@@ -960,7 +960,7 @@ def generate_pdf(config, output_path):
     logo_path = config.get("logo_path", "")
     if not logo_path:
         # Default to Course Logo.png
-        default_logo = BASE_DIR / "PDF" / "Course Logo.png"
+        default_logo = BASE_DIR / "PDF" / "Course_Logo.png"
         if default_logo.exists():
             logo_path = str(default_logo)
     logo_uri = img_to_data_uri(logo_path) if logo_path and os.path.exists(logo_path) else ""
@@ -1043,7 +1043,7 @@ def generate_from_json(config_path, output_path=None):
         config["logo_path"] = str(BASE_DIR / "PDF" / logo_name)
     elif not config.get("logo_path"):
         # Default: look for Course Logo
-        default_logo = BASE_DIR / "PDF" / "Course Logo.png"
+        default_logo = BASE_DIR / "PDF" / "Course_Logo.png"
         if default_logo.exists():
             config["logo_path"] = str(default_logo)
 
@@ -1059,7 +1059,7 @@ def generate_template_example():
     config = {
         "title": "AI Influencer Method\nFree Training",
         "subtitle": "The Complete Beginner's Blueprint to AI-Generated Influencer Income",
-        "logo_path": str(BASE_DIR / "PDF" / "Course Logo.png"),
+        "logo_path": str(BASE_DIR / "PDF" / "Course_Logo.png"),
         "sections": [
             {
                 "header": "Intro: What Is the AI Influencer Method",
