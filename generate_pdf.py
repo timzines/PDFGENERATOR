@@ -757,6 +757,37 @@ body {
     color: rgba(240,224,230,0.7);
     letter-spacing: 0.5px;
 }
+
+/* ---- PAGE NUMBERS ---- */
+.page-number {
+    position: absolute;
+    bottom: 18px;
+    right: 60px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    z-index: 10;
+}
+
+.page-number-dark {
+    color: rgba(255,255,255,0.3);
+}
+
+.page-number-light {
+    color: #8a6a72;
+}
+
+/* ---- SMALL TOP-RIGHT LOGO ON CONTENT PAGES ---- */
+.content-logo-small {
+    position: absolute;
+    top: 18px;
+    right: 30px;
+    height: 55px;
+    width: auto;
+    opacity: 0.35;
+    object-fit: contain;
+    z-index: 4;
+}
 """
 
 
@@ -814,7 +845,7 @@ def render_blocks_html(blocks):
 # PAGE BUILDERS (HTML)
 # ---------------------------------------------------------------------------
 
-def build_cover_html(title, subtitle, logo_uri=""):
+def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1):
     """Build cover page HTML."""
     title_html = title.replace("\n", "<br>")
 
@@ -834,23 +865,24 @@ def build_cover_html(title, subtitle, logo_uri=""):
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
+        <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
 
 
-def build_toc_html(sections, logo_uri=""):
+def build_toc_html(sections, logo_uri="", page_num=2, total_pages=1):
     """Build table of contents page HTML."""
     mid = len(sections) // 2 + len(sections) % 2
     left_items = sections[:mid]
     right_items = sections[mid:]
 
     left_html = ""
-    for page_num, title in left_items:
-        left_html += f'<div class="toc-item"><span class="toc-num">{page_num:02d}</span>{title}</div>\n'
+    for pn, title in left_items:
+        left_html += f'<div class="toc-item"><span class="toc-num">{pn:02d}</span>{title}</div>\n'
 
     right_html = ""
-    for page_num, title in right_items:
-        right_html += f'<div class="toc-item"><span class="toc-num">{page_num:02d}</span>{title}</div>\n'
+    for pn, title in right_items:
+        right_html += f'<div class="toc-item"><span class="toc-num">{pn:02d}</span>{title}</div>\n'
 
     return f'''
     <div class="page page-toc">
@@ -865,11 +897,12 @@ def build_toc_html(sections, logo_uri=""):
             <div class="toc-column">{right_html}</div>
         </div>
         <div class="toc-footer">{FOOTER_TEXT}</div>
+        <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
 
 
-def build_content_page_html(header, body_blocks, bg_uri=""):
+def build_content_page_html(header, body_blocks, bg_uri="", logo_uri="", page_num=3, total_pages=1):
     """Build a content page HTML."""
     main_part, fade_part = split_header_two_tone(header)
 
@@ -906,17 +939,19 @@ def build_content_page_html(header, body_blocks, bg_uri=""):
     return f'''
     <div class="page page-content">
         {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else '<div class="content-bg" style="background: ' + CONTENT_BG_GRADIENT + ';"></div>'}
+        {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
         <div class="content-top-overlay"></div>
         <div class="content-inner">
             <div class="section-header">{header_html}</div>
             {content_html}
         </div>
         <div class="content-footer">{FOOTER_TEXT}</div>
+        <div class="page-number page-number-light">{page_num} / {total_pages}</div>
     </div>
     '''
 
 
-def build_summary_page_html(points, bg_uri=""):
+def build_summary_page_html(points, bg_uri="", logo_uri="", page_num=1, total_pages=1):
     """Build summary page HTML."""
     bullets = ""
     for pt in points:
@@ -925,6 +960,7 @@ def build_summary_page_html(points, bg_uri=""):
     return f'''
     <div class="page page-content">
         {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else ""}
+        {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
         <div class="content-top-overlay"></div>
         <div class="content-inner">
             <div class="section-header">END <span class="fade">SUMMARY</span></div>
@@ -944,6 +980,7 @@ def build_summary_page_html(points, bg_uri=""):
             </div>
         </div>
         <div class="content-footer">{FOOTER_TEXT}</div>
+        <div class="page-number page-number-light">{page_num} / {total_pages}</div>
     </div>
     '''
 
@@ -979,29 +1016,42 @@ def generate_pdf(config, output_path):
     sections = config["sections"]
     summary_points = config.get("summary_points", [])
 
+    # Calculate total pages: cover + TOC + content sections + optional summary
+    total_pages = 2 + len(sections) + (1 if summary_points else 0)
+
     # Build pages
     pages_html = ""
+    current_page = 1
 
     # Cover — uses Course Logo as the main statue image
-    pages_html += build_cover_html(title, subtitle, logo_uri)
+    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=current_page, total_pages=total_pages)
+    current_page += 1
 
     # TOC — uses Course Logo as background decoration
     toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
-    pages_html += build_toc_html(toc_entries, logo_uri)
+    pages_html += build_toc_html(toc_entries, logo_uri, page_num=current_page, total_pages=total_pages)
+    current_page += 1
 
-    # Content pages — clean, no logo decorations
+    # Content pages — small logo in top-right corner
     for section in sections:
         pages_html += build_content_page_html(
             section["header"],
             section["blocks"],
             bg_uri=content_bg_uri,
+            logo_uri=logo_uri,
+            page_num=current_page,
+            total_pages=total_pages,
         )
+        current_page += 1
 
     # Summary
     if summary_points:
         pages_html += build_summary_page_html(
             summary_points,
             bg_uri=content_bg_uri,
+            logo_uri=logo_uri,
+            page_num=current_page,
+            total_pages=total_pages,
         )
 
     # Full HTML document
