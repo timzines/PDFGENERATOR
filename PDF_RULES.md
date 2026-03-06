@@ -1,8 +1,8 @@
 # PDF Template Rules — AI Influencer Accelerator
 
 All PDFs produced under the AI Influencer Accelerator brand **must** follow
-these rules exactly. No exceptions. The template example is
-`AI-Influencer-Method-Free-Training`.
+these rules exactly. No exceptions. The design is based on the original
+Canva-designed PDFs.
 
 ---
 
@@ -10,120 +10,156 @@ these rules exactly. No exceptions. The template example is
 
 | Property       | Value                                      |
 |----------------|--------------------------------------------|
-| Page size      | **1440 × 810 pts** (16:9 landscape)        |
+| Page size      | **1440 × 810 px** (16:9 landscape)         |
 | Orientation    | Landscape                                  |
 | Color mode     | RGB                                        |
-| Export format  | PDF 1.4+                                   |
-| Resolution     | 150 DPI minimum for raster elements        |
+| Export format  | PDF (WeasyPrint HTML/CSS → PDF)            |
+| Resolution     | 200 DPI for embedded raster elements       |
 
 ---
 
 ## 2. Color Palette
 
-| Role               | Hex       | Usage                                      |
-|--------------------|-----------|---------------------------------------------|
-| Background         | `#0D0D0D` | Page background (near-black)                |
-| Primary Accent     | `#39FF14` | Neon green — headings, dividers, highlights |
-| Secondary Accent   | `#1AFF00` | Lighter green — hover/emphasis states       |
-| Body Text          | `#FFFFFF` | Main paragraph text                         |
-| Muted Text         | `#AAAAAA` | Footnotes, captions, secondary info         |
-| Card/Panel BG      | `#1A1A1A` | Content boxes, two-column panels            |
-| Danger/Warning     | `#FF3131` | "Bad example" highlights, warnings          |
-| Success/Good       | `#39FF14` | "Good example" highlights                   |
+### Cover & TOC Pages (Dark Theme)
+| Role               | Hex / Value                          | Usage                              |
+|--------------------|--------------------------------------|------------------------------------|
+| Cover Background   | `#1a1b1f`                            | Dark near-black base               |
+| Cover Gradient     | Radial from `#3d3036` → `#1a1b1f`   | Subtle warm dark gradient          |
+| TOC Gradient       | Linear `#5f4657` → `#1a1b1f`        | Dark mauve to black                |
+| TOC Item BG        | `rgba(80, 55, 65, 0.6)`             | Semi-transparent pill backgrounds  |
+| Cover Text         | `#ffffff`                            | Title text                         |
+| Cover Muted        | `#999999`                            | Subtitle text                      |
+| Cover Brand Border | `#555555`                            | Pill border around brand name      |
+
+### Content Pages (Rose/Mauve Theme)
+| Role               | Hex / Value                          | Usage                              |
+|--------------------|--------------------------------------|------------------------------------|
+| BG Center          | `#d4b6be`                            | Light dusty rose (gradient center) |
+| BG Mid             | `#c7a5b2`                            | Medium mauve (gradient mid)        |
+| BG Edge            | `#a07d83`                            | Dark rose (gradient edges)         |
+| Content Box BG     | `rgba(111, 76, 83, 0.82)`           | Semi-transparent dark panels       |
+| Box Text           | `#f0e0e6`                            | Light pink-white body text         |
+| Header Dark        | `#2a1a1f`                            | Section header primary color       |
+| Header Fade        | `#c49a85`                            | Section header last-word fade      |
+| Sub-header         | `#ffffff`                            | Bold white within boxes            |
+| Footer Text        | `#8a6a72`                            | Muted rose footer text             |
+| Good Example       | `#7dba6d` border, `#c8e6c0` text    | Green-tinted examples              |
+| Bad Example        | `#c9665a` border, `#eaaca5` text    | Red-tinted examples                |
+| Panel BG           | `rgba(90, 60, 68, 0.5)`             | Inner highlight panels             |
 
 ---
 
 ## 3. Typography
 
-| Element              | Font Family         | Weight    | Size (pt) | Color     | Case       |
-|----------------------|---------------------|-----------|-----------|-----------|------------|
-| Cover Title          | Inter / Sans-Serif  | Bold      | 48–56     | `#FFFFFF` | ALL CAPS   |
-| Cover Subtitle       | Inter / Sans-Serif  | Regular   | 22–26     | `#AAAAAA` | Title Case |
-| Section Header       | Inter / Sans-Serif  | Bold      | 32–40     | `#39FF14` | ALL CAPS   |
-| Sub-Header           | Inter / Sans-Serif  | Semi-Bold | 20–24     | `#FFFFFF` | Title Case |
-| Body Text            | Inter / Sans-Serif  | Regular   | 14–16     | `#FFFFFF` | Sentence   |
-| Bullet Points        | Inter / Sans-Serif  | Regular   | 14–16     | `#FFFFFF` | Sentence   |
-| Footer               | Inter / Sans-Serif  | Regular   | 9–10      | `#AAAAAA` | Sentence   |
-| TOC Entry            | Inter / Sans-Serif  | Regular   | 14–16     | `#FFFFFF` | Title Case |
-| TOC Page Number      | Inter / Sans-Serif  | Bold      | 14–16     | `#39FF14` | —          |
-| Brand Name           | Inter / Sans-Serif  | Bold      | 16–18     | `#39FF14` | Title Case |
+| Element              | Font Family         | Weight    | Size (px) | Style       | Color         | Case       |
+|----------------------|---------------------|-----------|-----------|-------------|---------------|------------|
+| Cover Title          | Helvetica / Arial   | Bold 700  | 44        | Normal      | `#ffffff`     | Title Case |
+| Cover Subtitle       | Helvetica / Arial   | Regular   | 16        | Normal      | `#999999`     | Sentence   |
+| Section Header       | Helvetica / Arial   | Bold 700  | 32        | **Italic**  | `#2a1a1f`     | ALL CAPS   |
+| Header Last Word     | Helvetica / Arial   | Bold 700  | 32        | **Italic**  | `#c49a85`     | ALL CAPS   |
+| Sub-Header           | Helvetica / Arial   | Bold 700  | 14.5      | Normal      | `#ffffff`     | Title Case |
+| Body Text            | Helvetica / Arial   | Regular   | 13.5      | Normal      | `#f0e0e6`     | Sentence   |
+| Bullet Points        | Helvetica / Arial   | Regular   | 13.5      | Normal      | `#f0e0e6`     | Sentence   |
+| Footer               | Helvetica / Arial   | Regular   | 10        | Normal      | `#8a6a72`     | Sentence   |
+| TOC Header           | Helvetica / Arial   | Bold 700  | 36        | **Italic**  | `#ffffff`     | Title Case |
+| TOC Entry            | Helvetica / Arial   | Regular   | 14        | Normal      | `#e0ccd2`     | Title Case |
+| Cover Brand          | Helvetica / Arial   | Regular   | 16        | Normal      | `#cccccc`     | Title Case |
 
-**Fallback font stack:** Inter → Helvetica Neue → Arial → sans-serif
+**Fallback font stack:** Helvetica Neue → Helvetica → Arial → sans-serif
 
 ---
 
-## 4. Page Structure (Mandatory Order)
+## 4. Visual Assets
+
+### Statue Imagery
+- **Cover statue:** Right half of cover page, extracted from original Canva design (`assets/cover_statue.png`)
+- **Content statue:** Small, top-right corner of content pages, ~200px height, 35% opacity (`assets/content_statue.png`)
+- **Content decor:** Bottom-right decoration, ~200px height, 18% opacity (`assets/content_decor.png`)
+- **Background gradient:** Pre-rendered radial gradient in dusty rose (`assets/content_bg_generated.png`)
+
+### Course Logo
+- `PDF/Course Logo.png` — used on cover page next to title (48×48px, rounded corners)
+
+---
+
+## 5. Page Structure (Mandatory Order)
 
 Every PDF must contain these pages **in this exact order**:
 
 ### Page 1 — Cover
-- Full dark background (`#0D0D0D`)
-- PDF title: centered, ALL CAPS, bold, 48–56pt
-- Subtitle: centered below title, 22–26pt, muted text
-- Brand name "AI Influencer Accelerator" below subtitle
-- Course logo (pink statue) optional — centered or top-right
+- Dark background (`#1a1b1f`) with subtle warm gradient
+- 3D classical statue on right half (from assets)
+- Left side: platform logo (optional) + title + subtitle
+- "AI Influencer Accelerator" in rounded pill/badge below
 - No footer on cover page
 
 ### Page 2 — Table of Contents
-- Header: "Table Of Contents" in section header style
-- Two-column layout
-- Left column: odd-numbered sections with page numbers
-- Right column: even-numbered sections with page numbers
-- Page numbers in green (`#39FF14`)
+- Dark gradient background (mauve → dark)
+- Header: "Table Of Contents" in italic bold white
+- Two-column layout with pill-shaped items
+- Semi-transparent item backgrounds
+- Statue visible behind (lower opacity)
 - Footer present
 
 ### Pages 3–N — Content Pages
-- Each page = one section or sub-section
-- Section header at top in ALL CAPS green
-- Body content below in white text
-- Two-column layout preferred for dense content
-- Single-column acceptable for flow content
-- Footer on every content page
+- Dusty rose/mauve gradient background
+- Small statue decoration top-right (subtle)
+- Dollar sign decoration bottom-right (subtle)
+- Section header: italic, bold, uppercase, two-tone coloring
+- Content in semi-transparent dark rounded boxes (`border-radius: 14px`)
+- Two-column box layout for dense content
+- Single full-width box for simpler content (max 75% width)
+- Footer on every page
 
 ### Final Page — Summary / End
-- Brief summary or key takeaways
-- Brand name
+- Same rose gradient background as content pages
+- Two-column box layout with summary points
+- Brand name panel
 - Footer present
 
 ---
 
-## 5. Layout Grid & Spacing
+## 6. Layout Grid & Spacing
 
 | Property                | Value                   |
 |-------------------------|-------------------------|
-| Left/Right margin       | 60–80 pts               |
-| Top margin              | 50–60 pts               |
-| Bottom margin           | 40–50 pts (above footer)|
-| Column gap (2-col)      | 40–60 pts               |
-| Line spacing (body)     | 1.4–1.6× font size      |
-| Paragraph spacing       | 12–16 pts               |
-| Section header to body  | 20–30 pts               |
-| Bullet indent           | 20 pts                  |
-| Bullet symbol           | `•` or `→`              |
+| Page padding            | 50px top, 60px sides    |
+| Bottom margin           | 45px (above footer)     |
+| Column gap (2-col)      | 20–24px                 |
+| Content box padding     | 22px 24px               |
+| Content box radius      | 14px                    |
+| Line height (body)      | 1.65                    |
+| Paragraph spacing       | 10px                    |
+| Section header to body  | 25px                    |
+| Bullet indent           | 18px                    |
+| Bullet symbol           | `•` (disc) or `→`      |
 
 ---
 
-## 6. Content Panels & Cards
+## 7. Content Panels & Cards
 
-When presenting structured info (good/bad examples, lists, data):
+Content is displayed inside semi-transparent dark rounded boxes:
+- Background: `rgba(111, 76, 83, 0.82)`
+- Border-radius: `14px`
+- Internal padding: `22px 24px`
+- Text color: `#f0e0e6` (light pink-white)
+- Sub-headers within boxes: bold white `#ffffff`
 
-- Use a rounded-corner panel with `#1A1A1A` background
-- 12–16 px internal padding
-- 1–2 px border in `#39FF14` (optional, for emphasis)
-- Panel header in sub-header style
-- Panel body in regular body text
+### Good / Bad Example Blocks
+| Type         | Border       | Text Color | Label Text       |
+|--------------|-------------|------------|------------------|
+| Good Example | 3px solid `#7dba6d` | `#c8e6c0`  | "GOOD EXAMPLE:"  |
+| Bad Example  | 3px solid `#c9665a` | `#eaaca5`  | "BAD EXAMPLE:"   |
 
----
-
-## 7. Good / Bad Example Blocks
-
-| Type         | Border Color | Label Color | Label Text       |
-|--------------|-------------|-------------|------------------|
-| Good Example | `#39FF14`   | `#39FF14`   | "Good example:"  |
-| Bad Example  | `#FF3131`   | `#FF3131`   | "Bad example:"   |
-
+- Left-border accent style (not full border)
+- Italic text for example content
 - Always show both when comparing approaches
-- Use side-by-side two-column layout when possible
+
+### Inner Highlight Panels
+- Background: `rgba(90, 60, 68, 0.5)`
+- Border: `1px solid rgba(255,255,255,0.15)`
+- Border-radius: `8px`
+- Used for key rules, warnings, and callouts
 
 ---
 
@@ -135,20 +171,19 @@ When presenting structured info (good/bad examples, lists, data):
 All materials are strictly protected under AI Influencer Accelerator® rights
 ```
 
-- Font: 9–10pt, muted text (`#AAAAAA`)
-- Position: bottom-center of page
+- Font: 10px, muted rose (`#8a6a72`)
+- Position: absolute bottom-center of page
 - Consistent on every page
 
 ---
 
-## 9. Images & Visual Assets
+## 9. Section Header Two-Tone Rule
 
-- Course Logo: `PDF/Course Logo.png` — use on cover or TOC
-- Screenshots/examples: bordered with 1px `#333333` border
-- Result images: use `PDF/Results*.jpg/png` where relevant
-- All images must be high-res (minimum 150 DPI at display size)
-- Never stretch or distort images
-- Images should have consistent rounded corners (8–12px radius)
+Section headers use a two-tone color effect:
+- **Primary words:** Dark rose-brown `#2a1a1f`
+- **Last word:** Faded gold-rose `#c49a85`
+- All uppercase, italic, bold
+- Example: **INTRO: THE ROLE OF** <span style="color:#c49a85">**REDDIT**</span>
 
 ---
 
@@ -163,6 +198,7 @@ All materials are strictly protected under AI Influencer Accelerator® rights
 7. **No emojis in body text** — emojis only in quoted examples
 8. **Examples are mandatory** — every rule must have a good/bad example where applicable
 9. **Page count**: 12–18 pages per PDF (cover + TOC + content + summary)
+10. **Text alignment**: Justified within content boxes
 
 ---
 
@@ -180,28 +216,49 @@ Examples:
 
 ---
 
-## 12. Metadata
+## 12. JSON Content Schema
 
-| Field    | Value                                                              |
-|----------|--------------------------------------------------------------------|
-| Title    | Same as cover title                                                |
-| Author   | AI Influencer Accelerator                                          |
-| Creator  | AI Influencer Accelerator PDF Generator                            |
-| Producer | AI Influencer Accelerator                                          |
+Each PDF is generated from a JSON config file in `content/`:
+
+```json
+{
+  "title": "PDF Title",
+  "subtitle": "Subtitle text",
+  "output_filename": "My-PDF.pdf",
+  "logo": "Course Logo.png",
+  "sections": [
+    {
+      "header": "Section Title",
+      "blocks": [
+        {"type": "text", "content": "Paragraph text..."},
+        {"type": "subheader", "content": "Sub-header text"},
+        {"type": "bullets", "items": ["Item 1", "Item 2"], "bullet": "•"},
+        {"type": "good_example", "content": "Good example text"},
+        {"type": "bad_example", "content": "Bad example text"},
+        {"type": "panel", "title": "Panel Title", "content": "Panel content"},
+        {"type": "two_column", "left": [...blocks], "right": [...blocks]}
+      ]
+    }
+  ],
+  "summary_points": ["Point 1", "Point 2"]
+}
+```
 
 ---
 
 ## 13. Template Checklist (Before Export)
 
 - [ ] Page size is 1440 × 810 landscape
-- [ ] Cover page has title, subtitle, brand name
-- [ ] Table of Contents is page 2 with correct page numbers
-- [ ] Every section header is ALL CAPS in green
-- [ ] Body text is white on dark background
+- [ ] Cover page has statue, title, subtitle, brand badge
+- [ ] Table of Contents is page 2 with pill-shaped items
+- [ ] Content pages use dusty rose gradient background
+- [ ] Section headers are italic, uppercase, two-tone colored
+- [ ] Content boxes are semi-transparent dark rounded panels
+- [ ] Body text is light pink-white on dark boxes
 - [ ] Footer appears on every page except cover
-- [ ] Good/Bad examples use correct color coding
+- [ ] Good/Bad examples use left-border accent style
+- [ ] Statue decoration appears subtly on content pages
 - [ ] File name follows hyphenated convention
-- [ ] Metadata fields are filled
 - [ ] Total pages between 12–18
 - [ ] No spelling errors
-- [ ] All images are high resolution
+- [ ] All decorative assets are properly positioned

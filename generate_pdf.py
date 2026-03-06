@@ -1,838 +1,860 @@
 #!/usr/bin/env python3
 """
-AI Influencer Accelerator — PDF Generator
-==========================================
-Generates branded PDFs following PDF_RULES.md exactly.
+AI Influencer Accelerator — PDF Generator v2
+=============================================
+Generates branded PDFs matching the original Canva design:
+  - Dusty rose/mauve gradient content pages
+  - Dark cover & TOC pages with statue imagery
+  - Semi-transparent dark content panels with rounded corners
+  - Italic two-tone section headers
+  - Statue and dollar-sign decorative overlays
+
+Uses WeasyPrint (HTML/CSS → PDF) for professional layout.
 
 Usage:
     python generate_pdf.py                          # generates the template example
     python generate_pdf.py --config my_content.json # generates from a JSON content file
-
-Content JSON format: see CONTENT_SCHEMA at bottom of file.
 """
 
+import base64
 import json
 import os
 import sys
-import textwrap
+from io import BytesIO
 from pathlib import Path
 
-from reportlab.lib.colors import HexColor, white
-from reportlab.lib.pagesizes import landscape
-from reportlab.lib.units import inch, mm
-from reportlab.pdfbase import pdfmetrics
-from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.pdfgen import canvas
-from reportlab.lib.utils import ImageReader
+from jinja2 import Template
+from PIL import Image, ImageDraw, ImageFilter
+from weasyprint import HTML
 
 # ---------------------------------------------------------------------------
-# BRAND CONSTANTS (from PDF_RULES.md)
+# PATHS
 # ---------------------------------------------------------------------------
-PAGE_W = 1440  # pts
-PAGE_H = 810   # pts
-PAGE_SIZE = (PAGE_W, PAGE_H)
+BASE_DIR = Path(__file__).parent
+ASSETS_DIR = BASE_DIR / "assets"
+OUTPUT_DIR = BASE_DIR / "output"
 
-# Colors
-BG_COLOR        = HexColor("#0D0D0D")
-ACCENT_GREEN    = HexColor("#39FF14")
-ACCENT_LIGHT    = HexColor("#1AFF00")
-TEXT_WHITE       = HexColor("#FFFFFF")
-TEXT_MUTED       = HexColor("#AAAAAA")
-PANEL_BG        = HexColor("#1A1A1A")
-DANGER_RED      = HexColor("#FF3131")
-BORDER_DARK     = HexColor("#333333")
+# ---------------------------------------------------------------------------
+# DESIGN CONSTANTS
+# ---------------------------------------------------------------------------
+PAGE_W = 1440
+PAGE_H = 810
 
-# Margins
-MARGIN_LEFT   = 70
-MARGIN_RIGHT  = 70
-MARGIN_TOP    = 55
-MARGIN_BOTTOM = 45
+# Colors (from original Canva PDFs)
+COVER_BG = "#1a1b1f"
+COVER_BG_GRADIENT = "radial-gradient(ellipse at 30% 50%, #3d3036 0%, #1a1b1f 50%, #141519 100%)"
+TOC_BG_GRADIENT = "linear-gradient(180deg, #5f4657 0%, #1a1b1f 40%, #141519 100%)"
 
-CONTENT_W = PAGE_W - MARGIN_LEFT - MARGIN_RIGHT
-COL_GAP   = 50
-COL_W     = (CONTENT_W - COL_GAP) / 2
+# Content page rose/mauve palette
+CONTENT_BG_BASE = "#c7a5b2"
+CONTENT_BG_LIGHT = "#d4b6be"
+CONTENT_BG_GRADIENT = "radial-gradient(ellipse at 50% 50%, #d4b6be 0%, #c7a5b2 40%, #a07d83 100%)"
 
-# Footer
+# Content box (semi-transparent dark rose)
+BOX_BG = "rgba(111, 76, 83, 0.82)"
+BOX_BG_SOLID = "#6f4c53"
+
+# Text colors
+TEXT_WHITE = "#ffffff"
+TEXT_LIGHT = "#e8d5dc"
+TEXT_DARK = "#2a1a1f"
+TEXT_MUTED_DARK = "#4a3038"
+TEXT_MUTED_LIGHT = "#999999"
+HEADER_FADE = "#c49a85"  # The faded last-word color in headers
+
 FOOTER_TEXT = "All materials are strictly protected under AI Influencer Accelerator\u00AE rights"
-FOOTER_FONT_SIZE = 9
-
-# Font sizes
-COVER_TITLE_SIZE   = 52
-COVER_SUB_SIZE     = 24
-SECTION_HDR_SIZE   = 36
-SUB_HDR_SIZE       = 22
-BODY_SIZE          = 15
-BULLET_SIZE        = 15
-TOC_SIZE           = 15
-BRAND_SIZE         = 17
-LINE_SPACING       = 1.5
+BRAND_NAME = "AI Influencer Accelerator"
 
 
 # ---------------------------------------------------------------------------
-# HELPERS
+# ASSET HELPERS
 # ---------------------------------------------------------------------------
 
-def hex_to_color(h):
-    return HexColor(h)
+def img_to_data_uri(path):
+    """Convert image file to data URI for embedding in HTML."""
+    with open(path, "rb") as f:
+        data = base64.b64encode(f.read()).decode()
+    ext = Path(path).suffix.lower()
+    mime = {"png": "image/png", "jpg": "image/jpeg", "jpeg": "image/jpeg"}.get(ext.lstrip("."), "image/png")
+    return f"data:{mime};base64,{data}"
 
 
-def draw_bg(c):
-    """Fill entire page with dark background."""
-    c.setFillColor(BG_COLOR)
-    c.rect(0, 0, PAGE_W, PAGE_H, fill=1, stroke=0)
+def pil_to_data_uri(img, fmt="PNG"):
+    """Convert PIL Image to data URI."""
+    buf = BytesIO()
+    img.save(buf, format=fmt)
+    data = base64.b64encode(buf.getvalue()).decode()
+    mime = "image/png" if fmt == "PNG" else "image/jpeg"
+    return f"data:{mime};base64,{data}"
 
 
-def draw_footer(c):
-    """Draw the standard footer on current page."""
-    c.setFillColor(TEXT_MUTED)
-    c.setFont("Helvetica", FOOTER_FONT_SIZE)
-    c.drawCentredString(PAGE_W / 2, 20, FOOTER_TEXT)
+def generate_content_bg():
+    """Generate dusty rose gradient background image."""
+    w, h = PAGE_W, PAGE_H
+    img = Image.new("RGB", (w, h))
+    draw = ImageDraw.Draw(img)
 
+    # Radial gradient: center is lighter, edges are darker rose
+    cx, cy = w // 2, h // 2
+    max_r = ((w/2)**2 + (h/2)**2) ** 0.5
 
-def draw_panel(c, x, y, w, h, border_color=None):
-    """Draw a rounded dark panel."""
-    c.setFillColor(PANEL_BG)
-    if border_color:
-        c.setStrokeColor(border_color)
-        c.setLineWidth(1.5)
-        c.roundRect(x, y, w, h, 10, fill=1, stroke=1)
-    else:
-        c.setStrokeColor(PANEL_BG)
-        c.roundRect(x, y, w, h, 10, fill=1, stroke=0)
+    # Base colors
+    center = (212, 182, 190)  # #d4b6be
+    edge = (160, 125, 131)    # #a07d83
+    mid = (199, 165, 178)     # #c7a5b2
 
-
-def wrap_text(text, font_name, font_size, max_width):
-    """Wrap text to fit within max_width, returns list of lines."""
-    # Rough char width estimate
-    avg_char_w = font_size * 0.48
-    chars_per_line = int(max_width / avg_char_w)
-    if chars_per_line < 10:
-        chars_per_line = 10
-    lines = []
-    for paragraph in text.split("\n"):
-        if paragraph.strip() == "":
-            lines.append("")
-        else:
-            wrapped = textwrap.wrap(paragraph, width=chars_per_line)
-            lines.extend(wrapped if wrapped else [""])
-    return lines
-
-
-def draw_body_text(c, text, x, y, max_width, font_size=BODY_SIZE, color=TEXT_WHITE):
-    """Draw wrapped body text. Returns new y position."""
-    c.setFillColor(color)
-    c.setFont("Helvetica", font_size)
-    line_h = font_size * LINE_SPACING
-    lines = wrap_text(text, "Helvetica", font_size, max_width)
-    for line in lines:
-        if y < MARGIN_BOTTOM + 30:
-            break
-        c.drawString(x, y, line)
-        y -= line_h
-    return y
-
-
-def draw_bullets(c, items, x, y, max_width, font_size=BULLET_SIZE, color=TEXT_WHITE, bullet="•"):
-    """Draw bullet list. Returns new y position."""
-    c.setFillColor(color)
-    c.setFont("Helvetica", font_size)
-    line_h = font_size * LINE_SPACING
-    indent = 20
-    for item in items:
-        if y < MARGIN_BOTTOM + 30:
-            break
-        lines = wrap_text(item, "Helvetica", font_size, max_width - indent)
-        for i, line in enumerate(lines):
-            if i == 0:
-                c.drawString(x, y, bullet)
-                c.drawString(x + indent, y, line)
+    for y_pos in range(h):
+        for x_pos in range(w):
+            dist = ((x_pos - cx)**2 + (y_pos - cy)**2) ** 0.5
+            t = min(dist / max_r, 1.0)
+            if t < 0.5:
+                t2 = t / 0.5
+                r = int(center[0] + (mid[0] - center[0]) * t2)
+                g = int(center[1] + (mid[1] - center[1]) * t2)
+                b = int(center[2] + (mid[2] - center[2]) * t2)
             else:
-                c.drawString(x + indent, y, line)
-            y -= line_h
-        y -= 4  # extra spacing between bullets
-    return y
+                t2 = (t - 0.5) / 0.5
+                r = int(mid[0] + (edge[0] - mid[0]) * t2)
+                g = int(mid[1] + (edge[1] - mid[1]) * t2)
+                b = int(mid[2] + (edge[2] - mid[2]) * t2)
+            draw.point((x_pos, y_pos), fill=(r, g, b))
+
+    return img
 
 
-def draw_section_header(c, title, y=None):
-    """Draw a green ALL CAPS section header."""
-    if y is None:
-        y = PAGE_H - MARGIN_TOP - SECTION_HDR_SIZE
-    c.setFillColor(ACCENT_GREEN)
-    c.setFont("Helvetica-Bold", SECTION_HDR_SIZE)
-    c.drawString(MARGIN_LEFT, y, title.upper())
-    # Green underline
-    c.setStrokeColor(ACCENT_GREEN)
-    c.setLineWidth(2)
-    c.line(MARGIN_LEFT, y - 8, MARGIN_LEFT + CONTENT_W, y - 8)
-    return y - 35
+def get_content_bg_uri():
+    """Get or create content background as data URI."""
+    cache_path = ASSETS_DIR / "content_bg_generated.png"
+    if not cache_path.exists():
+        img = generate_content_bg()
+        img.save(str(cache_path))
+    return img_to_data_uri(str(cache_path))
 
 
-def draw_sub_header(c, title, x, y, color=TEXT_WHITE):
-    """Draw a sub-header."""
-    c.setFillColor(color)
-    c.setFont("Helvetica-Bold", SUB_HDR_SIZE)
-    c.drawString(x, y, title)
-    return y - SUB_HDR_SIZE * LINE_SPACING
+def get_asset_uri(name):
+    """Get asset as data URI, return empty string if missing."""
+    path = ASSETS_DIR / name
+    if path.exists():
+        return img_to_data_uri(str(path))
+    return ""
 
 
 # ---------------------------------------------------------------------------
-# PAGE BUILDERS
+# HTML/CSS TEMPLATES
 # ---------------------------------------------------------------------------
 
-def build_cover(c, title, subtitle, brand="AI Influencer Accelerator", logo_path=None):
-    """Page 1 — Cover."""
-    draw_bg(c)
+CSS_BASE = """
+@page {
+    size: 1440px 810px;
+    margin: 0;
+}
 
-    # Optional logo
-    if logo_path and os.path.exists(logo_path):
-        try:
-            img = ImageReader(logo_path)
-            iw, ih = img.getSize()
-            scale = min(140 / iw, 140 / ih)
-            draw_w, draw_h = iw * scale, ih * scale
-            c.drawImage(logo_path, (PAGE_W - draw_w) / 2, PAGE_H - 60 - draw_h,
-                        width=draw_w, height=draw_h, mask='auto')
-        except Exception:
-            pass
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-    # Title
-    c.setFillColor(TEXT_WHITE)
-    c.setFont("Helvetica-Bold", COVER_TITLE_SIZE)
-    # Wrap title if needed
-    title_lines = wrap_text(title.upper(), "Helvetica-Bold", COVER_TITLE_SIZE, CONTENT_W)
-    title_y = PAGE_H / 2 + (len(title_lines) - 1) * COVER_TITLE_SIZE * 0.6
-    for line in title_lines:
-        tw = c.stringWidth(line, "Helvetica-Bold", COVER_TITLE_SIZE)
-        c.drawString((PAGE_W - tw) / 2, title_y, line)
-        title_y -= COVER_TITLE_SIZE * 1.2
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
 
-    # Subtitle
-    sub_y = title_y - 20
-    c.setFillColor(TEXT_MUTED)
-    c.setFont("Helvetica", COVER_SUB_SIZE)
-    tw = c.stringWidth(subtitle, "Helvetica", COVER_SUB_SIZE)
-    c.drawString((PAGE_W - tw) / 2, sub_y, subtitle)
+.page {
+    width: 1440px;
+    height: 810px;
+    position: relative;
+    overflow: hidden;
+    page-break-after: always;
+    page-break-inside: avoid;
+}
 
-    # Brand
-    brand_y = sub_y - 50
-    c.setFillColor(ACCENT_GREEN)
-    c.setFont("Helvetica-Bold", BRAND_SIZE)
-    tw = c.stringWidth(brand, "Helvetica-Bold", BRAND_SIZE)
-    c.drawString((PAGE_W - tw) / 2, brand_y, brand)
+.page:last-child {
+    page-break-after: auto;
+}
 
-    # Decorative line
-    c.setStrokeColor(ACCENT_GREEN)
-    c.setLineWidth(2)
-    line_w = 300
-    c.line((PAGE_W - line_w) / 2, brand_y - 15, (PAGE_W + line_w) / 2, brand_y - 15)
+/* ---- COVER PAGE ---- */
+.page-cover {
+    background: #1a1b1f;
+    display: flex;
+    align-items: center;
+}
 
-    c.showPage()
+.cover-left {
+    width: 50%;
+    padding: 60px 40px 60px 80px;
+    z-index: 2;
+}
+
+.cover-right {
+    width: 50%;
+    height: 100%;
+    position: relative;
+}
+
+.cover-statue {
+    position: absolute;
+    right: -20px;
+    top: 0;
+    height: 100%;
+    width: auto;
+    max-width: 120%;
+    object-fit: contain;
+    object-position: right center;
+}
+
+.cover-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 8px;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.cover-title {
+    font-size: 44px;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.15;
+    margin-bottom: 12px;
+    letter-spacing: -0.5px;
+}
+
+.cover-subtitle {
+    font-size: 16px;
+    font-weight: 400;
+    color: #999999;
+    margin-bottom: 36px;
+    letter-spacing: 0.3px;
+}
+
+.cover-brand {
+    display: inline-block;
+    border: 1px solid #555555;
+    border-radius: 24px;
+    padding: 10px 24px;
+    color: #cccccc;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+}
+
+/* ---- TOC PAGE ---- */
+.page-toc {
+    background: linear-gradient(180deg, #3d3036 0%, #1a1b1f 35%, #141519 100%);
+    padding: 50px 80px;
+    position: relative;
+}
+
+.toc-statue {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 90%;
+    width: auto;
+    opacity: 0.55;
+    object-fit: contain;
+    object-position: right bottom;
+}
+
+.toc-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #ffffff;
+    font-style: italic;
+    margin-bottom: 35px;
+    position: relative;
+    z-index: 2;
+}
+
+.toc-grid {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.toc-column {
+    flex: 1;
+}
+
+.toc-item {
+    background: rgba(80, 55, 65, 0.6);
+    border-radius: 8px;
+    padding: 10px 18px;
+    margin-bottom: 10px;
+    color: #e0ccd2;
+    font-size: 14px;
+    font-weight: 400;
+    backdrop-filter: blur(4px);
+}
+
+.toc-item .toc-num {
+    color: #e0ccd2;
+    margin-right: 12px;
+    font-weight: 500;
+}
+
+.toc-footer {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #888888;
+    font-size: 10px;
+    z-index: 2;
+}
+
+/* ---- CONTENT PAGE ---- */
+.page-content {
+    position: relative;
+    padding: 50px 60px 45px 60px;
+}
+
+.content-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.content-statue {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    height: 200px;
+    width: auto;
+    opacity: 0.35;
+    z-index: 1;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.content-decor {
+    position: absolute;
+    bottom: 20px;
+    right: -10px;
+    height: 200px;
+    width: auto;
+    opacity: 0.18;
+    z-index: 1;
+    object-fit: contain;
+    pointer-events: none;
+}
+
+.content-inner {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+    height: calc(100% - 45px);
+}
+
+.section-header {
+    font-size: 32px;
+    font-weight: 700;
+    font-style: italic;
+    color: #2a1a1f;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    line-height: 1.2;
+}
+
+.section-header .fade {
+    color: #c49a85;
+}
+
+.content-columns {
+    display: flex;
+    gap: 20px;
+    align-items: stretch;
+}
+
+.content-col {
+    flex: 1;
+    min-width: 0;
+}
+
+.content-box {
+    background: rgba(111, 76, 83, 0.82);
+    border-radius: 14px;
+    padding: 22px 24px;
+    color: #f0e0e6;
+    margin-bottom: 14px;
+    position: relative;
+    z-index: 2;
+}
+
+.content-box p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #f0e0e6;
+}
+
+.content-box p:last-child {
+    margin-bottom: 0;
+}
+
+.content-box .sub-header {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+
+.content-box .sub-header:first-child {
+    margin-top: 0;
+}
+
+.content-box ul {
+    margin: 6px 0 10px 18px;
+    padding: 0;
+}
+
+.content-box ul li {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #f0e0e6;
+    margin-bottom: 3px;
+}
+
+.content-box .example-good {
+    border-left: 3px solid #7dba6d;
+    padding-left: 12px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #c8e6c0;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.content-box .example-bad {
+    border-left: 3px solid #c9665a;
+    padding-left: 12px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #eaaca5;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.content-box .example-label {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.content-box .panel-box {
+    background: rgba(90, 60, 68, 0.5);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 12px 0 6px 0;
+}
+
+.content-box .panel-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.content-box .panel-body {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #e8d5dc;
+}
+
+/* Full-width content box (no columns) */
+.content-box-full {
+    background: rgba(111, 76, 83, 0.82);
+    border-radius: 14px;
+    padding: 22px 24px;
+    color: #f0e0e6;
+    margin-bottom: 14px;
+    max-width: 75%;
+    position: relative;
+    z-index: 2;
+}
+
+.content-box-full p {
+    font-size: 13.5px;
+    line-height: 1.65;
+    margin-bottom: 10px;
+    text-align: justify;
+    color: #f0e0e6;
+}
+
+.content-box-full p:last-child {
+    margin-bottom: 0;
+}
+
+.content-box-full .sub-header {
+    font-size: 14.5px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 8px;
+    margin-top: 14px;
+}
+
+.content-box-full .sub-header:first-child {
+    margin-top: 0;
+}
+
+.content-box-full ul {
+    margin: 6px 0 10px 18px;
+    padding: 0;
+}
+
+.content-box-full ul li {
+    font-size: 13.5px;
+    line-height: 1.6;
+    color: #f0e0e6;
+    margin-bottom: 3px;
+}
+
+.content-box-full .example-good {
+    border-left: 3px solid #7dba6d;
+    padding-left: 12px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #c8e6c0;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.content-box-full .example-bad {
+    border-left: 3px solid #c9665a;
+    padding-left: 12px;
+    margin: 10px 0;
+    font-style: italic;
+    color: #eaaca5;
+    font-size: 13px;
+    line-height: 1.55;
+}
+
+.content-box-full .example-label {
+    font-weight: 700;
+    font-style: normal;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.content-box-full .panel-box {
+    background: rgba(90, 60, 68, 0.5);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 8px;
+    padding: 12px 16px;
+    margin: 12px 0 6px 0;
+}
+
+.content-box-full .panel-title {
+    font-size: 13px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+}
+
+.content-box-full .panel-body {
+    font-size: 13px;
+    line-height: 1.55;
+    color: #e8d5dc;
+}
+
+.content-footer {
+    position: absolute;
+    bottom: 18px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    font-size: 10px;
+    color: #8a6a72;
+    z-index: 2;
+}
+
+/* ---- SUMMARY PAGE ---- */
+.summary-box ul li {
+    margin-bottom: 6px;
+}
+"""
 
 
-def build_toc(c, sections):
-    """Page 2 — Table of Contents."""
-    draw_bg(c)
+def split_header_two_tone(header_text):
+    """Split header so last word gets fade color."""
+    words = header_text.strip().split()
+    if len(words) <= 1:
+        return header_text, ""
+    main = " ".join(words[:-1])
+    fade = words[-1]
+    return main, fade
 
-    # Header
-    y = PAGE_H - MARGIN_TOP - 10
-    c.setFillColor(TEXT_WHITE)
-    c.setFont("Helvetica-Bold", 30)
-    c.drawString(MARGIN_LEFT, y, "Table Of Contents")
-    y -= 50
 
-    # Two columns
+def render_blocks_html(blocks):
+    """Render a list of content blocks into HTML."""
+    html = ""
+    for block in blocks:
+        btype = block.get("type", "text")
+
+        if btype == "text":
+            html += f'<p>{block["content"]}</p>\n'
+
+        elif btype == "subheader":
+            html += f'<div class="sub-header">{block["content"]}</div>\n'
+
+        elif btype == "bullets":
+            bullet = block.get("bullet", "")
+            html += "<ul>\n"
+            for item in block["items"]:
+                prefix = f"{bullet} " if bullet and bullet != "•" else ""
+                html += f"  <li>{prefix}{item}</li>\n"
+            html += "</ul>\n"
+
+        elif btype == "good_example":
+            lines = block["content"].replace("\n", "<br>")
+            html += f'<div class="example-good"><div class="example-label">Good example:</div>{lines}</div>\n'
+
+        elif btype == "bad_example":
+            lines = block["content"].replace("\n", "<br>")
+            html += f'<div class="example-bad"><div class="example-label">Bad example:</div>{lines}</div>\n'
+
+        elif btype == "panel":
+            title = block.get("title", "")
+            content = block.get("content", "").replace("\n", "<br>")
+            html += '<div class="panel-box">\n'
+            if title:
+                html += f'  <div class="panel-title">{title}</div>\n'
+            html += f'  <div class="panel-body">{content}</div>\n'
+            html += '</div>\n'
+
+    return html
+
+
+# ---------------------------------------------------------------------------
+# PAGE BUILDERS (HTML)
+# ---------------------------------------------------------------------------
+
+def build_cover_html(title, subtitle, logo_uri="", statue_uri=""):
+    """Build cover page HTML."""
+    # Platform icon if available
+    logo_html = ""
+    if logo_uri:
+        logo_html = f'<img class="cover-logo" src="{logo_uri}" /> '
+
+    title_html = title.replace("\n", "<br>")
+
+    return f'''
+    <div class="page page-cover">
+        <div class="cover-left">
+            <div class="cover-title">{logo_html}{title_html}</div>
+            <div class="cover-subtitle">{subtitle}</div>
+            <div class="cover-brand">{BRAND_NAME}</div>
+        </div>
+        <div class="cover-right">
+            {"<img class='cover-statue' src='" + statue_uri + "' />" if statue_uri else ""}
+        </div>
+    </div>
+    '''
+
+
+def build_toc_html(sections, statue_uri=""):
+    """Build table of contents page HTML."""
     mid = len(sections) // 2 + len(sections) % 2
     left_items = sections[:mid]
     right_items = sections[mid:]
 
-    line_h = 32
-    for i, (page_num, title) in enumerate(left_items):
-        if y < MARGIN_BOTTOM + 40:
-            break
-        # Page number in green
-        c.setFillColor(ACCENT_GREEN)
-        c.setFont("Helvetica-Bold", TOC_SIZE)
-        c.drawString(MARGIN_LEFT, y, f"{page_num:02d}")
-        # Title in white
-        c.setFillColor(TEXT_WHITE)
-        c.setFont("Helvetica", TOC_SIZE)
-        c.drawString(MARGIN_LEFT + 35, y, title)
-        y -= line_h
+    left_html = ""
+    for page_num, title in left_items:
+        left_html += f'<div class="toc-item"><span class="toc-num">{page_num:02d}</span>{title}</div>\n'
 
-    # Right column
-    y2 = PAGE_H - MARGIN_TOP - 60
-    x2 = MARGIN_LEFT + COL_W + COL_GAP
-    for i, (page_num, title) in enumerate(right_items):
-        if y2 < MARGIN_BOTTOM + 40:
-            break
-        c.setFillColor(ACCENT_GREEN)
-        c.setFont("Helvetica-Bold", TOC_SIZE)
-        c.drawString(x2, y2, f"{page_num:02d}")
-        c.setFillColor(TEXT_WHITE)
-        c.setFont("Helvetica", TOC_SIZE)
-        c.drawString(x2 + 35, y2, title)
-        y2 -= line_h
+    right_html = ""
+    for page_num, title in right_items:
+        right_html += f'<div class="toc-item"><span class="toc-num">{page_num:02d}</span>{title}</div>\n'
 
-    draw_footer(c)
-    c.showPage()
+    return f'''
+    <div class="page page-toc">
+        {"<img class='toc-statue' src='" + statue_uri + "' />" if statue_uri else ""}
+        <div class="toc-header">Table Of Contents</div>
+        <div class="toc-grid">
+            <div class="toc-column">{left_html}</div>
+            <div class="toc-column">{right_html}</div>
+        </div>
+        <div class="toc-footer">{FOOTER_TEXT}</div>
+    </div>
+    '''
 
 
-def build_content_page(c, header, body_blocks):
-    """
-    Generic content page.
-    body_blocks is a list of dicts:
-      {"type": "text", "content": "..."}
-      {"type": "bullets", "items": [...]}
-      {"type": "subheader", "content": "..."}
-      {"type": "good_example", "content": "..."}
-      {"type": "bad_example", "content": "..."}
-      {"type": "two_column", "left": [...blocks], "right": [...blocks]}
-      {"type": "panel", "title": "...", "content": "...", "border": "#39FF14"}
-    """
-    draw_bg(c)
-    y = draw_section_header(c, header)
+def build_content_page_html(header, body_blocks, bg_uri="", statue_uri="", decor_uri=""):
+    """Build a content page HTML."""
+    main_part, fade_part = split_header_two_tone(header)
 
-    def render_blocks(blocks, x, y, max_w):
-        for block in blocks:
-            if y < MARGIN_BOTTOM + 40:
-                break
-            btype = block.get("type", "text")
+    header_html = main_part
+    if fade_part:
+        header_html += f' <span class="fade">{fade_part}</span>'
 
-            if btype == "text":
-                y = draw_body_text(c, block["content"], x, y, max_w)
-                y -= 10
-
-            elif btype == "bullets":
-                bullet_char = block.get("bullet", "•")
-                y = draw_bullets(c, block["items"], x, y, max_w, bullet=bullet_char)
-                y -= 10
-
-            elif btype == "subheader":
-                y = draw_sub_header(c, block["content"], x, y)
-                y -= 5
-
-            elif btype == "good_example":
-                panel_h = 14 * LINE_SPACING * (block["content"].count("\n") + 2) + 30
-                draw_panel(c, x, y - panel_h, max_w, panel_h, border_color=ACCENT_GREEN)
-                inner_y = y - 16
-                c.setFillColor(ACCENT_GREEN)
-                c.setFont("Helvetica-Bold", 13)
-                c.drawString(x + 14, inner_y, "Good example:")
-                inner_y -= 20
-                inner_y = draw_body_text(c, block["content"], x + 14, inner_y, max_w - 28, font_size=13)
-                y = y - panel_h - 12
-
-            elif btype == "bad_example":
-                panel_h = 14 * LINE_SPACING * (block["content"].count("\n") + 2) + 30
-                draw_panel(c, x, y - panel_h, max_w, panel_h, border_color=DANGER_RED)
-                inner_y = y - 16
-                c.setFillColor(DANGER_RED)
-                c.setFont("Helvetica-Bold", 13)
-                c.drawString(x + 14, inner_y, "Bad example:")
-                inner_y -= 20
-                inner_y = draw_body_text(c, block["content"], x + 14, inner_y, max_w - 28, font_size=13)
-                y = y - panel_h - 12
-
-            elif btype == "panel":
-                lines = wrap_text(block.get("content", ""), "Helvetica", 14, max_w - 28)
-                panel_h = 14 * LINE_SPACING * len(lines) + 50
-                border = HexColor(block["border"]) if block.get("border") else ACCENT_GREEN
-                draw_panel(c, x, y - panel_h, max_w, panel_h, border_color=border)
-                inner_y = y - 16
-                if block.get("title"):
-                    c.setFillColor(ACCENT_GREEN)
-                    c.setFont("Helvetica-Bold", 14)
-                    c.drawString(x + 14, inner_y, block["title"])
-                    inner_y -= 24
-                inner_y = draw_body_text(c, block.get("content", ""), x + 14, inner_y, max_w - 28, font_size=14)
-                y = y - panel_h - 12
-
-        return y
-
-    # Check if there's a two_column block at top level
+    # Determine layout: check for two_column blocks
     has_two_col = any(b.get("type") == "two_column" for b in body_blocks)
 
+    content_html = ""
+
     if has_two_col:
+        # Process blocks: non-two-column blocks go as full-width above, two_column blocks as columns
         for block in body_blocks:
             if block.get("type") == "two_column":
-                left_y = render_blocks(block["left"], MARGIN_LEFT, y, COL_W)
-                right_y = render_blocks(block["right"], MARGIN_LEFT + COL_W + COL_GAP, y, COL_W)
-                y = min(left_y, right_y)
+                left_html = render_blocks_html(block["left"])
+                right_html = render_blocks_html(block["right"])
+                content_html += f'''
+                <div class="content-columns">
+                    <div class="content-col"><div class="content-box">{left_html}</div></div>
+                    <div class="content-col"><div class="content-box">{right_html}</div></div>
+                </div>
+                '''
             else:
-                y = render_blocks([block], MARGIN_LEFT, y, CONTENT_W)
+                # Full-width block rendered as a content box
+                block_html = render_blocks_html([block])
+                content_html += f'<div class="content-box-full">{block_html}</div>\n'
     else:
-        y = render_blocks(body_blocks, MARGIN_LEFT, y, CONTENT_W)
+        # All blocks in a single box (or left-aligned box)
+        all_html = render_blocks_html(body_blocks)
+        content_html = f'<div class="content-box-full">{all_html}</div>\n'
 
-    draw_footer(c)
-    c.showPage()
+    return f'''
+    <div class="page page-content">
+        {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else '<div class="content-bg" style="background: ' + CONTENT_BG_GRADIENT + ';"></div>'}
+        {"<img class='content-statue' src='" + statue_uri + "' />" if statue_uri else ""}
+        {"<img class='content-decor' src='" + decor_uri + "' />" if decor_uri else ""}
+        <div class="content-inner">
+            <div class="section-header">{header_html}</div>
+            {content_html}
+        </div>
+        <div class="content-footer">{FOOTER_TEXT}</div>
+    </div>
+    '''
 
 
-def build_summary_page(c, points, brand="AI Influencer Accelerator"):
-    """Final page — Summary."""
-    draw_bg(c)
-    y = draw_section_header(c, "Summary")
+def build_summary_page_html(points, bg_uri="", statue_uri="", decor_uri=""):
+    """Build summary page HTML."""
+    bullets = ""
+    for pt in points:
+        bullets += f"<li>{pt}</li>\n"
 
-    y = draw_body_text(c, "Key takeaways from this guide:", MARGIN_LEFT, y, CONTENT_W)
-    y -= 15
-
-    y = draw_bullets(c, points, MARGIN_LEFT, y, CONTENT_W, bullet="→")
-    y -= 30
-
-    # Brand
-    c.setFillColor(ACCENT_GREEN)
-    c.setFont("Helvetica-Bold", BRAND_SIZE)
-    tw = c.stringWidth(brand, "Helvetica-Bold", BRAND_SIZE)
-    c.drawString((PAGE_W - tw) / 2, MARGIN_BOTTOM + 80, brand)
-
-    draw_footer(c)
-    c.showPage()
+    return f'''
+    <div class="page page-content">
+        {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else ""}
+        {"<img class='content-statue' src='" + statue_uri + "' />" if statue_uri else ""}
+        {"<img class='content-decor' src='" + decor_uri + "' />" if decor_uri else ""}
+        <div class="content-inner">
+            <div class="section-header">END <span class="fade">SUMMARY</span></div>
+            <div class="content-columns">
+                <div class="content-col">
+                    <div class="content-box summary-box">
+                        <ul>{bullets}</ul>
+                    </div>
+                </div>
+                <div class="content-col">
+                    <div class="content-box">
+                        <div class="panel-box" style="margin-top: 0;">
+                            <div class="panel-title">{BRAND_NAME}</div>
+                            <div class="panel-body">All materials are strictly protected.</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content-footer">{FOOTER_TEXT}</div>
+    </div>
+    '''
 
 
 # ---------------------------------------------------------------------------
-# TEMPLATE: AI-Influencer-Method-Free-Training
+# MAIN GENERATION
 # ---------------------------------------------------------------------------
 
-def generate_template_example(output_path=None):
-    """Generate the template example PDF: AI-Influencer-Method-Free-Training."""
-    if output_path is None:
-        output_path = os.path.join(
-            os.path.dirname(__file__), "output", "AI-Influencer-Method-Free-Training.pdf"
-        )
-
+def generate_pdf(config, output_path):
+    """Generate a complete PDF from config dict."""
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-    logo_path = os.path.join(os.path.dirname(__file__), "PDF", "Course Logo.png")
+    # Load assets
+    cover_statue_uri = get_asset_uri("cover_statue.png")
+    content_statue_uri = get_asset_uri("content_statue.png")
+    content_decor_uri = get_asset_uri("content_decor.png")
 
-    c = canvas.Canvas(output_path, pagesize=PAGE_SIZE)
-    c.setTitle("AI Influencer Method Free Training")
-    c.setAuthor("AI Influencer Accelerator")
-    c.setCreator("AI Influencer Accelerator PDF Generator")
-    c.setProducer("AI Influencer Accelerator")
+    # Generate content background if not cached
+    bg_cache = ASSETS_DIR / "content_bg_generated.png"
+    if not bg_cache.exists():
+        print("  Generating background gradient (first run only)...")
+        img = generate_content_bg()
+        os.makedirs(str(ASSETS_DIR), exist_ok=True)
+        img.save(str(bg_cache))
+    content_bg_uri = img_to_data_uri(str(bg_cache))
 
-    # -----------------------------------------------------------------------
-    # PAGE 1 — COVER
-    # -----------------------------------------------------------------------
-    build_cover(
-        c,
-        title="AI Influencer Method\nFree Training",
-        subtitle="The Complete Beginner's Blueprint to AI-Generated Influencer Income",
-        logo_path=logo_path,
-    )
+    # Load logo if specified
+    logo_uri = ""
+    logo_path = config.get("logo_path", "")
+    if logo_path and os.path.exists(logo_path):
+        logo_uri = img_to_data_uri(logo_path)
 
-    # -----------------------------------------------------------------------
-    # PAGE 2 — TABLE OF CONTENTS
-    # -----------------------------------------------------------------------
-    toc = [
-        (3,  "Intro: What Is the AI Influencer Method"),
-        (4,  "Why AI Influencers Work"),
-        (5,  "The Business Model Overview"),
-        (6,  "Platform Selection: Where to Post"),
-        (7,  "Content Creation Pipeline"),
-        (8,  "Profile Setup: Identity & Trust"),
-        (9,  "Growth Phase: First 30 Days"),
-        (10, "Monetization: How Revenue Flows"),
-        (11, "Common Mistakes & How to Avoid Them"),
-        (12, "Scaling: From One Page to Many"),
-        (13, "Tools & Resources"),
-        (14, "Summary"),
-    ]
-    build_toc(c, toc)
+    title = config["title"]
+    subtitle = config.get("subtitle", "")
+    sections = config["sections"]
+    summary_points = config.get("summary_points", [])
 
-    # -----------------------------------------------------------------------
-    # PAGE 3 — INTRO
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Intro: What Is the AI Influencer Method", [
-        {"type": "text", "content": (
-            "The AI Influencer Method is a system for building and monetizing "
-            "social media pages using AI-generated personas. These personas look, "
-            "act, and engage like real influencers but are entirely created and "
-            "managed through artificial intelligence tools."
-        )},
-        {"type": "text", "content": (
-            "This is not about catfishing or deception. This is a business model. "
-            "The audience knows they are interacting with a curated persona. "
-            "The value they receive is entertainment, attention, and content."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "What You Will Learn"},
-            {"type": "bullets", "items": [
-                "How to create an AI influencer from scratch",
-                "Which platforms to use and why",
-                "How to grow from zero to monetization",
-                "The exact content pipeline that works",
-                "How to scale to multiple pages",
-            ]},
-        ], "right": [
-            {"type": "subheader", "content": "What This Is NOT"},
-            {"type": "bullets", "items": [
-                "A get-rich-quick scheme",
-                "A passive income fantasy",
-                "A one-click automation tool",
-                "Something that works without effort",
-                "A replacement for understanding marketing",
-            ]},
-        ]},
-    ])
+    # Build pages
+    pages_html = ""
 
-    # -----------------------------------------------------------------------
-    # PAGE 4 — WHY AI INFLUENCERS WORK
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Why AI Influencers Work", [
-        {"type": "two_column", "left": [
-            {"type": "text", "content": (
-                "Traditional influencer marketing requires a real person. "
-                "That person has limitations: they age, they get tired, "
-                "they have bad days, they have opinions that alienate audiences."
-            )},
-            {"type": "text", "content": (
-                "AI influencers have none of these limitations. "
-                "The persona is consistent. The content is controllable. "
-                "The output is scalable."
-            )},
-            {"type": "text", "content": (
-                "The market for parasocial relationships is massive and growing. "
-                "People pay for connection, attention, and fantasy. "
-                "AI personas deliver exactly that at scale."
-            )},
-        ], "right": [
-            {"type": "subheader", "content": "Key Advantages"},
-            {"type": "bullets", "items": [
-                "No physical limitations on content output",
-                "Consistent brand and persona across all content",
-                "Scalable to multiple personas simultaneously",
-                "Lower operating cost than traditional models",
-                "Full creative control over appearance and messaging",
-                "24/7 availability through automated chat systems",
-            ]},
-            {"type": "panel", "title": "Industry Growth", "content": (
-                "The AI influencer market is projected to grow significantly "
-                "year over year. Early movers have the strongest advantage."
-            ), "border": "#39FF14"},
-        ]},
-    ])
+    # Cover
+    pages_html += build_cover_html(title, subtitle, logo_uri, cover_statue_uri)
 
-    # -----------------------------------------------------------------------
-    # PAGE 5 — BUSINESS MODEL
-    # -----------------------------------------------------------------------
-    build_content_page(c, "The Business Model Overview", [
-        {"type": "text", "content": (
-            "The business model is simple. Attention flows through a funnel. "
-            "Free content creates interest. Interest creates followers. "
-            "Followers convert to paying subscribers."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Revenue Sources"},
-            {"type": "bullets", "items": [
-                "Fanvue / subscription platform monthly fees",
-                "Pay-per-view (PPV) locked content",
-                "Custom content requests via chat",
-                "Tips and gifts from engaged fans",
-                "Upsells through Telegram funnels",
-            ]},
-        ], "right": [
-            {"type": "subheader", "content": "Traffic Flow"},
-            {"type": "bullets", "items": [
-                "Instagram / TikTok → Link in Bio",
-                "Link in Bio → Free Telegram",
-                "Free Telegram → Fanvue subscription",
-                "Fanvue chat → Upsells and PPV",
-            ], "bullet": "→"},
-            {"type": "panel", "title": "Core Principle", "content": (
-                "Build desire on free platforms. Delay commitment. "
-                "Force the purchase decision at Fanvue where you control the experience."
-            ), "border": "#39FF14"},
-        ]},
-    ])
+    # TOC
+    toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
+    pages_html += build_toc_html(toc_entries, cover_statue_uri)
 
-    # -----------------------------------------------------------------------
-    # PAGE 6 — PLATFORM SELECTION
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Platform Selection: Where to Post", [
-        {"type": "text", "content": (
-            "Not all platforms are equal. Each has a role in the ecosystem. "
-            "Instagram is the primary platform. Everything else supports it."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Primary Platforms"},
-            {"type": "bullets", "items": [
-                "Instagram — Main traffic and brand hub",
-                "Threads — Engagement and discovery engine",
-                "TikTok — Secondary reach and content recycling",
-                "Fanvue — Monetization endpoint",
-            ]},
-            {"type": "subheader", "content": "Support Platforms"},
-            {"type": "bullets", "items": [
-                "Telegram — Pre-sell funnel and warming layer",
-                "Reddit — Niche viral exposure (opportunistic)",
-                "Twitter/X — Brand presence and link distribution",
-            ]},
-        ], "right": [
-            {"type": "panel", "title": "Platform Priority", "content": (
-                "1. Instagram (mandatory)\n"
-                "2. Threads (mandatory)\n"
-                "3. Fanvue (mandatory)\n"
-                "4. Telegram (highly recommended)\n"
-                "5. TikTok (recommended)\n"
-                "6. Reddit (optional)\n"
-                "7. Twitter/X (optional)"
-            ), "border": "#39FF14"},
-        ]},
-    ])
+    # Content pages
+    for section in sections:
+        pages_html += build_content_page_html(
+            section["header"],
+            section["blocks"],
+            bg_uri=content_bg_uri,
+            statue_uri=content_statue_uri,
+            decor_uri=content_decor_uri,
+        )
 
-    # -----------------------------------------------------------------------
-    # PAGE 7 — CONTENT CREATION PIPELINE
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Content Creation Pipeline", [
-        {"type": "text", "content": (
-            "Content is the fuel of this business. Without consistent, high-quality "
-            "content, nothing else works. The pipeline must be systematic."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Step-by-Step Pipeline"},
-            {"type": "bullets", "items": [
-                "Generate base images using AI tools",
-                "Edit and refine for consistency",
-                "Create variations for different platforms",
-                "Write captions that match platform tone",
-                "Schedule posts using a content calendar",
-                "Recycle top-performing content across platforms",
-            ], "bullet": "→"},
-        ], "right": [
-            {"type": "subheader", "content": "Content Rules"},
-            {"type": "bullets", "items": [
-                "Same face across all images (consistency is critical)",
-                "Lighting and background should vary naturally",
-                "Never use the same image on two platforms the same day",
-                "Instagram gets the best content first",
-                "TikTok and Threads get recycled or secondary content",
-            ]},
-            {"type": "good_example", "content": "Consistent face, varied outfits, natural settings, clear face visible"},
-            {"type": "bad_example", "content": "Different faces per post, over-filtered, blurry, no face visible"},
-        ]},
-    ])
+    # Summary
+    if summary_points:
+        pages_html += build_summary_page_html(
+            summary_points,
+            bg_uri=content_bg_uri,
+            statue_uri=content_statue_uri,
+            decor_uri=content_decor_uri,
+        )
 
-    # -----------------------------------------------------------------------
-    # PAGE 8 — PROFILE SETUP
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Profile Setup: Identity & Trust", [
-        {"type": "text", "content": (
-            "Your profile is the first thing anyone sees. It must look human, "
-            "trustworthy, and interesting within 2 seconds."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Username Rules"},
-            {"type": "bullets", "items": [
-                "Human-sounding (first name + modifier)",
-                "No random numbers or underscores",
-                "No sexual or suggestive words",
-                "Easy to remember and search",
-            ]},
-            {"type": "good_example", "content": "sofia.mae / emmaraexo / lilyy.ann"},
-            {"type": "bad_example", "content": "hotmodel_2024 / xxxsofia / user83742"},
-        ], "right": [
-            {"type": "subheader", "content": "Bio Rules"},
-            {"type": "bullets", "items": [
-                "Short, casual, personality-driven",
-                "No links during warmup phase",
-                "No selling language early on",
-                "Add link in bio only after 3 weeks",
-            ]},
-            {"type": "good_example", "content": "just a chill girl who likes coffee and sunsets"},
-            {"type": "bad_example", "content": "Model | Content Creator | Link below | DM for collabs"},
-        ]},
-    ])
+    # Full HTML document
+    full_html = f"""<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+{CSS_BASE}
+</style>
+</head>
+<body>
+{pages_html}
+</body>
+</html>"""
 
-    # -----------------------------------------------------------------------
-    # PAGE 9 — GROWTH PHASE
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Growth Phase: First 30 Days", [
-        {"type": "text", "content": (
-            "The first 30 days determine everything. Rush this phase and the "
-            "account gets flagged, shadow-limited, or banned. Patience is mandatory."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Week 1-2: Warmup"},
-            {"type": "bullets", "items": [
-                "No posting for the first 3 days",
-                "Scroll, like, and comment naturally",
-                "Follow 5-10 accounts per day maximum",
-                "Add profile picture on day 3-5",
-                "First post on day 5-7",
-                "2-3 posts per week maximum",
-            ]},
-        ], "right": [
-            {"type": "subheader", "content": "Week 3-4: Activation"},
-            {"type": "bullets", "items": [
-                "Increase to 4-5 posts per week",
-                "Start using Stories daily",
-                "Begin Threads engagement (Phase 1)",
-                "Add link in bio after week 3",
-                "Start Telegram funnel setup",
-                "Monitor analytics for shadow limits",
-            ]},
-        ]},
-        {"type": "panel", "title": "Critical Rule", "content": (
-            "If you rush the warmup, everything after it breaks. "
-            "There are no shortcuts. Follow the timeline exactly."
-        ), "border": "#FF3131"},
-    ])
-
-    # -----------------------------------------------------------------------
-    # PAGE 10 — MONETIZATION
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Monetization: How Revenue Flows", [
-        {"type": "text", "content": (
-            "Revenue does not come from posting. Revenue comes from the funnel. "
-            "The funnel converts free attention into paid subscriptions."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Conversion Path"},
-            {"type": "bullets", "items": [
-                "Free content builds desire",
-                "Link in Bio captures interest",
-                "Telegram warms cold traffic",
-                "Fanvue captures the payment",
-                "Chat upsells increase revenue per fan",
-            ], "bullet": "→"},
-            {"type": "panel", "title": "Expected Timeline", "content": (
-                "First revenue: Week 4-6\n"
-                "Consistent revenue: Month 2-3\n"
-                "Scalable revenue: Month 4+"
-            ), "border": "#39FF14"},
-        ], "right": [
-            {"type": "subheader", "content": "Revenue Optimization"},
-            {"type": "bullets", "items": [
-                "Chat quality determines revenue more than follower count",
-                "Respond to new subscribers within 5 minutes",
-                "Use emotional framing, not hard selling",
-                "Prioritize whale management (top spenders)",
-                "PPV content should escalate gradually",
-            ]},
-        ]},
-    ])
-
-    # -----------------------------------------------------------------------
-    # PAGE 11 — COMMON MISTAKES
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Common Mistakes & How to Avoid Them", [
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Mistakes That Kill Pages"},
-            {"type": "bullets", "items": [
-                "Posting before warmup is complete",
-                "Using inconsistent AI faces",
-                "Spamming links in captions or comments",
-                "Posting explicit content on Instagram",
-                "Ignoring shadow limit warnings",
-                "Copy-pasting the same captions",
-            ]},
-            {"type": "bad_example", "content": (
-                "Day 1: Create account\n"
-                "Day 1: Post 5 photos\n"
-                "Day 1: Add link in bio\n"
-                "Day 2: Wonder why reach is zero"
-            )},
-        ], "right": [
-            {"type": "subheader", "content": "What Winners Do Instead"},
-            {"type": "bullets", "items": [
-                "Follow the warmup timeline exactly",
-                "Use one consistent AI model per page",
-                "Deploy links only after trust is established",
-                "Keep Instagram content safe and compliant",
-                "Monitor analytics daily for red flags",
-                "Test and iterate captions and content angles",
-            ]},
-            {"type": "good_example", "content": (
-                "Week 1-2: Warmup only\n"
-                "Week 3: First careful posts\n"
-                "Week 4: Link in bio activated\n"
-                "Week 5: First subscribers arrive"
-            )},
-        ]},
-    ])
-
-    # -----------------------------------------------------------------------
-    # PAGE 12 — SCALING
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Scaling: From One Page to Many", [
-        {"type": "text", "content": (
-            "Once the first page is profitable and stable, the system is ready to scale. "
-            "Scaling means running multiple AI personas simultaneously."
-        )},
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "When to Scale"},
-            {"type": "bullets", "items": [
-                "First page has consistent revenue for 30+ days",
-                "Content pipeline is systematized",
-                "Chat operations are handled or delegated",
-                "You understand the platform algorithms",
-            ]},
-        ], "right": [
-            {"type": "subheader", "content": "How to Scale"},
-            {"type": "bullets", "items": [
-                "Create a new persona with a different niche/look",
-                "Use separate devices or browser profiles",
-                "Never link accounts to each other",
-                "Hire chatters for fan management",
-                "Replicate the exact same funnel structure",
-            ]},
-        ]},
-        {"type": "panel", "title": "Scaling Rule", "content": (
-            "Never scale a broken system. Fix the first page completely before "
-            "adding a second. A broken process multiplied by 5 is 5x the problems."
-        ), "border": "#39FF14"},
-    ])
-
-    # -----------------------------------------------------------------------
-    # PAGE 13 — TOOLS & RESOURCES
-    # -----------------------------------------------------------------------
-    build_content_page(c, "Tools & Resources", [
-        {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Content Generation"},
-            {"type": "bullets", "items": [
-                "AI image generation tools",
-                "Photo editing software",
-                "Face consistency tools",
-                "Background variation tools",
-            ]},
-            {"type": "subheader", "content": "Platform Management"},
-            {"type": "bullets", "items": [
-                "Content scheduling tools",
-                "Analytics monitoring",
-                "Multi-account management",
-                "VPN and device separation",
-            ]},
-        ], "right": [
-            {"type": "subheader", "content": "Monetization"},
-            {"type": "bullets", "items": [
-                "Fanvue (primary platform)",
-                "Telegram (free funnel)",
-                "AllMyLinks / Linktree (link in bio)",
-            ]},
-            {"type": "subheader", "content": "Operations"},
-            {"type": "bullets", "items": [
-                "Chat management systems",
-                "Chatter hiring and training SOPs",
-                "Revenue tracking spreadsheets",
-                "Content calendar templates",
-            ]},
-        ]},
-    ])
-
-    # -----------------------------------------------------------------------
-    # PAGE 14 — SUMMARY
-    # -----------------------------------------------------------------------
-    build_summary_page(c, [
-        "The AI Influencer Method is a real business that requires real effort",
-        "Follow the warmup phase exactly — no shortcuts",
-        "Instagram is the primary platform, everything else supports it",
-        "Content consistency (same face) is non-negotiable",
-        "Revenue comes from the funnel, not from posting",
-        "Chat quality determines profit more than follower count",
-        "Scale only after the first page is profitable and stable",
-        "Patience in the first 30 days determines everything after",
-    ])
-
-    c.save()
+    # Generate PDF
+    HTML(string=full_html, base_url=str(BASE_DIR)).write_pdf(output_path)
     print(f"Generated: {output_path}")
     return output_path
 
@@ -842,72 +864,312 @@ def generate_template_example(output_path=None):
 # ---------------------------------------------------------------------------
 
 def generate_from_json(config_path, output_path=None):
-    """
-    Generate a PDF from a JSON content file.
-
-    JSON Schema:
-    {
-        "title": "PDF TITLE",
-        "subtitle": "Subtitle text",
-        "brand": "AI Influencer Accelerator",
-        "output_filename": "My-PDF-Name.pdf",
-        "sections": [
-            {
-                "header": "SECTION TITLE",
-                "blocks": [
-                    {"type": "text", "content": "..."},
-                    {"type": "bullets", "items": ["...", "..."]},
-                    {"type": "subheader", "content": "..."},
-                    {"type": "good_example", "content": "..."},
-                    {"type": "bad_example", "content": "..."},
-                    {"type": "panel", "title": "...", "content": "...", "border": "#39FF14"},
-                    {"type": "two_column", "left": [...blocks], "right": [...blocks]}
-                ]
-            }
-        ],
-        "summary_points": ["...", "..."]
-    }
-    """
+    """Generate a PDF from a JSON content file."""
     with open(config_path, "r") as f:
         config = json.load(f)
 
-    title = config["title"]
-    subtitle = config.get("subtitle", "")
-    brand = config.get("brand", "AI Influencer Accelerator")
-    sections = config["sections"]
-    summary_points = config.get("summary_points", [])
-
     if output_path is None:
-        filename = config.get("output_filename", title.replace(" ", "-") + ".pdf")
-        output_path = os.path.join(os.path.dirname(__file__), "output", filename)
+        filename = config.get("output_filename", "output.pdf")
+        output_path = str(OUTPUT_DIR / filename)
 
-    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-    logo_path = os.path.join(os.path.dirname(__file__), "PDF", "Course Logo.png")
+    # Try to find a platform logo
+    logo_name = config.get("logo", "")
+    if logo_name:
+        config["logo_path"] = str(BASE_DIR / "PDF" / logo_name)
+    elif not config.get("logo_path"):
+        # Default: look for Course Logo
+        default_logo = BASE_DIR / "PDF" / "Course Logo.png"
+        if default_logo.exists():
+            config["logo_path"] = str(default_logo)
 
-    c = canvas.Canvas(output_path, pagesize=PAGE_SIZE)
-    c.setTitle(title)
-    c.setAuthor(brand)
-    c.setCreator("AI Influencer Accelerator PDF Generator")
-    c.setProducer(brand)
+    return generate_pdf(config, output_path)
 
-    # Cover
-    build_cover(c, title=title, subtitle=subtitle, brand=brand, logo_path=logo_path)
 
-    # TOC
-    toc = [(i + 3, s["header"]) for i, s in enumerate(sections)]
-    build_toc(c, toc)
+# ---------------------------------------------------------------------------
+# TEMPLATE EXAMPLE
+# ---------------------------------------------------------------------------
 
-    # Content pages
-    for section in sections:
-        build_content_page(c, section["header"], section["blocks"])
+def generate_template_example():
+    """Generate the template example PDF."""
+    config = {
+        "title": "AI Influencer Method\nFree Training",
+        "subtitle": "The Complete Beginner's Blueprint to AI-Generated Influencer Income",
+        "logo_path": str(BASE_DIR / "PDF" / "Course Logo.png"),
+        "sections": [
+            {
+                "header": "Intro: What Is the AI Influencer Method",
+                "blocks": [
+                    {"type": "text", "content": "The AI Influencer Method is a system for building and monetizing social media pages using AI-generated personas. These personas look, act, and engage like real influencers but are entirely created and managed through artificial intelligence tools."},
+                    {"type": "text", "content": "This is not about catfishing or deception. This is a business model. The audience knows they are interacting with a curated persona. The value they receive is entertainment, attention, and content."},
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "What You Will Learn"},
+                        {"type": "bullets", "items": [
+                            "How to create an AI influencer from scratch",
+                            "Which platforms to use and why",
+                            "How to grow from zero to monetization",
+                            "The exact content pipeline that works",
+                            "How to scale to multiple pages",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "What This Is NOT"},
+                        {"type": "bullets", "items": [
+                            "A get-rich-quick scheme",
+                            "A passive income fantasy",
+                            "A one-click automation tool",
+                            "Something that works without effort",
+                        ]},
+                    ]},
+                ],
+            },
+            {
+                "header": "Why AI Influencers Work",
+                "blocks": [
+                    {"type": "two_column", "left": [
+                        {"type": "text", "content": "Traditional influencer marketing requires a real person. That person has limitations. AI influencers have none of these limitations. The persona is consistent. The content is controllable. The output is scalable."},
+                        {"type": "text", "content": "The market for parasocial relationships is massive and growing. People pay for connection, attention, and fantasy."},
+                    ], "right": [
+                        {"type": "subheader", "content": "Key Advantages"},
+                        {"type": "bullets", "items": [
+                            "No physical limitations on content output",
+                            "Consistent brand and persona",
+                            "Scalable to multiple personas",
+                            "Lower operating cost",
+                            "Full creative control",
+                        ]},
+                        {"type": "panel", "title": "Industry Growth", "content": "The AI influencer market is projected to grow significantly year over year. Early movers have the strongest advantage."},
+                    ]},
+                ],
+            },
+            {
+                "header": "The Business Model Overview",
+                "blocks": [
+                    {"type": "text", "content": "The business model is simple. Attention flows through a funnel. Free content creates interest. Interest creates followers. Followers convert to paying subscribers."},
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Revenue Sources"},
+                        {"type": "bullets", "items": [
+                            "Fanvue / subscription platform monthly fees",
+                            "Pay-per-view (PPV) locked content",
+                            "Custom content requests via chat",
+                            "Tips and gifts from engaged fans",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "Traffic Flow"},
+                        {"type": "bullets", "items": [
+                            "Instagram / TikTok \u2192 Link in Bio",
+                            "Link in Bio \u2192 Free Telegram",
+                            "Free Telegram \u2192 Fanvue subscription",
+                            "Fanvue chat \u2192 Upsells and PPV",
+                        ], "bullet": "\u2192"},
+                    ]},
+                ],
+            },
+            {
+                "header": "Platform Selection: Where to Post",
+                "blocks": [
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Primary Platforms"},
+                        {"type": "bullets", "items": [
+                            "Instagram \u2014 Main traffic and brand hub",
+                            "Threads \u2014 Engagement and discovery",
+                            "TikTok \u2014 Secondary reach",
+                            "Fanvue \u2014 Monetization endpoint",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "Support Platforms"},
+                        {"type": "bullets", "items": [
+                            "Telegram \u2014 Pre-sell funnel",
+                            "Reddit \u2014 Niche viral exposure",
+                            "Twitter/X \u2014 Brand presence",
+                        ]},
+                        {"type": "panel", "title": "Priority", "content": "1. Instagram (mandatory)\n2. Threads (mandatory)\n3. Fanvue (mandatory)\n4. Telegram (recommended)"},
+                    ]},
+                ],
+            },
+            {
+                "header": "Content Creation Pipeline",
+                "blocks": [
+                    {"type": "text", "content": "Content is the fuel of this business. Without consistent, high-quality content, nothing else works."},
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Step-by-Step Pipeline"},
+                        {"type": "bullets", "items": [
+                            "Generate base images using AI tools",
+                            "Edit and refine for consistency",
+                            "Create variations for different platforms",
+                            "Write captions that match platform tone",
+                            "Schedule posts using a content calendar",
+                        ], "bullet": "\u2192"},
+                    ], "right": [
+                        {"type": "subheader", "content": "Content Rules"},
+                        {"type": "bullets", "items": [
+                            "Same face across all images",
+                            "Lighting and background vary naturally",
+                            "Never same image on two platforms same day",
+                            "Instagram gets best content first",
+                        ]},
+                    ]},
+                ],
+            },
+            {
+                "header": "Profile Setup: Identity & Trust",
+                "blocks": [
+                    {"type": "text", "content": "Your profile is the first thing anyone sees. It must look human, trustworthy, and interesting within 2 seconds."},
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Username Rules"},
+                        {"type": "bullets", "items": [
+                            "Human-sounding name",
+                            "No random numbers",
+                            "No sexual words",
+                            "Easy to remember",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "Bio Rules"},
+                        {"type": "bullets", "items": [
+                            "Short, casual, personality-driven",
+                            "No links during warmup",
+                            "No selling language early",
+                            "Add link after 3 weeks",
+                        ]},
+                    ]},
+                ],
+            },
+            {
+                "header": "Growth Phase: First 30 Days",
+                "blocks": [
+                    {"type": "text", "content": "The first 30 days determine everything. Rush this phase and the account gets flagged or banned."},
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Week 1-2: Warmup"},
+                        {"type": "bullets", "items": [
+                            "No posting first 3 days",
+                            "Scroll, like, and comment naturally",
+                            "Follow 5-10 accounts per day max",
+                            "First post on day 5-7",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "Week 3-4: Activation"},
+                        {"type": "bullets", "items": [
+                            "Increase to 4-5 posts per week",
+                            "Start using Stories daily",
+                            "Begin Threads engagement",
+                            "Add link in bio after week 3",
+                        ]},
+                        {"type": "panel", "title": "Critical Rule", "content": "If you rush the warmup, everything after breaks. There are no shortcuts."},
+                    ]},
+                ],
+            },
+            {
+                "header": "Monetization: How Revenue Flows",
+                "blocks": [
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Conversion Path"},
+                        {"type": "bullets", "items": [
+                            "Free content builds desire",
+                            "Link in Bio captures interest",
+                            "Telegram warms cold traffic",
+                            "Fanvue captures the payment",
+                            "Chat upsells increase revenue",
+                        ], "bullet": "\u2192"},
+                    ], "right": [
+                        {"type": "subheader", "content": "Revenue Optimization"},
+                        {"type": "bullets", "items": [
+                            "Chat quality > follower count",
+                            "Respond to new subs within 5 min",
+                            "Use emotional framing, not hard selling",
+                            "Prioritize whale management",
+                        ]},
+                    ]},
+                ],
+            },
+            {
+                "header": "Common Mistakes & How to Avoid Them",
+                "blocks": [
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Mistakes That Kill Pages"},
+                        {"type": "bullets", "items": [
+                            "Posting before warmup is complete",
+                            "Using inconsistent AI faces",
+                            "Spamming links in captions",
+                            "Posting explicit content on IG",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "What Winners Do"},
+                        {"type": "bullets", "items": [
+                            "Follow the warmup timeline",
+                            "One consistent AI model per page",
+                            "Deploy links after trust is built",
+                            "Keep Instagram safe and compliant",
+                        ]},
+                    ]},
+                ],
+            },
+            {
+                "header": "Scaling: From One Page to Many",
+                "blocks": [
+                    {"type": "text", "content": "Once the first page is profitable and stable, the system is ready to scale. Scaling means running multiple AI personas simultaneously."},
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "When to Scale"},
+                        {"type": "bullets", "items": [
+                            "First page has consistent revenue",
+                            "Content pipeline is systematized",
+                            "Chat operations are delegated",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "How to Scale"},
+                        {"type": "bullets", "items": [
+                            "New persona with different niche",
+                            "Separate devices or browser profiles",
+                            "Never link accounts to each other",
+                            "Hire chatters for fan management",
+                        ]},
+                    ]},
+                ],
+            },
+            {
+                "header": "Tools & Resources",
+                "blocks": [
+                    {"type": "two_column", "left": [
+                        {"type": "subheader", "content": "Content Generation"},
+                        {"type": "bullets", "items": [
+                            "AI image generation tools",
+                            "Photo editing software",
+                            "Face consistency tools",
+                        ]},
+                        {"type": "subheader", "content": "Platform Management"},
+                        {"type": "bullets", "items": [
+                            "Content scheduling tools",
+                            "Analytics monitoring",
+                            "Multi-account management",
+                        ]},
+                    ], "right": [
+                        {"type": "subheader", "content": "Monetization"},
+                        {"type": "bullets", "items": [
+                            "Fanvue (primary platform)",
+                            "Telegram (free funnel)",
+                            "AllMyLinks / Linktree",
+                        ]},
+                        {"type": "subheader", "content": "Operations"},
+                        {"type": "bullets", "items": [
+                            "Chat management systems",
+                            "Revenue tracking spreadsheets",
+                            "Content calendar templates",
+                        ]},
+                    ]},
+                ],
+            },
+        ],
+        "summary_points": [
+            "The AI Influencer Method is a real business that requires real effort",
+            "Follow the warmup phase exactly \u2014 no shortcuts",
+            "Instagram is the primary platform, everything else supports it",
+            "Content consistency (same face) is non-negotiable",
+            "Revenue comes from the funnel, not from posting",
+            "Chat quality determines profit more than follower count",
+            "Scale only after the first page is profitable and stable",
+            "Patience in the first 30 days determines everything after",
+        ],
+    }
 
-    # Summary
-    if summary_points:
-        build_summary_page(c, summary_points, brand=brand)
-
-    c.save()
-    print(f"Generated: {output_path}")
-    return output_path
+    output_path = str(OUTPUT_DIR / "AI-Influencer-Method-Free-Training.pdf")
+    return generate_pdf(config, output_path)
 
 
 # ---------------------------------------------------------------------------
