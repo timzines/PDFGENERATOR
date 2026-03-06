@@ -810,14 +810,12 @@ def generate_pdf(config, output_path):
     toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
     pages_html += build_toc_html(toc_entries, logo_uri)
 
-    # Content pages — uses Course Logo as subtle top-right decoration
+    # Content pages — clean, no logo decorations
     for section in sections:
         pages_html += build_content_page_html(
             section["header"],
             section["blocks"],
             bg_uri=content_bg_uri,
-            statue_uri=logo_uri,
-            decor_uri=logo_uri,
         )
 
     # Summary
@@ -825,8 +823,6 @@ def generate_pdf(config, output_path):
         pages_html += build_summary_page_html(
             summary_points,
             bg_uri=content_bg_uri,
-            statue_uri=logo_uri,
-            decor_uri=logo_uri,
         )
 
     # Full HTML document
