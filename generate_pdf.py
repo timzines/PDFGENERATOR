@@ -176,39 +176,38 @@ body {
 /* ---- COVER PAGE ---- */
 .page-cover {
     background: #1a1b1f;
-    display: flex;
-    align-items: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .cover-left {
-    width: 50%;
-    padding: 60px 40px 60px 80px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 48%;
+    height: 100%;
+    padding: 140px 40px 60px 80px;
     z-index: 2;
 }
 
-.cover-right {
-    width: 50%;
-    height: 100%;
-    position: relative;
-}
-
-.cover-statue {
+.cover-logo-wrap {
     position: absolute;
-    right: -20px;
+    right: 0;
     top: 0;
+    width: 58%;
     height: 100%;
-    width: auto;
-    max-width: 120%;
-    object-fit: contain;
-    object-position: right center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
 }
 
-.cover-logo {
-    width: 48px;
-    height: 48px;
-    margin-bottom: 8px;
-    vertical-align: middle;
-    border-radius: 10px;
+.cover-logo-img {
+    height: 85%;
+    width: auto;
+    max-width: 90%;
+    object-fit: contain;
+    opacity: 0.92;
 }
 
 .cover-title {
@@ -248,11 +247,11 @@ body {
 
 .toc-statue {
     position: absolute;
-    right: 0;
-    bottom: 0;
-    height: 90%;
+    right: 20px;
+    bottom: 20px;
+    height: 80%;
     width: auto;
-    opacity: 0.55;
+    opacity: 0.45;
     object-fit: contain;
     object-position: right bottom;
 }
@@ -310,47 +309,45 @@ body {
 .page-content {
     position: relative;
     padding: 50px 60px 45px 60px;
+    overflow: hidden;
 }
 
 .content-bg {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    width: 1440px;
+    height: 810px;
     object-fit: cover;
     z-index: 0;
 }
 
 .content-statue {
     position: absolute;
-    top: -10px;
-    right: -10px;
-    height: 200px;
+    top: 10px;
+    right: 15px;
+    height: 180px;
     width: auto;
-    opacity: 0.35;
+    opacity: 0.30;
     z-index: 1;
     object-fit: contain;
-    pointer-events: none;
 }
 
 .content-decor {
     position: absolute;
-    bottom: 20px;
-    right: -10px;
-    height: 200px;
+    bottom: 30px;
+    right: 15px;
+    height: 170px;
     width: auto;
-    opacity: 0.18;
+    opacity: 0.15;
     z-index: 1;
     object-fit: contain;
-    pointer-events: none;
 }
 
 .content-inner {
     position: relative;
     z-index: 3;
     width: 100%;
-    height: calc(100% - 45px);
 }
 
 .section-header {
@@ -645,30 +642,25 @@ def render_blocks_html(blocks):
 # PAGE BUILDERS (HTML)
 # ---------------------------------------------------------------------------
 
-def build_cover_html(title, subtitle, logo_uri="", statue_uri=""):
+def build_cover_html(title, subtitle, logo_uri=""):
     """Build cover page HTML."""
-    # Platform icon if available
-    logo_html = ""
-    if logo_uri:
-        logo_html = f'<img class="cover-logo" src="{logo_uri}" /> '
-
     title_html = title.replace("\n", "<br>")
 
     return f'''
     <div class="page page-cover">
         <div class="cover-left">
-            <div class="cover-title">{logo_html}{title_html}</div>
+            <div class="cover-title">{title_html}</div>
             <div class="cover-subtitle">{subtitle}</div>
             <div class="cover-brand">{BRAND_NAME}</div>
         </div>
-        <div class="cover-right">
-            {"<img class='cover-statue' src='" + statue_uri + "' />" if statue_uri else ""}
+        <div class="cover-logo-wrap">
+            {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
     </div>
     '''
 
 
-def build_toc_html(sections, statue_uri=""):
+def build_toc_html(sections, logo_uri=""):
     """Build table of contents page HTML."""
     mid = len(sections) // 2 + len(sections) % 2
     left_items = sections[:mid]
@@ -684,7 +676,7 @@ def build_toc_html(sections, statue_uri=""):
 
     return f'''
     <div class="page page-toc">
-        {"<img class='toc-statue' src='" + statue_uri + "' />" if statue_uri else ""}
+        {"<img class='toc-statue' src='" + logo_uri + "' />" if logo_uri else ""}
         <div class="toc-header">Table Of Contents</div>
         <div class="toc-grid">
             <div class="toc-column">{left_html}</div>
@@ -785,10 +777,14 @@ def generate_pdf(config, output_path):
     """Generate a complete PDF from config dict."""
     os.makedirs(os.path.dirname(output_path), exist_ok=True)
 
-    # Load assets
-    cover_statue_uri = get_asset_uri("cover_statue.png")
-    content_statue_uri = get_asset_uri("content_statue.png")
-    content_decor_uri = get_asset_uri("content_decor.png")
+    # Load the main Course Logo (statue bust with dollar halo)
+    logo_path = config.get("logo_path", "")
+    if not logo_path:
+        # Default to Course Logo.png
+        default_logo = BASE_DIR / "PDF" / "Course Logo.png"
+        if default_logo.exists():
+            logo_path = str(default_logo)
+    logo_uri = img_to_data_uri(logo_path) if logo_path and os.path.exists(logo_path) else ""
 
     # Generate content background if not cached
     bg_cache = ASSETS_DIR / "content_bg_generated.png"
@@ -799,12 +795,6 @@ def generate_pdf(config, output_path):
         img.save(str(bg_cache))
     content_bg_uri = img_to_data_uri(str(bg_cache))
 
-    # Load logo if specified
-    logo_uri = ""
-    logo_path = config.get("logo_path", "")
-    if logo_path and os.path.exists(logo_path):
-        logo_uri = img_to_data_uri(logo_path)
-
     title = config["title"]
     subtitle = config.get("subtitle", "")
     sections = config["sections"]
@@ -813,21 +803,21 @@ def generate_pdf(config, output_path):
     # Build pages
     pages_html = ""
 
-    # Cover
-    pages_html += build_cover_html(title, subtitle, logo_uri, cover_statue_uri)
+    # Cover — uses Course Logo as the main statue image
+    pages_html += build_cover_html(title, subtitle, logo_uri)
 
-    # TOC
+    # TOC — uses Course Logo as background decoration
     toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
-    pages_html += build_toc_html(toc_entries, cover_statue_uri)
+    pages_html += build_toc_html(toc_entries, logo_uri)
 
-    # Content pages
+    # Content pages — uses Course Logo as subtle top-right decoration
     for section in sections:
         pages_html += build_content_page_html(
             section["header"],
             section["blocks"],
             bg_uri=content_bg_uri,
-            statue_uri=content_statue_uri,
-            decor_uri=content_decor_uri,
+            statue_uri=logo_uri,
+            decor_uri=logo_uri,
         )
 
     # Summary
@@ -835,8 +825,8 @@ def generate_pdf(config, output_path):
         pages_html += build_summary_page_html(
             summary_points,
             bg_uri=content_bg_uri,
-            statue_uri=content_statue_uri,
-            decor_uri=content_decor_uri,
+            statue_uri=logo_uri,
+            decor_uri=logo_uri,
         )
 
     # Full HTML document
