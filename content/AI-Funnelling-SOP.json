@@ -1,0 +1,355 @@
+{
+  "title": "AI Funnelling SOP",
+  "subtitle": "Traffic Conversion & Monetization Framework",
+  "output_filename": "AI-Funnelling-SOP.pdf",
+  "sections": [
+    {
+      "header": "Foreword: Funnel Psychology",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "text",
+              "content": "The endpoint is Fanvue. Every other platform exists to support that conversion."
+            },
+            {
+              "type": "text",
+              "content": "Instagram is not a selling platform. Instagram is a distribution engine. The mistake beginners make is attempting to convert users too early, too directly, or too aggressively without warming intent."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Purpose of This Funnel"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Capture attention",
+                "Reduce friction",
+                "Delay commitment",
+                "Increase urgency",
+                "Force monetization at the correct endpoint"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Funnel Overview: Traffic Flow",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This ecosystem uses a Hard Gate Funnel. No other routing structures are permitted."
+        },
+        {
+          "type": "subheader",
+          "content": "Approved Traffic Paths Only"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Instagram \u2192 Link in Bio \u2192 Fanvue",
+            "Instagram \u2192 Link in Bio \u2192 Free Telegram \u2192 Fanvue",
+            "Instagram \u2192 Link in Bio \u2192 Free Telegram \u2192 Link in Bio \u2192 Fanvue"
+          ],
+          "bullet": "\u2192"
+        },
+        {
+          "type": "panel",
+          "title": "How It Works",
+          "content": "Instagram builds desire.\nTelegram builds urgency.\nFanvue captures revenue.",
+          "border": "#39FF14"
+        }
+      ]
+    },
+    {
+      "header": "Funnel Activation Timing",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "DO NOT deploy funnel links immediately. Links must never be spammed in captions or comments."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Safe Activation Window"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Approximately 3 weeks of normal posting",
+                "Stable engagement",
+                "Green recommendation status"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Once Activated, Links May Appear In"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Bio",
+                "Story Highlights",
+                "Story Link Stickers"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "This Prevents"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Shadowbans",
+                "Recommendation suppression",
+                "Early account flags"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Link in Bio Architecture",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Your link in bio acts as a decision control hub. Fewer choices increase conversion probability. Do not overload the page."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Approved Platforms"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "AllMyLinks",
+                "Linktree",
+                "Hoo.be"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Mandatory Links Only"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Fanvue (Primary Monetization)",
+                "Free Telegram (Pre-Sell Funnel)"
+              ],
+              "bullet": "\u2192"
+            },
+            {
+              "type": "panel",
+              "title": "Rule",
+              "content": "Only two links. Nothing else. Fewer choices = higher conversion.",
+              "border": "#39FF14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Free Telegram Funnel",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Telegram exists to capture users who are interested but busy, in public or at work, or unwilling to enter payment details immediately."
+        },
+        {
+          "type": "text",
+          "content": "Joining a free Telegram requires less commitment than subscribing to Fanvue. This makes Telegram the primary warming layer. Many users leave notifications ON, creating repeated exposure without Instagram risk."
+        }
+      ]
+    },
+    {
+      "header": "Telegram Content Rules",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Captions Must"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Express desire or urgency",
+                "Imply availability",
+                "Redirect to Fanvue"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Posting Frequency"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Maximum 2-3 posts per day",
+                "Overposting causes muting and exits"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Content Guidelines"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Thirst traps",
+                "Suggestive content",
+                "More NSFW than Instagram",
+                "NEVER more explicit than Fanvue"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Critical Rule",
+              "content": "Telegram content should increase frustration, not relieve it.",
+              "border": "#FF3131"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Instagram Highlight Funnel",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Highlights act as a permanent funnel entry."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Setup Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "One dedicated highlight only",
+                "Sexier cover image than feed",
+                "Face clearly visible"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Inside the Highlight"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Story with Link Sticker",
+                "CTA text: \"Come chat to me\" or \"Talk to me here\"",
+                "Links may point to Fanvue or Telegram"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Funnel Aggression & Compliance",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This funnel is designed to be aggressive. Aggression without structure leads to bans. Structure allows aggression to scale."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Aggressive Elements"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Frequent CTAs",
+                "Repeated Fanvue exposure",
+                "Emotional and sexual framing"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Compliance Guardrails"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram remains compliant",
+                "Explicit payoff is exclusive to Fanvue",
+                "Telegram bridges the gap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Funnel Mistakes & Common Failures",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Common Failures"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Too many links",
+                "Fanvue buried or hidden",
+                "No Telegram buffer",
+                "Explicit previews on Instagram"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "panel",
+              "title": "Final Note",
+              "content": "This funnel is not optional.\nTraffic without structure is wasted.\nBuild desire. Delay commitment.\nForce the decision at Fanvue.",
+              "border": "#FF3131"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary_points": [
+    "Instagram is a distribution engine, not a selling platform",
+    "The funnel removes emotion, guesswork, and impatience from monetization",
+    "Telegram sharpens demand for Fanvue — it does not replace it",
+    "The funnel lowers friction at every step to capture hesitant users",
+    "Links are placed only where they belong, only when the account is ready",
+    "Content escalates in the correct order: free, teasing, exclusive",
+    "When followed correctly, the funnel becomes self-sustaining",
+    "This is not a growth trick — it is a repeatable conversion system"
+  ]
+}

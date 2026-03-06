@@ -1,0 +1,379 @@
+{
+  "title": "Chatter Hiring SOP",
+  "subtitle": "Recruitment and Vetting Manual",
+  "output_filename": "Chatter-Hiring-SOP.pdf",
+  "sections": [
+    {
+      "header": "Intro: Why Hiring Matters",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Chatters are the human layer of the system. They control communication, emotions, and revenue. A bad hire does not just reduce income. A bad hire can damage accounts, leak methods, or sabotage operations."
+        },
+        {
+          "type": "text",
+          "content": "Hiring is not about finding cheap labor. It is about finding reliable operators who can follow structure and respect boundaries. You are not hiring personalities. You are hiring discipline."
+        },
+        {
+          "type": "panel",
+          "title": "Core Rule",
+          "content": "Every chatter must be filtered. Every chatter must be tested. Every chatter must be proven before trust is given.",
+          "border": "#39FF14"
+        }
+      ]
+    },
+    {
+      "header": "Where to Find Chatters",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Primary Sources"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "ofmjobs.com",
+                "onlinejobs.ph"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "These platforms provide higher quality applicants who already understand online work and adult industry communication."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Secondary Sources"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Telegram",
+                "Telegram groups such as ofmjobs on Telegram"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Telegram is usable but lower quality. Many applicants there lack professionalism, discipline, or long term commitment."
+            },
+            {
+              "type": "panel",
+              "title": "Rule",
+              "content": "The more public and unstructured the platform, the lower the average candidate quality. Always prioritize platforms where people apply formally.",
+              "border": "#39FF14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "First Screening",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Before any interview, applicants must be screened. This stage is about eliminating obvious bad fits before wasting time on interviews."
+        },
+        {
+          "type": "subheader",
+          "content": "You Should Check"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Previous work history",
+            "Basic English level from their written messages",
+            "Their communication tone and professionalism"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Filter Rule",
+          "content": "If a candidate cannot write clearly, politely, and in full sentences, they should not move forward.",
+          "border": "#FF3131"
+        }
+      ]
+    },
+    {
+      "header": "Interview Process",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Every candidate must go through a live interview. The interview is not just about answers. It is about behavior."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Interview Should Cover"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Previous chatting or sales work",
+                "Experience with adult platforms if any",
+                "Availability and time zone",
+                "Motivation for the job"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "You Must Observe"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "How they speak",
+                "How confident they are in English",
+                "How they respond under pressure",
+                "How honest they seem about past work"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Rejection Rule",
+              "content": "Candidates who avoid direct answers or exaggerate experience should be rejected.",
+              "border": "#FF3131"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "English and Skill Testing",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "After the interview, every candidate must be tested live. They must join a Discord call with screen sharing."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "English Test"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Must answer questions verbally",
+                "Must write sample replies in chat",
+                "Prevents cheating with translators or AI tools"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Typing Speed Test"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Words per minute test done live",
+                "Shows how fast they can respond to fans"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Rejection Rule",
+              "content": "If a candidate refuses screen sharing or avoids live testing, they should be rejected immediately.",
+              "border": "#FF3131"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Observation Period",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "No candidate should get direct access after testing. They must first observe trained chatters for one to two days."
+        },
+        {
+          "type": "subheader",
+          "content": "During This Period They Should"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Watch how real conversations look",
+            "Understand tone and structure",
+            "Learn pacing and discipline"
+          ]
+        },
+        {
+          "type": "text",
+          "content": "This stage filters out people who lose interest quickly or cannot focus. Only candidates who stay attentive and engaged should move forward."
+        }
+      ]
+    },
+    {
+      "header": "Access Control",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Access must be earned gradually. New chatters should never receive full account access immediately. This reduces damage if a hire turns out to be malicious or incompetent."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "First stage: Read only access, observation only",
+            "Second stage: Limited supervised chatting, no financial controls",
+            "Final stage: Full chatting access after trust is built"
+          ],
+          "bullet": "\u2192"
+        }
+      ]
+    },
+    {
+      "header": "Payment Structure",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Standard Pay"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Hourly pay: $5-$7 per hour",
+                "Commission: around 3% of profits",
+                "Creates stability through hourly pay",
+                "Creates motivation through commission"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Payment Schedule"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Biweekly payments",
+                "Preferred method: Wise"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Payment Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Clear payment rules must be set before work begins",
+                "Never delay payments",
+                "Never change pay terms without agreement"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Trust Rule",
+              "content": "A chatter who is paid on time is more loyal.\nA chatter who is not paid becomes a risk.",
+              "border": "#39FF14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Performance Tracking",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Chatters Must Track (Excel)"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Hours worked",
+                "Sales made",
+                "Messages sent if required"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "Self reporting saves management time but requires verification to prevent manipulation."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Random Checks Confirm"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Chat activity",
+                "Revenue numbers",
+                "Time claims"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "You must regularly verify these stats to ensure they are accurate."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Risk and Trust Management",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Chatters can cause serious damage if mistreated. They can leak methods, sabotage accounts, and spread negative reputation. Fear based management creates short term compliance but long term risk."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "For This Reason"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Always treat chatters with respect",
+                "Always pay them on time",
+                "Always communicate clearly"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "panel",
+              "title": "Trust Principle",
+              "content": "Trust is built through fairness, consistency, and transparency.\nA well treated chatter protects your system.\nA mistreated chatter becomes a threat.",
+              "border": "#39FF14"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "summary_points": [
+    "Chatters are operators — their performance directly affects profit and risk",
+    "Hiring correctly increases stability and revenue",
+    "Hiring poorly increases loss and exposure",
+    "Live interviews, live English testing, and controlled access are not optional",
+    "Most losses come from rushing hires, skipping tests, and trusting without verification",
+    "Payment must be on time — delayed pay creates risk",
+    "Structure separates scalable operations from chaos",
+    "Treat chatters with respect — they control your revenue"
+  ]
+}

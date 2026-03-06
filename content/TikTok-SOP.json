@@ -1,0 +1,403 @@
+{
+  "title": "TikTok SOP",
+  "subtitle": "Profile and Content Structure Manual",
+  "output_filename": "TikTok-SOP.pdf",
+  "sections": [
+    {
+      "header": "Intro: The Role of TikTok",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "text",
+              "content": "TikTok is a secondary traffic source. Instagram remains the main platform. TikTok converts worse than Instagram. Estimated 5 to 10 times worse in CVR. Its value is not volume."
+            },
+            {
+              "type": "subheader",
+              "content": "TikTok Exists To"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Recycle content",
+                "Generate extra views",
+                "Capture additional attention"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "text",
+              "content": "Its value is extra reach when combined with other organic marketing. TikTok should support the system. Not replace it."
+            },
+            {
+              "type": "panel",
+              "title": "Core Rule",
+              "content": "TikTok is leverage. Not focus. Not dependency.",
+              "border": "#39FF14"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Platform Risk: TikTok vs Instagram",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "text",
+              "content": "TikTok is stricter than Instagram. Content moderation is heavier. Accounts are reviewed faster. Shadow limits happen more easily."
+            },
+            {
+              "type": "text",
+              "content": "Because of this: only very safe content should be posted. TikTok is not the place to push boundaries. What works on Instagram can get limited on TikTok."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "TikTok Rewards Accounts That"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Look human",
+                "Act slowly",
+                "Stay within platform comfort zones"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Safety Rule",
+              "content": "If content feels risky, do not post it on TikTok. Safe posting beats frequent posting.",
+              "border": "#FF3131"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Account Setup: First Signals",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "New TikTok accounts must start empty. Early behavior determines trust."
+        },
+        {
+          "type": "subheader",
+          "content": "When Creating a New Account"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Do not add username",
+            "Do not add bio",
+            "Do not add profile picture",
+            "Close the app for 20 minutes after creation"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Bio & Profile: Identity and Trust",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Profile setup must be done manually. Each account must look like a different person."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Username"
+            },
+            {
+              "type": "bullets",
+              "items": ["Human", "Simple", "No spam patterns"]
+            },
+            {
+              "type": "subheader",
+              "content": "Profile Picture"
+            },
+            {
+              "type": "bullets",
+              "items": ["Unique per account", "Non-explicit"]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Bio"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Typed manually",
+                "Never copy-pasted",
+                "Neutral and casual"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Warm Up Phase: New Account Protocol",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Warm up is mandatory on TikTok. Follow this schedule exactly."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Day 1"
+            },
+            {
+              "type": "bullets",
+              "items": ["Create the account", "No username, bio, or picture", "Close app for 20 minutes", "Browse FYP 30-60 minutes", "No likes, no posts"]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 2"
+            },
+            {
+              "type": "bullets",
+              "items": ["Browse FYP 30 minutes", "No follows, no posts, no likes"]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 3"
+            },
+            {
+              "type": "bullets",
+              "items": ["Browse FYP 30 minutes", "Like 3-5 videos", "No follows, no posts"]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 4"
+            },
+            {
+              "type": "bullets",
+              "items": ["Browse FYP 30-40 minutes", "Like 5-7 videos", "Write 1 comment", "No follows, no posts"]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Day 5"
+            },
+            {
+              "type": "bullets",
+              "items": ["Add profile picture, bio, and username manually", "Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2 comments", "No posts"]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 6"
+            },
+            {
+              "type": "bullets",
+              "items": ["Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2 comments", "No posting"]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 7"
+            },
+            {
+              "type": "bullets",
+              "items": ["Browse FYP 30-40 minutes", "Like 10 videos", "Write 3 comments", "Post the first TikTok"]
+            },
+            {
+              "type": "subheader",
+              "content": "Days 8-9"
+            },
+            {
+              "type": "bullets",
+              "items": ["Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2-3 comments", "Post second and third TikToks", "Activate analytics"]
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "After Day 9",
+          "content": "Treat the account like a regular one.",
+          "border": "#39FF14"
+        }
+      ]
+    },
+    {
+      "header": "Posting Phase: After Warm Up",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Posting can increase slowly. TikTok punishes speed. TikTok rewards stability."
+        },
+        {
+          "type": "subheader",
+          "content": "Rules"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Do not spam (wait 4+ hours between posts)",
+            "Do not batch upload",
+            "Do not post risky content",
+            "Safe posting beats frequent posting"
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Daily Behavior: Trust Signals",
+      "blocks": [
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Daily Actions Per Account"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP at least 20 minutes",
+                "Like content",
+                "Comment naturally",
+                "Follow back 5-10 followers per day"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Before and After Posting"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Before posting: Engage 10 minutes",
+                "After posting: Engage 10 minutes, then close app for 30 minutes",
+                "Captions must be typed manually",
+                "Never copy-paste captions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Multi-Account Safety",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Maximum 3 accounts per device. Linked accounts increase ban risk."
+        },
+        {
+          "type": "subheader",
+          "content": "Each Account Must Have"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Unique username",
+            "Unique profile picture",
+            "Unique bio"
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Critical Rule",
+          "content": "Never open the same link on multiple accounts.",
+          "border": "#FF3131"
+        }
+      ]
+    },
+    {
+      "header": "Content Formats: Safe Reach & Carousels",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "TikTok does not require only videos. Carousels are a powerful and safe format."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Carousels Are Recommended For"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "New accounts",
+                "Risk-averse posting",
+                "Consistent exposure"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Why Carousels Work"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Easy to consume",
+                "Lower ban risk",
+                "Often get strong reach"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Carousel Examples"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Pictures of your model",
+                "Your model with celebrities",
+                "Your model in different outfits",
+                "Your model in different moods"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Scale Strategy and Expectations",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Open up to 3 TikTok accounts. All Instagram content can be reused."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Expected result: around 20 percent subscriber increase",
+            "Do not overinvest time",
+            "TikTok supports the system",
+            "Instagram drives the system"
+          ]
+        }
+      ]
+    }
+  ],
+  "summary_points": [
+    "TikTok is stricter than Instagram — only safe content should be posted",
+    "Warm up is mandatory — if rushed, accounts die",
+    "If safe, accounts survive and generate extra reach",
+    "TikTok works only when warm up is completed and behavior looks human",
+    "Accounts must be separated — maximum 3 per device",
+    "Risk must be minimized at all times",
+    "TikTok is leverage, not focus, not dependency",
+    "Instagram drives the system — TikTok supports it"
+  ]
+}
