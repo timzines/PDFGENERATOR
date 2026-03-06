@@ -62,8 +62,8 @@ TEXT_MUTED_DARK = "#4a3038"
 TEXT_MUTED_LIGHT = "#999999"
 HEADER_FADE = "#c49a85"  # The faded last-word color in headers
 
-FOOTER_TEXT = "All materials are strictly protected under AI Influencer Accelerator\u00AE rights"
-BRAND_NAME = "AI Influencer Accelerator"
+FOOTER_TEXT = "All materials are strictly protected under AI Influencer Method\u00AE rights"
+BRAND_NAME = "AI Influencer Method"
 
 
 # ---------------------------------------------------------------------------
@@ -175,100 +175,220 @@ body {
 
 /* ---- COVER PAGE ---- */
 .page-cover {
-    background: #1a1b1f;
+    background: #0f1013;
     position: relative;
     overflow: hidden;
+}
+
+/* Atmospheric gradient overlay on cover */
+.cover-gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 25% 50%, rgba(90, 50, 65, 0.5) 0%, transparent 60%),
+        radial-gradient(ellipse at 75% 40%, rgba(60, 35, 50, 0.4) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 100%, rgba(40, 25, 35, 0.6) 0%, transparent 50%),
+        linear-gradient(180deg, #1a1b1f 0%, #0f1013 100%);
+    z-index: 0;
+}
+
+/* Subtle decorative line accents on cover */
+.cover-accent-line {
+    position: absolute;
+    left: 60px;
+    top: 100px;
+    width: 3px;
+    height: 200px;
+    background: linear-gradient(180deg, #c49a85 0%, transparent 100%);
+    z-index: 3;
+    border-radius: 2px;
+}
+
+.cover-accent-line-bottom {
+    position: absolute;
+    left: 80px;
+    bottom: 80px;
+    width: 120px;
+    height: 1px;
+    background: linear-gradient(90deg, rgba(196,154,133,0.6) 0%, transparent 100%);
+    z-index: 3;
 }
 
 .cover-left {
     position: absolute;
     left: 0;
     top: 0;
-    width: 48%;
+    width: 50%;
     height: 100%;
-    padding: 140px 40px 60px 80px;
-    z-index: 2;
+    padding: 120px 40px 80px 85px;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .cover-logo-wrap {
     position: absolute;
-    right: 0;
+    right: -20px;
     top: 0;
-    width: 58%;
+    width: 55%;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    z-index: 1;
+    z-index: 2;
 }
 
 .cover-logo-img {
-    height: 85%;
+    height: 92%;
     width: auto;
-    max-width: 90%;
+    max-width: 95%;
     object-fit: contain;
-    opacity: 0.92;
+    opacity: 0.85;
+    filter: drop-shadow(0 0 60px rgba(90, 50, 65, 0.4));
+}
+
+/* Glow behind statue */
+.cover-glow {
+    position: absolute;
+    right: 100px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(196,154,133,0.12) 0%, transparent 70%);
+    z-index: 1;
+    border-radius: 50%;
+}
+
+.cover-tag {
+    font-size: 11px;
+    font-weight: 600;
+    color: #c49a85;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 18px;
 }
 
 .cover-title {
-    font-size: 44px;
+    font-size: 48px;
     font-weight: 700;
     color: #ffffff;
-    line-height: 1.15;
-    margin-bottom: 12px;
+    line-height: 1.1;
+    margin-bottom: 16px;
     letter-spacing: -0.5px;
 }
 
 .cover-subtitle {
     font-size: 16px;
-    font-weight: 400;
-    color: #999999;
-    margin-bottom: 36px;
-    letter-spacing: 0.3px;
+    font-weight: 300;
+    color: rgba(255,255,255,0.5);
+    margin-bottom: 40px;
+    letter-spacing: 0.5px;
+    line-height: 1.5;
 }
 
 .cover-brand {
     display: inline-block;
-    border: 1px solid #555555;
-    border-radius: 24px;
-    padding: 10px 24px;
-    color: #cccccc;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0.2px;
+    border: 1px solid rgba(196,154,133,0.4);
+    border-radius: 30px;
+    padding: 11px 28px;
+    color: #c49a85;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(196,154,133,0.06);
+}
+
+.cover-divider {
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #c49a85, transparent);
+    margin-bottom: 20px;
+    border-radius: 1px;
 }
 
 /* ---- TOC PAGE ---- */
 .page-toc {
-    background: linear-gradient(180deg, #3d3036 0%, #1a1b1f 35%, #141519 100%);
-    padding: 50px 80px;
+    background: linear-gradient(160deg, #2d2230 0%, #1a1b1f 40%, #0f1013 100%);
+    padding: 55px 80px;
     position: relative;
+    overflow: hidden;
+}
+
+/* Decorative gradient orbs on TOC */
+.toc-orb {
+    position: absolute;
+    border-radius: 50%;
+    z-index: 0;
+}
+
+.toc-orb-1 {
+    top: -80px;
+    left: -80px;
+    width: 300px;
+    height: 300px;
+    background: radial-gradient(circle, rgba(95,70,87,0.4) 0%, transparent 70%);
+}
+
+.toc-orb-2 {
+    bottom: -60px;
+    right: 200px;
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(80,55,65,0.3) 0%, transparent 70%);
 }
 
 .toc-statue {
     position: absolute;
     right: 20px;
     bottom: 20px;
-    height: 80%;
+    height: 82%;
     width: auto;
-    opacity: 0.45;
+    opacity: 0.35;
     object-fit: contain;
     object-position: right bottom;
+    z-index: 1;
+    filter: drop-shadow(0 0 40px rgba(90,50,65,0.3));
+}
+
+.toc-tag {
+    font-size: 10px;
+    font-weight: 600;
+    color: #c49a85;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 2;
 }
 
 .toc-header {
-    font-size: 36px;
+    font-size: 38px;
     font-weight: 700;
     color: #ffffff;
     font-style: italic;
-    margin-bottom: 35px;
+    margin-bottom: 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.toc-header-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #c49a85, transparent);
+    margin-bottom: 30px;
     position: relative;
     z-index: 2;
 }
 
 .toc-grid {
     display: flex;
-    gap: 30px;
+    gap: 24px;
     position: relative;
     z-index: 2;
 }
@@ -278,20 +398,22 @@ body {
 }
 
 .toc-item {
-    background: rgba(80, 55, 65, 0.6);
-    border-radius: 8px;
-    padding: 10px 18px;
-    margin-bottom: 10px;
+    background: rgba(80, 55, 65, 0.45);
+    border: 1px solid rgba(196,154,133,0.12);
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-bottom: 8px;
     color: #e0ccd2;
     font-size: 14px;
     font-weight: 400;
-    backdrop-filter: blur(4px);
+    transition: all 0.2s;
 }
 
 .toc-item .toc-num {
-    color: #e0ccd2;
-    margin-right: 12px;
-    font-weight: 500;
+    color: #c49a85;
+    margin-right: 14px;
+    font-weight: 600;
+    font-size: 13px;
 }
 
 .toc-footer {
@@ -300,9 +422,10 @@ body {
     left: 0;
     right: 0;
     text-align: center;
-    color: #888888;
+    color: rgba(255,255,255,0.25);
     font-size: 10px;
     z-index: 2;
+    letter-spacing: 0.5px;
 }
 
 /* ---- CONTENT PAGE ---- */
@@ -322,26 +445,15 @@ body {
     z-index: 0;
 }
 
-.content-statue {
+/* Subtle top gradient overlay on content pages */
+.content-top-overlay {
     position: absolute;
-    top: 10px;
-    right: 15px;
-    height: 180px;
-    width: auto;
-    opacity: 0.30;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120px;
+    background: linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 100%);
     z-index: 1;
-    object-fit: contain;
-}
-
-.content-decor {
-    position: absolute;
-    bottom: 30px;
-    right: 15px;
-    height: 170px;
-    width: auto;
-    opacity: 0.15;
-    z-index: 1;
-    object-fit: contain;
 }
 
 .content-inner {
@@ -355,10 +467,24 @@ body {
     font-weight: 700;
     font-style: italic;
     color: #2a1a1f;
-    margin-bottom: 25px;
+    margin-bottom: 22px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     line-height: 1.2;
+    position: relative;
+    padding-left: 16px;
+}
+
+/* Accent bar before section headers */
+.section-header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 4px;
+    width: 4px;
+    height: 32px;
+    background: linear-gradient(180deg, #c49a85, rgba(42,26,31,0.4));
+    border-radius: 2px;
 }
 
 .section-header .fade {
@@ -384,6 +510,7 @@ body {
     margin-bottom: 14px;
     position: relative;
     z-index: 2;
+    border: 1px solid rgba(255,255,255,0.06);
 }
 
 .content-box p {
@@ -404,6 +531,7 @@ body {
     color: #ffffff;
     margin-bottom: 8px;
     margin-top: 14px;
+    letter-spacing: 0.3px;
 }
 
 .content-box .sub-header:first-child {
@@ -424,46 +552,53 @@ body {
 
 .content-box .example-good {
     border-left: 3px solid #7dba6d;
-    padding-left: 12px;
+    background: rgba(125,186,109,0.08);
+    padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
     color: #c8e6c0;
     font-size: 13px;
     line-height: 1.55;
+    border-radius: 0 6px 6px 0;
 }
 
 .content-box .example-bad {
     border-left: 3px solid #c9665a;
-    padding-left: 12px;
+    background: rgba(201,102,90,0.08);
+    padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
     color: #eaaca5;
     font-size: 13px;
     line-height: 1.55;
+    border-radius: 0 6px 6px 0;
 }
 
 .content-box .example-label {
     font-weight: 700;
     font-style: normal;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin-bottom: 4px;
 }
 
 .content-box .panel-box {
-    background: rgba(90, 60, 68, 0.5);
-    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(90, 60, 68, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-left: 3px solid rgba(196,154,133,0.6);
     border-radius: 8px;
-    padding: 12px 16px;
+    padding: 14px 18px;
     margin: 12px 0 6px 0;
 }
 
 .content-box .panel-title {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
-    color: #ffffff;
+    color: #c49a85;
     margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .content-box .panel-body {
@@ -482,6 +617,7 @@ body {
     max-width: 75%;
     position: relative;
     z-index: 2;
+    border: 1px solid rgba(255,255,255,0.06);
 }
 
 .content-box-full p {
@@ -502,6 +638,7 @@ body {
     color: #ffffff;
     margin-bottom: 8px;
     margin-top: 14px;
+    letter-spacing: 0.3px;
 }
 
 .content-box-full .sub-header:first-child {
@@ -522,46 +659,53 @@ body {
 
 .content-box-full .example-good {
     border-left: 3px solid #7dba6d;
-    padding-left: 12px;
+    background: rgba(125,186,109,0.08);
+    padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
     color: #c8e6c0;
     font-size: 13px;
     line-height: 1.55;
+    border-radius: 0 6px 6px 0;
 }
 
 .content-box-full .example-bad {
     border-left: 3px solid #c9665a;
-    padding-left: 12px;
+    background: rgba(201,102,90,0.08);
+    padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
     color: #eaaca5;
     font-size: 13px;
     line-height: 1.55;
+    border-radius: 0 6px 6px 0;
 }
 
 .content-box-full .example-label {
     font-weight: 700;
     font-style: normal;
-    font-size: 12px;
+    font-size: 11px;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 1px;
     margin-bottom: 4px;
 }
 
 .content-box-full .panel-box {
-    background: rgba(90, 60, 68, 0.5);
-    border: 1px solid rgba(255,255,255,0.15);
+    background: rgba(90, 60, 68, 0.55);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-left: 3px solid rgba(196,154,133,0.6);
     border-radius: 8px;
-    padding: 12px 16px;
+    padding: 14px 18px;
     margin: 12px 0 6px 0;
 }
 
 .content-box-full .panel-title {
-    font-size: 13px;
+    font-size: 12px;
     font-weight: 700;
-    color: #ffffff;
+    color: #c49a85;
     margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
 }
 
 .content-box-full .panel-body {
@@ -579,11 +723,39 @@ body {
     font-size: 10px;
     color: #8a6a72;
     z-index: 2;
+    letter-spacing: 0.5px;
 }
 
 /* ---- SUMMARY PAGE ---- */
 .summary-box ul li {
     margin-bottom: 6px;
+}
+
+.summary-brand-box {
+    text-align: center;
+    padding: 30px 24px;
+}
+
+.summary-brand-name {
+    font-size: 22px;
+    font-weight: 700;
+    color: #c49a85;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+}
+
+.summary-brand-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #c49a85, transparent);
+    margin: 0 auto 14px auto;
+}
+
+.summary-brand-text {
+    font-size: 12px;
+    color: rgba(240,224,230,0.7);
+    letter-spacing: 0.5px;
 }
 """
 
@@ -648,7 +820,13 @@ def build_cover_html(title, subtitle, logo_uri=""):
 
     return f'''
     <div class="page page-cover">
+        <div class="cover-gradient-overlay"></div>
+        <div class="cover-glow"></div>
+        <div class="cover-accent-line"></div>
+        <div class="cover-accent-line-bottom"></div>
         <div class="cover-left">
+            <div class="cover-tag">Premium Course Material</div>
+            <div class="cover-divider"></div>
             <div class="cover-title">{title_html}</div>
             <div class="cover-subtitle">{subtitle}</div>
             <div class="cover-brand">{BRAND_NAME}</div>
@@ -676,8 +854,12 @@ def build_toc_html(sections, logo_uri=""):
 
     return f'''
     <div class="page page-toc">
+        <div class="toc-orb toc-orb-1"></div>
+        <div class="toc-orb toc-orb-2"></div>
         {"<img class='toc-statue' src='" + logo_uri + "' />" if logo_uri else ""}
+        <div class="toc-tag">Course Outline</div>
         <div class="toc-header">Table Of Contents</div>
+        <div class="toc-header-line"></div>
         <div class="toc-grid">
             <div class="toc-column">{left_html}</div>
             <div class="toc-column">{right_html}</div>
@@ -687,7 +869,7 @@ def build_toc_html(sections, logo_uri=""):
     '''
 
 
-def build_content_page_html(header, body_blocks, bg_uri="", statue_uri="", decor_uri=""):
+def build_content_page_html(header, body_blocks, bg_uri=""):
     """Build a content page HTML."""
     main_part, fade_part = split_header_two_tone(header)
 
@@ -724,8 +906,7 @@ def build_content_page_html(header, body_blocks, bg_uri="", statue_uri="", decor
     return f'''
     <div class="page page-content">
         {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else '<div class="content-bg" style="background: ' + CONTENT_BG_GRADIENT + ';"></div>'}
-        {"<img class='content-statue' src='" + statue_uri + "' />" if statue_uri else ""}
-        {"<img class='content-decor' src='" + decor_uri + "' />" if decor_uri else ""}
+        <div class="content-top-overlay"></div>
         <div class="content-inner">
             <div class="section-header">{header_html}</div>
             {content_html}
@@ -735,7 +916,7 @@ def build_content_page_html(header, body_blocks, bg_uri="", statue_uri="", decor
     '''
 
 
-def build_summary_page_html(points, bg_uri="", statue_uri="", decor_uri=""):
+def build_summary_page_html(points, bg_uri=""):
     """Build summary page HTML."""
     bullets = ""
     for pt in points:
@@ -744,8 +925,7 @@ def build_summary_page_html(points, bg_uri="", statue_uri="", decor_uri=""):
     return f'''
     <div class="page page-content">
         {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else ""}
-        {"<img class='content-statue' src='" + statue_uri + "' />" if statue_uri else ""}
-        {"<img class='content-decor' src='" + decor_uri + "' />" if decor_uri else ""}
+        <div class="content-top-overlay"></div>
         <div class="content-inner">
             <div class="section-header">END <span class="fade">SUMMARY</span></div>
             <div class="content-columns">
@@ -755,11 +935,10 @@ def build_summary_page_html(points, bg_uri="", statue_uri="", decor_uri=""):
                     </div>
                 </div>
                 <div class="content-col">
-                    <div class="content-box">
-                        <div class="panel-box" style="margin-top: 0;">
-                            <div class="panel-title">{BRAND_NAME}</div>
-                            <div class="panel-body">All materials are strictly protected.</div>
-                        </div>
+                    <div class="content-box summary-brand-box">
+                        <div class="summary-brand-name">{BRAND_NAME}</div>
+                        <div class="summary-brand-line"></div>
+                        <div class="summary-brand-text">All materials are strictly protected.</div>
                     </div>
                 </div>
             </div>
