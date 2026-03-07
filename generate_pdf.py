@@ -267,6 +267,89 @@ body {
     border-radius: 50%;
 }
 
+/* Subtle geometric design behind the logo */
+.cover-logo-design {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 520px;
+    height: 520px;
+    z-index: 1;
+}
+
+.cover-logo-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(196,154,133,0.08);
+}
+
+.cover-logo-ring-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+}
+
+.cover-logo-ring-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 380px;
+    border-color: rgba(196,154,133,0.06);
+}
+
+.cover-logo-ring-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 260px;
+    border-color: rgba(196,154,133,0.04);
+}
+
+/* Decorative arc lines */
+.cover-logo-arc {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.cover-logo-arc-1 {
+    top: 10%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    border-top-color: rgba(196,154,133,0.1);
+    border-right-color: rgba(196,154,133,0.06);
+    transform: rotate(-30deg);
+}
+
+.cover-logo-arc-2 {
+    bottom: 15%;
+    left: 10%;
+    width: 160px;
+    height: 160px;
+    border-bottom-color: rgba(196,154,133,0.08);
+    border-left-color: rgba(196,154,133,0.04);
+    transform: rotate(20deg);
+}
+
+/* Small decorative dots */
+.cover-logo-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(196,154,133,0.15);
+}
+
+.cover-logo-dot-1 { top: 20%; right: 15%; }
+.cover-logo-dot-2 { bottom: 25%; left: 20%; }
+.cover-logo-dot-3 { top: 60%; right: 8%; width: 3px; height: 3px; background: rgba(196,154,133,0.1); }
+
 .cover-tag {
     font-size: 11px;
     font-weight: 600;
@@ -329,7 +412,7 @@ body {
     width: 50px;
     height: 2px;
     background: linear-gradient(90deg, #c49a85, transparent);
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     border-radius: 1px;
 }
 
@@ -789,9 +872,19 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
         <div class="cover-glow"></div>
         <div class="cover-accent-line"></div>
         <div class="cover-accent-line-bottom"></div>
+        <div class="cover-logo-design">
+            <div class="cover-logo-ring cover-logo-ring-1"></div>
+            <div class="cover-logo-ring cover-logo-ring-2"></div>
+            <div class="cover-logo-ring cover-logo-ring-3"></div>
+            <div class="cover-logo-arc cover-logo-arc-1"></div>
+            <div class="cover-logo-arc cover-logo-arc-2"></div>
+            <div class="cover-logo-dot cover-logo-dot-1"></div>
+            <div class="cover-logo-dot cover-logo-dot-2"></div>
+            <div class="cover-logo-dot cover-logo-dot-3"></div>
+        </div>
         <div class="cover-left">
-            <div class="cover-tag">Premium Course Material</div>
             <div class="cover-divider"></div>
+            <div class="cover-tag">Premium Course Material</div>
             {"<div class='cover-module-label'>" + module_label + "</div>" if module_label else ""}
             {"<div class='cover-lesson-label'>" + lesson_label + "</div>" if lesson_label else ""}
             <div class="cover-title">{title_html}</div>
