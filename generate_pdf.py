@@ -276,10 +276,19 @@ body {
 .cover-module-label {
     font-size: 13px;
     font-weight: 500;
-    color: rgba(196,154,133,0.6);
+    color: rgba(196,154,133,0.5);
     text-transform: uppercase;
     letter-spacing: 2.5px;
-    margin-bottom: 8px;
+    margin-bottom: 4px;
+}
+
+.cover-lesson-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(196,154,133,0.5);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 10px;
 }
 
 .cover-title {
@@ -854,7 +863,7 @@ def render_blocks_html(blocks):
 # PAGE BUILDERS (HTML)
 # ---------------------------------------------------------------------------
 
-def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, module_label=""):
+def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, module_label="", lesson_label=""):
     """Build cover page HTML."""
     title_html = title.replace("\n", "<br>")
 
@@ -868,6 +877,7 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             <div class="cover-tag">Premium Course Material</div>
             <div class="cover-divider"></div>
             {"<div class='cover-module-label'>" + module_label + "</div>" if module_label else ""}
+            {"<div class='cover-lesson-label'>" + lesson_label + "</div>" if lesson_label else ""}
             <div class="cover-title">{title_html}</div>
             <div class="cover-subtitle">{subtitle}</div>
             <div class="cover-brand">{BRAND_NAME}</div>
@@ -1024,6 +1034,7 @@ def generate_pdf(config, output_path):
     title = config["title"]
     subtitle = config.get("subtitle", "")
     module_label = config.get("module_label", "")
+    lesson_label = config.get("lesson_label", "")
     sections = config["sections"]
     summary_points = config.get("summary_points", [])
 
@@ -1043,7 +1054,7 @@ def generate_pdf(config, output_path):
     current_page = 1
 
     # Cover — uses Course Logo as the main statue image
-    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=current_page, total_pages=total_pages, module_label=module_label)
+    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=current_page, total_pages=total_pages, module_label=module_label, lesson_label=lesson_label)
     current_page += 1
 
     # TOC — uses Course Logo as background decoration
