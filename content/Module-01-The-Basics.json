@@ -8,117 +8,8 @@
       "header": "The AI Influencer Method",
       "blocks": [
         {
-          "type": "text",
-          "content": "The AI Influencer Method is a system for building and monetizing social media pages using AI-generated personas. These personas look, act, and engage like real influencers but are entirely created and managed through artificial intelligence tools. This is not about catfishing or deception. This is a business model. You are building a brand, not pretending to be a real person."
-        },
-        {
-          "type": "text",
-          "content": "The technology behind this method has reached a point where AI-generated images and videos are indistinguishable from real content when done correctly. The tools are accessible, the demand is proven, and the window for early movers is wide open. But this is a real business that requires real work, real patience, and real strategy."
-        },
-        {
           "type": "two_column",
           "left": [
-            {
-              "type": "subheader",
-              "content": "What You Will Learn"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "How to create an AI influencer from scratch using professional tools",
-                "Which platforms to use and exactly how to grow on each one",
-                "The content pipeline that produces consistent, believable content",
-                "How to warm up accounts so they look human to algorithms",
-                "How to scale to multiple personas once your first page works",
-                "How to protect your accounts from bans and shadowbans",
-                "How to turn free followers into paying subscribers on Fanvue"
-              ]
-            },
-            {
-              "type": "subheader",
-              "content": "Why AI Influencers Work"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "No physical limitations on content output — generate 24/7",
-                "Consistent brand and persona across all content — the face never changes",
-                "Scalable to multiple personas simultaneously — one operator, many pages",
-                "Lower operating cost than managing real influencers",
-                "Full creative control over every aspect of the persona",
-                "You own the model — no creator dependency or contract issues",
-                "Content pipeline can be systematized and batched efficiently"
-              ]
-            }
-          ],
-          "right": [
-            {
-              "type": "subheader",
-              "content": "The Business Model"
-            },
-            {
-              "type": "text",
-              "content": "Attention flows through a funnel. Free content creates interest. Interest creates followers. Followers convert to paying subscribers on Fanvue, a paid adult subscription platform where your AI persona monetizes through monthly subscriptions, pay-per-view content, custom requests, and tips."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Instagram / TikTok — Free content drives discovery and builds trust",
-                "Threads — Engagement engine that feeds Instagram growth",
-                "Link in Bio (link.me) — Bridge between free attention and paid conversion",
-                "Telegram — Pre-sell warming layer for hesitant followers",
-                "Fanvue — Paid adult subscription platform where revenue is captured (monthly subs, PPV, custom content, tips)"
-              ],
-              "bullet": "→"
-            },
-            {
-              "type": "panel",
-              "title": "Critical Rule",
-              "content": "Revenue comes from the funnel, not from posting. The system works as a whole — no single platform generates money on its own. Every piece of content exists to move someone one step closer to subscribing on Fanvue.",
-              "border": "#39FF14"
-            }
-          ]
-        },
-        {
-          "type": "subheader",
-          "content": "Startup Costs & Tool Stack"
-        },
-        {
-          "type": "text",
-          "content": "One of the advantages of the AI influencer model is the low barrier to entry. You do not need tens of thousands in capital to start. However, there are real costs you need to budget for. Going in underfunded leads to cutting corners, which leads to bans and wasted effort."
-        },
-        {
-          "type": "two_column",
-          "left": [
-            {
-              "type": "subheader",
-              "content": "Minimum Startup Budget"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Dedicated iPhone (iPhone 13 or newer recommended — iPhones 13+ get pushed more by the algorithm): $150-$300 (used phones work fine)",
-                "Prepaid SIM card: $10-$15",
-                "Higgsfield (all-in-one AI tool for image and video generation): $50/month",
-                "Photo editing tool (Photopea): Free",
-                "Link in bio service (link.me): Free",
-                "Total minimum to start: approximately $200-$500"
-              ]
-            },
-            {
-              "type": "panel",
-              "title": "Why iPhone 13+?",
-              "content": "iPhones 13 and newer are pushed more favorably by social media algorithms. The metadata and camera signatures from these devices signal authenticity to Instagram and TikTok. A used iPhone 13 is one of the best investments you can make for this business.",
-              "border": "#39FF14"
-            },
-            {
-              "type": "panel",
-              "title": "No VPN Needed",
-              "content": "You do not need a VPN for this method. VPNs are unnecessary and can actually trigger suspicion on social media platforms. Always post using mobile data on your phone, not WiFi. WiFi connections can be shared across multiple devices and accounts, which platforms flag as suspicious.",
-              "border": "#39FF14"
-            }
-          ],
-          "right": [
             {
               "type": "subheader",
               "content": "The Core Tool Stack"
@@ -144,36 +35,6 @@
               "content": "Higgsfield ($50/month) bundles AI image generation, video generation, and editing into a single platform. If you want one tool that does everything instead of juggling multiple services, this is the recommended option.",
               "border": "#39FF14"
             }
-          ]
-        },
-        {
-          "type": "two_column",
-          "left": [
-            {
-              "type": "subheader",
-              "content": "Primary Platforms (Mandatory)"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Instagram — Main traffic and brand hub. This is your most important platform",
-                "Threads — Engagement and discovery engine that feeds Instagram growth",
-                "Telegram — Pre-sell funnel that warms followers before they subscribe",
-                "Fanvue — Paid adult subscription platform for monetization"
-              ]
-            },
-            {
-              "type": "subheader",
-              "content": "Support Platforms"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "TikTok — Secondary reach and discovery (supplements Instagram)",
-                "Reddit — Niche viral exposure inside specific communities",
-                "Twitter/X — Brand presence and discovery through conversations"
-              ]
-            }
           ],
           "right": [
             {
@@ -197,12 +58,42 @@
                 "You do NOT need a team — solo operators can run one page profitably",
                 "You do NOT need advanced video editing skills — simple clips outperform complex ones"
               ]
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Platforms"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Primary Platforms"
             },
             {
-              "type": "panel",
-              "title": "Mindset",
-              "content": "This is a real business. The people who fail are the ones who skip steps, rush the process, or expect results without work. The window for early movers is open now. But the window rewards builders, not browsers.",
-              "border": "#39FF14"
+              "type": "bullets",
+              "items": [
+                "Instagram — Main traffic and brand hub. This is your most important platform",
+                "Threads — Engagement and discovery engine that feeds Instagram growth",
+                "Telegram — Pre-sell funnel that warms followers before they subscribe",
+                "Fanvue — Paid adult subscription platform for monetization"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Support Platforms"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "TikTok — Secondary reach and discovery (supplements Instagram)",
+                "Reddit — Niche viral exposure inside specific communities",
+                "Twitter/X — Brand presence and discovery through conversations"
+              ]
             }
           ]
         }
@@ -212,8 +103,7 @@
   "summary_points": [
     "The AI Influencer Method is a real business — expect to see actual results within 2-3 months of consistent posting",
     "Revenue comes from the funnel: Social Media → link.me → Telegram → Fanvue (paid adult subscription platform)",
-    "Minimum startup cost is approximately $200-$500 — Higgsfield ($50/month) is the recommended all-in-one tool",
-    "Core tools: Seedream 4.5 (NSFW), Nano Banana 2 (SFW), Photopea, link.me, Telegram, CapCut — no VPN needed, use mobile data only",
+    "Core tools: Seedream 4.5 (NSFW), Nano Banana 2 (SFW), Photopea, link.me, Telegram, CapCut — Higgsfield ($50/month) as all-in-one alternative",
     "Instagram and Threads are mandatory primary platforms — TikTok, Reddit, and Twitter/X support the system",
     "Start with one persona, master the system, then scale — do not skip steps or rush the process"
   ]
