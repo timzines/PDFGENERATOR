@@ -104,7 +104,7 @@ def generate_lesson_configs(module_config):
             filename = f"{lesson_num} - {lesson_title}.pdf"
             lesson_label = lesson_num
         else:
-            filename = f"{header}.pdf"
+            filename = f"{sanitize_filename(header)}.pdf"
             lesson_label = ""
 
         # Create a single-section config for this lesson
