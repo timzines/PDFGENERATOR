@@ -451,7 +451,7 @@ body {
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    background: rgba(57,255,20,0.85);
+    background: rgba(34,120,60,0.9);
     text-decoration: none;
 }
 
@@ -889,58 +889,6 @@ body {
     white-space: nowrap;
 }
 
-.fanvue-promo-url {
-    font-size: 10px;
-    color: #c49a85;
-    margin-top: 3px;
-    letter-spacing: 0.3px;
-}
-
-/* Summary page promo - larger version */
-.fanvue-promo-summary {
-    background: linear-gradient(135deg, rgba(196,154,133,0.25) 0%, rgba(180,100,140,0.3) 50%, rgba(196,154,133,0.2) 100%);
-    border: 1px solid rgba(196,154,133,0.35);
-    border-radius: 12px;
-    padding: 20px 28px;
-    margin-top: 16px;
-    text-align: center;
-}
-
-.fanvue-promo-summary .promo-headline {
-    font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 6px;
-    letter-spacing: 0.5px;
-}
-
-.fanvue-promo-summary .promo-subtext {
-    font-size: 12px;
-    color: #d4bcc4;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-.fanvue-promo-summary .promo-cta-large {
-    display: inline-block;
-    background: linear-gradient(135deg, #c49a85 0%, #d4a090 100%);
-    color: #1a1b1f;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    padding: 10px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.fanvue-promo-summary .promo-url {
-    font-size: 11px;
-    color: #c49a85;
-    margin-top: 6px;
-    letter-spacing: 0.3px;
-}
 """
 
 
@@ -1206,16 +1154,10 @@ def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
                         <div class="summary-brand-name">{BRAND_NAME}</div>
                         <div class="summary-brand-line"></div>
                         <div class="summary-brand-text">All materials are strictly protected.</div>
-                        <div style="margin-top:18px;padding:12px 20px;border:1px solid rgba(57,255,20,0.35);border-radius:10px;background:rgba(57,255,20,0.04);">
-                            <div style="color:#39FF14;font-size:13px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Ready to monetize your AI models?</div>
-                            <div style="color:rgba(255,255,255,0.5);font-size:11px;line-height:1.5;">Sign up to Fanvue with our link and start earning today:<br/><span style="color:rgba(57,255,20,0.7);font-weight:600;">fanvue.com/signup?referral=FV-C4WPNC</span></div>
+                        <div style="margin-top:18px;padding:12px 20px;border:1px solid rgba(34,120,60,0.5);border-radius:10px;background:rgba(34,120,60,0.08);">
+                            <div style="color:#2d8a4e;font-size:12px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Start monetizing your AI models</div>
+                            <div style="color:rgba(255,255,255,0.45);font-size:10px;line-height:1.5;">Sign up to Fanvue with our link:<br/><span style="color:#2d8a4e;font-weight:600;">{FANVUE_URL}</span></div>
                         </div>
-                    </div>
-                    <div class="fanvue-promo-summary">
-                        <div class="promo-headline">Ready to Start Earning with Your AI Models?</div>
-                        <div class="promo-subtext">Fanvue is the premier platform for creators to monetize AI-generated content. Join thousands of creators already earning.</div>
-                        <div class="promo-cta-large">Sign Up to Fanvue Now</div>
-                        <div class="promo-url">{FANVUE_URL}</div>
                     </div>
                 </div>
             </div>
