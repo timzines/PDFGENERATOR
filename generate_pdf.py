@@ -273,6 +273,15 @@ body {
     margin-bottom: 18px;
 }
 
+.cover-module-label {
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(196,154,133,0.6);
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    margin-bottom: 8px;
+}
+
 .cover-title {
     font-size: 48px;
     font-weight: 700;
@@ -845,7 +854,7 @@ def render_blocks_html(blocks):
 # PAGE BUILDERS (HTML)
 # ---------------------------------------------------------------------------
 
-def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1):
+def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, module_label=""):
     """Build cover page HTML."""
     title_html = title.replace("\n", "<br>")
 
@@ -858,6 +867,7 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1):
         <div class="cover-left">
             <div class="cover-tag">Premium Course Material</div>
             <div class="cover-divider"></div>
+            {"<div class='cover-module-label'>" + module_label + "</div>" if module_label else ""}
             <div class="cover-title">{title_html}</div>
             <div class="cover-subtitle">{subtitle}</div>
             <div class="cover-brand">{BRAND_NAME}</div>
@@ -1013,24 +1023,34 @@ def generate_pdf(config, output_path):
 
     title = config["title"]
     subtitle = config.get("subtitle", "")
+    module_label = config.get("module_label", "")
     sections = config["sections"]
     summary_points = config.get("summary_points", [])
 
-    # Calculate total pages: cover + TOC + content sections + optional summary
-    total_pages = 2 + len(sections) + (1 if summary_points else 0)
+    # Determine if TOC and summary should be included
+    skip_toc = config.get("skip_toc", False)
+    skip_summary = config.get("skip_summary", False)
+
+    # Calculate total pages
+    total_pages = 1 + len(sections)  # cover + content
+    if not skip_toc:
+        total_pages += 1  # TOC page
+    if summary_points and not skip_summary:
+        total_pages += 1  # summary page
 
     # Build pages
     pages_html = ""
     current_page = 1
 
     # Cover — uses Course Logo as the main statue image
-    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=current_page, total_pages=total_pages)
+    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=current_page, total_pages=total_pages, module_label=module_label)
     current_page += 1
 
     # TOC — uses Course Logo as background decoration
-    toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
-    pages_html += build_toc_html(toc_entries, logo_uri, page_num=current_page, total_pages=total_pages)
-    current_page += 1
+    if not skip_toc:
+        toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
+        pages_html += build_toc_html(toc_entries, logo_uri, page_num=current_page, total_pages=total_pages)
+        current_page += 1
 
     # Content pages — small logo in top-right corner
     for section in sections:
@@ -1045,7 +1065,7 @@ def generate_pdf(config, output_path):
         current_page += 1
 
     # Summary
-    if summary_points:
+    if summary_points and not skip_summary:
         pages_html += build_summary_page_html(
             summary_points,
             bg_uri=content_bg_uri,
