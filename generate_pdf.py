@@ -64,6 +64,8 @@ HEADER_FADE = "#c49a85"  # The faded last-word color in headers
 
 FOOTER_TEXT = "All materials are strictly protected under AI Influencer Method\u00AE rights"
 BRAND_NAME = "AI Influencer Method"
+FANVUE_URL = "https://www.fanvue.com/signup?referral=FV-C4WPNC"
+FANVUE_PROMO_TEXT = "Start monetizing your AI models today"
 
 
 # ---------------------------------------------------------------------------
@@ -707,6 +709,100 @@ body {
     object-fit: contain;
     z-index: 4;
 }
+
+/* ---- FANVUE PROMO BANNER ---- */
+.fanvue-promo {
+    position: absolute;
+    bottom: 50px;
+    left: 60px;
+    right: 60px;
+    background: linear-gradient(135deg, rgba(196,154,133,0.2) 0%, rgba(180,100,140,0.25) 50%, rgba(196,154,133,0.15) 100%);
+    border: 1px solid rgba(196,154,133,0.3);
+    border-radius: 10px;
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.fanvue-promo-text {
+    font-size: 12px;
+    color: #e0ccd2;
+    letter-spacing: 0.3px;
+}
+
+.fanvue-promo-text strong {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.fanvue-promo-cta {
+    display: inline-block;
+    background: linear-gradient(135deg, #c49a85 0%, #d4a090 100%);
+    color: #1a1b1f;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    padding: 8px 20px;
+    border-radius: 6px;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.fanvue-promo-url {
+    font-size: 10px;
+    color: #c49a85;
+    margin-top: 3px;
+    letter-spacing: 0.3px;
+}
+
+/* Summary page promo - larger version */
+.fanvue-promo-summary {
+    background: linear-gradient(135deg, rgba(196,154,133,0.25) 0%, rgba(180,100,140,0.3) 50%, rgba(196,154,133,0.2) 100%);
+    border: 1px solid rgba(196,154,133,0.35);
+    border-radius: 12px;
+    padding: 20px 28px;
+    margin-top: 16px;
+    text-align: center;
+}
+
+.fanvue-promo-summary .promo-headline {
+    font-size: 16px;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 6px;
+    letter-spacing: 0.5px;
+}
+
+.fanvue-promo-summary .promo-subtext {
+    font-size: 12px;
+    color: #d4bcc4;
+    margin-bottom: 12px;
+    line-height: 1.5;
+}
+
+.fanvue-promo-summary .promo-cta-large {
+    display: inline-block;
+    background: linear-gradient(135deg, #c49a85 0%, #d4a090 100%);
+    color: #1a1b1f;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    padding: 10px 28px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-bottom: 8px;
+}
+
+.fanvue-promo-summary .promo-url {
+    font-size: 11px;
+    color: #c49a85;
+    margin-top: 6px;
+    letter-spacing: 0.3px;
+}
 """
 
 
@@ -806,6 +902,7 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
+        <div class="toc-footer">Sign up to fanvue &amp; start monetizing your AI models \u2192 {FANVUE_URL}</div>
         <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
@@ -837,7 +934,7 @@ def build_toc_html(sections, logo_uri="", page_num=2, total_pages=1):
             <div class="toc-column">{left_html}</div>
             <div class="toc-column">{right_html}</div>
         </div>
-        <div class="toc-footer">{FOOTER_TEXT}</div>
+        <div class="toc-footer">{FOOTER_TEXT}  |  Sign up to fanvue &amp; start monetizing your AI models \u2192 {FANVUE_URL}</div>
         <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
@@ -947,6 +1044,12 @@ def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
                         <div class="summary-brand-line"></div>
                         <div class="summary-brand-text">All materials are strictly protected.</div>
                     </div>
+                    <div class="fanvue-promo-summary">
+                        <div class="promo-headline">Ready to Start Earning with Your AI Models?</div>
+                        <div class="promo-subtext">Fanvue is the premier platform for creators to monetize AI-generated content. Join thousands of creators already earning.</div>
+                        <div class="promo-cta-large">Sign Up to Fanvue Now</div>
+                        <div class="promo-url">{FANVUE_URL}</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -1010,16 +1113,18 @@ def generate_pdf(config, output_path):
 
     # Build dynamic @page CSS for content pages (dark background + footer)
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
+    fanvue_footer = f"Sign up to fanvue and start monetizing your AI models \u2192 {FANVUE_URL}"
+    fanvue_footer_escaped = fanvue_footer.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0 0 45px 0;
+    margin: 0 0 60px 0;
     padding: 0;
     background: linear-gradient(160deg, #2d2230 0%, #1a1b1f 40%, #0f1013 100%);
     @bottom-center {{
-        content: "{footer_escaped}";
+        content: "{footer_escaped}  |  {fanvue_footer_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 10px;
-        color: rgba(255,255,255,0.25);
+        font-size: 9px;
+        color: rgba(196,154,133,0.5);
         letter-spacing: 0.5px;
     }}
     @bottom-right {{
