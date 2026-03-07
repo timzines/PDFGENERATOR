@@ -6,695 +6,1458 @@
     {
       "header": "Lesson 1: Instagram Growth Strategy",
       "blocks": [
-        {"type": "text", "content": "Instagram is your primary traffic source. Everything else feeds into it or supports it. After warmup is complete (Module 5), you are ready to launch your real growth phase. Instagram does not push new accounts because content is 'good'. It pushes content when behavior looks human, consistent, and socially validated. This is where your page goes from looking human to actually growing."},
-        {"type": "panel", "title": "2025-2026 Instagram Reality Check", "content": "Meta deployed LLaMA-based AI moderation in 2025 that is hyper-sensitive to AI-generated content. This caused a mass ban wave (May-August 2025) affecting many AI influencer accounts. Instagram now actively flags and deranks AI-generated content. This means: your content must pass as real (the grain trick from Module 3 is critical), your accounts WILL get flagged eventually (always have backup accounts warming up), and IMEI/device bans can affect all accounts linked to that phone. Be prepared, not surprised.", "border": "#FF3131"},
-        {"type": "text", "content": "Instagram rewards pages that already look wanted. Threads manufactures demand first, then Instagram amplifies it. You are not growing on two separate platforms — you are running one system with two tools."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Platform Role: Instagram"},
-          {"type": "bullets", "items": [
-            "Visually lock the persona",
-            "Build trust through consistent visual identity",
-            "Convert attention into clicks and money",
-            "Instagram posts should make someone think: 'I've seen her before — she's real.'"
-          ]},
-          {"type": "subheader", "content": "Reels Launch Process"},
-          {"type": "bullets", "items": [
-            "Start Reels only AFTER warmup is fully complete AND Threads is active",
-            "Comments should already be flowing from Threads before first Reel",
-            "A viral Thread is a boost, not a requirement — but engagement must be stable",
-            "First Reels must be high-quality, SFW, and scroll-stopping",
-            "Parent or lifestyle content works well for first Reels",
-            "Post 1 quality Reel per day — more only if quality stays high",
-            "Use trending sounds — check the Reels audio library daily",
-            "Keep captions short and personality-driven, not salesy"
-          ]},
-          {"type": "subheader", "content": "Content Hierarchy"},
-          {"type": "bullets", "items": [
-            "Reels — Primary discovery tool (reach new people)",
-            "Stories — Daily engagement (keep existing followers active)",
-            "Carousels — Profile building (make your grid look real)",
-            "Feed posts — Support content (fills out your page)"
-          ], "bullet": "→"}
-        ], "right": [
-          {"type": "subheader", "content": "Instagram Content Execution"},
-          {"type": "bullets", "items": [
-            "Instagram gets your BEST content first — always",
-            "Never post the same image on Instagram and another platform same day",
-            "Vary content: selfies, lifestyle, casual, glam — not all one type",
-            "Stories should feel raw and 'in the moment' even if AI-generated",
-            "Carousel posts: 3-5 images, first image is the hook",
-            "Never upload raw AI images — use Photoshop or Photopea",
-            "Add approximately 2% grain to images for realism",
-            "Stories: daily if possible, lifestyle and personality, no links before 3 weeks"
-          ]},
-          {"type": "subheader", "content": "Reels Strategy"},
-          {"type": "bullets", "items": [
-            "Quality over quantity — always",
-            "If first Reel goes viral, replicate that exact format",
-            "Use trial Reels to test risky or experimental ideas",
-            "Trial Reels: reuse clips, change text and order, fully experimental",
-            "If Reels flop: keep posting, change format, do NOT stop"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example Instagram grid layout showing content variety and posting pattern"},
-          {"type": "panel", "title": "Growth Trigger", "content": "The algorithm pushes Reels when early engagement is strong. Post when your audience is online (check Insights). The first 30 minutes determine if the Reel gets distributed or dies. Stay active and reply to comments immediately after posting.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Geo Targeting & Distribution Control"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Target Audiences"},
-          {"type": "bullets", "items": [
-            "English-speaking countries — USA priority",
-            "EU acceptable as secondary",
-            "Use USA city locations in posts",
-            "Use American music and trends",
-            "Flag emojis in moderation"
-          ]},
-          {"type": "panel", "title": "Geo Signaling", "content": "Signal your location through content choices: American cities in location tags, American music in Reels, English-language engagement. The algorithm learns your target audience from your behavior.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "Geo Blocking (LAST RESORT)"},
-          {"type": "text", "content": "Geo blocking is not a default strategy. It is an emergency correction tool used only when Instagram repeatedly pushes content to the wrong audience."},
-          {"type": "bullets", "items": [
-            "Use Instagram native age restriction by country",
-            "Go to Settings > Business Tools > Minimum Age",
-            "Set highest age for countries you want to limit",
-            "Do not use on brand-new accounts",
-            "Continue posting USA-targeted content while active"
-          ]},
-          {"type": "panel", "title": "Warning", "content": "Only use geo blocking after your account is established and you have confirmed wrong-audience distribution through Insights. Using it too early can hurt reach.", "border": "#FF3131"}
-        ]}
+        {
+          "type": "text",
+          "content": "Instagram is your primary traffic source. Everything else feeds into it or supports it. After warmup is complete (Module 5), you are ready to launch your real growth phase. Instagram does not push new accounts because content is 'good'. It pushes content when behavior looks human, consistent, and socially validated. This is where your page goes from looking human to actually growing."
+        },
+        {
+          "type": "panel",
+          "title": "2025-2026 Instagram Reality Check",
+          "content": "Meta deployed LLaMA-based AI moderation in 2025 that is hyper-sensitive to AI-generated content. This caused a mass ban wave (May-August 2025) affecting many AI influencer accounts. Instagram now actively flags and deranks AI-generated content. This means: your content must pass as real (the grain trick from Module 3 is critical), your accounts WILL get flagged eventually (always have backup accounts warming up), and IMEI/device bans can affect all accounts linked to that phone. Be prepared, not surprised.",
+          "border": "#FF3131"
+        },
+        {
+          "type": "text",
+          "content": "Instagram rewards pages that already look wanted. Threads manufactures demand first, then Instagram amplifies it. You are not growing on two separate platforms — you are running one system with two tools."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Platform Role: Instagram"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Visually lock the persona",
+                "Build trust through consistent visual identity",
+                "Convert attention into clicks and money",
+                "Instagram posts should make someone think: 'I've seen her before — she's real.'"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Reels Launch Process"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Start Reels only AFTER warmup is fully complete AND Threads is active",
+                "Comments should already be flowing from Threads before first Reel",
+                "A viral Thread is a boost, not a requirement — but engagement must be stable",
+                "First Reels must be high-quality, SFW, and scroll-stopping",
+                "Parent or lifestyle content works well for first Reels",
+                "Post 1 quality Reel per day — more only if quality stays high",
+                "Use trending sounds — check the Reels audio library daily",
+                "Keep captions short and personality-driven, not salesy"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Content Hierarchy"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Reels — Primary discovery tool (reach new people)",
+                "Stories — Daily engagement (keep existing followers active)",
+                "Carousels — Profile building (make your grid look real)",
+                "Feed posts — Support content (fills out your page)"
+              ],
+              "bullet": "→"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Instagram Content Execution"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram gets your BEST content first — always",
+                "Never post the same image on Instagram and another platform same day",
+                "Vary content: selfies, lifestyle, casual, glam — not all one type",
+                "Stories should feel raw and 'in the moment' even if AI-generated",
+                "Carousel posts: 3-5 images, first image is the hook",
+                "Never upload raw AI images — use Photoshop or Photopea",
+                "Add approximately 2% grain to images for realism",
+                "Stories: daily if possible, lifestyle and personality, no links before 3 weeks"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Reels Strategy"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Quality over quantity — always",
+                "If first Reel goes viral, replicate that exact format",
+                "Use trial Reels to test risky or experimental ideas",
+                "Trial Reels: reuse clips, change text and order, fully experimental",
+                "If Reels flop: keep posting, change format, do NOT stop"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Example Instagram grid layout showing content variety and posting pattern"
+            },
+            {
+              "type": "panel",
+              "title": "Growth Trigger",
+              "content": "The algorithm pushes Reels when early engagement is strong. Post when your audience is online (check Insights). The first 30 minutes determine if the Reel gets distributed or dies. Stay active and reply to comments immediately after posting.",
+              "border": "#39FF14"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Geo Targeting & Distribution Control"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Target Audiences"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "English-speaking countries — USA priority",
+                "EU acceptable as secondary",
+                "Use USA city locations in posts",
+                "Use American music and trends",
+                "Flag emojis in moderation"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Geo Signaling",
+              "content": "Signal your location through content choices: American cities in location tags, American music in Reels, English-language engagement. The algorithm learns your target audience from your behavior.",
+              "border": "#39FF14"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Geo Blocking (LAST RESORT)"
+            },
+            {
+              "type": "text",
+              "content": "Geo blocking is not a default strategy. It is an emergency correction tool used only when Instagram repeatedly pushes content to the wrong audience."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Use Instagram native age restriction by country",
+                "Go to Settings > Business Tools > Minimum Age",
+                "Set highest age for countries you want to limit",
+                "Do not use on brand-new accounts",
+                "Continue posting USA-targeted content while active"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Warning",
+              "content": "Only use geo blocking after your account is established and you have confirmed wrong-audience distribution through Insights. Using it too early can hurt reach.",
+              "border": "#FF3131"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 2: Threads Growth Strategy",
       "blocks": [
-        {"type": "text", "content": "Threads is not a separate platform — it is a tool that feeds directly into your Instagram growth. Threads gives new pages reach without history. You use it to manufacture demand and curiosity, then push that attention to your Instagram profile. The fan should think: 'Who is this girl?' Not 'She is selling something.'"},
-        {"type": "panel", "title": "Critical Warning: Threads and Instagram Are Linked", "content": "Your Threads and Instagram accounts are connected. Spamming on Threads, getting reported on Threads, or violating community guidelines on Threads can directly affect your Instagram account. A Threads ban can trigger an Instagram flag. Treat Threads with the same safety discipline you apply to Instagram — it is not a throwaway platform.", "border": "#FF3131"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Platform Role: Threads"},
-          {"type": "bullets", "items": [
-            "Trigger comments and arguments",
-            "Start conversations that make people curious",
-            "Test narratives and post angles",
-            "Send people to your IG profile organically",
-            "Threads posts should make someone think: 'Who is this girl?'"
-          ]},
-          {"type": "subheader", "content": "Phase 1: How to Post & Reply"},
-          {"type": "text", "content": "Goal: Force comments and profile visits. Start after warmup, or in the last 7 days of warmup if engagement is stable."},
-          {"type": "subheader", "content": "Posting Rules"},
-          {"type": "bullets", "items": [
-            "1 post per day to start",
-            "Always text-based",
-            "Optional photo (cute, casual, not polished)",
-            "Light comparison or validation bait",
-            "Posts that trigger comments get pushed to more people",
-            "Use your AI model's persona voice — casual, human, not corporate"
-          ]},
-          {"type": "subheader", "content": "Post Angles That Work"},
-          {"type": "bullets", "items": [
-            "'Does anyone even like ___ girls?'",
-            "'Am I wrong for wanting ___?'",
-            "'My parents hate ___ about me'",
-            "'Be honest, does this look bad?'",
-            "Hot takes and opinions (generates replies)",
-            "Relatable daily moments",
-            "Questions that spark conversation",
-            "Slightly controversial (not offensive) statements",
-            "Personal stories that feel authentic"
-          ]},
-          {"type": "good_example", "content": "Thread post: 'accidentally made eye contact with someone at the gym and now we're married i guess'\nRelatable, funny, conversation-starting."},
-          {"type": "bad_example", "content": "Thread post: 'Check out my page for exclusive content! Link in bio'\nSales pitch. No one engages. Algorithm buries it."}
-        ], "right": [
-          {"type": "subheader", "content": "Reply Hijacking Strategy"},
-          {"type": "text", "content": "Reply hijacking is how you steal attention from existing conversations and redirect it to your profile."},
-          {"type": "bullets", "items": [
-            "Find Threads posted 2-4 hours ago that are gaining traction",
-            "Reply with text + selfie attached",
-            "Ask follow-up questions to keep the thread going",
-            "Be slightly unsure — keep them talking and reassuring you",
-            "You are making people reassure her, argue, and explain things to her",
-            "You are always asking for validation or opinion"
-          ]},
-          {"type": "good_example", "content": "Reply: 'Really? I always thought it made me look weird'\nThis keeps the conversation going and makes people click your profile."},
-          {"type": "bad_example", "content": "Reply: 'aww ty'\nConversation killer. No one clicks through. Zero value."},
-          {"type": "subheader", "content": "Phase 2: Scaling & Testing"},
-          {"type": "text", "content": "Phase 2 starts when posts get comments consistently, profile visits increase, and IG followers rise without Reels."},
-          {"type": "bullets", "items": [
-            "Increase to 3-4 posts per day",
-            "Same formats, same angles that worked",
-            "Slight wording changes only — do NOT rotate just to rotate",
-            "If something works: repeat it with slightly changed phrasing and context",
-            "If something dies: drop it and move on immediately",
-            "Scale to 5-8 posts per day as engagement grows"
-          ]},
-          {"type": "subheader", "content": "Content Expansion (Still SFW)"},
-          {"type": "bullets", "items": [
-            "More confident tone as following grows",
-            "Slightly flirtier text is allowed",
-            "Glow-up narratives work well",
-            "Every Threads post that pops sends people to your IG profile"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example Threads posts that drove Instagram profile visits"}
-        ]},
-        {"type": "subheader", "content": "Real-Time Rebrands (Allowed vs Not Allowed)"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Allowed Changes"},
-          {"type": "bullets", "items": [
-            "Hair color change",
-            "Accessories (glasses, eyepatch, jewelry)",
-            "Story-based changes (glow-up narrative)"
-          ]},
-          {"type": "good_example", "content": "Same model, new hair color with a 'just dyed my hair' post.\nFeels natural and creates engagement."}
-        ], "right": [
-          {"type": "subheader", "content": "NOT Allowed"},
-          {"type": "bullets", "items": [
-            "New face entirely",
-            "New body type",
-            "Completely different model"
-          ]},
-          {"type": "bad_example", "content": "Switching to a completely different AI model mid-growth.\nDestroys all trust and consistency built."},
-          {"type": "panel", "title": "Consistency Rule", "content": "Small visual changes create engagement and feel natural. Complete model swaps destroy everything you have built. The persona must always be recognizably the same person.", "border": "#FF3131"}
-        ]}
+        {
+          "type": "text",
+          "content": "Threads is not a separate platform — it is a tool that feeds directly into your Instagram growth. Threads gives new pages reach without history. You use it to manufacture demand and curiosity, then push that attention to your Instagram profile. The fan should think: 'Who is this girl?' Not 'She is selling something.'"
+        },
+        {
+          "type": "panel",
+          "title": "Critical Warning: Threads and Instagram Are Linked",
+          "content": "Your Threads and Instagram accounts are connected. Spamming on Threads, getting reported on Threads, or violating community guidelines on Threads can directly affect your Instagram account. A Threads ban can trigger an Instagram flag. Treat Threads with the same safety discipline you apply to Instagram — it is not a throwaway platform.",
+          "border": "#FF3131"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Platform Role: Threads"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Trigger comments and arguments",
+                "Start conversations that make people curious",
+                "Test narratives and post angles",
+                "Send people to your IG profile organically",
+                "Threads posts should make someone think: 'Who is this girl?'"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Phase 1: How to Post & Reply"
+            },
+            {
+              "type": "text",
+              "content": "Goal: Force comments and profile visits. Start after warmup, or in the last 7 days of warmup if engagement is stable."
+            },
+            {
+              "type": "subheader",
+              "content": "Posting Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "1 post per day to start",
+                "Always text-based",
+                "Optional photo (cute, casual, not polished)",
+                "Light comparison or validation bait",
+                "Posts that trigger comments get pushed to more people",
+                "Use your AI model's persona voice — casual, human, not corporate"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Post Angles That Work"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "'Does anyone even like ___ girls?'",
+                "'Am I wrong for wanting ___?'",
+                "'My parents hate ___ about me'",
+                "'Be honest, does this look bad?'",
+                "Hot takes and opinions (generates replies)",
+                "Relatable daily moments",
+                "Questions that spark conversation",
+                "Slightly controversial (not offensive) statements",
+                "Personal stories that feel authentic"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Thread post: 'accidentally made eye contact with someone at the gym and now we're married i guess'\nRelatable, funny, conversation-starting."
+            },
+            {
+              "type": "bad_example",
+              "content": "Thread post: 'Check out my page for exclusive content! Link in bio'\nSales pitch. No one engages. Algorithm buries it."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Reply Hijacking Strategy"
+            },
+            {
+              "type": "text",
+              "content": "Reply hijacking is how you steal attention from existing conversations and redirect it to your profile."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Find Threads posted 2-4 hours ago that are gaining traction",
+                "Reply with text + selfie attached",
+                "Ask follow-up questions to keep the thread going",
+                "Be slightly unsure — keep them talking and reassuring you",
+                "You are making people reassure her, argue, and explain things to her",
+                "You are always asking for validation or opinion"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Reply: 'Really? I always thought it made me look weird'\nThis keeps the conversation going and makes people click your profile."
+            },
+            {
+              "type": "bad_example",
+              "content": "Reply: 'aww ty'\nConversation killer. No one clicks through. Zero value."
+            },
+            {
+              "type": "subheader",
+              "content": "Phase 2: Scaling & Testing"
+            },
+            {
+              "type": "text",
+              "content": "Phase 2 starts when posts get comments consistently, profile visits increase, and IG followers rise without Reels."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Increase to 3-4 posts per day",
+                "Same formats, same angles that worked",
+                "Slight wording changes only — do NOT rotate just to rotate",
+                "If something works: repeat it with slightly changed phrasing and context",
+                "If something dies: drop it and move on immediately",
+                "Scale to 5-8 posts per day as engagement grows"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Content Expansion (Still SFW)"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "More confident tone as following grows",
+                "Slightly flirtier text is allowed",
+                "Glow-up narratives work well",
+                "Every Threads post that pops sends people to your IG profile"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Example Threads posts that drove Instagram profile visits"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Real-Time Rebrands (Allowed vs Not Allowed)"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Allowed Changes"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Hair color change",
+                "Accessories (glasses, eyepatch, jewelry)",
+                "Story-based changes (glow-up narrative)"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Same model, new hair color with a 'just dyed my hair' post.\nFeels natural and creates engagement."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "NOT Allowed"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "New face entirely",
+                "New body type",
+                "Completely different model"
+              ]
+            },
+            {
+              "type": "bad_example",
+              "content": "Switching to a completely different AI model mid-growth.\nDestroys all trust and consistency built."
+            },
+            {
+              "type": "panel",
+              "title": "Consistency Rule",
+              "content": "Small visual changes create engagement and feel natural. Complete model swaps destroy everything you have built. The persona must always be recognizably the same person.",
+              "border": "#FF3131"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 3: Reddit Growth Strategy",
       "blocks": [
-        {"type": "text", "content": "Reddit is not a main platform. It is a niche amplifier. Reddit is slow, strict, and heavily moderated. Most subreddits do not allow promotion and remove content quickly. However, Reddit can be extremely powerful when a post goes viral inside the correct niche subreddit. One viral post inside the right subreddit can generate large traffic in a short time."},
-        {"type": "panel", "title": "Reddit Reality Check (2025-2026)", "content": "Reddit has become extremely hostile to promotional accounts. Operators running 5-15 promo accounts report daily bans even with residential proxies, manual warmup, and isolated environments. New accounts get flagged and banned within 1-2 days. Reddit's Contributor Quality Score (CQS) now heavily favors genuine engagement — comments are valued far more than posts. Expect to lose accounts regularly. Budget for it. Always have new accounts warming up. This is a war of attrition, not a set-and-forget strategy.", "border": "#FF3131"},
-        {"type": "text", "content": "Reddit does not reward creators. It rewards relevance inside specific communities. A good Reddit account does not look like a model account. It looks like a normal user who belongs to a niche. The fan should feel like they discovered you inside their own community, not that you came to advertise."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Profile Setup: First Impression"},
-          {"type": "text", "content": "The username and profile are the first trust signals. The profile answers one question for moderators and users: Is this a real person."},
-          {"type": "subheader", "content": "Username Rules"},
-          {"type": "bullets", "items": [
-            "No sexual words",
-            "No random numbers",
-            "No spam patterns",
-            "Must look human and natural",
-            "Cute or quirky names work best"
-          ]},
-          {"type": "good_example", "content": "Username: sarah_thinksalot\nProfile pic: casual selfie, soft smile"},
-          {"type": "bad_example", "content": "Username: hotmodel_xxx_99\nProfile pic: explicit pose, heavy filter"},
-          {"type": "subheader", "content": "Profile Picture Rules"},
-          {"type": "bullets", "items": [
-            "Should be neutral or soft — never explicit",
-            "Use your AI model's face as avatar",
-            "Before posting NSFW content, the profile must be marked as NSFW in Reddit settings"
-          ]},
-          {"type": "subheader", "content": "Bio Rules"},
-          {"type": "text", "content": "The bio should sound casual and normal. No links or promotions in the beginning."},
-          {"type": "good_example", "content": "Bio: 'Just here for memes and random thoughts'"},
-          {"type": "bad_example", "content": "Bio: 'Model. Content. Link below.'"}
-        ], "right": [
-          {"type": "subheader", "content": "Subreddit Targeting"},
-          {"type": "text", "content": "The goal is not large subreddits. The goal is correct subreddits. Each model must match the subreddit style. Never post off-theme."},
-          {"type": "bullets", "items": [
-            "Read each subreddit's rules before posting anything",
-            "Start with SFW subreddits only",
-            "Target subreddits with 50k-500k members (sweet spot for visibility)",
-            "Join 10-15 relevant subreddits",
-            "Match the model's aesthetic to the subreddit niche"
-          ]},
-          {"type": "subheader", "content": "Example Subreddit Categories"},
-          {"type": "bullets", "items": [
-            "General: r/18_22, r/selfietits",
-            "Cute / Innocent Style: r/cutecore, r/cutevsslut",
-            "Goth Girl: r/gothwhoress, r/gothgirlsgw, r/altgirls"
-          ]},
-          {"type": "panel", "title": "Key Rule", "content": "Match the model to the subreddit. Never post off-theme. A goth model does not belong in a cute subreddit. The account should slowly build trust inside specific communities.", "border": "#39FF14"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example subreddit list organized by niche type"}
-        ]},
-        {"type": "subheader", "content": "Reddit Warmup: Day-by-Day Protocol"},
-        {"type": "text", "content": "Warmup is mandatory on Reddit. Before posting NSFW or traffic content, the account must have comment karma, post karma, and posting history. If the account moves too fast, it dies."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Day 1"},
-          {"type": "bullets", "items": ["Log in and do nothing"]},
-          {"type": "subheader", "content": "Day 2"},
-          {"type": "bullets", "items": ["Scroll for 15 to 20 minutes", "No posts", "No comments"]},
-          {"type": "subheader", "content": "Day 3"},
-          {"type": "bullets", "items": ["Scroll 25 to 30 minutes", "Upvote 2 to 3 posts", "Join 2 subreddits"]},
-          {"type": "subheader", "content": "Day 4"},
-          {"type": "bullets", "items": ["Scroll 30 to 40 minutes", "Upvote 5 to 7 posts", "Write 1 comment maximum", "No posts"]}
-        ], "right": [
-          {"type": "subheader", "content": "Day 5"},
-          {"type": "bullets", "items": ["Scroll 30 to 40 minutes", "Upvote 8 to 10 posts", "Write 2 comments", "Post 1 safe-for-work post"]},
-          {"type": "subheader", "content": "Days 6 and 7"},
-          {"type": "bullets", "items": ["Scroll 30 to 40 minutes", "Upvote 8 to 10 posts", "Write 2 comments", "Post 2 to 3 safe posts"]},
-          {"type": "panel", "title": "Required Before NSFW Posting", "content": "You must have all three before any NSFW content:\n- Comment karma\n- Post karma\n- Posting history\nSkipping any of these gets you banned.", "border": "#FF3131"}
-        ]},
-        {"type": "subheader", "content": "Karma Farming Methods"},
-        {"type": "bullets", "items": [
-          "Commenting in anime subreddits",
-          "Posting questions in hobby subreddits",
-          "Posting AI animal images in animal subreddits and asking for names",
-          "Posting memes in meme subreddits",
-          "Posting casual questions and opinions",
-          "Get creative — act human, blend in"
-        ]},
-        {"type": "subheader", "content": "Comments: The Main Legitimacy Signal"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Comments Should Be"},
-          {"type": "bullets", "items": [
-            "Relevant to the post",
-            "Short and natural",
-            "Human-sounding",
-            "Non-promotional"
-          ]},
-          {"type": "good_example", "content": "that's funny\ni agree with this\ndidn't think of it like that"}
-        ], "right": [
-          {"type": "subheader", "content": "Never Comment Like This"},
-          {"type": "bad_example", "content": "check my profile\nlink in bio\ndm me"},
-          {"type": "text", "content": "Comments should look like real reactions, not strategy. One promotional comment can get your entire account flagged. Reddit's Contributor Quality Score (CQS) tracks your comment patterns — comments are valued far more than posts for building account legitimacy. Avoid ChatGPT-sounding text and emoji-heavy responses. Write like a real person who belongs in the community."}
-        ]},
-        {"type": "subheader", "content": "Posting Phase & Content Progression"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Posting Rules After Warmup"},
-          {"type": "bullets", "items": [
-            "Post 1-2 images per subreddit per week maximum",
-            "Titles should be casual, not promotional: 'felt cute today' not 'check me out'",
-            "Respond to every comment on your posts",
-            "Rotate subreddits — don't spam the same one",
-            "NSFW content only after history, karma, and subreddit rules are understood",
-            "Profile must be marked NSFW in settings before NSFW posts",
-            "Link placement starts only after around 1k followers",
-            "Verification using r/letsverify is optional — bonus, not requirement"
-          ]},
-          {"type": "subheader", "content": "Early Post Content"},
-          {"type": "bullets", "items": [
-            "Memes and questions",
-            "Text posts and casual photos",
-            "Normal discussions",
-            "No links, promotions, sexual content, or repeated titles"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Content Progression Ladder"},
-          {"type": "text", "content": "Content must follow a ladder. Each layer must leave something unfinished so the next layer becomes attractive."},
-          {"type": "bullets", "items": [
-            "Neutral content builds trust",
-            "Soft content builds curiosity",
-            "Fanvue fulfills fantasy"
-          ], "bullet": "→"},
-          {"type": "panel", "title": "Critical Rule", "content": "If Reddit gives satisfaction, the user will not click out. Always leave desire unfinished. The purpose is to make them curious enough to find your link.", "border": "#FF3131"},
-          {"type": "subheader", "content": "Visual Consistency"},
-          {"type": "bullets", "items": [
-            "All images must look like the same person",
-            "Backgrounds should be similar across posts",
-            "Lighting should be similar",
-            "Style should be similar",
-            "Sudden changes reduce realism — realism creates trust — trust creates clicks"
-          ]},
-          {"type": "panel", "title": "Reddit Golden Rule", "content": "Reddit users hate self-promotion. If your account looks like it exists only to post images, you will be downvoted and banned. Blend in first, post second. One viral post in the right subreddit can outperform weeks of posting.", "border": "#FF3131"}
-        ]}
+        {
+          "type": "text",
+          "content": "Reddit is not a main platform. It is a niche amplifier. Reddit is slow, strict, and heavily moderated. Most subreddits do not allow promotion and remove content quickly. However, Reddit can be extremely powerful when a post goes viral inside the correct niche subreddit. One viral post inside the right subreddit can generate large traffic in a short time."
+        },
+        {
+          "type": "panel",
+          "title": "Reddit Reality Check (2025-2026)",
+          "content": "Reddit has become extremely hostile to promotional accounts. Operators running 5-15 promo accounts report daily bans even with residential proxies, manual warmup, and isolated environments. New accounts get flagged and banned within 1-2 days. Reddit's Contributor Quality Score (CQS) now heavily favors genuine engagement — comments are valued far more than posts. Expect to lose accounts regularly. Budget for it. Always have new accounts warming up. This is a war of attrition, not a set-and-forget strategy.",
+          "border": "#FF3131"
+        },
+        {
+          "type": "text",
+          "content": "Reddit does not reward creators. It rewards relevance inside specific communities. A good Reddit account does not look like a model account. It looks like a normal user who belongs to a niche. The fan should feel like they discovered you inside their own community, not that you came to advertise."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Profile Setup: First Impression"
+            },
+            {
+              "type": "text",
+              "content": "The username and profile are the first trust signals. The profile answers one question for moderators and users: Is this a real person."
+            },
+            {
+              "type": "subheader",
+              "content": "Username Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "No sexual words",
+                "No random numbers",
+                "No spam patterns",
+                "Must look human and natural",
+                "Cute or quirky names work best"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Username: sarah_thinksalot\nProfile pic: casual selfie, soft smile"
+            },
+            {
+              "type": "bad_example",
+              "content": "Username: hotmodel_xxx_99\nProfile pic: explicit pose, heavy filter"
+            },
+            {
+              "type": "subheader",
+              "content": "Profile Picture Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Should be neutral or soft — never explicit",
+                "Use your AI model's face as avatar",
+                "Before posting NSFW content, the profile must be marked as NSFW in Reddit settings"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Bio Rules"
+            },
+            {
+              "type": "text",
+              "content": "The bio should sound casual and normal. No links or promotions in the beginning."
+            },
+            {
+              "type": "good_example",
+              "content": "Bio: 'Just here for memes and random thoughts'"
+            },
+            {
+              "type": "bad_example",
+              "content": "Bio: 'Model. Content. Link below.'"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Subreddit Targeting"
+            },
+            {
+              "type": "text",
+              "content": "The goal is not large subreddits. The goal is correct subreddits. Each model must match the subreddit style. Never post off-theme."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Read each subreddit's rules before posting anything",
+                "Start with SFW subreddits only",
+                "Target subreddits with 50k-500k members (sweet spot for visibility)",
+                "Join 10-15 relevant subreddits",
+                "Match the model's aesthetic to the subreddit niche"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Example Subreddit Categories"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "General: r/18_22, r/selfietits",
+                "Cute / Innocent Style: r/cutecore, r/cutevsslut",
+                "Goth Girl: r/gothwhoress, r/gothgirlsgw, r/altgirls"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Key Rule",
+              "content": "Match the model to the subreddit. Never post off-theme. A goth model does not belong in a cute subreddit. The account should slowly build trust inside specific communities.",
+              "border": "#39FF14"
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Example subreddit list organized by niche type"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Reddit Warmup: Day-by-Day Protocol"
+        },
+        {
+          "type": "text",
+          "content": "Warmup is mandatory on Reddit. Before posting NSFW or traffic content, the account must have comment karma, post karma, and posting history. If the account moves too fast, it dies."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Day 1"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Log in and do nothing"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 2"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Scroll for 15 to 20 minutes",
+                "No posts",
+                "No comments"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 3"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Scroll 25 to 30 minutes",
+                "Upvote 2 to 3 posts",
+                "Join 2 subreddits"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 4"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Scroll 30 to 40 minutes",
+                "Upvote 5 to 7 posts",
+                "Write 1 comment maximum",
+                "No posts"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Day 5"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Scroll 30 to 40 minutes",
+                "Upvote 8 to 10 posts",
+                "Write 2 comments",
+                "Post 1 safe-for-work post"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Days 6 and 7"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Scroll 30 to 40 minutes",
+                "Upvote 8 to 10 posts",
+                "Write 2 comments",
+                "Post 2 to 3 safe posts"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Required Before NSFW Posting",
+              "content": "You must have all three before any NSFW content:\n- Comment karma\n- Post karma\n- Posting history\nSkipping any of these gets you banned.",
+              "border": "#FF3131"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Karma Farming Methods"
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Commenting in anime subreddits",
+            "Posting questions in hobby subreddits",
+            "Posting AI animal images in animal subreddits and asking for names",
+            "Posting memes in meme subreddits",
+            "Posting casual questions and opinions",
+            "Get creative — act human, blend in"
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Comments: The Main Legitimacy Signal"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Comments Should Be"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Relevant to the post",
+                "Short and natural",
+                "Human-sounding",
+                "Non-promotional"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "that's funny\ni agree with this\ndidn't think of it like that"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Never Comment Like This"
+            },
+            {
+              "type": "bad_example",
+              "content": "check my profile\nlink in bio\ndm me"
+            },
+            {
+              "type": "text",
+              "content": "Comments should look like real reactions, not strategy. One promotional comment can get your entire account flagged. Reddit's Contributor Quality Score (CQS) tracks your comment patterns — comments are valued far more than posts for building account legitimacy. Avoid ChatGPT-sounding text and emoji-heavy responses. Write like a real person who belongs in the community."
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Posting Phase & Content Progression"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Posting Rules After Warmup"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Post 1-2 images per subreddit per week maximum",
+                "Titles should be casual, not promotional: 'felt cute today' not 'check me out'",
+                "Respond to every comment on your posts",
+                "Rotate subreddits — don't spam the same one",
+                "NSFW content only after history, karma, and subreddit rules are understood",
+                "Profile must be marked NSFW in settings before NSFW posts",
+                "Link placement starts only after around 1k followers",
+                "Verification using r/letsverify is optional — bonus, not requirement"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Early Post Content"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Memes and questions",
+                "Text posts and casual photos",
+                "Normal discussions",
+                "No links, promotions, sexual content, or repeated titles"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Content Progression Ladder"
+            },
+            {
+              "type": "text",
+              "content": "Content must follow a ladder. Each layer must leave something unfinished so the next layer becomes attractive."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Neutral content builds trust",
+                "Soft content builds curiosity",
+                "Fanvue fulfills fantasy"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "panel",
+              "title": "Critical Rule",
+              "content": "If Reddit gives satisfaction, the user will not click out. Always leave desire unfinished. The purpose is to make them curious enough to find your link.",
+              "border": "#FF3131"
+            },
+            {
+              "type": "subheader",
+              "content": "Visual Consistency"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "All images must look like the same person",
+                "Backgrounds should be similar across posts",
+                "Lighting should be similar",
+                "Style should be similar",
+                "Sudden changes reduce realism — realism creates trust — trust creates clicks"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Reddit Golden Rule",
+              "content": "Reddit users hate self-promotion. If your account looks like it exists only to post images, you will be downvoted and banned. Blend in first, post second. One viral post in the right subreddit can outperform weeks of posting.",
+              "border": "#FF3131"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 4: TikTok Growth Strategy",
       "blocks": [
-        {"type": "text", "content": "TikTok is a secondary traffic source. Instagram remains the main platform. TikTok converts worse than Instagram — estimated 5 to 10 times worse in CVR. Its value is not volume. Its value is extra reach when combined with other organic marketing. TikTok should support the system, not replace it."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "TikTok Exists To"},
-          {"type": "bullets", "items": [
-            "Recycle content from Instagram",
-            "Generate extra views and attention",
-            "Capture additional audience that is not on Instagram",
-            "Add approximately 20% more subscribers to overall funnel"
-          ]},
-          {"type": "subheader", "content": "Platform Risk: TikTok vs Instagram"},
-          {"type": "text", "content": "TikTok is stricter than Instagram. Content moderation is heavier. Accounts are reviewed faster. Shadow limits happen more easily. What works on Instagram can get limited on TikTok."},
-          {"type": "panel", "title": "Core Rule", "content": "TikTok is leverage. Not focus. Not dependency. Do not overinvest time. Instagram drives the system — TikTok supports it.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "What TikTok Rewards"},
-          {"type": "bullets", "items": [
-            "Accounts that look human and act slowly",
-            "Content that stays within platform comfort zones",
-            "Consistent posting schedule over time",
-            "High watch time and completion rate on videos"
-          ]},
-          {"type": "panel", "title": "Safety Rule", "content": "If content feels risky, do not post it on TikTok. Safe posting beats frequent posting. One strike on TikTok can shadow your account for weeks.", "border": "#FF3131"}
-        ]},
-        {"type": "subheader", "content": "Account Setup: First Signals"},
-        {"type": "text", "content": "New TikTok accounts must start empty. Early behavior determines trust. Follow this exactly."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "When Creating a New Account"},
-          {"type": "bullets", "items": [
-            "Do not add username",
-            "Do not add bio",
-            "Do not add profile picture",
-            "Close the app for 20 minutes after creation",
-            "Then browse FYP for 30-60 minutes",
-            "No likes, no posts on Day 1"
-          ]},
-          {"type": "subheader", "content": "Profile Setup (Day 5)"},
-          {"type": "bullets", "items": [
-            "Username: human, simple, no spam patterns",
-            "Profile picture: unique per account, non-explicit",
-            "Bio: typed manually, never copy-pasted, neutral and casual",
-            "Each account must look like a different person"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Multi-Account Safety"},
-          {"type": "bullets", "items": [
-            "Maximum 3 accounts per device",
-            "Linked accounts increase ban risk",
-            "Each account must have unique username, profile picture, and bio",
-            "Never open the same link on multiple accounts"
-          ]},
-          {"type": "panel", "title": "Critical Rule", "content": "Never open the same link on multiple TikTok accounts. This links them together and increases ban risk for all accounts.", "border": "#FF3131"}
-        ]},
-        {"type": "subheader", "content": "TikTok Warmup: Day-by-Day Protocol"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Day 1"},
-          {"type": "bullets", "items": ["Create the account with no username, bio, or picture", "Close app for 20 minutes", "Browse FYP 30-60 minutes", "No likes, no posts"]},
-          {"type": "subheader", "content": "Day 2"},
-          {"type": "bullets", "items": ["Browse FYP 30 minutes", "No follows, no posts, no likes"]},
-          {"type": "subheader", "content": "Day 3"},
-          {"type": "bullets", "items": ["Browse FYP 30 minutes", "Like 3-5 videos", "No follows, no posts"]},
-          {"type": "subheader", "content": "Day 4"},
-          {"type": "bullets", "items": ["Browse FYP 30-40 minutes", "Like 5-7 videos", "Write 1 comment", "No follows, no posts"]}
-        ], "right": [
-          {"type": "subheader", "content": "Day 5"},
-          {"type": "bullets", "items": ["Add profile picture, bio, and username manually", "Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2 comments", "No posts yet"]},
-          {"type": "subheader", "content": "Day 6"},
-          {"type": "bullets", "items": ["Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2 comments", "No posting"]},
-          {"type": "subheader", "content": "Day 7"},
-          {"type": "bullets", "items": ["Browse FYP 30-40 minutes", "Like 10 videos", "Write 3 comments", "Post your first TikTok"]},
-          {"type": "subheader", "content": "Days 8-9"},
-          {"type": "bullets", "items": ["Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2-3 comments", "Post second and third TikToks", "Activate analytics"]},
-          {"type": "panel", "title": "After Day 9", "content": "Treat the account like a regular one. Warmup is complete. Begin normal posting schedule.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Content Strategy & Formats"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Content Types"},
-          {"type": "bullets", "items": [
-            "Carousel/photo format is the safest content type",
-            "Short video clips (3-10 seconds) with trending sounds",
-            "Face-focused content outperforms everything else",
-            "Recycle your best Instagram content (delayed by 2-3 days minimum)",
-            "Only post very safe content — TikTok moderation is stricter"
-          ]},
-          {"type": "subheader", "content": "Why Carousels Work"},
-          {"type": "text", "content": "Carousels are the safest and often most effective content format on TikTok for AI personas. They avoid the AI detection risks of video while still getting strong algorithmic reach."},
-          {"type": "bullets", "items": [
-            "Easy to consume — users swipe through naturally",
-            "Significantly lower ban risk than video content",
-            "Often get strong reach — TikTok's algorithm treats them favorably",
-            "Best for new accounts and risk-averse posting",
-            "Less chance of AI detection compared to AI-generated video",
-            "Can be repurposed directly from your Instagram carousel content"
-          ]},
-          {"type": "subheader", "content": "Carousel Ideas"},
-          {"type": "bullets", "items": [
-            "Pictures of your model in different settings",
-            "Your model with celebrities (AI composites)",
-            "Your model in different outfits",
-            "Your model in different moods"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Daily Behavior (Trust Signals)"},
-          {"type": "bullets", "items": [
-            "Browse FYP at least 20 minutes per day",
-            "Like content naturally",
-            "Comment on other creators' posts",
-            "Follow back 5-10 followers per day",
-            "Before posting: engage for 10 minutes",
-            "After posting: engage 10 minutes, then close app for 30 minutes",
-            "Captions must be typed manually — never copy-paste"
-          ]},
-          {"type": "subheader", "content": "Posting Rules After Warmup"},
-          {"type": "bullets", "items": [
-            "Do not spam — wait 4+ hours between posts",
-            "Do not batch upload multiple posts",
-            "Do not post risky content",
-            "Safe posting beats frequent posting",
-            "1-2 posts per day is the target"
-          ]},
-          {"type": "subheader", "content": "Scale Strategy"},
-          {"type": "bullets", "items": [
-            "Open up to 3 TikTok accounts",
-            "All Instagram content can be reused across accounts",
-            "Expected result: around 20% subscriber increase",
-            "Do not overinvest time — TikTok supports, Instagram drives"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "TikTok content examples: safe carousel format vs risky content that gets flagged"}
-        ]}
+        {
+          "type": "text",
+          "content": "TikTok is a secondary traffic source. Instagram remains the main platform. TikTok converts worse than Instagram — estimated 5 to 10 times worse in CVR. Its value is not volume. Its value is extra reach when combined with other organic marketing. TikTok should support the system, not replace it."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "TikTok Exists To"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Recycle content from Instagram",
+                "Generate extra views and attention",
+                "Capture additional audience that is not on Instagram",
+                "Add approximately 20% more subscribers to overall funnel"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Platform Risk: TikTok vs Instagram"
+            },
+            {
+              "type": "text",
+              "content": "TikTok is stricter than Instagram. Content moderation is heavier. Accounts are reviewed faster. Shadow limits happen more easily. What works on Instagram can get limited on TikTok."
+            },
+            {
+              "type": "panel",
+              "title": "Core Rule",
+              "content": "TikTok is leverage. Not focus. Not dependency. Do not overinvest time. Instagram drives the system — TikTok supports it.",
+              "border": "#39FF14"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "What TikTok Rewards"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Accounts that look human and act slowly",
+                "Content that stays within platform comfort zones",
+                "Consistent posting schedule over time",
+                "High watch time and completion rate on videos"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Safety Rule",
+              "content": "If content feels risky, do not post it on TikTok. Safe posting beats frequent posting. One strike on TikTok can shadow your account for weeks.",
+              "border": "#FF3131"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Account Setup: First Signals"
+        },
+        {
+          "type": "text",
+          "content": "New TikTok accounts must start empty. Early behavior determines trust. Follow this exactly."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "When Creating a New Account"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Do not add username",
+                "Do not add bio",
+                "Do not add profile picture",
+                "Close the app for 20 minutes after creation",
+                "Then browse FYP for 30-60 minutes",
+                "No likes, no posts on Day 1"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Profile Setup (Day 5)"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Username: human, simple, no spam patterns",
+                "Profile picture: unique per account, non-explicit",
+                "Bio: typed manually, never copy-pasted, neutral and casual",
+                "Each account must look like a different person"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Multi-Account Safety"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Maximum 3 accounts per device",
+                "Linked accounts increase ban risk",
+                "Each account must have unique username, profile picture, and bio",
+                "Never open the same link on multiple accounts"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Critical Rule",
+              "content": "Never open the same link on multiple TikTok accounts. This links them together and increases ban risk for all accounts.",
+              "border": "#FF3131"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "TikTok Warmup: Day-by-Day Protocol"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Day 1"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Create the account with no username, bio, or picture",
+                "Close app for 20 minutes",
+                "Browse FYP 30-60 minutes",
+                "No likes, no posts"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 2"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP 30 minutes",
+                "No follows, no posts, no likes"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 3"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP 30 minutes",
+                "Like 3-5 videos",
+                "No follows, no posts"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 4"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 5-7 videos",
+                "Write 1 comment",
+                "No follows, no posts"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Day 5"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Add profile picture, bio, and username manually",
+                "Browse FYP 30-40 minutes",
+                "Like 8-10 videos",
+                "Write 2 comments",
+                "No posts yet"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 6"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 8-10 videos",
+                "Write 2 comments",
+                "No posting"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Day 7"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 10 videos",
+                "Write 3 comments",
+                "Post your first TikTok"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Days 8-9"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 8-10 videos",
+                "Write 2-3 comments",
+                "Post second and third TikToks",
+                "Activate analytics"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "After Day 9",
+              "content": "Treat the account like a regular one. Warmup is complete. Begin normal posting schedule.",
+              "border": "#39FF14"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Content Strategy & Formats"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Content Types"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Carousel/photo format is the safest content type",
+                "Short video clips (3-10 seconds) with trending sounds",
+                "Face-focused content outperforms everything else",
+                "Recycle your best Instagram content (delayed by 2-3 days minimum)",
+                "Only post very safe content — TikTok moderation is stricter"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Why Carousels Work"
+            },
+            {
+              "type": "text",
+              "content": "Carousels are the safest and often most effective content format on TikTok for AI personas. They avoid the AI detection risks of video while still getting strong algorithmic reach."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Easy to consume — users swipe through naturally",
+                "Significantly lower ban risk than video content",
+                "Often get strong reach — TikTok's algorithm treats them favorably",
+                "Best for new accounts and risk-averse posting",
+                "Less chance of AI detection compared to AI-generated video",
+                "Can be repurposed directly from your Instagram carousel content"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Carousel Ideas"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Pictures of your model in different settings",
+                "Your model with celebrities (AI composites)",
+                "Your model in different outfits",
+                "Your model in different moods"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Daily Behavior (Trust Signals)"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Browse FYP at least 20 minutes per day",
+                "Like content naturally",
+                "Comment on other creators' posts",
+                "Follow back 5-10 followers per day",
+                "Before posting: engage for 10 minutes",
+                "After posting: engage 10 minutes, then close app for 30 minutes",
+                "Captions must be typed manually — never copy-paste"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Posting Rules After Warmup"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Do not spam — wait 4+ hours between posts",
+                "Do not batch upload multiple posts",
+                "Do not post risky content",
+                "Safe posting beats frequent posting",
+                "1-2 posts per day is the target"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Scale Strategy"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Open up to 3 TikTok accounts",
+                "All Instagram content can be reused across accounts",
+                "Expected result: around 20% subscriber increase",
+                "Do not overinvest time — TikTok supports, Instagram drives"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "TikTok content examples: safe carousel format vs risky content that gets flagged"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 5: Twitter/X Growth Strategy",
       "blocks": [
-        {"type": "text", "content": "X is not a sales page. It is a discovery environment. Its purpose is to turn strangers into profile visitors and profile visitors into fans. Your growth on Twitter comes from being seen in other people's conversations, not from broadcasting your own content. This is the opposite of Instagram."},
-        {"type": "text", "content": "A user decides very quickly whether an account feels real or fake, safe or risky, interesting or boring. If the account looks spammy, aggressive, or sexual too fast, the user scrolls away. X is the public stage. Fanvue is the private room."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Profile Setup: Visual First Impression"},
-          {"type": "text", "content": "The profile picture and header are the first emotional signal. They decide whether the account looks human or artificial."},
-          {"type": "subheader", "content": "Profile Picture Rules"},
-          {"type": "bullets", "items": [
-            "Clearly show the face",
-            "Natural light, no heavy filters",
-            "No extreme sexual pose",
-            "Must match the persona"
-          ]},
-          {"type": "subheader", "content": "Header/Banner Rules"},
-          {"type": "bullets", "items": [
-            "Believable place (bedroom, couch, mirror, hotel)",
-            "Casual and personal pose, not staged",
-            "Lifestyle or aesthetic image of your persona"
-          ]},
-          {"type": "subheader", "content": "Persona Matching"},
-          {"type": "bullets", "items": [
-            "Soft persona = warm and approachable",
-            "Luxury persona = calm and confident",
-            "Playful persona = expressive and chaotic"
-          ]},
-          {"type": "good_example", "content": "Natural selfies, lifestyle backgrounds, soft teasing poses"},
-          {"type": "bad_example", "content": "Oversexualized images, text-only banners, logos instead of photos"}
-        ], "right": [
-          {"type": "subheader", "content": "Bio: Identity and Emotional Hook"},
-          {"type": "text", "content": "The bio should sound like a person, not a business. Personality creates desire, not features."},
-          {"type": "subheader", "content": "Bio Must Answer"},
-          {"type": "bullets", "items": [
-            "Who are you",
-            "What happens here",
-            "Why should I follow"
-          ]},
-          {"type": "subheader", "content": "Bio Structure"},
-          {"type": "bullets", "items": [
-            "First line: mood or personality",
-            "Second line: type of content",
-            "Third line: emotional invitation"
-          ]},
-          {"type": "good_example", "content": "Bio: 'Late nights and quiet trouble. I share little moments and things I like here. Stay with me.'"},
-          {"type": "bad_example", "content": "Bio: 'NSFW model. Link below'"},
-          {"type": "bullets", "items": [
-            "Pinned tweet: your best-performing or most engaging post",
-            "No links in bio during warmup"
-          ]},
-          {"type": "panel", "title": "Core Rule", "content": "The goal is not to sell. The goal is to be seen. The fan should feel curious, not pressured. A good X account feels like a real person inside public conversations, not like an advertisement.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Reply-Based Growth Engine"},
-        {"type": "text", "content": "Replies are the main growth engine on X. Most followers come from being visible under large posts, not from your own tweets. Replies must feel like conversation, not promotion."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Reply Rules"},
-          {"type": "bullets", "items": [
-            "Start lowercase",
-            "Under 15 words",
-            "One emoji maximum",
-            "No links, no insults, no copy-paste",
-            "Reply 10-20 times per day to build visibility",
-            "Every reply is seen by that account's followers",
-            "Goal: make people click on your profile from your reply"
-          ]},
-          {"type": "good_example", "content": "nah that's wild\ni would've done the same\nthis feels illegal"},
-          {"type": "bad_example", "content": "buy my content\ncheck my bio"}
-        ], "right": [
-          {"type": "subheader", "content": "Reply Pools — Where to Reply"},
-          {"type": "bullets", "items": [
-            "Pool A: Viral posts — highest visibility, most competition",
-            "Pool B: Niche creators — targeted audience, less competition",
-            "Pool C: Small active posts — intimate, high engagement rate"
-          ]},
-          {"type": "text", "content": "The account should reply under posts where your target audience already reads. Over time, X builds a personality file for the account and shows it to similar users."}
-        ]},
-        {"type": "subheader", "content": "Target Audience"},
-        {"type": "two_column", "left": [
-          {"type": "text", "content": "The main audience is men with spending power, usually age 40 and above. This demographic spends more per subscriber than younger audiences."},
-          {"type": "subheader", "content": "They Are Interested In"},
-          {"type": "bullets", "items": [
-            "Business and entrepreneurship",
-            "Luxury goods and lifestyle",
-            "Cars and travel",
-            "Women and comfort lifestyle"
-          ]},
-          {"type": "text", "content": "They do not use hashtags. They read replies under big pages. Target accounts and conversations that this audience follows."}
-        ], "right": [
-          {"type": "subheader", "content": "Post Content Strategy"},
-          {"type": "text", "content": "Posts build familiarity and curiosity, not satisfaction. The best performing style is semi-NSFW: clean image, natural light, short human caption. Sexual tension without porn."},
-          {"type": "subheader", "content": "Post Content Should Include"},
-          {"type": "bullets", "items": [
-            "Clothed selfies and mirror photos",
-            "Outfit shots and casual bedroom/couch photos",
-            "Short native videos or gifs",
-            "Captions: 'Long day today', 'Would you like this outfit', 'Late again'"
-          ]},
-          {"type": "subheader", "content": "Posts Should Avoid"},
-          {"type": "bullets", "items": [
-            "Full nudity or pornographic actions",
-            "Explicit angles or toy play",
-            "Promotional captions — keep them casual and emotional"
-          ]}
-        ]},
-        {"type": "subheader", "content": "Twitter/X Warmup: Day-by-Day Protocol"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Days 1-3"},
-          {"type": "bullets", "items": [
-            "1 text post per day",
-            "10 to 20 likes",
-            "5 replies",
-            "No adult content",
-            "No images yet"
-          ]},
-          {"type": "subheader", "content": "Days 4-7"},
-          {"type": "bullets", "items": [
-            "1 to 2 SFW posts per day",
-            "30 likes per day",
-            "10 replies per day",
-            "Start mixing text and images"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Days 8-14"},
-          {"type": "bullets", "items": [
-            "2 to 3 posts per day",
-            "20 replies per day",
-            "One short thread",
-            "Increase posting and add images to tweets",
-            "After 14 days: full posting schedule, add link in bio"
-          ]},
-          {"type": "panel", "title": "Health Check — Mandatory", "content": "Account health must be checked using:\nhttps://shadowban.yuzurisa.com\nWarm up continues until ALL indicators are green.\nOnly green accounts are ready for real posting.\nIf your replies stop getting likes, you may be shadowbanned. Reduce activity for 48 hours and resume slowly.", "border": "#FF3131"}
-        ]},
-        {"type": "subheader", "content": "Safety, Account Health & Premium"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Never Do This"},
-          {"type": "bullets", "items": [
-            "Spam links in replies or posts",
-            "Copy-paste the same reply across posts",
-            "Use mass bots or automation",
-            "Tag many people in posts",
-            "Use many hashtags"
-          ]},
-          {"type": "subheader", "content": "Always Do This"},
-          {"type": "bullets", "items": [
-            "Enable 2FA on every account",
-            "Use the same device daily",
-            "Mark media as sensitive if NSFW",
-            "Post and reply at natural speed",
-            "Each account: one device, one IP"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Premium & Premium Plus"},
-          {"type": "text", "content": "Premium dramatically increases reply visibility and ranking. It is not optional for serious operators on Twitter/X — it is a growth multiplier. Only activate after the account shows green status on the shadowban checker and has stable reach. The purpose is not status — the purpose is reach. Premium helps your replies appear higher under big posts, significantly increasing profile clicks and followers. The investment pays for itself quickly through increased discovery."},
-          {"type": "subheader", "content": "Content Progression Ladder"},
-          {"type": "bullets", "items": [
-            "Soft public content builds curiosity",
-            "Stronger posts build desire",
-            "Fanvue fulfills fantasy"
-          ], "bullet": "→"},
-          {"type": "good_example", "content": "Clothed selfie → Teasing outfit photo → Fanvue nude video\nEach layer must leave something unfinished."},
-          {"type": "subheader", "content": "Visual Consistency"},
-          {"type": "bullets", "items": [
-            "Backgrounds, lighting, camera angles, clothing style must be similar",
-            "Sudden changes reduce realism"
-          ]},
-          {"type": "panel", "title": "The Chain", "content": "Realism builds trust. Trust creates spending. All content must look like it comes from the same person.", "border": "#39FF14"}
-        ]}
-      ]
-    },
-    {
-      "header": "Lesson 6: Cross-Platform Coordination",
-      "blocks": [
-        {"type": "text", "content": "You are not growing on five separate platforms. You are running one system with multiple tools. Each platform serves a role. Coordination between them is what multiplies your results. The persona must feel like the same person everywhere — same face, same name, same personality. The only thing that changes is the content format and tone for each platform."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Platform Roles Summary"},
-          {"type": "bullets", "items": [
-            "Threads: Trigger comments, start conversations, test narratives, send people to IG",
-            "Instagram: Visually lock the persona, build trust, convert attention into clicks",
-            "TikTok: Recycle content, generate extra views, capture additional attention",
-            "Reddit: Niche exposure inside specific communities, viral spikes",
-            "Twitter/X: Discovery environment, turn strangers into profile visitors"
-          ]},
-          {"type": "subheader", "content": "Content Distribution Rules"},
-          {"type": "bullets", "items": [
-            "Instagram gets your best content FIRST — always",
-            "Never post the same image on two platforms on the same day",
-            "Threads content is text-only — don't duplicate Instagram captions",
-            "TikTok recycles Instagram content (delayed by 2-3 days minimum)",
-            "Reddit gets unique content tailored to each subreddit",
-            "Twitter gets a mix of text posts and image tweets",
-            "Never upload raw AI images on any platform — always edit for realism"
-          ]},
-          {"type": "subheader", "content": "Weekly Posting Schedule"},
-          {"type": "bullets", "items": [
-            "Instagram: 1 quality Reel/day + daily Stories + 2-3 carousels/week",
-            "Threads: 3-4 posts/day (Phase 1) scaling to 5-8/day (Phase 2)",
-            "TikTok: 1-2 posts per day (wait 4+ hours between posts)",
-            "Reddit: 1-2 images per subreddit per week, rotate subreddits",
-            "Twitter: 2-3 tweets + 10-20 replies per day"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Traffic Flow Between Platforms"},
-          {"type": "bullets", "items": [
-            "Threads → drives profile visits to Instagram",
-            "Instagram → converts followers via link in bio",
-            "TikTok → supplements Instagram traffic (up to 3 accounts)",
-            "Reddit → niche viral spikes to profile",
-            "Twitter → steady discovery and brand presence",
-            "All platforms → Link in Bio → Telegram → Fanvue"
-          ], "bullet": "→"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Cross-platform content calendar template showing weekly distribution across all 5 platforms"},
-          {"type": "subheader", "content": "Warmup Timeline Coordination"},
-          {"type": "bullets", "items": [
-            "Instagram warmup: 21-28 days (carousels + stories only, no Reels)",
-            "Threads: Start after IG warmup, or last 7 days of warmup if stable",
-            "Reddit warmup: 7 days minimum (day-by-day karma building)",
-            "TikTok warmup: 9 days (day-by-day FYP engagement)",
-            "Twitter warmup: 14 days (must pass shadowban check before scaling)"
-          ]}
-        ]},
-        {"type": "subheader", "content": "Cross-Platform Safety & Consistency"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Visual Consistency Across All Platforms"},
-          {"type": "bullets", "items": [
-            "All images must look like the same person across every platform",
-            "Backgrounds, lighting, and style should be consistent",
-            "Small visual changes (hair color, accessories) are allowed",
-            "Complete model swaps destroy everything across all platforms",
-            "Add approximately 2% grain to all images for realism"
-          ]},
-          {"type": "subheader", "content": "Content Progression (All Platforms)"},
-          {"type": "text", "content": "Every platform follows the same ladder. If the fan gets satisfaction on any platform, they will not click through to pay."},
-          {"type": "bullets", "items": [
-            "Neutral/soft content on social platforms builds curiosity",
-            "Stronger content builds desire",
-            "Fanvue fulfills fantasy",
-            "Always leave desire unfinished on free platforms"
-          ], "bullet": "→"},
-          {"type": "panel", "title": "Content Ladder Rule", "content": "If the fan gets satisfaction on any free platform, they will not click through to pay. Always leave desire unfinished. Each social platform is a teaser, not the show.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "Platform-Specific Safety Reminders"},
-          {"type": "bullets", "items": [
-            "Instagram: No Reels before warmup, no links before 3 weeks",
-            "Threads: SFW text only, no sales pitches ever",
-            "TikTok: Safest content only, max 3 accounts per device",
-            "Reddit: Blend in before posting, mark profile NSFW before NSFW content",
-            "Twitter: Check shadowban status regularly, one device per account"
-          ]},
-          {"type": "subheader", "content": "Geo Targeting (All Platforms)"},
-          {"type": "bullets", "items": [
-            "Target English-speaking countries — USA priority",
-            "Signal location through American music, city tags, cultural references",
-            "Engage with English-speaking creators during warmup on every platform",
-            "Geo blocking on Instagram is a last resort, not a default strategy"
-          ]},
-          {"type": "panel", "title": "Coordination Rule", "content": "Your persona must feel like the same person across all platforms. Same face, same name, same personality. The only thing that changes is the content format and tone for each platform. Consistency builds trust. Trust creates spending.", "border": "#39FF14"}
-        ]}
+        {
+          "type": "text",
+          "content": "X is not a sales page. It is a discovery environment. Its purpose is to turn strangers into profile visitors and profile visitors into fans. Your growth on Twitter comes from being seen in other people's conversations, not from broadcasting your own content. This is the opposite of Instagram."
+        },
+        {
+          "type": "text",
+          "content": "A user decides very quickly whether an account feels real or fake, safe or risky, interesting or boring. If the account looks spammy, aggressive, or sexual too fast, the user scrolls away. X is the public stage. Fanvue is the private room."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Profile Setup: Visual First Impression"
+            },
+            {
+              "type": "text",
+              "content": "The profile picture and header are the first emotional signal. They decide whether the account looks human or artificial."
+            },
+            {
+              "type": "subheader",
+              "content": "Profile Picture Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Clearly show the face",
+                "Natural light, no heavy filters",
+                "No extreme sexual pose",
+                "Must match the persona"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Header/Banner Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Believable place (bedroom, couch, mirror, hotel)",
+                "Casual and personal pose, not staged",
+                "Lifestyle or aesthetic image of your persona"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Persona Matching"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Soft persona = warm and approachable",
+                "Luxury persona = calm and confident",
+                "Playful persona = expressive and chaotic"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Natural selfies, lifestyle backgrounds, soft teasing poses"
+            },
+            {
+              "type": "bad_example",
+              "content": "Oversexualized images, text-only banners, logos instead of photos"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Bio: Identity and Emotional Hook"
+            },
+            {
+              "type": "text",
+              "content": "The bio should sound like a person, not a business. Personality creates desire, not features."
+            },
+            {
+              "type": "subheader",
+              "content": "Bio Must Answer"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Who are you",
+                "What happens here",
+                "Why should I follow"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Bio Structure"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "First line: mood or personality",
+                "Second line: type of content",
+                "Third line: emotional invitation"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Bio: 'Late nights and quiet trouble. I share little moments and things I like here. Stay with me.'"
+            },
+            {
+              "type": "bad_example",
+              "content": "Bio: 'NSFW model. Link below'"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Pinned tweet: your best-performing or most engaging post",
+                "No links in bio during warmup"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Core Rule",
+              "content": "The goal is not to sell. The goal is to be seen. The fan should feel curious, not pressured. A good X account feels like a real person inside public conversations, not like an advertisement.",
+              "border": "#39FF14"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Reply-Based Growth Engine"
+        },
+        {
+          "type": "text",
+          "content": "Replies are the main growth engine on X. Most followers come from being visible under large posts, not from your own tweets. Replies must feel like conversation, not promotion."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Reply Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Start lowercase",
+                "Under 15 words",
+                "One emoji maximum",
+                "No links, no insults, no copy-paste",
+                "Reply 10-20 times per day to build visibility",
+                "Every reply is seen by that account's followers",
+                "Goal: make people click on your profile from your reply"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "nah that's wild\ni would've done the same\nthis feels illegal"
+            },
+            {
+              "type": "bad_example",
+              "content": "buy my content\ncheck my bio"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Reply Pools — Where to Reply"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Pool A: Viral posts — highest visibility, most competition",
+                "Pool B: Niche creators — targeted audience, less competition",
+                "Pool C: Small active posts — intimate, high engagement rate"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "The account should reply under posts where your target audience already reads. Over time, X builds a personality file for the account and shows it to similar users."
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Target Audience"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "text",
+              "content": "The main audience is men with spending power, usually age 40 and above. This demographic spends more per subscriber than younger audiences."
+            },
+            {
+              "type": "subheader",
+              "content": "They Are Interested In"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Business and entrepreneurship",
+                "Luxury goods and lifestyle",
+                "Cars and travel",
+                "Women and comfort lifestyle"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "They do not use hashtags. They read replies under big pages. Target accounts and conversations that this audience follows."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Post Content Strategy"
+            },
+            {
+              "type": "text",
+              "content": "Posts build familiarity and curiosity, not satisfaction. The best performing style is semi-NSFW: clean image, natural light, short human caption. Sexual tension without porn."
+            },
+            {
+              "type": "subheader",
+              "content": "Post Content Should Include"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Clothed selfies and mirror photos",
+                "Outfit shots and casual bedroom/couch photos",
+                "Short native videos or gifs",
+                "Captions: 'Long day today', 'Would you like this outfit', 'Late again'"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Posts Should Avoid"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Full nudity or pornographic actions",
+                "Explicit angles or toy play",
+                "Promotional captions — keep them casual and emotional"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Twitter/X Warmup: Day-by-Day Protocol"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Days 1-3"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "1 text post per day",
+                "10 to 20 likes",
+                "5 replies",
+                "No adult content",
+                "No images yet"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Days 4-7"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "1 to 2 SFW posts per day",
+                "30 likes per day",
+                "10 replies per day",
+                "Start mixing text and images"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Days 8-14"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "2 to 3 posts per day",
+                "20 replies per day",
+                "One short thread",
+                "Increase posting and add images to tweets",
+                "After 14 days: full posting schedule, add link in bio"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Health Check — Mandatory",
+              "content": "Account health must be checked using:\nhttps://shadowban.yuzurisa.com\nWarm up continues until ALL indicators are green.\nOnly green accounts are ready for real posting.\nIf your replies stop getting likes, you may be shadowbanned. Reduce activity for 48 hours and resume slowly.",
+              "border": "#FF3131"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Safety, Account Health & Premium"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Never Do This"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Spam links in replies or posts",
+                "Copy-paste the same reply across posts",
+                "Use mass bots or automation",
+                "Tag many people in posts",
+                "Use many hashtags"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Always Do This"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Enable 2FA on every account",
+                "Use the same device daily",
+                "Mark media as sensitive if NSFW",
+                "Post and reply at natural speed",
+                "Each account: one device, one IP"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Premium & Premium Plus"
+            },
+            {
+              "type": "text",
+              "content": "Premium dramatically increases reply visibility and ranking. It is not optional for serious operators on Twitter/X — it is a growth multiplier. Only activate after the account shows green status on the shadowban checker and has stable reach. The purpose is not status — the purpose is reach. Premium helps your replies appear higher under big posts, significantly increasing profile clicks and followers. The investment pays for itself quickly through increased discovery."
+            },
+            {
+              "type": "subheader",
+              "content": "Content Progression Ladder"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Soft public content builds curiosity",
+                "Stronger posts build desire",
+                "Fanvue fulfills fantasy"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "good_example",
+              "content": "Clothed selfie → Teasing outfit photo → Fanvue nude video\nEach layer must leave something unfinished."
+            },
+            {
+              "type": "subheader",
+              "content": "Visual Consistency"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Backgrounds, lighting, camera angles, clothing style must be similar",
+                "Sudden changes reduce realism"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "The Chain",
+              "content": "Realism builds trust. Trust creates spending. All content must look like it comes from the same person.",
+              "border": "#39FF14"
+            }
+          ]
+        }
       ]
     }
   ],

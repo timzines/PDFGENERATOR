@@ -84,11 +84,10 @@ MODULE_OVERVIEWS = {
         ],
     },
     6: {
-        "description": "Now that your accounts are warmed up, it is time to grow. This module gives you the growth strategy for every platform: Instagram, Threads, Reddit, TikTok, Twitter/X, and how to coordinate across all of them.",
+        "description": "Now that your accounts are warmed up, it is time to grow. This module gives you the growth strategy for every platform: Instagram, Threads, Reddit, TikTok, and Twitter/X.",
         "outcomes": [
             "Execute platform-specific growth strategies for Instagram, Threads, Reddit, TikTok, and Twitter/X",
             "Understand what type of content performs best on each platform",
-            "Use cross-platform coordination to multiply your reach",
             "Build a consistent posting and engagement routine",
         ],
     },
@@ -111,12 +110,11 @@ MODULE_OVERVIEWS = {
         ],
     },
     9: {
-        "description": "Followers are worth nothing if they do not convert. This module covers funnel psychology, link-in-bio architecture, Telegram strategy, content progression ladders, subscription pricing, and automated welcome messages that turn free attention into paid subscribers.",
+        "description": "Followers are worth nothing if they do not convert. This module covers funnel psychology, content progression ladders, and automated welcome messages that turn free attention into paid subscribers.",
         "outcomes": [
             "Understand the psychology behind why followers become paying fans",
-            "Build a link-in-bio funnel that drives conversions",
-            "Set up your subscription page and Telegram channel for maximum retention",
-            "Implement a content progression ladder and pricing strategy that converts",
+            "Build a content progression ladder that drives conversions",
+            "Set up automated messages that create connection and retain subscribers",
         ],
     },
     10: {
