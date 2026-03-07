@@ -1154,12 +1154,12 @@ def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
                         <div class="summary-brand-name">{BRAND_NAME}</div>
                         <div class="summary-brand-line"></div>
                         <div class="summary-brand-text">All materials are strictly protected.</div>
-                        <div style="margin-top:18px;padding:12px 20px;border:1px solid rgba(34,120,60,0.5);border-radius:10px;background:rgba(34,120,60,0.08);">
-                            <div style="color:#2d8a4e;font-size:12px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Start monetizing your AI models</div>
-                            <div style="color:rgba(255,255,255,0.45);font-size:10px;line-height:1.5;">Sign up to Fanvue with our link:<br/><span style="color:#2d8a4e;font-weight:600;">{FANVUE_URL}</span></div>
-                        </div>
                     </div>
                 </div>
+            </div>
+            <div style="margin-top:20px;padding:12px 20px;border:1px solid rgba(34,120,60,0.5);border-radius:10px;background:rgba(34,120,60,0.08);text-align:center;">
+                <div style="color:#2d8a4e;font-size:12px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Start monetizing your AI models</div>
+                <div style="color:rgba(255,255,255,0.45);font-size:10px;line-height:1.5;">Sign up to Fanvue with our link: <span style="color:#2d8a4e;font-weight:600;">{FANVUE_URL}</span></div>
             </div>
         </div>
     </div>
