@@ -170,6 +170,11 @@ body {
     page-break-after: auto;
 }
 
+/* Summary page always starts on a new page */
+.page-summary {
+    page-break-before: always;
+}
+
 /* ---- COVER PAGE ---- */
 .page-cover {
     background: #0f1013;
@@ -448,8 +453,7 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 50px 60px 10px 60px;
-    min-height: 775px;
+    padding: 50px 60px 40px 60px;
     page: content-page;
 }
 
@@ -491,6 +495,13 @@ body {
     line-height: 1.2;
     position: relative;
     padding-left: 16px;
+    page-break-before: always;
+    page-break-after: avoid;
+}
+
+/* First section header should not force a page break */
+.content-inner .section-header:first-child {
+    page-break-before: auto;
 }
 
 /* Accent bar before section headers */
@@ -512,8 +523,7 @@ body {
 .content-columns {
     display: flex;
     gap: 20px;
-    align-items: stretch;
-    page-break-inside: avoid;
+    align-items: flex-start;
 }
 
 .content-col {
@@ -530,7 +540,6 @@ body {
     position: relative;
     z-index: 2;
     border: 1px solid rgba(255,255,255,0.06);
-    page-break-inside: avoid;
 }
 
 .content-box p {
@@ -627,113 +636,30 @@ body {
     color: #e8d5dc;
 }
 
-/* Full-width content box (no columns) */
+/* Full-width content box — inherits all .content-box styles */
 .content-box-full {
     background: rgba(111, 76, 83, 0.82);
     border-radius: 14px;
     padding: 22px 24px;
     color: #f0e0e6;
     margin-bottom: 14px;
-    max-width: 75%;
     position: relative;
     z-index: 2;
     border: 1px solid rgba(255,255,255,0.06);
-    page-break-inside: avoid;
 }
 
-.content-box-full p {
-    font-size: 13.5px;
-    line-height: 1.65;
-    margin-bottom: 10px;
-    text-align: justify;
-    color: #f0e0e6;
-}
-
-.content-box-full p:last-child {
-    margin-bottom: 0;
-}
-
-.content-box-full .sub-header {
-    font-size: 14.5px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 8px;
-    margin-top: 14px;
-    letter-spacing: 0.3px;
-}
-
-.content-box-full .sub-header:first-child {
-    margin-top: 0;
-}
-
-.content-box-full ul {
-    margin: 6px 0 10px 18px;
-    padding: 0;
-}
-
-.content-box-full ul li {
-    font-size: 13.5px;
-    line-height: 1.6;
-    color: #f0e0e6;
-    margin-bottom: 3px;
-}
-
-.content-box-full .example-good {
-    border-left: 3px solid #7dba6d;
-    background: rgba(125,186,109,0.08);
-    padding: 8px 12px;
-    margin: 10px 0;
-    font-style: italic;
-    color: #c8e6c0;
-    font-size: 13px;
-    line-height: 1.55;
-    border-radius: 0 6px 6px 0;
-}
-
-.content-box-full .example-bad {
-    border-left: 3px solid #c9665a;
-    background: rgba(201,102,90,0.08);
-    padding: 8px 12px;
-    margin: 10px 0;
-    font-style: italic;
-    color: #eaaca5;
-    font-size: 13px;
-    line-height: 1.55;
-    border-radius: 0 6px 6px 0;
-}
-
-.content-box-full .example-label {
-    font-weight: 700;
-    font-style: normal;
-    font-size: 11px;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-bottom: 4px;
-}
-
-.content-box-full .panel-box {
-    background: rgba(90, 60, 68, 0.55);
-    border: 1px solid rgba(255,255,255,0.12);
-    border-left: 3px solid rgba(196,154,133,0.6);
-    border-radius: 8px;
-    padding: 14px 18px;
-    margin: 12px 0 6px 0;
-}
-
-.content-box-full .panel-title {
-    font-size: 12px;
-    font-weight: 700;
-    color: #c49a85;
-    margin-bottom: 6px;
-    text-transform: uppercase;
-    letter-spacing: 0.8px;
-}
-
-.content-box-full .panel-body {
-    font-size: 13px;
-    line-height: 1.55;
-    color: #e8d5dc;
-}
+.content-box-full p { font-size: 13.5px; line-height: 1.65; margin-bottom: 10px; text-align: justify; color: #f0e0e6; }
+.content-box-full p:last-child { margin-bottom: 0; }
+.content-box-full .sub-header { font-size: 14.5px; font-weight: 700; color: #ffffff; margin-bottom: 8px; margin-top: 14px; letter-spacing: 0.3px; }
+.content-box-full .sub-header:first-child { margin-top: 0; }
+.content-box-full ul { margin: 6px 0 10px 18px; padding: 0; }
+.content-box-full ul li { font-size: 13.5px; line-height: 1.6; color: #f0e0e6; margin-bottom: 3px; }
+.content-box-full .example-good { border-left: 3px solid #7dba6d; background: rgba(125,186,109,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #c8e6c0; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; }
+.content-box-full .example-bad { border-left: 3px solid #c9665a; background: rgba(201,102,90,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #eaaca5; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; }
+.content-box-full .example-label { font-weight: 700; font-style: normal; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+.content-box-full .panel-box { background: rgba(90, 60, 68, 0.55); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid rgba(196,154,133,0.6); border-radius: 8px; padding: 14px 18px; margin: 12px 0 6px 0; }
+.content-box-full .panel-title { font-size: 12px; font-weight: 700; color: #c49a85; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.8px; }
+.content-box-full .panel-body { font-size: 13px; line-height: 1.55; color: #e8d5dc; }
 
 .content-footer {
     position: absolute;
@@ -925,46 +851,56 @@ def build_toc_html(sections, logo_uri="", page_num=2, total_pages=1):
     '''
 
 
-def build_content_page_html(header, body_blocks, bg_uri="", logo_uri="", page_num=3, total_pages=1):
-    """Build a content page HTML."""
+def build_section_html(header, body_blocks):
+    """Build HTML for a single section (header + content blocks).
+
+    Returns flowing HTML that is NOT wrapped in a page div, so WeasyPrint
+    can paginate it naturally across multiple slides.
+    """
     main_part, fade_part = split_header_two_tone(header)
 
     header_html = main_part
     if fade_part:
         header_html += f' <span class="fade">{fade_part}</span>'
 
-    # Determine layout: check for two_column blocks
-    has_two_col = any(b.get("type") == "two_column" for b in body_blocks)
-
     content_html = ""
 
-    if has_two_col:
-        # Process blocks: non-two-column blocks go as full-width above, two_column blocks as columns
-        for block in body_blocks:
-            if block.get("type") == "two_column":
-                left_html = render_blocks_html(block["left"])
-                right_html = render_blocks_html(block["right"])
-                content_html += f'''
-                <div class="content-columns">
-                    <div class="content-col"><div class="content-box">{left_html}</div></div>
-                    <div class="content-col"><div class="content-box">{right_html}</div></div>
-                </div>
-                '''
-            else:
-                # Full-width block rendered as a content box
-                block_html = render_blocks_html([block])
-                content_html += f'<div class="content-box-full">{block_html}</div>\n'
-    else:
-        # All blocks in a single box (or left-aligned box)
-        all_html = render_blocks_html(body_blocks)
-        content_html = f'<div class="content-box-full">{all_html}</div>\n'
+    for block in body_blocks:
+        if block.get("type") == "two_column":
+            left_html = render_blocks_html(block["left"])
+            right_html = render_blocks_html(block["right"])
+            content_html += f'''
+            <div class="content-columns">
+                <div class="content-col"><div class="content-box">{left_html}</div></div>
+                <div class="content-col"><div class="content-box">{right_html}</div></div>
+            </div>
+            '''
+        else:
+            block_html = render_blocks_html([block])
+            content_html += f'<div class="content-box-full">{block_html}</div>\n'
 
     return f'''
-    <div class="page page-content">
-        {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
+        <div class="section-header">{header_html}</div>
+        {content_html}
+    '''
+
+
+def build_content_pages_html(sections, bg_uri="", logo_uri=""):
+    """Build all content sections as a single flowing content region.
+
+    Instead of one .page div per section, all sections flow inside a single
+    content container.  WeasyPrint paginates using the @page content-page
+    rule, so content naturally fills each slide and overflows to the next
+    without leaving whitespace gaps.
+    """
+    sections_html = ""
+    for section in sections:
+        sections_html += build_section_html(section["header"], section["blocks"])
+
+    return f'''
+    <div class="page-content">
         <div class="content-inner">
-            <div class="section-header">{header_html}</div>
-            {content_html}
+            {sections_html}
         </div>
     </div>
     '''
@@ -977,8 +913,7 @@ def build_summary_page_html(points, bg_uri="", logo_uri="", page_num=1, total_pa
         bullets += f"<li>{pt}</li>\n"
 
     return f'''
-    <div class="page page-content">
-        {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
+    <div class="page page-content page-summary">
         <div class="content-inner">
             <div class="section-header">END <span class="fade">SUMMARY</span></div>
             <div class="content-columns">
@@ -1037,38 +972,22 @@ def generate_pdf(config, output_path):
     skip_toc = config.get("skip_toc", False)
     skip_summary = config.get("skip_summary", False)
 
-    # Calculate total pages
-    total_pages = 1 + len(sections)  # cover + content
-    if not skip_toc:
-        total_pages += 1  # TOC page
-    if summary_points and not skip_summary:
-        total_pages += 1  # summary page
+    # Page count is dynamic now (WeasyPrint auto-paginates content)
+    total_pages = 0  # placeholder, counter(pages) in CSS handles it
 
     # Build pages
     pages_html = ""
-    current_page = 1
 
     # Cover — uses Course Logo as the main statue image
-    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=current_page, total_pages=total_pages, module_label=module_label, lesson_label=lesson_label)
-    current_page += 1
+    pages_html += build_cover_html(title, subtitle, logo_uri, page_num=1, total_pages=total_pages, module_label=module_label, lesson_label=lesson_label)
 
     # TOC — uses Course Logo as background decoration
     if not skip_toc:
-        toc_entries = [(i + 3, s["header"]) for i, s in enumerate(sections)]
-        pages_html += build_toc_html(toc_entries, logo_uri, page_num=current_page, total_pages=total_pages)
-        current_page += 1
+        toc_entries = [(i + 1, s["header"]) for i, s in enumerate(sections)]
+        pages_html += build_toc_html(toc_entries, logo_uri, page_num=2, total_pages=total_pages)
 
-    # Content pages — small logo in top-right corner
-    for section in sections:
-        pages_html += build_content_page_html(
-            section["header"],
-            section["blocks"],
-            bg_uri=content_bg_uri,
-            logo_uri=logo_uri,
-            page_num=current_page,
-            total_pages=total_pages,
-        )
-        current_page += 1
+    # Content — all sections flow continuously; WeasyPrint paginates
+    pages_html += build_content_pages_html(sections, bg_uri=content_bg_uri, logo_uri=logo_uri)
 
     # Summary
     if summary_points and not skip_summary:
@@ -1076,15 +995,14 @@ def generate_pdf(config, output_path):
             summary_points,
             bg_uri=content_bg_uri,
             logo_uri=logo_uri,
-            page_num=current_page,
-            total_pages=total_pages,
         )
 
     # Build dynamic @page CSS for content pages (background + footer on every page)
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0 0 35px 0;
+    margin: 0;
+    padding: 0;
     background-image:
         linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 15%),
         url('{content_bg_uri}');
