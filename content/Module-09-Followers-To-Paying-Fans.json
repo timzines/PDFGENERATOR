@@ -6,287 +6,339 @@
     {
       "header": "Lesson 1: Funnel Psychology & Overview",
       "blocks": [
-        {"type": "text", "content": "Followers are not customers. They are potential customers sitting at the top of a funnel. The funnel is the system that takes someone from 'I saw a Reel' to 'I just paid for a subscription.' Without this system, followers are just a number on your profile. Every other platform exists to support that conversion."},
-        {"type": "text", "content": "Instagram is not a selling platform. Instagram is a distribution engine. The mistake beginners make is attempting to convert users too early, too directly, or too aggressively without warming intent. This module covers the funnel architecture that turns free attention into paid subscriptions — step by step, with no shortcuts."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "The Hard Gate Funnel"},
-          {"type": "text", "content": "A Hard Gate Funnel means every fan must pass through defined stages before reaching the monetization endpoint. There are no shortcuts, no alternative paths, and no direct selling on social media. This structure maximizes conversion by building desire before asking for money."},
-          {"type": "subheader", "content": "The Funnel Stages"},
-          {"type": "bullets", "items": [
-            "Stage 1: Discovery — They see your content on Instagram, TikTok, Threads, or Reddit",
-            "Stage 2: Curiosity — They visit your profile, scroll your grid, read your bio",
-            "Stage 3: Interest — They follow you, watch your Stories, engage with your content",
-            "Stage 4: Trust — They feel connected to your persona through consistent content",
-            "Stage 5: Desire — They want more than what is available for free",
-            "Stage 6: Action — They click the link, enter the funnel, and convert to a paying subscriber"
-          ], "bullet": "→"},
-          {"type": "text", "content": "Every step of this funnel must be intentional. If any step is weak, the whole thing leaks. Most people lose fans between Trust and Desire because they try to sell too early."},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Visual funnel diagram: Wide top showing Discovery (social media icons) → narrowing through Curiosity → Interest → Trust → Desire → Action (subscriber icon at bottom). Show drop-off rates at each stage. Dollar signs increase toward the bottom."}
-        ], "right": [
-          {"type": "subheader", "content": "Funnel Psychology"},
-          {"type": "text", "content": "Understanding why people pay is more important than understanding how to ask them to pay. The psychology behind the funnel drives every decision."},
-          {"type": "bullets", "items": [
-            "People do not pay for content — they pay for connection and exclusivity",
-            "The feeling of being 'close' to someone drives subscriptions",
-            "Free content must tease but never fully satisfy — the gap creates desire",
-            "The gap between free and paid must feel exciting, not frustrating",
-            "Emotional framing always outperforms hard selling",
-            "Urgency and scarcity increase conversion — 'limited time' and 'exclusive' work"
-          ]},
-          {"type": "subheader", "content": "Common Funnel Mistakes"},
-          {"type": "bullets", "items": [
-            "Trying to sell directly on Instagram (never works, gets you flagged)",
-            "Putting links everywhere too early (screams promotion, kills trust)",
-            "Skipping the trust-building phase (asking for money before connection exists)",
-            "Giving away too much for free (no reason to subscribe)",
-            "Being too aggressive with CTAs (repels instead of attracts)",
-            "Having too many links or options (confusion kills conversion)"
-          ]},
-          {"type": "panel", "title": "Core Principle", "content": "You are not selling content. You are selling the feeling of a relationship. Every decision you make should build emotional proximity, not advertise a product. The fans who spend the most feel the most connected.", "border": "#39FF14"}
-        ]}
+        {
+          "type": "text",
+          "content": "Followers are not customers. They are potential customers sitting at the top of a funnel. The funnel is the system that takes someone from 'I saw a Reel' to 'I just paid for a subscription.' Without this system, followers are just a number on your profile. Every other platform exists to support that conversion."
+        },
+        {
+          "type": "text",
+          "content": "Instagram is not a selling platform. Instagram is a distribution engine. The mistake beginners make is attempting to convert users too early, too directly, or too aggressively without warming intent. This module covers the funnel architecture that turns free attention into paid subscriptions — step by step, with no shortcuts."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "The Hard Gate Funnel"
+            },
+            {
+              "type": "text",
+              "content": "A Hard Gate Funnel means every fan must pass through defined stages before reaching the monetization endpoint. There are no shortcuts, no alternative paths, and no direct selling on social media. This structure maximizes conversion by building desire before asking for money."
+            },
+            {
+              "type": "subheader",
+              "content": "The Funnel Stages"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Stage 1: Discovery — They see your content on Instagram, TikTok, Threads, or Reddit",
+                "Stage 2: Curiosity — They visit your profile, scroll your grid, read your bio",
+                "Stage 3: Interest — They follow you, watch your Stories, engage with your content",
+                "Stage 4: Trust — They feel connected to your persona through consistent content",
+                "Stage 5: Desire — They want more than what is available for free",
+                "Stage 6: Action — They click the link, enter the funnel, and convert to a paying subscriber"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "text",
+              "content": "Every step of this funnel must be intentional. If any step is weak, the whole thing leaks. Most people lose fans between Trust and Desire because they try to sell too early."
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Visual funnel diagram: Wide top showing Discovery (social media icons) → narrowing through Curiosity → Interest → Trust → Desire → Action (subscriber icon at bottom). Show drop-off rates at each stage. Dollar signs increase toward the bottom."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Funnel Psychology"
+            },
+            {
+              "type": "text",
+              "content": "Understanding why people pay is more important than understanding how to ask them to pay. The psychology behind the funnel drives every decision."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "People do not pay for content — they pay for connection and exclusivity",
+                "The feeling of being 'close' to someone drives subscriptions",
+                "Free content must tease but never fully satisfy — the gap creates desire",
+                "The gap between free and paid must feel exciting, not frustrating",
+                "Emotional framing always outperforms hard selling",
+                "Urgency and scarcity increase conversion — 'limited time' and 'exclusive' work"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Common Funnel Mistakes"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Trying to sell directly on Instagram (never works, gets you flagged)",
+                "Putting links everywhere too early (screams promotion, kills trust)",
+                "Skipping the trust-building phase (asking for money before connection exists)",
+                "Giving away too much for free (no reason to subscribe)",
+                "Being too aggressive with CTAs (repels instead of attracts)",
+                "Having too many links or options (confusion kills conversion)"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Core Principle",
+              "content": "You are not selling content. You are selling the feeling of a relationship. Every decision you make should build emotional proximity, not advertise a product. The fans who spend the most feel the most connected.",
+              "border": "#39FF14"
+            }
+          ]
+        }
       ]
     },
     {
-      "header": "Lesson 2: Link in Bio & Funnel Architecture",
+      "header": "Lesson 2: Content Progression & Value Ladder",
       "blocks": [
-        {"type": "text", "content": "The link in bio is the bridge between free attention and paid conversion. It acts as a decision control hub. Fewer choices increase conversion probability. Do not overload the page. Too many options means confusion, and confusion means lost conversion. This lesson covers the exact architecture that maximizes click-through."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Link in Bio Setup"},
-          {"type": "subheader", "content": "Approved Link-in-Bio Platforms"},
-          {"type": "bullets", "items": [
-            "AllMyLinks — Clean, customizable, popular in this space",
-            "Linktree — Well-known, reliable, free tier available",
-            "Hoo.be — Alternative option with good customization"
-          ]},
-          {"type": "subheader", "content": "Page Design Rules"},
-          {"type": "bullets", "items": [
-            "Design must match your persona's aesthetic (colors, mood, style)",
-            "Profile photo on the link page should match your Instagram profile photo",
-            "Keep the layout clean and minimal — no clutter",
-            "Maximum 2-3 links visible (fewer choices = higher conversion)",
-            "Primary link should be the most visually prominent"
-          ]},
-          {"type": "panel", "title": "Rule", "content": "Keep it simple. Fewer choices = higher conversion. No Amazon wishlists, no Spotify, no personal blogs, no extra social links. Every additional link dilutes the conversion rate of your primary monetization path.", "border": "#39FF14"},
-          {"type": "good_example", "content": "Link page:\n1. 'My free private channel' → Telegram\n2. 'Exclusive content' → Subscription Platform\n\nClean, simple, two clear paths. Design matches persona aesthetic. Fan knows exactly what to click."},
-          {"type": "bad_example", "content": "Link page:\n8 different links, random colors, Amazon wishlist, Spotify, TikTok link, personal blog, subscription link buried at the bottom.\n\nResult: Fan gets overwhelmed, clicks nothing, leaves."}
-        ], "right": [
-          {"type": "subheader", "content": "Free Telegram Funnel"},
-          {"type": "text", "content": "Telegram exists to capture users who are interested but not ready to pay immediately. They may be busy, in public, at work, or simply not willing to enter payment details on first contact. Joining a free Telegram channel requires zero commitment — no credit card, no signup, just one tap."},
-          {"type": "subheader", "content": "Why Telegram Works"},
-          {"type": "bullets", "items": [
-            "Zero barrier to entry — one tap to join, no payment info needed",
-            "Captures interest before it fades — they can come back later",
-            "Many users leave notifications ON — creates repeated exposure without relying on Instagram",
-            "Private channel format feels exclusive and personal",
-            "Content can be slightly more personal than Instagram without platform restrictions",
-            "Direct communication channel — not algorithm-dependent"
-          ]},
-          {"type": "subheader", "content": "Telegram Content Rules"},
-          {"type": "bullets", "items": [
-            "Content should feel more personal and intimate than Instagram — but still SFW",
-            "Behind-the-scenes content, casual selfies, personal thoughts",
-            "Maximum 2-3 posts per day — overposting causes muting and channel exits",
-            "Captions should feel personal and conversational",
-            "Soft CTAs directing to your subscription platform: 'more on my exclusive page'",
-            "Never spam — quality over quantity always"
-          ]},
-          {"type": "panel", "title": "Telegram Strategy", "content": "Telegram content should increase curiosity, not satisfy it. If a fan can get everything they want from Telegram, they will never subscribe. The Telegram channel is a warming layer — it builds desire and redirects it to your paid platform.", "border": "#FF3131"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example link-in-bio page layout (clean, 2 links, matching aesthetic) alongside a Telegram channel screenshot showing content style and posting frequency."}
-        ]},
-        {"type": "subheader", "content": "Instagram Highlight Funnel"},
-        {"type": "text", "content": "Highlights act as a permanent funnel entry point. They catch followers who do not check your bio organically. A well-designed highlight is like a 24/7 billboard for your link."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Setup Rules"},
-          {"type": "bullets", "items": [
-            "One dedicated highlight for your link funnel",
-            "Cover image should be attention-grabbing and match your aesthetic",
-            "Face clearly visible on the cover"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Inside the Highlight"},
-          {"type": "bullets", "items": [
-            "Story with Link Sticker directing to your link-in-bio page or Telegram",
-            "CTA text: 'Come chat to me' or 'Talk to me here' or 'More of me here'",
-            "Update highlights monthly with fresh content to keep them feeling current"
-          ]}
-        ]},
-        {"type": "panel", "title": "Funnel Activation Timing", "content": "DO NOT deploy funnel links immediately. Links must never be spammed in captions or comments. Wait approximately 3 weeks of normal posting with stable engagement and green recommendation status before activating. Once activated, links may appear ONLY in: Bio, Story Highlights, and Story Link Stickers. Activating too early screams 'promo account' and causes shadowbans, recommendation suppression, and early account flags.", "border": "#FF3131"}
+        {
+          "type": "text",
+          "content": "Content must follow a clear ladder. Each layer builds on the previous one and leaves something unfinished so the next layer becomes attractive. This is how you create desire that converts to revenue. If the fan gets full satisfaction at any free layer, they have no reason to move to the next."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "The Content Ladder"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Layer 1: Social Media (Instagram, TikTok, Threads) — Builds curiosity and trust",
+                "Layer 2: Telegram — Builds personal connection and desire",
+                "Layer 3: Subscription Platform — Delivers exclusive content and access"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "subheader",
+              "content": "Social Media Content (Layer 1)"
+            },
+            {
+              "type": "text",
+              "content": "This is your public face. It must be polished, SFW, and make people want to know more about you. Think of it as the shop window — it shows the best of what you offer without giving everything away."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "High-quality lifestyle shots and selfies",
+                "Personality-driven captions that create connection",
+                "Reels and video content that showcase your persona's 'life'",
+                "Stories that feel raw and in-the-moment",
+                "Content that makes people think: 'I want to see more of her'"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Telegram Content (Layer 2)"
+            },
+            {
+              "type": "text",
+              "content": "More personal than social media, but still controlled. This layer makes the fan feel like they have special access. It bridges the gap between public following and paid subscription."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "More casual, behind-the-scenes content",
+                "Personal thoughts and daily updates",
+                "Exclusive photos not posted on Instagram",
+                "Occasional teases of subscription-exclusive content",
+                "Conversational tone — like texting a friend"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Subscription Content (Layer 3)"
+            },
+            {
+              "type": "text",
+              "content": "This is where the full experience is delivered. Subscribers should feel they unlocked something meaningful — content, access, and interaction that justify the price."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Content that is genuinely exclusive — never posted anywhere else",
+                "More frequent posting than free platforms",
+                "Personal feel — content looks and feels like it was made for subscribers",
+                "Consistent quality and posting schedule",
+                "Interaction and engagement with subscribers (responses, acknowledgment)"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Content Ladder Rule",
+              "content": "If a fan can get satisfaction at Layer 1, they will not join Layer 2.\nIf a fan can get satisfaction at Layer 2, they will not subscribe at Layer 3.\nEach layer must leave something unfinished. Each step up must feel like a meaningful upgrade.",
+              "border": "#FF3131"
+            },
+            {
+              "type": "subheader",
+              "content": "Visual Consistency Across All Layers"
+            },
+            {
+              "type": "text",
+              "content": "All content across all layers must look like it comes from the same person. Sudden changes reduce realism and trust."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Backgrounds should be similar across all content layers",
+                "Camera angles and style should be consistent",
+                "Mood and aesthetic should match your persona across every platform",
+                "Hair, makeup, and clothing style should evolve naturally, not change drastically"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "The Consistency Chain",
+              "content": "Consistency creates realism.\nRealism creates attachment.\nAttachment creates spending.\nBreak any link in this chain and the funnel leaks.",
+              "border": "#39FF14"
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Content progression ladder visual: Three ascending steps labeled Layer 1 (Social Media - free), Layer 2 (Telegram - free but exclusive), Layer 3 (Subscription - paid). Show content examples at each level with arrows showing upward progression."
+            }
+          ]
+        }
       ]
     },
     {
-      "header": "Lesson 3: Content Progression & Value Ladder",
+      "header": "Lesson 3: Automated Messages & First Impressions",
       "blocks": [
-        {"type": "text", "content": "Content must follow a clear ladder. Each layer builds on the previous one and leaves something unfinished so the next layer becomes attractive. This is how you create desire that converts to revenue. If the fan gets full satisfaction at any free layer, they have no reason to move to the next."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "The Content Ladder"},
-          {"type": "bullets", "items": [
-            "Layer 1: Social Media (Instagram, TikTok, Threads) — Builds curiosity and trust",
-            "Layer 2: Telegram — Builds personal connection and desire",
-            "Layer 3: Subscription Platform — Delivers exclusive content and access"
-          ], "bullet": "→"},
-          {"type": "subheader", "content": "Social Media Content (Layer 1)"},
-          {"type": "text", "content": "This is your public face. It must be polished, SFW, and make people want to know more about you. Think of it as the shop window — it shows the best of what you offer without giving everything away."},
-          {"type": "bullets", "items": [
-            "High-quality lifestyle shots and selfies",
-            "Personality-driven captions that create connection",
-            "Reels and video content that showcase your persona's 'life'",
-            "Stories that feel raw and in-the-moment",
-            "Content that makes people think: 'I want to see more of her'"
-          ]},
-          {"type": "subheader", "content": "Telegram Content (Layer 2)"},
-          {"type": "text", "content": "More personal than social media, but still controlled. This layer makes the fan feel like they have special access. It bridges the gap between public following and paid subscription."},
-          {"type": "bullets", "items": [
-            "More casual, behind-the-scenes content",
-            "Personal thoughts and daily updates",
-            "Exclusive photos not posted on Instagram",
-            "Occasional teases of subscription-exclusive content",
-            "Conversational tone — like texting a friend"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Subscription Content (Layer 3)"},
-          {"type": "text", "content": "This is where the full experience is delivered. Subscribers should feel they unlocked something meaningful — content, access, and interaction that justify the price."},
-          {"type": "bullets", "items": [
-            "Content that is genuinely exclusive — never posted anywhere else",
-            "More frequent posting than free platforms",
-            "Personal feel — content looks and feels like it was made for subscribers",
-            "Consistent quality and posting schedule",
-            "Interaction and engagement with subscribers (responses, acknowledgment)"
-          ]},
-          {"type": "panel", "title": "Content Ladder Rule", "content": "If a fan can get satisfaction at Layer 1, they will not join Layer 2.\nIf a fan can get satisfaction at Layer 2, they will not subscribe at Layer 3.\nEach layer must leave something unfinished. Each step up must feel like a meaningful upgrade.", "border": "#FF3131"},
-          {"type": "subheader", "content": "Visual Consistency Across All Layers"},
-          {"type": "text", "content": "All content across all layers must look like it comes from the same person. Sudden changes reduce realism and trust."},
-          {"type": "bullets", "items": [
-            "Backgrounds should be similar across all content layers",
-            "Camera angles and style should be consistent",
-            "Mood and aesthetic should match your persona across every platform",
-            "Hair, makeup, and clothing style should evolve naturally, not change drastically"
-          ]},
-          {"type": "panel", "title": "The Consistency Chain", "content": "Consistency creates realism.\nRealism creates attachment.\nAttachment creates spending.\nBreak any link in this chain and the funnel leaks.", "border": "#39FF14"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Content progression ladder visual: Three ascending steps labeled Layer 1 (Social Media - free), Layer 2 (Telegram - free but exclusive), Layer 3 (Subscription - paid). Show content examples at each level with arrows showing upward progression."}
-        ]}
-      ]
-    },
-    {
-      "header": "Lesson 4: Pricing Strategy & Subscription Setup",
-      "blocks": [
-        {"type": "text", "content": "Your subscription price is not designed to generate maximum profit on its own. Its main purpose is to remove fear and make the fan take the first step. The subscription price should feel like an easy decision — low enough to not trigger resistance, high enough to signal value. This lesson covers the pricing psychology and setup that maximizes conversions."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Subscription Pricing Psychology"},
-          {"type": "bullets", "items": [
-            "The subscription is a gateway, not the main revenue source",
-            "Low price removes psychological resistance to the first payment",
-            "High price signals value but kills conversion volume",
-            "The sweet spot: $7-$15 per month base subscription",
-            "Promotional pricing: visible discount to $3-$9 makes it feel like a deal",
-            "Below $5 attracts low-quality subscribers who never engage",
-            "Above $20 kills conversion volume for new pages"
-          ]},
-          {"type": "subheader", "content": "Pricing Tiers Strategy"},
-          {"type": "bullets", "items": [
-            "Base price: $10-$20 per month (creates perceived value)",
-            "Promotional price: $3-$9 (visible discount that triggers action)",
-            "Show the original price crossed out next to the promo price",
-            "Limited-time framing increases urgency: 'Price going up soon'",
-            "Never discount so heavily that you devalue your content — the promo price should feel like a deal, not charity"
-          ]},
-          {"type": "panel", "title": "Pricing Data", "content": "Industry data shows $7-$15/month is the sweet spot for AI influencer subscriptions. Below $5 attracts subscribers who never buy additional content. Above $20 dramatically reduces conversion rates for pages under 10K followers.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "Page Setup Essentials"},
-          {"type": "text", "content": "Your subscription page is where money is made. Everything else in this course leads to this page. First impressions matter — a poorly set up page loses subscribers within 24 hours."},
-          {"type": "subheader", "content": "Banner"},
-          {"type": "bullets", "items": [
-            "High-quality image of your AI persona in a natural, believable setting",
-            "Casual and personal pose — not staged or over-produced",
-            "Must match the mood of your persona (approachable, confident, playful)",
-            "Should suggest lifestyle and personality, not just appearance"
-          ]},
-          {"type": "subheader", "content": "Bio"},
-          {"type": "text", "content": "The bio should sound like a person, not a business. Personality creates desire. Features do not."},
-          {"type": "bullets", "items": [
-            "First line: personality or mood — who you are",
-            "Second line: type of content or interaction — what happens here",
-            "Third line: emotional invitation — why they should stay"
-          ]},
-          {"type": "good_example", "content": "Bio: 'Just a girl who loves late nights and sharing little moments. I post my daily life and things I usually keep private. Stay and get to know me.'"},
-          {"type": "bad_example", "content": "Bio: 'Daily posts. HD content. DM me.'"},
-          {"type": "subheader", "content": "First Week of Content"},
-          {"type": "bullets", "items": [
-            "Have 5-10 posts ready before your first subscriber arrives",
-            "Mix content types: lifestyle shots, casual selfies, personal updates",
-            "Post consistently from Day 1 — empty pages cause immediate unsubscribes",
-            "Captions should feel personal and conversational"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Subscription page layout example: Banner image, bio text, initial posts grid. Annotate: 'Banner sets the mood', 'Bio creates connection', 'Posts show consistent value'."}
-        ]},
-        {"type": "panel", "title": "Retention Rule", "content": "A subscriber who sees an empty or inconsistent page will unsubscribe immediately. Have content ready before launch. Post consistently. Respond to new subscribers quickly. The first 48 hours determine if they stay or leave.", "border": "#FF3131"}
-      ]
-    },
-    {
-      "header": "Lesson 5: Automated Messages & First Impressions",
-      "blocks": [
-        {"type": "text", "content": "Automated messages are the first emotional touchpoint with new followers and subscribers. They set the tone for the entire relationship. A good automated message makes the fan feel noticed and welcome. A bad one makes them feel like they just subscribed to a spam list. This lesson covers how to set up messages that create connection, not resistance."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Welcome Message for New Followers"},
-          {"type": "text", "content": "The purpose of this message is not to sell. It is to make the fan feel noticed and create an opening for conversation. Most fans receive nothing — a warm welcome immediately sets you apart."},
-          {"type": "bullets", "items": [
-            "Friendly greeting with a soft, personal tone",
-            "No prices, no discounts, no content mentions",
-            "Create curiosity and encourage a reply",
-            "Sound like a real person, not a bot or template"
-          ]},
-          {"type": "good_example", "content": "Hey, I just saw you follow me. That was sweet of you. Where are you from?\n\n(Simple, warm, creates conversation opening.)"},
-          {"type": "bad_example", "content": "Thanks for following! Subscribe now for exclusive content! Link below!\n\n(Transactional, cold, zero personality. Instant unfollow.)"},
-          {"type": "subheader", "content": "Welcome Message for New Subscribers"},
-          {"type": "text", "content": "Sent immediately after someone subscribes. The purpose is to emotionally reward the action and make the subscriber feel they made a good decision."},
-          {"type": "bullets", "items": [
-            "Warm welcome that emotionally rewards their decision to subscribe",
-            "Soft direction toward engaging with your content",
-            "Make them feel special — not like subscriber #47",
-            "Ask a question to start a conversation"
-          ]},
-          {"type": "good_example", "content": "I was hoping you would join me here. This feels more personal already. Tell me what made you decide to subscribe?\n\n(Warm, personal, creates dialogue.)"},
-          {"type": "bad_example", "content": "Welcome! Check out my content. DM me if you want custom.\n\n(Cold, transactional, no personality. Subscriber regrets joining.)"}
-        ], "right": [
-          {"type": "subheader", "content": "Message Timing & Frequency"},
-          {"type": "bullets", "items": [
-            "Welcome messages should trigger within minutes of follow/subscribe",
-            "Do not send more than one automated message per trigger event",
-            "Never send automated bulk messages to existing followers — it feels spammy",
-            "If the subscriber replies, respond personally — this is your conversion moment",
-            "Speed of response matters: reply within 30 minutes for best conversion"
-          ]},
-          {"type": "subheader", "content": "Tone Guidelines"},
-          {"type": "text", "content": "The tone of every message must match your persona's personality. A playful persona sounds different from a mysterious one. Consistency in tone builds believability."},
-          {"type": "bullets", "items": [
-            "Playful persona: Light, teasing, uses casual language and questions",
-            "Shy/cute persona: Soft, slightly hesitant, uses 'I hope' and 'maybe'",
-            "Confident persona: Direct, warm, makes the fan feel chosen",
-            "Mysterious persona: Brief, intriguing, leaves questions open",
-            "Whatever tone you choose, maintain it across ALL messages and captions"
-          ]},
-          {"type": "subheader", "content": "What Never to Include in Automated Messages"},
-          {"type": "bullets", "items": [
-            "Prices or payment amounts",
-            "Links to purchase anything",
-            "Mentions of exclusive or paid content",
-            "Sales language ('buy', 'purchase', 'unlock', 'deal')",
-            "Copy-pasted text that sounds robotic or templated",
-            "Emojis overload — keep it to 1-2 maximum"
-          ]},
-          {"type": "panel", "title": "First Impression Rule", "content": "The first message sets the tone for the entire relationship. Make the fan feel noticed, welcome, and curious. If the first message feels like a sales pitch, the fan's guard goes up and never comes down. You only get one chance at a first impression.", "border": "#39FF14"}
-        ]}
+        {
+          "type": "text",
+          "content": "Automated messages are the first emotional touchpoint with new followers and subscribers. They set the tone for the entire relationship. A good automated message makes the fan feel noticed and welcome. A bad one makes them feel like they just subscribed to a spam list. This lesson covers how to set up messages that create connection, not resistance."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Welcome Message for New Followers"
+            },
+            {
+              "type": "text",
+              "content": "The purpose of this message is not to sell. It is to make the fan feel noticed and create an opening for conversation. Most fans receive nothing — a warm welcome immediately sets you apart."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Friendly greeting with a soft, personal tone",
+                "No prices, no discounts, no content mentions",
+                "Create curiosity and encourage a reply",
+                "Sound like a real person, not a bot or template"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "Hey, I just saw you follow me. That was sweet of you. Where are you from?\n\n(Simple, warm, creates conversation opening.)"
+            },
+            {
+              "type": "bad_example",
+              "content": "Thanks for following! Subscribe now for exclusive content! Link below!\n\n(Transactional, cold, zero personality. Instant unfollow.)"
+            },
+            {
+              "type": "subheader",
+              "content": "Welcome Message for New Subscribers"
+            },
+            {
+              "type": "text",
+              "content": "Sent immediately after someone subscribes. The purpose is to emotionally reward the action and make the subscriber feel they made a good decision."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Warm welcome that emotionally rewards their decision to subscribe",
+                "Soft direction toward engaging with your content",
+                "Make them feel special — not like subscriber #47",
+                "Ask a question to start a conversation"
+              ]
+            },
+            {
+              "type": "good_example",
+              "content": "I was hoping you would join me here. This feels more personal already. Tell me what made you decide to subscribe?\n\n(Warm, personal, creates dialogue.)"
+            },
+            {
+              "type": "bad_example",
+              "content": "Welcome! Check out my content. DM me if you want custom.\n\n(Cold, transactional, no personality. Subscriber regrets joining.)"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Message Timing & Frequency"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Welcome messages should trigger within minutes of follow/subscribe",
+                "Do not send more than one automated message per trigger event",
+                "Never send automated bulk messages to existing followers — it feels spammy",
+                "If the subscriber replies, respond personally — this is your conversion moment",
+                "Speed of response matters: reply within 30 minutes for best conversion"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Tone Guidelines"
+            },
+            {
+              "type": "text",
+              "content": "The tone of every message must match your persona's personality. A playful persona sounds different from a mysterious one. Consistency in tone builds believability."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Playful persona: Light, teasing, uses casual language and questions",
+                "Shy/cute persona: Soft, slightly hesitant, uses 'I hope' and 'maybe'",
+                "Confident persona: Direct, warm, makes the fan feel chosen",
+                "Mysterious persona: Brief, intriguing, leaves questions open",
+                "Whatever tone you choose, maintain it across ALL messages and captions"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "What Never to Include in Automated Messages"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Prices or payment amounts",
+                "Links to purchase anything",
+                "Mentions of exclusive or paid content",
+                "Sales language ('buy', 'purchase', 'unlock', 'deal')",
+                "Copy-pasted text that sounds robotic or templated",
+                "Emojis overload — keep it to 1-2 maximum"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "First Impression Rule",
+              "content": "The first message sets the tone for the entire relationship. Make the fan feel noticed, welcome, and curious. If the first message feels like a sales pitch, the fan's guard goes up and never comes down. You only get one chance at a first impression.",
+              "border": "#39FF14"
+            }
+          ]
+        }
       ]
     }
   ],
   "summary_points": [
     "The Hard Gate Funnel moves followers through defined stages: Discovery → Curiosity → Interest → Trust → Desire → Action",
     "Instagram is a distribution engine, not a selling platform — never try to sell directly on social media",
-    "Link-in-bio should have maximum 2-3 links — fewer choices means higher conversion",
     "Telegram is a zero-barrier warming layer that captures interested followers before they are ready to pay",
     "Content follows a ladder: Social Media (builds curiosity) → Telegram (builds desire) → Subscription (delivers value)",
     "Each content layer must leave something unfinished — if fans get satisfaction for free, they will not subscribe",
-    "Subscription pricing sweet spot is $7-$15/month — low enough to remove resistance, high enough to signal value",
-    "Have 5-10 posts ready on your subscription page before your first subscriber arrives",
     "Automated welcome messages must feel personal and warm — never transactional or salesy",
     "Funnel links activate only after 3+ weeks of stable engagement — never during warmup"
   ]

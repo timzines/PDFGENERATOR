@@ -6,239 +6,387 @@
     {
       "header": "Lesson 1: Why Video Changes Everything",
       "blocks": [
-        {"type": "text", "content": "Video content gets 3-4x the reach of static images on every major platform. Instagram Reels, TikTok, and even Threads with attached video all prioritize motion content in their algorithms. If you are only posting images, you are leaving the majority of your growth potential on the table."},
-        {"type": "text", "content": "Video makes your AI persona feel real and alive. A 5-second clip of your model blinking, smiling, and turning her head does more for believability than 50 static photos. Moving content stops the scroll in a way that images cannot. This module covers how to create video content using Kling AI and how to turn raw clips into polished, platform-ready content."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Why Video Matters — The Numbers"},
-          {"type": "bullets", "items": [
-            "Instagram Reels reach 3-10x more non-followers than carousels or feed posts",
-            "TikTok's entire algorithm is built around video discovery",
-            "Video content converts followers to subscribers faster than any other format",
-            "Even short 3-5 second clips massively boost engagement rates",
-            "Pages that post Reels daily grow 4-5x faster than image-only pages",
-            "Video is the highest-value content type for subscriber platforms"
-          ]},
-          {"type": "subheader", "content": "What Kling AI Can Do"},
-          {"type": "bullets", "items": [
-            "Turn a single static image into a short video clip (3-10 seconds)",
-            "Add natural motion: hair movement, blinking, smiling, head turns",
-            "Control camera movement: slow zoom, pan, tracking",
-            "Generate lip sync — your model appears to speak with synced lips",
-            "Produce videos in multiple aspect ratios (9:16, 1:1, 16:9)",
-            "Extend existing clips to create longer sequences"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of Kling AI dashboard/interface showing the image-to-video workflow. Label key areas: upload source image, prompt input, generation settings, output preview."}
-        ], "right": [
-          {"type": "subheader", "content": "Kling Modes — Which to Use When"},
-          {"type": "text", "content": "Kling offers different generation modes. Understanding when to use each one saves credits and produces better results."},
-          {"type": "bullets", "items": [
-            "Standard Mode — Lower quality, faster generation, cheaper. Use for testing prompts and ideas before committing credits",
-            "Professional Mode — Higher quality, slower, costs more credits. Use for final content that will be posted publicly",
-            "Always test your prompt in Standard Mode first, then regenerate in Professional Mode once you are happy with the motion"
-          ]},
-          {"type": "subheader", "content": "Kling Credit Economics"},
-          {"type": "text", "content": "Understanding the cost structure helps you budget and avoid wasting credits on bad generations."},
-          {"type": "bullets", "items": [
-            "Free tier: Limited daily generations (good for learning, not for production)",
-            "Paid plans: $10-$30/month depending on usage tier",
-            "Standard Mode uses fewer credits per generation",
-            "Professional Mode uses 2-3x more credits than Standard",
-            "Budget approximately $15-$25/month for a consistent posting schedule",
-            "Tip: batch your video generation sessions to maximize efficiency"
-          ]},
-          {"type": "subheader", "content": "When to Use Video"},
-          {"type": "bullets", "items": [
-            "Instagram Reels — Primary use case, highest reach multiplier",
-            "TikTok posts — Strong discovery platform for video content",
-            "Instagram Stories — 'Casual' feeling clips increase authenticity",
-            "Content that requires motion to feel real (smiling, hair movement, walking)"
-          ]},
-          {"type": "panel", "title": "Cost-Saving Rule", "content": "Never burn Professional Mode credits on an untested prompt. Always test in Standard Mode first. One test generation costs a fraction of a final render. This habit alone will save you 30-40% of your monthly credit spend.", "border": "#39FF14"}
-        ]}
+        {
+          "type": "text",
+          "content": "Video content gets 3-4x the reach of static images on every major platform. Instagram Reels, TikTok, and even Threads with attached video all prioritize motion content in their algorithms. If you are only posting images, you are leaving the majority of your growth potential on the table."
+        },
+        {
+          "type": "text",
+          "content": "Video makes your AI persona feel real and alive. A 5-second clip of your model blinking, smiling, and turning her head does more for believability than 50 static photos. Moving content stops the scroll in a way that images cannot. This module covers how to create video content using Kling AI and how to turn raw clips into polished, platform-ready content."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Why Video Matters — The Numbers"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram Reels reach 3-10x more non-followers than carousels or feed posts",
+                "TikTok's entire algorithm is built around video discovery",
+                "Video content converts followers to subscribers faster than any other format",
+                "Even short 3-5 second clips massively boost engagement rates",
+                "Pages that post Reels daily grow 4-5x faster than image-only pages",
+                "Video is the highest-value content type for subscriber platforms"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "What Kling AI Can Do"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Turn a single static image into a short video clip (3-10 seconds)",
+                "Add natural motion: hair movement, blinking, smiling, head turns",
+                "Control camera movement: slow zoom, pan, tracking",
+                "Generate lip sync — your model appears to speak with synced lips",
+                "Produce videos in multiple aspect ratios (9:16, 1:1, 16:9)",
+                "Extend existing clips to create longer sequences"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Screenshot of Kling AI dashboard/interface showing the image-to-video workflow. Label key areas: upload source image, prompt input, generation settings, output preview."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Kling Modes — Which to Use When"
+            },
+            {
+              "type": "text",
+              "content": "Kling offers different generation modes. Understanding when to use each one saves credits and produces better results."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Standard Mode — Lower quality, faster generation, cheaper. Use for testing prompts and ideas before committing credits",
+                "Professional Mode — Higher quality, slower, costs more credits. Use for final content that will be posted publicly",
+                "Always test your prompt in Standard Mode first, then regenerate in Professional Mode once you are happy with the motion"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Kling Credit Economics"
+            },
+            {
+              "type": "text",
+              "content": "Understanding the cost structure helps you budget and avoid wasting credits on bad generations."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Free tier: Limited daily generations (good for learning, not for production)",
+                "Paid plans: $10-$30/month depending on usage tier",
+                "Standard Mode uses fewer credits per generation",
+                "Professional Mode uses 2-3x more credits than Standard",
+                "Budget approximately $15-$25/month for a consistent posting schedule",
+                "Tip: batch your video generation sessions to maximize efficiency"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "When to Use Video"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram Reels — Primary use case, highest reach multiplier",
+                "TikTok posts — Strong discovery platform for video content",
+                "Instagram Stories — 'Casual' feeling clips increase authenticity",
+                "Content that requires motion to feel real (smiling, hair movement, walking)"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Cost-Saving Rule",
+              "content": "Never burn Professional Mode credits on an untested prompt. Always test in Standard Mode first. One test generation costs a fraction of a final render. This habit alone will save you 30-40% of your monthly credit spend.",
+              "border": "#39FF14"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 2: Writing Video Prompts for Kling",
       "blocks": [
-        {"type": "text", "content": "Kling video generation is prompt-driven, just like image generation. But video prompts require you to think about motion, timing, and camera behavior — not just static appearance. The key difference: a good video prompt describes what happens, not just what the scene looks like. Less is more with video — simpler motion produces more realistic results."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Video Prompt Structure"},
-          {"type": "bullets", "items": [
-            "Start with the source image (your AI model image from Module 2/3)",
-            "Describe the motion: what moves and how (keep it simple)",
-            "Describe camera behavior: static, slow zoom, gentle pan",
-            "Describe the mood: calm, energetic, playful, intimate",
-            "Keep it to one motion at a time — less motion equals more realistic output"
-          ], "bullet": "→"},
-          {"type": "subheader", "content": "The Motion Complexity Scale"},
-          {"type": "text", "content": "Understanding this scale is critical. The further right you go, the more likely the output will look glitchy or unnatural."},
-          {"type": "bullets", "items": [
-            "Simple (best results): Blink, soft smile, hair movement in wind, slow breathing",
-            "Medium (good results): Head turn, slow camera zoom, slight body lean, looking up/down",
-            "Complex (risky): Full body movement, walking, camera panning, multiple motions at once",
-            "Too Complex (will fail): Dancing, running, fast camera movement, multiple people interacting"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Motion complexity scale visual: horizontal gradient from green (Simple) through yellow (Medium) to red (Too Complex). Show example motions at each level: blink → head turn → walking → dancing."}
-        ], "right": [
-          {"type": "subheader", "content": "10 Proven Video Prompts"},
-          {"type": "good_example", "content": "1. 'Slow zoom in on face, she looks at camera and gives a soft smile, slight head tilt to the right, natural daylight'\n\n2. 'Hair gently blowing in the wind, slow blink, looking directly at camera, golden hour lighting'\n\n3. 'Slight head turn from left to right, soft smile appears, warm indoor lighting, static camera'\n\n4. 'Looking down at phone, then slowly looks up at camera with eye contact, natural lighting'\n\n5. 'Slow zoom in, she tucks hair behind ear, slight smile, bedroom setting'"},
-          {"type": "good_example", "content": "6. 'Sitting on couch, slow breathing motion, looks up from book and makes eye contact, warm lighting'\n\n7. 'Mirror reflection, she adjusts top slightly, gentle head tilt, bathroom lighting'\n\n8. 'Close-up face, slow blink, wind gently moves hair, direct eye contact, outdoor'\n\n9. 'Leans chin on hand, slow smile develops, camera slowly zooms in, cafe setting'\n\n10. 'Standing, slight weight shift side to side, looks at camera over shoulder, natural light'"},
-          {"type": "bad_example", "content": "Bad prompts:\n'Girl dancing and spinning around' — Too much motion, will distort\n'Camera flies around her while she walks' — Impossible for AI\n'She picks up coffee, drinks it, puts it down' — Multiple sequential actions fail\n\nAll bad prompts try to do too much at once. One motion. One camera move. That is it."},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side by side: output from a simple prompt (clean, natural) vs output from an overloaded prompt (distorted, glitchy). Show the quality difference clearly."}
-        ]},
-        {"type": "panel", "title": "Golden Rule for Video", "content": "Source image quality matters more than generation settings. A perfect source image with a simple prompt will always outperform a mediocre source image with a complex prompt. Start with your best images from Module 3.", "border": "#39FF14"}
+        {
+          "type": "text",
+          "content": "Kling video generation is prompt-driven, just like image generation. But video prompts require you to think about motion, timing, and camera behavior — not just static appearance. The key difference: a good video prompt describes what happens, not just what the scene looks like. Less is more with video — simpler motion produces more realistic results."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Video Prompt Structure"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Start with the source image (your AI model image from Module 2/3)",
+                "Describe the motion: what moves and how (keep it simple)",
+                "Describe camera behavior: static, slow zoom, gentle pan",
+                "Describe the mood: calm, energetic, playful, intimate",
+                "Keep it to one motion at a time — less motion equals more realistic output"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "subheader",
+              "content": "The Motion Complexity Scale"
+            },
+            {
+              "type": "text",
+              "content": "Understanding this scale is critical. The further right you go, the more likely the output will look glitchy or unnatural."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Simple (best results): Blink, soft smile, hair movement in wind, slow breathing",
+                "Medium (good results): Head turn, slow camera zoom, slight body lean, looking up/down",
+                "Complex (risky): Full body movement, walking, camera panning, multiple motions at once",
+                "Too Complex (will fail): Dancing, running, fast camera movement, multiple people interacting"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Motion complexity scale visual: horizontal gradient from green (Simple) through yellow (Medium) to red (Too Complex). Show example motions at each level: blink → head turn → walking → dancing."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "10 Proven Video Prompts"
+            },
+            {
+              "type": "good_example",
+              "content": "1. 'Slow zoom in on face, she looks at camera and gives a soft smile, slight head tilt to the right, natural daylight'\n\n2. 'Hair gently blowing in the wind, slow blink, looking directly at camera, golden hour lighting'\n\n3. 'Slight head turn from left to right, soft smile appears, warm indoor lighting, static camera'\n\n4. 'Looking down at phone, then slowly looks up at camera with eye contact, natural lighting'\n\n5. 'Slow zoom in, she tucks hair behind ear, slight smile, bedroom setting'"
+            },
+            {
+              "type": "good_example",
+              "content": "6. 'Sitting on couch, slow breathing motion, looks up from book and makes eye contact, warm lighting'\n\n7. 'Mirror reflection, she adjusts top slightly, gentle head tilt, bathroom lighting'\n\n8. 'Close-up face, slow blink, wind gently moves hair, direct eye contact, outdoor'\n\n9. 'Leans chin on hand, slow smile develops, camera slowly zooms in, cafe setting'\n\n10. 'Standing, slight weight shift side to side, looks at camera over shoulder, natural light'"
+            },
+            {
+              "type": "bad_example",
+              "content": "Bad prompts:\n'Girl dancing and spinning around' — Too much motion, will distort\n'Camera flies around her while she walks' — Impossible for AI\n'She picks up coffee, drinks it, puts it down' — Multiple sequential actions fail\n\nAll bad prompts try to do too much at once. One motion. One camera move. That is it."
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Side by side: output from a simple prompt (clean, natural) vs output from an overloaded prompt (distorted, glitchy). Show the quality difference clearly."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Golden Rule for Video",
+          "content": "Source image quality matters more than generation settings. A perfect source image with a simple prompt will always outperform a mediocre source image with a complex prompt. Start with your best images from Module 3.",
+          "border": "#39FF14"
+        }
       ]
     },
     {
-      "header": "Lesson 3: Lip Sync & Advanced Features",
+      "header": "Lesson 3: Editing Videos & Adding Audio",
       "blocks": [
-        {"type": "text", "content": "Lip sync is one of the most powerful features in Kling. It makes your AI model appear to speak with synced lip movements. A 5-second clip of your model 'talking' directly to camera is incredibly convincing and dramatically outperforms standard motion clips for engagement. This is what makes your persona feel real."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "How Lip Sync Works"},
-          {"type": "bullets", "items": [
-            "Upload your source image (clear front-facing shot, mouth visible)",
-            "Provide audio input — either record a voice clip or use text-to-speech",
-            "Kling syncs the lip movements to match the audio",
-            "Output: your model appears to be speaking the words naturally",
-            "Works best with clear, front-facing portraits where the mouth is fully visible"
-          ]},
-          {"type": "subheader", "content": "Best Practices for Lip Sync"},
-          {"type": "bullets", "items": [
-            "Use a clear, well-lit front-facing image — the face must be prominent",
-            "Audio should be clear with minimal background noise",
-            "Keep clips short: 3-7 seconds produces the most natural results",
-            "Simple phrases work better than long monologues",
-            "Text-to-speech voice should match your persona's aesthetic (young, warm, casual)",
-            "Review output carefully — lip sync can sometimes drift or look unnatural on certain sounds"
-          ]},
-          {"type": "subheader", "content": "Lip Sync Content Ideas"},
-          {"type": "bullets", "items": [
-            "'Hey, come talk to me' — Simple CTA for Stories",
-            "'Good morning' / 'Goodnight' — Daily check-in clips",
-            "Trending audio lip sync — Matches popular Reels format",
-            "Short personality statements — 'I swear I was going to study today'",
-            "Response clips — Appear to reply to comments or questions"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Video Extension"},
-          {"type": "text", "content": "Raw Kling output is typically 3-5 seconds. For a 15-30 second Reel, you need to create multiple clips and stitch them together, or use Kling's video extension feature."},
-          {"type": "bullets", "items": [
-            "Video Extend lets you continue a generated clip for additional seconds",
-            "Each extension adds 3-5 more seconds of motion",
-            "The AI tries to continue the natural motion from where the clip ended",
-            "Works best when the original clip ends in a natural position (not mid-motion)",
-            "Quality can degrade with multiple extensions — limit to 1-2 extensions per clip",
-            "For longer content, stitch separate clips together in an editor (next lesson)"
-          ]},
-          {"type": "subheader", "content": "Face Preservation Tips"},
-          {"type": "text", "content": "The biggest challenge with AI video is maintaining your character's face consistency. Small errors compound over frames — by the end of a long clip, the face can drift."},
-          {"type": "bullets", "items": [
-            "Use your best, clearest reference image as the source — quality in = quality out",
-            "Subtle motion preserves faces better than dramatic movement",
-            "Conservative movement settings reduce face drift",
-            "Short clips (3-5 seconds) have better face consistency than long ones",
-            "Always compare the first and last frame — if the face drifted, regenerate",
-            "Professional Mode produces more consistent faces than Standard Mode"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Lip sync workflow: Source Image + Audio Input → Kling Lip Sync → Output video showing model appearing to speak. Annotate the steps clearly."}
-        ]}
+        {
+          "type": "text",
+          "content": "Raw Kling output is only half the job. A 3-5 second silent clip is not a finished Reel. This lesson covers how to edit clips together, add trending audio, and create polished content that performs on Instagram and TikTok. The editing step is what transforms raw AI video into content that competes with real influencers."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Free Video Editing Tools"
+            },
+            {
+              "type": "text",
+              "content": "You do not need expensive software. These free tools handle everything you need for social media video."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "CapCut (Desktop & Mobile) — Best for beginners, designed for social media, free",
+                "DaVinci Resolve (Desktop) — More powerful, free version is fully capable",
+                "InShot (Mobile) — Quick mobile editing for Stories and simple clips",
+                "CapCut is recommended for most operators — it has Reels-specific templates and trending audio built in"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Stitching Multiple Clips"
+            },
+            {
+              "type": "text",
+              "content": "A finished Reel is typically 10-30 seconds. Since Kling produces 3-5 second clips, you need to combine multiple clips into one seamless video."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Generate 3-5 separate clips of your model with different motions",
+                "Import all clips into CapCut or DaVinci Resolve",
+                "Arrange them in a natural sequence (e.g., look up → smile → hair flip → look away)",
+                "Add smooth transitions between clips (crossfade or cut on motion)",
+                "Trim any awkward frames from the beginning or end of each clip",
+                "Target total length: 10-15 seconds for Reels, 15-30 seconds for TikTok"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Timeline view in CapCut showing 3-4 Kling clips arranged sequentially with transitions between them, audio track below, and text overlay. Annotate: clips, transitions, audio, text."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Adding Audio — The Growth Multiplier"
+            },
+            {
+              "type": "text",
+              "content": "Trending audio is what makes Reels go viral. The right sound can 10x your reach. Never post a Reel without audio."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Use Instagram's built-in audio library to find trending sounds",
+                "Check the Reels tab daily — trending audio changes every 1-2 weeks",
+                "Match the mood of the audio to your clip (romantic, chill, energetic)",
+                "CapCut has a trending audio section specifically for Reels/TikTok",
+                "Lip sync audio: use your generated lip sync as the audio track",
+                "Never use copyrighted music directly — use platform-provided audio only"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "The 15-Second Reel Formula"
+            },
+            {
+              "type": "text",
+              "content": "This formula consistently produces high-performing Reels. Follow it until you find what works specifically for your audience."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Second 0-1: Hook — Face, eye contact, immediate attention grab",
+                "Second 1-5: First motion — Smile, head turn, or hair movement",
+                "Second 5-8: Cut to new angle or setting — Different clip, same model",
+                "Second 8-12: Audio peak — Sync a key moment to the audio's strongest beat",
+                "Second 12-15: End — Soft look at camera or look away. Leave them wanting more"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "The 15-second Reel formula as a horizontal timeline: Hook (0-1s) → Motion (1-5s) → Cut (5-8s) → Audio Peak (8-12s) → End (12-15s). Color-coded segments with descriptions."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Pro Tip",
+          "content": "Start simple. A 5-second clip of your AI model looking at the camera with a subtle smile, a slow zoom-in, and a trending audio track will outperform a complex, glitchy 15-second video every time. Master the basics before trying advanced editing. Quality always beats complexity.",
+          "border": "#39FF14"
+        }
       ]
     },
     {
-      "header": "Lesson 4: Editing Videos & Adding Audio",
+      "header": "Lesson 4: Exporting & Platform Optimization",
       "blocks": [
-        {"type": "text", "content": "Raw Kling output is only half the job. A 3-5 second silent clip is not a finished Reel. This lesson covers how to edit clips together, add trending audio, and create polished content that performs on Instagram and TikTok. The editing step is what transforms raw AI video into content that competes with real influencers."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Free Video Editing Tools"},
-          {"type": "text", "content": "You do not need expensive software. These free tools handle everything you need for social media video."},
-          {"type": "bullets", "items": [
-            "CapCut (Desktop & Mobile) — Best for beginners, designed for social media, free",
-            "DaVinci Resolve (Desktop) — More powerful, free version is fully capable",
-            "InShot (Mobile) — Quick mobile editing for Stories and simple clips",
-            "CapCut is recommended for most operators — it has Reels-specific templates and trending audio built in"
-          ]},
-          {"type": "subheader", "content": "Stitching Multiple Clips"},
-          {"type": "text", "content": "A finished Reel is typically 10-30 seconds. Since Kling produces 3-5 second clips, you need to combine multiple clips into one seamless video."},
-          {"type": "bullets", "items": [
-            "Generate 3-5 separate clips of your model with different motions",
-            "Import all clips into CapCut or DaVinci Resolve",
-            "Arrange them in a natural sequence (e.g., look up → smile → hair flip → look away)",
-            "Add smooth transitions between clips (crossfade or cut on motion)",
-            "Trim any awkward frames from the beginning or end of each clip",
-            "Target total length: 10-15 seconds for Reels, 15-30 seconds for TikTok"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Timeline view in CapCut showing 3-4 Kling clips arranged sequentially with transitions between them, audio track below, and text overlay. Annotate: clips, transitions, audio, text."}
-        ], "right": [
-          {"type": "subheader", "content": "Adding Audio — The Growth Multiplier"},
-          {"type": "text", "content": "Trending audio is what makes Reels go viral. The right sound can 10x your reach. Never post a Reel without audio."},
-          {"type": "bullets", "items": [
-            "Use Instagram's built-in audio library to find trending sounds",
-            "Check the Reels tab daily — trending audio changes every 1-2 weeks",
-            "Match the mood of the audio to your clip (romantic, chill, energetic)",
-            "CapCut has a trending audio section specifically for Reels/TikTok",
-            "Lip sync audio: use your generated lip sync as the audio track",
-            "Never use copyrighted music directly — use platform-provided audio only"
-          ]},
-          {"type": "subheader", "content": "The 15-Second Reel Formula"},
-          {"type": "text", "content": "This formula consistently produces high-performing Reels. Follow it until you find what works specifically for your audience."},
-          {"type": "bullets", "items": [
-            "Second 0-1: Hook — Face, eye contact, immediate attention grab",
-            "Second 1-5: First motion — Smile, head turn, or hair movement",
-            "Second 5-8: Cut to new angle or setting — Different clip, same model",
-            "Second 8-12: Audio peak — Sync a key moment to the audio's strongest beat",
-            "Second 12-15: End — Soft look at camera or look away. Leave them wanting more"
-          ], "bullet": "→"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "The 15-second Reel formula as a horizontal timeline: Hook (0-1s) → Motion (1-5s) → Cut (5-8s) → Audio Peak (8-12s) → End (12-15s). Color-coded segments with descriptions."}
-        ]},
-        {"type": "panel", "title": "Pro Tip", "content": "Start simple. A 5-second clip of your AI model looking at the camera with a subtle smile, a slow zoom-in, and a trending audio track will outperform a complex, glitchy 15-second video every time. Master the basics before trying advanced editing. Quality always beats complexity.", "border": "#39FF14"}
-      ]
-    },
-    {
-      "header": "Lesson 5: Exporting & Platform Optimization",
-      "blocks": [
-        {"type": "text", "content": "The final step is exporting your edited video in the correct format for each platform. Wrong resolution, wrong aspect ratio, or wrong duration means your content underperforms or gets cropped awkwardly. This lesson covers the exact export settings for every platform."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Export Settings by Platform"},
-          {"type": "bullets", "items": [
-            "Instagram Reels: 1080x1920 (9:16 vertical), MP4, 15-30 seconds ideal",
-            "Instagram Stories: 1080x1920 (9:16 vertical), MP4, under 15 seconds",
-            "Instagram Feed: 1080x1080 (1:1 square) or 1080x1350 (4:5), MP4",
-            "TikTok: 1080x1920 (9:16 vertical), MP4, 15-60 seconds",
-            "Twitter/X: 1280x720 minimum, MP4, under 2 minutes",
-            "Always export as MP4 — it is universally supported"
-          ]},
-          {"type": "subheader", "content": "Quality Checklist Before Posting"},
-          {"type": "bullets", "items": [
-            "Face matches your base model consistently throughout the clip",
-            "No weird hand or finger movements visible",
-            "Motion looks natural, not robotic or jerky",
-            "No visual glitches, warping, or frame jumps",
-            "Audio (if added) syncs properly — no lag or desync",
-            "First frame shows face clearly (this is the thumbnail/hook)",
-            "Text overlays are readable and not cut off by UI elements",
-            "Grain has been added to the source images before video generation"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Platform Posting Strategy"},
-          {"type": "bullets", "items": [
-            "Instagram Reels — Add trending audio, 3-5 hashtags, and a hook caption. Post during peak hours (check Insights)",
-            "Instagram Stories — Use raw-feeling clips for authenticity. No heavy editing needed. Post 3-5 per day",
-            "TikTok — Similar to Reels but keep it more casual. Native-feeling content outperforms polished content",
-            "Twitter/X — Short clips with captions. Video tweets get 10x more engagement than text-only"
-          ]},
-          {"type": "subheader", "content": "Content Batching for Video"},
-          {"type": "text", "content": "Video generation is slower than image generation. Batch your video work to maximize efficiency."},
-          {"type": "bullets", "items": [
-            "Generate all Kling clips in one session (5-10 clips at a time)",
-            "Edit all clips in one editing session",
-            "Export multiple versions: Reels format, Story format, TikTok format",
-            "Schedule posts across the week — never post all videos on the same day",
-            "Keep a video backlog of 7-10 finished clips ready to post",
-            "One dedicated video session per week is better than daily scrambling"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Export settings reference card: Platform → Resolution → Aspect Ratio → Ideal Duration → Format. Cover all platforms in a clean table format."}
-        ]},
-        {"type": "panel", "title": "Video Priority Rule", "content": "Video content should be your #1 priority for Instagram and TikTok growth. A page with daily Reels will grow 4-5x faster than a page posting only images. If you can only do one thing per day, make it a Reel. Everything else supports the video-first strategy.", "border": "#FF3131"}
+        {
+          "type": "text",
+          "content": "The final step is exporting your edited video in the correct format for each platform. Wrong resolution, wrong aspect ratio, or wrong duration means your content underperforms or gets cropped awkwardly. This lesson covers the exact export settings for every platform."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Export Settings by Platform"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram Reels: 1080x1920 (9:16 vertical), MP4, 15-30 seconds ideal",
+                "Instagram Stories: 1080x1920 (9:16 vertical), MP4, under 15 seconds",
+                "Instagram Feed: 1080x1080 (1:1 square) or 1080x1350 (4:5), MP4",
+                "TikTok: 1080x1920 (9:16 vertical), MP4, 15-60 seconds",
+                "Twitter/X: 1280x720 minimum, MP4, under 2 minutes",
+                "Always export as MP4 — it is universally supported"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Quality Checklist Before Posting"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Face matches your base model consistently throughout the clip",
+                "No weird hand or finger movements visible",
+                "Motion looks natural, not robotic or jerky",
+                "No visual glitches, warping, or frame jumps",
+                "Audio (if added) syncs properly — no lag or desync",
+                "First frame shows face clearly (this is the thumbnail/hook)",
+                "Text overlays are readable and not cut off by UI elements",
+                "Grain has been added to the source images before video generation"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Platform Posting Strategy"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram Reels — Add trending audio, 3-5 hashtags, and a hook caption. Post during peak hours (check Insights)",
+                "Instagram Stories — Use raw-feeling clips for authenticity. No heavy editing needed. Post 3-5 per day",
+                "TikTok — Similar to Reels but keep it more casual. Native-feeling content outperforms polished content",
+                "Twitter/X — Short clips with captions. Video tweets get 10x more engagement than text-only"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Content Batching for Video"
+            },
+            {
+              "type": "text",
+              "content": "Video generation is slower than image generation. Batch your video work to maximize efficiency."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Generate all Kling clips in one session (5-10 clips at a time)",
+                "Edit all clips in one editing session",
+                "Export multiple versions: Reels format, Story format, TikTok format",
+                "Schedule posts across the week — never post all videos on the same day",
+                "Keep a video backlog of 7-10 finished clips ready to post",
+                "One dedicated video session per week is better than daily scrambling"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Export settings reference card: Platform → Resolution → Aspect Ratio → Ideal Duration → Format. Cover all platforms in a clean table format."
+            }
+          ]
+        },
+        {
+          "type": "panel",
+          "title": "Video Priority Rule",
+          "content": "Video content should be your #1 priority for Instagram and TikTok growth. A page with daily Reels will grow 4-5x faster than a page posting only images. If you can only do one thing per day, make it a Reel. Everything else supports the video-first strategy.",
+          "border": "#FF3131"
+        }
       ]
     }
   ],
@@ -247,7 +395,6 @@
     "Kling AI turns static images into realistic video clips with motion, expressions, and camera movement",
     "Always test prompts in Standard Mode before committing Professional Mode credits — saves 30-40% of costs",
     "Keep video prompts simple — one motion at a time produces the most realistic results",
-    "Lip sync is one of the most powerful features — a 5-second talking clip dramatically boosts believability",
     "Edit clips together using CapCut (free) — combine 3-5 short clips with transitions and trending audio",
     "The 15-second Reel formula: Hook → Motion → Cut → Audio Peak → End",
     "Export in 9:16 at 1080x1920 for Reels/TikTok, always MP4, add trending audio before posting",
