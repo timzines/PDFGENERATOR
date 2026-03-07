@@ -783,6 +783,22 @@ body {
     color: #d4bcc4;
 }
 
+.content-image {
+    margin: 8px 0;
+    text-align: center;
+}
+.content-image img {
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.content-image-caption {
+    font-size: 10px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 4px;
+}
+
 .content-footer {
     position: absolute;
     bottom: 18px;
@@ -970,6 +986,18 @@ def render_blocks_html(blocks):
                 html += f'  <div class="panel-title">{title}</div>\n'
             html += f'  <div class="panel-body">{content}</div>\n'
             html += '</div>\n'
+
+        elif btype == "image":
+            img_path = block.get("path", "")
+            caption = block.get("caption", "")
+            if not os.path.isabs(img_path):
+                img_path = str(BASE_DIR / img_path)
+            if os.path.exists(img_path):
+                uri = img_to_data_uri(img_path)
+                html += f'<div class="content-image"><img src="{uri}" />'
+                if caption:
+                    html += f'<div class="content-image-caption">{caption}</div>'
+                html += '</div>\n'
 
         elif btype == "page_break":
             html += '<div style="page-break-before: always;"></div>\n'
