@@ -11,6 +11,12 @@
           "content": "Before you generate a single image, you need to decide who your AI model is. This is a business decision, not an aesthetic one. Your niche determines your audience, your content style, and ultimately your revenue potential. The biggest mistake beginners make is choosing a niche they personally like instead of one with proven market demand."
         },
         {
+          "type": "panel",
+          "title": "Choosing Your Niche — Read This First",
+          "content": "Do not just pick a generic blonde girl — that space is completely oversaturated and you will not stand out. You need to choose a niche that is currently working and has demand. Look at what's trending, what audiences are engaging with, and build your persona around that.\n\nExotic niches (vitiligo, heterochromia, and similar unique traits) are highly not recommended. Fanvue has been actively cracking down on these types of models. While you can technically sell them on other platforms for AI content, the reality is that generating NSFW content for these models is extremely difficult for no good reason — the tools just don't handle it well. Save yourself the headache and pick a niche that works with the current tools and platforms.",
+          "border": "#FF6B35"
+        },
+        {
           "type": "text",
           "content": "Research what is already working. Look at successful AI influencer pages on Instagram, Threads, and TikTok. Study what aesthetics get engagement, what niches have active audiences, and what styles people actually follow. You are building a product for a market, not creating art for yourself."
         },
