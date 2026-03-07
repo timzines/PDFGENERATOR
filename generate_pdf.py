@@ -536,7 +536,7 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 10px 60px 0 60px;
+    padding: 10px 0 0 0;
     page: content-page;
     color: #e0ccd2;
 }
@@ -1100,7 +1100,7 @@ def generate_pdf(config, output_path):
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 45px 0;
+    margin: 45px 60px;
     padding: 0;
     background: #1a1b1f;
     @bottom-center {{
@@ -1116,6 +1116,7 @@ def generate_pdf(config, output_path):
         font-weight: 500;
         letter-spacing: 1px;
         color: rgba(255,255,255,0.3);
+        margin-right: 0;
     }}
 }}
 """
