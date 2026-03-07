@@ -1,0 +1,111 @@
+{
+  "title": "Module 4\nSFW Video Creation",
+  "subtitle": "Learn Motion Control with Kling and How to Generate Video Prompts",
+  "output_filename": "Module-04-SFW-Video-Creation.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: Introduction to AI Video with Kling",
+      "blocks": [
+        {"type": "text", "content": "Video content dramatically increases engagement and reach on every platform. Kling is an AI video generation tool that takes your static images and turns them into realistic video clips with motion, expressions, and camera movement. This is how you bring your AI model to life."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Why Video Matters"},
+          {"type": "bullets", "items": [
+            "Instagram Reels and TikTok prioritize video in discovery",
+            "Video makes your AI persona feel real and alive",
+            "Moving content stops the scroll far more than static images",
+            "Even short 3-5 second clips massively boost engagement",
+            "Video content converts followers to subscribers faster"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of Kling interface / dashboard overview"}
+        ], "right": [
+          {"type": "subheader", "content": "What Kling Can Do"},
+          {"type": "bullets", "items": [
+            "Turn a single image into a short video clip",
+            "Add natural motion: hair movement, blinking, head turns",
+            "Control camera movement: pan, zoom, tracking",
+            "Generate lip sync and facial expressions",
+            "Produce videos in multiple aspect ratios"
+          ]},
+          {"type": "subheader", "content": "When to Use Video"},
+          {"type": "bullets", "items": [
+            "Instagram Reels (primary use case)",
+            "TikTok posts",
+            "Instagram Stories for 'casual' feel",
+            "Fanvue content to increase perceived value"
+          ]}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: Writing Video Prompts for Kling",
+      "blocks": [
+        {"type": "text", "content": "Kling video generation is prompt-driven, just like image generation. But video prompts require you to think about motion, timing, and camera behavior — not just static appearance. A good video prompt describes what happens, not just what the scene looks like."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Video Prompt Structure"},
+          {"type": "bullets", "items": [
+            "Start with the source image (your AI model image)",
+            "Describe the motion: what moves and how",
+            "Describe camera behavior: static, slow pan, zoom in",
+            "Describe the mood: calm, energetic, playful, intimate",
+            "Keep it simple — less motion = more realistic output"
+          ], "bullet": "→"},
+          {"type": "good_example", "content": "Prompt: 'Slow zoom in on woman's face, she looks at camera and gives a soft smile, slight head tilt to the right, wind gently moves her hair, natural daylight'"},
+          {"type": "bad_example", "content": "Prompt: 'Girl dancing and spinning around while the camera flies in circles'\n(Too much motion — will produce distorted, unrealistic output)"}
+        ], "right": [
+          {"type": "subheader", "content": "Motion Control Tips"},
+          {"type": "bullets", "items": [
+            "One motion at a time produces the cleanest results",
+            "Subtle movements look more realistic than dramatic ones",
+            "Head turns, hair movement, and blinking are the easiest wins",
+            "Camera zoom-in works better than camera panning",
+            "Avoid full body movement — it's the hardest to get right"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example prompts with their video output results (3-4 examples showing different motion types)"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Kling settings/parameters screenshot showing recommended configuration"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 3: Exporting & Using Videos on Social Media",
+      "blocks": [
+        {"type": "text", "content": "Generating a video is only half the job. You need to export it in the right format, at the right resolution, and post it with the right strategy for each platform. This lesson covers the final steps from Kling output to published content."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Export Settings"},
+          {"type": "bullets", "items": [
+            "Resolution: 1080x1920 for Reels/TikTok (9:16 vertical)",
+            "Resolution: 1080x1080 for feed posts (1:1 square)",
+            "Format: MP4 is universal",
+            "Duration: 3-15 seconds is ideal for most platforms",
+            "Check for artifacts or glitches before exporting"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Export settings screenshot and format comparison chart"}
+        ], "right": [
+          {"type": "subheader", "content": "Platform Posting Strategy"},
+          {"type": "bullets", "items": [
+            "Instagram Reels — Add trending audio, hashtags, and a hook caption",
+            "TikTok — Similar to Reels, keep it native-feeling",
+            "Instagram Stories — Use raw-feeling clips for authenticity",
+            "Fanvue — Longer or more intimate clips for subscriber content"
+          ]},
+          {"type": "subheader", "content": "Quality Checklist Before Posting"},
+          {"type": "bullets", "items": [
+            "Face matches your base model consistently",
+            "No weird hand/finger movements",
+            "Motion looks natural, not robotic",
+            "No visual glitches or frame jumps",
+            "Audio (if added) syncs properly"
+          ]}
+        ]},
+        {"type": "panel", "title": "Pro Tip", "content": "Start simple. A 5-second clip of your AI model looking at the camera with a subtle smile and a slow zoom-in will outperform a complex, glitchy 15-second video every time. Master the basics before trying advanced motion.", "border": "#39FF14"}
+      ]
+    }
+  ],
+  "summary_points": [
+    "Video content dramatically increases engagement and reach on all platforms",
+    "Kling turns your static AI images into realistic motion clips",
+    "Keep video prompts simple — one motion at a time produces the best results",
+    "Subtle movements (smile, head tilt, hair movement) are more realistic than dramatic ones",
+    "Export in 9:16 for Reels/TikTok, 1:1 for feed posts, always MP4",
+    "Quality check every video before posting — face consistency and no glitches"
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "title": "Module 3\nSFW Image Creation",
+  "subtitle": "Learn How to Generate SFW Images from Reference Images",
+  "output_filename": "Module-03-SFW-Image-Creation.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: Reference Image Workflow",
+      "blocks": [
+        {"type": "text", "content": "Once you have your base model from Module 2, every new image you create should be generated using that base as a reference. This is how you maintain consistency across hundreds of images. The reference image workflow is the backbone of your content pipeline."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "The Reference Workflow"},
+          {"type": "bullets", "items": [
+            "Start with your locked-in seed image from Module 2",
+            "Upload it as a reference/input image in your generation tool",
+            "Write a new prompt describing the desired scene, outfit, or setting",
+            "Generate multiple outputs and compare against the reference",
+            "Only keep images that match the face consistently"
+          ], "bullet": "→"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Step-by-step screenshot of uploading reference image and generating a new variation"}
+        ], "right": [
+          {"type": "subheader", "content": "Reference Image Best Practices"},
+          {"type": "bullets", "items": [
+            "Use a clear, front-facing headshot as your primary reference",
+            "Keep 2-3 reference angles (front, 3/4 turn, profile) for variety",
+            "Higher resolution reference = better consistency in outputs",
+            "Never change your reference image once your page is live"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example showing reference image → 3-4 different output images generated from it"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: Prompt Engineering for SFW Images",
+      "blocks": [
+        {"type": "text", "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. This lesson covers how to write prompts that consistently produce natural, platform-safe images."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Prompt Structure"},
+          {"type": "bullets", "items": [
+            "Subject description (already handled by reference image)",
+            "Setting/background (indoor, outdoor, studio, café, etc.)",
+            "Outfit/clothing description",
+            "Lighting and mood (natural light, golden hour, soft studio)",
+            "Camera angle and framing (selfie, portrait, full body)",
+            "Style keywords (photorealistic, candid, editorial)"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Annotated prompt example showing each component highlighted"}
+        ], "right": [
+          {"type": "good_example", "content": "Prompt: 'Young woman in a white sundress sitting at an outdoor café, golden hour lighting, candid pose, looking at camera with soft smile, iPhone selfie style, photorealistic'"},
+          {"type": "bad_example", "content": "Prompt: 'Beautiful girl photo'\n(Too vague — no setting, lighting, or style direction. Results will be random and inconsistent.)"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side-by-side comparison: output from a good prompt vs output from a vague prompt"}
+        ]},
+        {"type": "panel", "title": "Pro Tip", "content": "Keep a prompt template document. When you find a prompt structure that works well, save it. Swap out the setting and outfit details for each new batch. This saves time and maintains quality.", "border": "#39FF14"}
+      ]
+    },
+    {
+      "header": "Lesson 3: Editing & Refining AI Images",
+      "blocks": [
+        {"type": "text", "content": "Raw AI outputs are rarely perfect. Even the best generations need minor editing before they are ready to post. This lesson covers what to look for and how to fix common issues without over-processing the image."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Common Issues to Fix"},
+          {"type": "bullets", "items": [
+            "Extra or distorted fingers/hands",
+            "Asymmetric facial features",
+            "Text or watermark artifacts in background",
+            "Unnatural skin smoothing or shine",
+            "Weird jewelry, accessories, or clothing seams",
+            "Background inconsistencies or blending errors"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Before/after examples of common AI artifacts being fixed"}
+        ], "right": [
+          {"type": "subheader", "content": "Editing Workflow"},
+          {"type": "bullets", "items": [
+            "Inspect hands and fingers first (most common issue)",
+            "Check face symmetry and eye alignment",
+            "Scan background for text, artifacts, or impossible geometry",
+            "Adjust color grading for natural skin tones",
+            "Crop or reframe for platform-specific aspect ratios",
+            "Export at appropriate resolution"
+          ], "bullet": "→"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of editing workflow in photo editing tool"}
+        ]},
+        {"type": "panel", "title": "Rule", "content": "Do not over-edit. The goal is to fix obvious AI artifacts, not to create a heavily processed image. Over-edited photos look fake and reduce engagement.", "border": "#FF3131"}
+      ]
+    },
+    {
+      "header": "Lesson 4: Platform-Specific Image Rules",
+      "blocks": [
+        {"type": "text", "content": "Each platform has different content guidelines. What works on Reddit will get you banned on Instagram. Understanding what is 'safe' per platform prevents account strikes and keeps your content flowing without interruption."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Instagram (Strictest)"},
+          {"type": "bullets", "items": [
+            "No nudity, implied or explicit",
+            "No underwear as primary clothing",
+            "Cleavage must be modest and natural",
+            "Swimwear is allowed in context (beach, pool)",
+            "No sexual poses or suggestive hand placement"
+          ]},
+          {"type": "subheader", "content": "TikTok (Strict)"},
+          {"type": "bullets", "items": [
+            "Similar rules to Instagram, often stricter",
+            "Carousels and photo content are safest",
+            "Avoid anything that could be flagged as 'adult content'",
+            "When in doubt, keep it casual and clothed"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Reddit (Most Flexible)"},
+          {"type": "bullets", "items": [
+            "Varies by subreddit rules",
+            "SFW subreddits still require tasteful content",
+            "Read each subreddit's rules before posting",
+            "Some SFW subs allow swimwear, others don't"
+          ]},
+          {"type": "subheader", "content": "Twitter/X (Flexible)"},
+          {"type": "bullets", "items": [
+            "More lenient than Instagram",
+            "SFW content performs better for discovery",
+            "Mark sensitive content appropriately",
+            "Keep main feed clean, use media for variety"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Content tier chart: what's safe for each platform (green/yellow/red zones)"}
+        ]},
+        {"type": "panel", "title": "Golden Rule", "content": "When in doubt, keep it safe. One content strike on Instagram can shadow your account for weeks. It is always better to post something slightly too modest than to risk a ban.", "border": "#39FF14"}
+      ]
+    }
+  ],
+  "summary_points": [
+    "Always generate new images using your base model as a reference",
+    "Write detailed prompts with setting, lighting, outfit, and camera angle",
+    "Save prompt templates that produce consistently good results",
+    "Edit AI outputs to fix hands, artifacts, and background issues — but don't over-edit",
+    "Know each platform's content rules — Instagram is strictest, Reddit is most flexible",
+    "When in doubt, keep it safe — a content strike can derail weeks of progress"
+  ]
+}

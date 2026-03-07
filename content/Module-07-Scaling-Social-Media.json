@@ -1,0 +1,159 @@
+{
+  "title": "Module 7\nScaling Social Media",
+  "subtitle": "Posting and Scaling on Your Social Media Accounts",
+  "output_filename": "Module-07-Scaling-Social-Media.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: Content Posting Cadence & Scheduling",
+      "blocks": [
+        {"type": "text", "content": "After warmup is complete and your accounts are growing, the next challenge is maintaining momentum. Consistency is what separates pages that plateau from pages that scale. This lesson covers the exact posting cadence that keeps the algorithm feeding you reach."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Daily Posting Schedule"},
+          {"type": "bullets", "items": [
+            "Instagram Reels: 1 per day (minimum 4-5 per week)",
+            "Instagram Stories: 3-5 per day (keeps you at top of follower feed)",
+            "Instagram Carousels: 2-3 per week (profile building)",
+            "Threads: 5-8 text posts per day",
+            "TikTok: 1-2 posts per day",
+            "Twitter: 2-3 original tweets + 15-20 replies per day",
+            "Reddit: 1 post per day across different subreddits"
+          ]},
+          {"type": "panel", "title": "Consistency Rule", "content": "Missing one day is fine. Missing three in a row resets your algorithmic momentum. The algorithm rewards consistency above everything else.", "border": "#39FF14"}
+        ], "right": [
+          {"type": "subheader", "content": "Optimal Posting Times"},
+          {"type": "bullets", "items": [
+            "Post when your target audience is online (check Insights)",
+            "For US audiences: 11am-1pm EST and 7pm-9pm EST are peak",
+            "First 30 minutes after posting determine reach",
+            "Engage with comments immediately after posting to boost signals",
+            "Schedule content in advance so you never miss a window"
+          ]},
+          {"type": "subheader", "content": "Content Batching"},
+          {"type": "bullets", "items": [
+            "Generate content in batches (10-20 images per session)",
+            "Write captions in advance for the entire week",
+            "Pre-plan Threads posts in a notes app",
+            "Record and edit TikTok clips in batches",
+            "Always have 2 weeks of content ready ahead"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Weekly content calendar template showing posting schedule across all platforms"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: The Hook That Converts Viewers to Followers",
+      "blocks": [
+        {"type": "text", "content": "Getting views is not the same as getting followers. Millions of people will see your content. Only a fraction will follow. The difference between a 1% follow rate and a 5% follow rate is the difference between a dead page and a profitable business. This lesson covers the 'hook' — the trick that makes viewers stop scrolling and tap follow."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "The 3-Second Hook"},
+          {"type": "text", "content": "You have 3 seconds. If someone sees your Reel and does not feel something — curiosity, attraction, intrigue — they scroll past. The hook must happen in the first frame."},
+          {"type": "bullets", "items": [
+            "First frame of every Reel must show face clearly",
+            "Eye contact with camera = strongest hook",
+            "Movement in the first second (head turn, smile, hair flip)",
+            "Trending audio that creates emotional context",
+            "Caption overlay that creates curiosity (optional but powerful)"
+          ]},
+          {"type": "good_example", "content": "Hook: AI model looks directly at camera, gives a slow smile, trending romantic audio plays. Caption: 'pov: she noticed you'\nResult: High watch time, saves, profile visits."},
+          {"type": "bad_example", "content": "Hook: Generic full-body shot, no eye contact, random audio, no caption.\nResult: Scrolled past in 0.5 seconds. No engagement."}
+        ], "right": [
+          {"type": "subheader", "content": "Profile Optimization for Conversion"},
+          {"type": "text", "content": "The hook gets them to your profile. The profile converts them to followers. Both must be optimized."},
+          {"type": "bullets", "items": [
+            "Profile photo must be the most attractive, clear face shot",
+            "Bio must create intrigue, not sell",
+            "First 3 grid posts must be your absolute best content",
+            "Highlight covers should look curated and intentional",
+            "Story highlights create depth ('about me', 'daily life', etc.)"
+          ]},
+          {"type": "subheader", "content": "CTA Placement"},
+          {"type": "bullets", "items": [
+            "Never say 'follow me' in captions — it repels people",
+            "Use soft CTAs: 'more on my page' or 'I post daily'",
+            "Link in bio becomes active after warmup — keep it clean",
+            "Pinned post should be your highest-performing content"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Before/after profile optimization example showing conversion improvement"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 3: Geo Targeting & Distribution Control",
+      "blocks": [
+        {"type": "text", "content": "Not all followers are equal. A follower from the USA is worth significantly more than a follower from a non-English-speaking country. Geo targeting ensures your content reaches the right audience — people who actually convert to paying subscribers."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Why Geo Targeting Matters"},
+          {"type": "bullets", "items": [
+            "US/UK/Canada/Australia audiences have highest conversion rates",
+            "English-speaking fans are more likely to subscribe and pay",
+            "Non-target audiences inflate follower count but kill revenue",
+            "Algorithm learns from your early audience — bad targeting compounds",
+            "100 US followers > 10,000 non-target followers for revenue"
+          ]},
+          {"type": "subheader", "content": "How to Control Distribution"},
+          {"type": "bullets", "items": [
+            "Use English only in all captions and bios",
+            "Post during US peak hours (EST/PST time zones)",
+            "Engage with US-based accounts and creators",
+            "Use location tags for US cities when available",
+            "VPN to US during all platform activity"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Platform-Specific Targeting"},
+          {"type": "bullets", "items": [
+            "Instagram: Use Insights to monitor audience demographics — if non-US audience grows past 30%, adjust strategy",
+            "TikTok: Set content language to English, target US in settings if available",
+            "Reddit: Post in English-language subreddits only",
+            "Twitter: Engage with US-centric accounts and conversations"
+          ]},
+          {"type": "panel", "title": "Rebranding Trigger", "content": "If your audience skews heavily non-English despite correct targeting, it may be time to rebrand. Start a fresh account with stricter targeting from Day 1. A clean restart is better than building on a bad audience foundation.", "border": "#FF3131"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Instagram Insights screenshot showing ideal audience demographics (US-heavy)"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 4: Multi-Account Scaling",
+      "blocks": [
+        {"type": "text", "content": "Once your first page is profitable and stable, the system is ready to scale. Scaling means running multiple AI personas simultaneously. Each new persona multiplies your revenue potential — but only if done correctly. Sloppy scaling gets all your accounts banned."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "When to Scale"},
+          {"type": "bullets", "items": [
+            "First page has consistent, reliable revenue",
+            "Content pipeline is systematized and efficient",
+            "You can produce content for a new persona without neglecting the first",
+            "Chat operations are delegated or manageable",
+            "You have the devices and infrastructure for another account"
+          ]},
+          {"type": "panel", "title": "Scaling Trigger", "content": "Do NOT scale because you are bored with one page. Scale because one page is working and you have the capacity. Premature scaling kills both the old and new page.", "border": "#FF3131"}
+        ], "right": [
+          {"type": "subheader", "content": "Scaling Rules"},
+          {"type": "bullets", "items": [
+            "New persona = different niche, different look, different name",
+            "Separate device for each persona (mandatory)",
+            "Never link accounts to each other (no cross-follows, no shared links)",
+            "Each persona gets its own email, phone number, and IP",
+            "Max 2-3 accounts per device (TikTok: max 3 accounts)",
+            "Stagger launches — don't start 3 new accounts in the same week"
+          ]},
+          {"type": "subheader", "content": "Infrastructure Checklist"},
+          {"type": "bullets", "items": [
+            "New phone or device (or browser profile)",
+            "New SIM card or phone number",
+            "New email address",
+            "New VPN profile (different IP)",
+            "Fresh content library (30+ images before launch)"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Multi-account infrastructure diagram showing device/IP/account separation"}
+        ]}
+      ]
+    }
+  ],
+  "summary_points": [
+    "Consistency is the #1 growth factor — never miss more than 2 days in a row",
+    "The 3-second hook (face, eye contact, movement) determines if people follow",
+    "Profile optimization converts viewers to followers — first 3 grid posts matter most",
+    "Geo target USA/UK/Canada/Australia — 100 US followers outperform 10k non-target",
+    "Scale only when the first page is profitable and your pipeline can handle it",
+    "Each new persona needs its own device, phone number, email, and IP — no exceptions"
+  ]
+}

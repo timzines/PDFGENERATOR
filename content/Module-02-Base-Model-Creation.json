@@ -1,0 +1,126 @@
+{
+  "title": "Module 2\nBase Model Creation",
+  "subtitle": "Learn How to Generate Your Base Model Realistically and Efficiently",
+  "output_filename": "Module-02-Base-Model-Creation.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: Choosing Your Niche & Persona",
+      "blocks": [
+        {"type": "text", "content": "Before you generate a single image, you need to decide who your AI model is. This is a business decision, not an aesthetic one. Your niche determines your audience, your content style, and ultimately your revenue potential."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Key Persona Decisions"},
+          {"type": "bullets", "items": [
+            "Age range and look (18-25 is the standard sweet spot)",
+            "Ethnicity and features",
+            "Style and aesthetic (e.g., girl-next-door, alt, fitness, elegant)",
+            "Personality tone (shy, bold, playful, mysterious)",
+            "Name — must sound real, be memorable, easy to search"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Examples of different AI persona styles/niches side by side"}
+        ], "right": [
+          {"type": "subheader", "content": "Niche Selection Rules"},
+          {"type": "bullets", "items": [
+            "Pick a niche with proven demand — don't invent one",
+            "Research what's working on Fanvue and similar platforms",
+            "Your persona must feel like a real person, not a character",
+            "Avoid overly specific niches that limit content variety"
+          ]},
+          {"type": "good_example", "content": "Niche: Cute, approachable college-age girl with a soft aesthetic.\nName: Emma, Lily, Sofia — simple, real, memorable."},
+          {"type": "bad_example", "content": "Niche: 'Cyberpunk alien princess from the future.'\nName: XxDarkAngelxX — unnatural, forgettable."}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: Generating Your Base Model",
+      "blocks": [
+        {"type": "text", "content": "Your base model is the core face and body that will remain consistent across all content. Getting this right is the single most important step. If the face changes between images, your entire page looks fake."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Base Model Generation Steps"},
+          {"type": "bullets", "items": [
+            "Choose your AI generation tool",
+            "Write a detailed base prompt describing your persona",
+            "Generate multiple variations",
+            "Select the strongest result as your 'seed' image",
+            "Save this image — it becomes your reference for everything"
+          ], "bullet": "→"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of AI generation tool with base model prompt and output"}
+        ], "right": [
+          {"type": "subheader", "content": "What Makes a Good Base Model"},
+          {"type": "bullets", "items": [
+            "Clear, well-lit face with visible features",
+            "Natural pose — not overly stylized or dramatic",
+            "Realistic skin texture and proportions",
+            "No artifacts, extra fingers, or distorted features",
+            "A face that can be recreated consistently"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Good base model example vs bad base model example (artifacts, inconsistency)"}
+        ]},
+        {"type": "panel", "title": "Critical Rule", "content": "Your base model is your brand. Every image you generate from this point forward must look like the same person. If you cannot recreate the face reliably, choose a different seed image.", "border": "#FF3131"}
+      ]
+    },
+    {
+      "header": "Lesson 3: Ensuring Face & Style Consistency",
+      "blocks": [
+        {"type": "text", "content": "Consistency is what separates a believable AI influencer from an obvious fake. Your audience will scroll through your page. If the face changes between posts, trust is destroyed instantly. This lesson covers how to lock in your model's look."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Consistency Rules"},
+          {"type": "bullets", "items": [
+            "Same face structure across all images — no exceptions",
+            "Same body type and proportions",
+            "Hair color and style should only change naturally (like a real person would)",
+            "Skin tone must remain constant",
+            "Eye color locked in from the start"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side-by-side grid showing consistent face across 4-6 different images/settings"}
+        ], "right": [
+          {"type": "subheader", "content": "What Can Vary Naturally"},
+          {"type": "bullets", "items": [
+            "Lighting and shadows (indoor vs outdoor)",
+            "Clothing and outfits",
+            "Background and location",
+            "Makeup style (subtle changes only)",
+            "Camera angle and distance"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example showing natural variation (lighting, outfit) while maintaining face consistency"}
+        ]},
+        {"type": "panel", "title": "Visual Consistency Check", "content": "Before posting any image, place it next to your last 3 posts. If the face does not look like the same person at a glance, do not post it. Regenerate until it matches.", "border": "#39FF14"}
+      ]
+    },
+    {
+      "header": "Lesson 4: Building Your Content Library",
+      "blocks": [
+        {"type": "text", "content": "You should never be scrambling for content. Before you post anything publicly, build a library of at least 30-50 images. This gives you a buffer and lets you plan your content calendar without pressure."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Batch Generation Strategy"},
+          {"type": "bullets", "items": [
+            "Set aside dedicated sessions for content generation",
+            "Generate 10-20 images per session",
+            "Vary outfits, settings, and poses across the batch",
+            "Sort images into categories: casual, lifestyle, glam, close-up",
+            "Keep a 'rejected' folder — you may salvage later"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of organized content library folder structure"}
+        ], "right": [
+          {"type": "subheader", "content": "Content Categories to Build"},
+          {"type": "bullets", "items": [
+            "Profile photos and headshots (3-5)",
+            "Casual lifestyle shots (10-15)",
+            "Glamour or dressed-up shots (5-10)",
+            "Close-up selfie-style images (5-10)",
+            "Story-ready casual content (10+)"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Grid of example content library showing variety across categories"}
+        ]},
+        {"type": "panel", "title": "Minimum Before Launch", "content": "Do NOT launch any social media account until you have at least 30 quality images saved and sorted. Running out of content mid-warmup kills momentum and consistency.", "border": "#FF3131"}
+      ]
+    }
+  ],
+  "summary_points": [
+    "Choose your niche based on market demand, not personal preference",
+    "Your base model's face is your brand — consistency is everything",
+    "Generate a strong seed image and use it as reference for all future content",
+    "Lock in face, body type, skin tone, and eye color from day one",
+    "Lighting, outfits, and backgrounds can vary naturally",
+    "Build a library of 30-50 images before launching any account"
+  ]
+}
