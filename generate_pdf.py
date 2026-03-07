@@ -453,29 +453,9 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 50px 60px 40px 60px;
+    padding: 50px 60px 20px 60px;
     page: content-page;
-}
-
-.content-bg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 1440px;
-    height: 810px;
-    object-fit: cover;
-    z-index: 0;
-}
-
-/* Subtle top gradient overlay on content pages */
-.content-top-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 120px;
-    background: linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 100%);
-    z-index: 1;
+    color: #e0ccd2;
 }
 
 .content-inner {
@@ -488,7 +468,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     font-style: italic;
-    color: #2a1a1f;
+    color: #ffffff;
     margin-bottom: 22px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -512,7 +492,7 @@ body {
     top: 4px;
     width: 4px;
     height: 32px;
-    background: linear-gradient(180deg, #c49a85, rgba(42,26,31,0.4));
+    background: linear-gradient(180deg, #c49a85, rgba(196,154,133,0.2));
     border-radius: 2px;
 }
 
@@ -520,68 +500,83 @@ body {
     color: #c49a85;
 }
 
+/* ---- TWO-COLUMN LAYOUT ---- */
 .content-columns {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 6px;
+}
+.content-columns::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .content-col {
-    flex: 1;
-    min-width: 0;
+    width: calc(50% - 20px);
+}
+.content-col:first-child {
+    float: left;
+}
+.content-col:last-child {
+    float: right;
 }
 
-.content-box {
-    background: rgba(111, 76, 83, 0.82);
-    border-radius: 14px;
-    padding: 22px 24px;
-    color: #f0e0e6;
+/* ---- CONTENT BLOCKS (no background boxes) ---- */
+.content-box,
+.content-box-full {
     margin-bottom: 14px;
-    position: relative;
-    z-index: 2;
-    border: 1px solid rgba(255,255,255,0.06);
+    color: #e0ccd2;
 }
 
-.content-box p {
+.content-box p,
+.content-box-full p {
     font-size: 13.5px;
     line-height: 1.65;
     margin-bottom: 10px;
     text-align: justify;
-    color: #f0e0e6;
+    color: #d4bcc4;
 }
 
-.content-box p:last-child {
+.content-box p:last-child,
+.content-box-full p:last-child {
     margin-bottom: 0;
 }
 
-.content-box .sub-header {
-    font-size: 14.5px;
+.content-box .sub-header,
+.content-box-full .sub-header {
+    font-size: 15px;
     font-weight: 700;
-    color: #ffffff;
+    color: #c49a85;
     margin-bottom: 8px;
-    margin-top: 14px;
+    margin-top: 18px;
     letter-spacing: 0.3px;
+    page-break-after: avoid;
 }
 
-.content-box .sub-header:first-child {
+.content-box .sub-header:first-child,
+.content-box-full .sub-header:first-child {
     margin-top: 0;
 }
 
-.content-box ul {
+.content-box ul,
+.content-box-full ul {
     margin: 6px 0 10px 18px;
     padding: 0;
 }
 
-.content-box ul li {
+.content-box ul li,
+.content-box-full ul li {
     font-size: 13.5px;
     line-height: 1.6;
-    color: #f0e0e6;
+    color: #d4bcc4;
     margin-bottom: 3px;
 }
 
-.content-box .example-good {
+/* ---- EXAMPLES ---- */
+.content-box .example-good,
+.content-box-full .example-good {
     border-left: 3px solid #7dba6d;
-    background: rgba(125,186,109,0.08);
+    background: rgba(125,186,109,0.06);
     padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
@@ -589,11 +584,13 @@ body {
     font-size: 13px;
     line-height: 1.55;
     border-radius: 0 6px 6px 0;
+    page-break-inside: avoid;
 }
 
-.content-box .example-bad {
+.content-box .example-bad,
+.content-box-full .example-bad {
     border-left: 3px solid #c9665a;
-    background: rgba(201,102,90,0.08);
+    background: rgba(201,102,90,0.06);
     padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
@@ -601,9 +598,11 @@ body {
     font-size: 13px;
     line-height: 1.55;
     border-radius: 0 6px 6px 0;
+    page-break-inside: avoid;
 }
 
-.content-box .example-label {
+.content-box .example-label,
+.content-box-full .example-label {
     font-weight: 700;
     font-style: normal;
     font-size: 11px;
@@ -612,16 +611,17 @@ body {
     margin-bottom: 4px;
 }
 
-.content-box .panel-box {
-    background: rgba(90, 60, 68, 0.55);
-    border: 1px solid rgba(255,255,255,0.12);
+/* ---- PANELS ---- */
+.content-box .panel-box,
+.content-box-full .panel-box {
     border-left: 3px solid rgba(196,154,133,0.6);
-    border-radius: 8px;
     padding: 14px 18px;
     margin: 12px 0 6px 0;
+    page-break-inside: avoid;
 }
 
-.content-box .panel-title {
+.content-box .panel-title,
+.content-box-full .panel-title {
     font-size: 12px;
     font-weight: 700;
     color: #c49a85;
@@ -630,36 +630,12 @@ body {
     letter-spacing: 0.8px;
 }
 
-.content-box .panel-body {
+.content-box .panel-body,
+.content-box-full .panel-body {
     font-size: 13px;
     line-height: 1.55;
-    color: #e8d5dc;
+    color: #d4bcc4;
 }
-
-/* Full-width content box — inherits all .content-box styles */
-.content-box-full {
-    background: rgba(111, 76, 83, 0.82);
-    border-radius: 14px;
-    padding: 22px 24px;
-    color: #f0e0e6;
-    margin-bottom: 14px;
-    position: relative;
-    z-index: 2;
-    border: 1px solid rgba(255,255,255,0.06);
-}
-
-.content-box-full p { font-size: 13.5px; line-height: 1.65; margin-bottom: 10px; text-align: justify; color: #f0e0e6; }
-.content-box-full p:last-child { margin-bottom: 0; }
-.content-box-full .sub-header { font-size: 14.5px; font-weight: 700; color: #ffffff; margin-bottom: 8px; margin-top: 14px; letter-spacing: 0.3px; }
-.content-box-full .sub-header:first-child { margin-top: 0; }
-.content-box-full ul { margin: 6px 0 10px 18px; padding: 0; }
-.content-box-full ul li { font-size: 13.5px; line-height: 1.6; color: #f0e0e6; margin-bottom: 3px; }
-.content-box-full .example-good { border-left: 3px solid #7dba6d; background: rgba(125,186,109,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #c8e6c0; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; }
-.content-box-full .example-bad { border-left: 3px solid #c9665a; background: rgba(201,102,90,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #eaaca5; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; }
-.content-box-full .example-label { font-weight: 700; font-style: normal; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.content-box-full .panel-box { background: rgba(90, 60, 68, 0.55); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid rgba(196,154,133,0.6); border-radius: 8px; padding: 14px 18px; margin: 12px 0 6px 0; }
-.content-box-full .panel-title { font-size: 12px; font-weight: 700; color: #c49a85; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.8px; }
-.content-box-full .panel-body { font-size: 13px; line-height: 1.55; color: #e8d5dc; }
 
 .content-footer {
     position: absolute;
@@ -668,7 +644,7 @@ body {
     right: 0;
     text-align: center;
     font-size: 10px;
-    color: #8a6a72;
+    color: rgba(255,255,255,0.25);
     z-index: 2;
     letter-spacing: 0.5px;
 }
@@ -701,7 +677,7 @@ body {
 
 .summary-brand-text {
     font-size: 12px;
-    color: rgba(240,224,230,0.7);
+    color: rgba(255,255,255,0.4);
     letter-spacing: 0.5px;
 }
 
@@ -718,10 +694,6 @@ body {
 
 .page-number-dark {
     color: rgba(255,255,255,0.3);
-}
-
-.page-number-light {
-    color: #8a6a72;
 }
 
 /* ---- SMALL TOP-RIGHT LOGO ON CONTENT PAGES ---- */
@@ -746,6 +718,26 @@ def split_header_two_tone(header_text):
     main = " ".join(words[:-1])
     fade = words[-1]
     return main, fade
+
+
+def group_blocks_into_chunks(blocks):
+    """Group blocks into logical chunks, splitting at each subheader.
+
+    A chunk starts at a subheader (or from the beginning) and includes
+    everything up to the next subheader.  This keeps each chunk small
+    enough to fit on a single page, avoiding the monolithic-column
+    problem with WeasyPrint floats.
+    """
+    chunks = []
+    current_chunk = []
+    for block in blocks:
+        if block.get("type") == "subheader" and current_chunk:
+            chunks.append(current_chunk)
+            current_chunk = []
+        current_chunk.append(block)
+    if current_chunk:
+        chunks.append(current_chunk)
+    return chunks
 
 
 def render_blocks_html(blocks):
@@ -865,19 +857,46 @@ def build_section_html(header, body_blocks):
 
     content_html = ""
 
+    # Group consecutive non-two-column blocks into a single content-box-full
+    # so they flow together naturally instead of each being an isolated box.
+    pending_blocks = []
+
+    def flush_pending():
+        nonlocal pending_blocks
+        if not pending_blocks:
+            return ""
+        block_html = render_blocks_html(pending_blocks)
+        pending_blocks = []
+        return f'<div class="content-box-full">{block_html}</div>\n'
+
     for block in body_blocks:
         if block.get("type") == "two_column":
-            left_html = render_blocks_html(block["left"])
-            right_html = render_blocks_html(block["right"])
-            content_html += f'''
-            <div class="content-columns">
-                <div class="content-col"><div class="content-box">{left_html}</div></div>
-                <div class="content-col"><div class="content-box">{right_html}</div></div>
-            </div>
-            '''
-        else:
+            content_html += flush_pending()
+            # Split each column into small logical chunks (one per subheader
+            # group) so each paired row is small enough for a single page.
+            left_chunks = group_blocks_into_chunks(block["left"])
+            right_chunks = group_blocks_into_chunks(block["right"])
+            max_chunks = max(len(left_chunks), len(right_chunks))
+            for i in range(max_chunks):
+                left_html = render_blocks_html(left_chunks[i]) if i < len(left_chunks) else ""
+                right_html = render_blocks_html(right_chunks[i]) if i < len(right_chunks) else ""
+                left_box = f'<div class="content-box">{left_html}</div>' if left_html else ""
+                right_box = f'<div class="content-box">{right_html}</div>' if right_html else ""
+                content_html += f'''
+                <div class="content-columns">
+                    <div class="content-col">{left_box}</div>
+                    <div class="content-col">{right_box}</div>
+                </div>
+                '''
+        elif block.get("type") == "panel" and block.get("border"):
+            # Bordered panels (rules, tips) are standalone — flush first
+            content_html += flush_pending()
             block_html = render_blocks_html([block])
             content_html += f'<div class="content-box-full">{block_html}</div>\n'
+        else:
+            pending_blocks.append(block)
+
+    content_html += flush_pending()
 
     return f'''
         <div class="section-header">{header_html}</div>
@@ -885,7 +904,7 @@ def build_section_html(header, body_blocks):
     '''
 
 
-def build_content_pages_html(sections, bg_uri="", logo_uri=""):
+def build_content_pages_html(sections, logo_uri=""):
     """Build all content sections as a single flowing content region.
 
     Instead of one .page div per section, all sections flow inside a single
@@ -906,7 +925,7 @@ def build_content_pages_html(sections, bg_uri="", logo_uri=""):
     '''
 
 
-def build_summary_page_html(points, bg_uri="", logo_uri="", page_num=1, total_pages=1):
+def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
     """Build summary page HTML."""
     bullets = ""
     for pt in points:
@@ -952,14 +971,7 @@ def generate_pdf(config, output_path):
             logo_path = str(default_logo)
     logo_uri = img_to_data_uri(logo_path) if logo_path and os.path.exists(logo_path) else ""
 
-    # Generate content background if not cached
-    bg_cache = ASSETS_DIR / "content_bg_generated.png"
-    if not bg_cache.exists():
-        print("  Generating background gradient (first run only)...")
-        img = generate_content_bg()
-        os.makedirs(str(ASSETS_DIR), exist_ok=True)
-        img.save(str(bg_cache))
-    content_bg_uri = img_to_data_uri(str(bg_cache))
+    # Content pages now use CSS dark gradient background (no image needed)
 
     title = config["title"]
     subtitle = config.get("subtitle", "")
@@ -987,33 +999,27 @@ def generate_pdf(config, output_path):
         pages_html += build_toc_html(toc_entries, logo_uri, page_num=2, total_pages=total_pages)
 
     # Content — all sections flow continuously; WeasyPrint paginates
-    pages_html += build_content_pages_html(sections, bg_uri=content_bg_uri, logo_uri=logo_uri)
+    pages_html += build_content_pages_html(sections, logo_uri=logo_uri)
 
     # Summary
     if summary_points and not skip_summary:
         pages_html += build_summary_page_html(
             summary_points,
-            bg_uri=content_bg_uri,
             logo_uri=logo_uri,
         )
 
-    # Build dynamic @page CSS for content pages (background + footer on every page)
+    # Build dynamic @page CSS for content pages (dark background + footer)
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0;
+    margin: 0 0 45px 0;
     padding: 0;
-    background-image:
-        linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 15%),
-        url('{content_bg_uri}');
-    background-size: 100% 120px, cover;
-    background-position: top left, center;
-    background-repeat: no-repeat, no-repeat;
+    background: linear-gradient(160deg, #2d2230 0%, #1a1b1f 40%, #0f1013 100%);
     @bottom-center {{
         content: "{footer_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 10px;
-        color: #8a6a72;
+        color: rgba(255,255,255,0.25);
         letter-spacing: 0.5px;
     }}
     @bottom-right {{
@@ -1021,7 +1027,7 @@ def generate_pdf(config, output_path):
         font-size: 11px;
         font-weight: 500;
         letter-spacing: 1px;
-        color: #8a6a72;
+        color: rgba(255,255,255,0.3);
     }}
 }}
 """
