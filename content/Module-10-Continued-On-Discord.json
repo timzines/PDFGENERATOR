@@ -4,36 +4,178 @@
   "output_filename": "Module-10-Continued-On-Discord.pdf",
   "sections": [
     {
-      "header": "Lesson 1: What Comes Next",
+      "header": "Lesson 1: Course Completion Checklist",
       "blocks": [
-        {"type": "text", "content": "Congratulations on completing Modules 1-9. You now have the complete foundation: model creation, content pipeline, platform growth, account safety, and monetization systems. Everything you need to launch and run a profitable AI influencer business."},
-        {"type": "text", "content": "Module 10 continues on Discord. The advanced training covers NSFW content creation, advanced monetization strategies, and ongoing community support that cannot be delivered in a static PDF format."},
+        {"type": "text", "content": "Before moving to advanced content on Discord, verify that you have completed every step in Modules 1-9. Each item on this checklist is a building block. Skipping any of them creates a weak link that will break under pressure. Go through this list honestly — if anything is incomplete, go back and finish it before moving forward."},
         {"type": "two_column", "left": [
-          {"type": "subheader", "content": "What You'll Find on Discord"},
+          {"type": "subheader", "content": "Module 1-2: Foundation"},
           {"type": "bullets", "items": [
-            "NSFW image and video creation techniques",
-            "Advanced content strategies that push beyond SFW",
-            "Live Q&A sessions and real-time support",
-            "Community of operators sharing strategies and results",
-            "Template libraries, prompt databases, and shared resources",
-            "Direct feedback on your pages from experienced operators"
+            "Niche and persona selected based on market demand",
+            "Name chosen and username available across all platforms",
+            "Base model generated using Seedream 4.5 and Nano Banana 2",
+            "Seed image selected and saved at full resolution",
+            "Face consistency confirmed across multiple test generations",
+            "Content library built: 30+ images sorted into categories"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Discord server invite graphic or screenshot of channel structure"}
+          {"type": "subheader", "content": "Module 3-4: Content Pipeline"},
+          {"type": "bullets", "items": [
+            "Reference image workflow tested and producing consistent results",
+            "Prompt templates saved for each content category",
+            "Editing workflow established (artifact fix, grain addition)",
+            "Kling account set up with credits loaded",
+            "Video generation tested in Standard and Professional modes",
+            "At least 5 finished video clips ready for posting",
+            "Video editing workflow established (CapCut or DaVinci Resolve)"
+          ]},
+          {"type": "subheader", "content": "Module 5: Device & Accounts"},
+          {"type": "bullets", "items": [
+            "Dedicated phone or device set up for persona",
+            "SIM card and phone number acquired",
+            "VPN configured and set to US location",
+            "Instagram account created and profile configured",
+            "Threads account linked to Instagram",
+            "TikTok account created (no profile details yet — Day 1 rules)",
+            "Telegram channel created and configured",
+            "All accounts warming up according to protocol"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Module 6-7: Growth Systems"},
+          {"type": "bullets", "items": [
+            "Instagram warmup completed (21-28 days)",
+            "TikTok warmup completed (9 days)",
+            "Threads posting active and driving Instagram profile visits",
+            "First Reels posted with trending audio",
+            "Content posting schedule established and followed consistently",
+            "Geo targeting signals active (English, US timing, US location tags)",
+            "Audience demographics checked and healthy (60%+ English-speaking)"
+          ]},
+          {"type": "subheader", "content": "Module 8: Safety"},
+          {"type": "bullets", "items": [
+            "Daily safety habits established and non-negotiable",
+            "Content backup system in place (local + cloud)",
+            "Metrics monitoring routine active (daily reach, engagement, story views)",
+            "Twitter/X shadowban status checked and green",
+            "Instagram Account Status checked and clean",
+            "Backup account warming up on separate device"
+          ]},
+          {"type": "subheader", "content": "Module 9: Monetization"},
+          {"type": "bullets", "items": [
+            "Link-in-bio page created (AllMyLinks or Linktree, max 2-3 links)",
+            "Subscription platform page set up with banner, bio, and initial content",
+            "Pricing strategy set ($7-$15/month base, promotional discount active)",
+            "Telegram channel producing content on schedule",
+            "Automated welcome messages configured and tested",
+            "Instagram highlight with link sticker created",
+            "Funnel links activated (only after 3+ weeks of stable engagement)"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Course completion checklist as a visual progress tracker: All items listed with checkbox-style formatting. Group by module with progress percentage indicators."}
+        ]},
+        {"type": "panel", "title": "Completion Standard", "content": "If you cannot check off every item above, you are not ready for advanced content. Go back to the relevant module and finish it. The foundation must be solid before you scale into advanced strategies. Half-built foundations collapse under weight.", "border": "#FF3131"}
+      ]
+    },
+    {
+      "header": "Lesson 2: Your First 30 Days Action Plan",
+      "blocks": [
+        {"type": "text", "content": "This is the exact sequence of actions for your first 30 days, organized week by week. Follow this plan in order. Do not skip ahead. Each week builds on the previous one. Print this out and check items off as you complete them."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Week 1: Build the Foundation"},
+          {"type": "bullets", "items": [
+            "Day 1-2: Choose niche, name, and persona (Module 1-2)",
+            "Day 2-3: Generate base model using Seedream 4.5 and Nano Banana 2",
+            "Day 3-4: Test face consistency with reference workflow",
+            "Day 4-5: Begin building content library (target 15+ images)",
+            "Day 5-6: Generate first Kling video clips (3-5 clips)",
+            "Day 6-7: Set up phone, SIM card, VPN, and all apps",
+            "Day 7: Create Instagram account and configure profile"
+          ]},
+          {"type": "panel", "title": "Week 1 Goal", "content": "By end of Week 1: Base model locked, 15+ images generated, 3+ video clips created, Instagram account created. You should be ready to begin warmup.", "border": "#39FF14"},
+          {"type": "subheader", "content": "Week 2: Content & Warmup Begins"},
+          {"type": "bullets", "items": [
+            "Day 8-9: Continue building content library (target 30+ total images)",
+            "Day 8: Create TikTok account (follow Day 1 rules — empty, no details)",
+            "Day 9-14: Instagram warmup — scroll, like, follow, watch (Module 5)",
+            "Day 9-14: TikTok warmup — Day 1-7 protocol from Module 5",
+            "Day 10: Create Telegram channel and prepare 5-10 initial posts",
+            "Day 11: Create link-in-bio page (AllMyLinks or Linktree)",
+            "Day 12-14: Set up subscription platform page with banner, bio, 5-10 posts",
+            "Day 14: Generate additional video clips for posting backlog"
+          ]},
+          {"type": "panel", "title": "Week 2 Goal", "content": "By end of Week 2: 30+ images in library, all accounts created, warmup in progress on all platforms, subscription page ready with content, Telegram channel prepared.", "border": "#39FF14"}
+        ], "right": [
+          {"type": "subheader", "content": "Week 3: Growth Phase Begins"},
+          {"type": "bullets", "items": [
+            "Day 15-16: First Instagram carousel posts (2-3 SFW, face-focused)",
+            "Day 15-21: Continue Instagram warmup engagement daily",
+            "Day 16: TikTok warmup complete — begin posting (1-2 per day)",
+            "Day 17: Start Threads posting (1-2 posts per day, text-based)",
+            "Day 18-19: First Instagram Stories (daily, casual, lifestyle)",
+            "Day 20: Scale Threads to 3-4 posts per day",
+            "Day 21: Instagram warmup minimum complete — evaluate metrics",
+            "Day 21: Begin Twitter/X warmup if bandwidth allows"
+          ]},
+          {"type": "panel", "title": "Week 3 Goal", "content": "By end of Week 3: Content flowing on Instagram and TikTok. Threads active and driving profile visits. Growth signals visible in Instagram Insights. Ready to activate funnel links.", "border": "#39FF14"},
+          {"type": "subheader", "content": "Week 4: Monetization Activation"},
+          {"type": "bullets", "items": [
+            "Day 22: Add link in bio on Instagram (only if engagement is stable)",
+            "Day 22: Create Instagram highlight with link sticker",
+            "Day 22-28: Begin posting Instagram Reels daily (one per day minimum)",
+            "Day 23: Activate Telegram posting schedule (2-3 posts per day)",
+            "Day 24: Configure automated welcome messages",
+            "Day 25-28: Scale posting cadence across all platforms",
+            "Day 28: Review all metrics — reach, engagement, profile visits, audience demographics",
+            "Day 28-30: First subscriber conversions should begin arriving"
+          ]},
+          {"type": "panel", "title": "Week 4 Goal", "content": "By end of Week 4: Full funnel active. Reels posting daily. Telegram funnel warming followers. Link in bio live. First subscriber conversions beginning. System is operational.", "border": "#39FF14"}
+        ]},
+        {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "30-day action plan timeline: 4-week horizontal timeline with daily milestones. Color-coded by activity type: Foundation (blue), Warmup (yellow), Growth (green), Monetization (orange). Key milestones called out with star icons."},
+        {"type": "panel", "title": "After Day 30", "content": "Day 30 is not the finish line — it is the starting line. Your system is now operational. From here, your daily job is: generate content, post consistently, engage with your audience, monitor metrics, and optimize what works. The real growth happens in Months 2-6 as your systems compound. Keep going.", "border": "#39FF14"}
+      ]
+    },
+    {
+      "header": "Lesson 3: What Comes Next on Discord",
+      "blocks": [
+        {"type": "text", "content": "Congratulations on completing Modules 1-9 and your first 30 days. You now have the complete foundation: model creation, content pipeline, platform growth, account safety, and monetization systems. Everything you need to launch and run a profitable AI influencer business is in your hands."},
+        {"type": "text", "content": "Module 10 continues on Discord. The advanced training covers content and strategies that go beyond what can be delivered in a static PDF format. The Discord community is where the real-time learning happens."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "What You Will Find on Discord"},
+          {"type": "bullets", "items": [
+            "NSFW image and video creation techniques and workflows",
+            "Advanced content strategies that push beyond SFW",
+            "Chat systems and revenue optimization strategies",
+            "Live Q&A sessions and real-time support from experienced operators",
+            "Community of operators sharing strategies, results, and lessons learned",
+            "Template libraries, prompt databases, and shared resources",
+            "Direct feedback on your pages from experienced operators",
+            "Platform update alerts when rules or algorithms change"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Discord server preview showing channel structure: #announcements, #general, #nsfw-tutorials, #prompt-sharing, #page-reviews, #q-and-a, #wins. Clean mockup of channel list."}
         ], "right": [
           {"type": "subheader", "content": "Why Discord?"},
-          {"type": "text", "content": "NSFW content and advanced monetization strategies require a platform that allows open discussion without content restrictions. Discord provides the privacy, flexibility, and real-time interaction that this material demands."},
-          {"type": "text", "content": "Additionally, this industry evolves constantly. Platform rules change, new AI tools launch, and strategies that work today may need adjustment tomorrow. Discord allows the community to stay current in a way that static PDFs cannot."},
-          {"type": "panel", "title": "How to Join", "content": "Access to the Discord server is included with your course purchase. Check your purchase confirmation email for the invite link. If you don't have it, reach out to support.", "border": "#39FF14"}
+          {"type": "text", "content": "Advanced strategies and NSFW content require a platform that allows open discussion without content restrictions. Discord provides the privacy, flexibility, and real-time interaction that this material demands."},
+          {"type": "text", "content": "This industry evolves constantly. Platform rules change, new AI tools launch, and strategies that work today may need adjustment tomorrow. Discord allows the community to stay current in a way that static PDFs cannot. When Instagram changes its algorithm or a new AI video tool launches, the Discord community adapts in real time."},
+          {"type": "subheader", "content": "How to Get the Most from Discord"},
+          {"type": "bullets", "items": [
+            "Introduce yourself and share your current progress",
+            "Ask specific questions — vague questions get vague answers",
+            "Share your results (wins and failures) — the community learns from both",
+            "Review other operators' pages and offer feedback",
+            "Stay active — the most successful operators are the most engaged in the community",
+            "Check the announcements channel weekly for platform updates and strategy changes"
+          ]},
+          {"type": "panel", "title": "How to Join", "content": "Access to the Discord server is included with your course purchase. Check your purchase confirmation email for the invite link. If you do not have it, reach out to support.", "border": "#39FF14"}
         ]},
-        {"type": "panel", "title": "Before You Move On", "content": "Make sure you have completed Modules 1-9 and have your first page set up before jumping into advanced content. The fundamentals must be solid before you scale into NSFW and advanced strategies. Build the foundation first.", "border": "#FF3131"}
+        {"type": "panel", "title": "Final Rule", "content": "Make sure you have completed Modules 1-9 and have your first page fully operational before jumping into advanced content. The fundamentals must be solid before you scale. Build the foundation first. Everything advanced is built on top of what you learned here.", "border": "#FF3131"}
       ]
     }
   ],
   "summary_points": [
-    "Modules 1-9 give you the complete foundation to launch and monetize an AI influencer",
-    "Module 10 continues on Discord with NSFW content and advanced strategies",
-    "Discord provides real-time support, community feedback, and evolving strategies",
-    "Complete Modules 1-9 and set up your first page before moving to advanced content",
-    "Check your purchase confirmation for the Discord invite link"
+    "Complete the full checklist from Modules 1-9 before moving to advanced content — no shortcuts",
+    "Week 1: Build foundation (model, content library, device setup)",
+    "Week 2: Create all accounts, begin warmup, prepare subscription page and Telegram",
+    "Week 3: Start posting on Instagram and TikTok, activate Threads, growth signals begin",
+    "Week 4: Activate funnel links, start Reels daily, first subscriber conversions arrive",
+    "Day 30 is the starting line, not the finish line — real growth happens in Months 2-6",
+    "Discord continues with NSFW content, chat systems, advanced strategies, and real-time community support",
+    "The most successful operators stay active in the community and share both wins and failures"
   ]
 }

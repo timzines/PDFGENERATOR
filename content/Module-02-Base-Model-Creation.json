@@ -6,121 +6,217 @@
     {
       "header": "Lesson 1: Choosing Your Niche & Persona",
       "blocks": [
-        {"type": "text", "content": "Before you generate a single image, you need to decide who your AI model is. This is a business decision, not an aesthetic one. Your niche determines your audience, your content style, and ultimately your revenue potential."},
+        {"type": "text", "content": "Before you generate a single image, you need to decide who your AI model is. This is a business decision, not an aesthetic one. Your niche determines your audience, your content style, and ultimately your revenue potential. The biggest mistake beginners make is choosing a niche they personally like instead of one with proven market demand."},
+        {"type": "text", "content": "Research what is already working. Look at successful AI influencer pages on Instagram, Threads, and TikTok. Study what aesthetics get engagement, what niches have active audiences, and what styles people actually follow. You are building a product for a market, not creating art for yourself."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Key Persona Decisions"},
           {"type": "bullets", "items": [
-            "Age range and look (18-25 is the standard sweet spot)",
-            "Ethnicity and features",
-            "Style and aesthetic (e.g., girl-next-door, alt, fitness, elegant)",
-            "Personality tone (shy, bold, playful, mysterious)",
-            "Name — must sound real, be memorable, easy to search"
+            "Age range and look (18-25 is the standard sweet spot for engagement)",
+            "Ethnicity and features — pick what resonates with your target audience",
+            "Style and aesthetic (e.g., girl-next-door, alt, fitness, elegant, cute)",
+            "Personality tone (shy, bold, playful, mysterious) — this shapes all captions",
+            "Name — must sound real, be memorable, easy to search, and available across platforms"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Examples of different AI persona styles/niches side by side"}
+          {"type": "subheader", "content": "Proven Niche Categories"},
+          {"type": "bullets", "items": [
+            "Girl-next-door / College aesthetic — highest mass appeal, easiest to grow",
+            "Fitness / Gym — strong engagement, clear content themes",
+            "Alt / Goth — passionate niche audience, less competition",
+            "Elegant / Luxury — attracts higher-spending audience",
+            "Cute / Soft — strong on Threads and TikTok for discovery"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Niche selection matrix: 2x2 grid showing Demand (High/Low) vs Competition (High/Low). Best niches labeled in high-demand quadrants. Example niches placed in each quadrant."}
         ], "right": [
           {"type": "subheader", "content": "Niche Selection Rules"},
           {"type": "bullets", "items": [
-            "Pick a niche with proven demand — don't invent one",
-            "Research what's working on Fanvue and similar platforms",
-            "Your persona must feel like a real person, not a character",
-            "Avoid overly specific niches that limit content variety"
+            "Pick a niche with proven demand — do not invent a new one",
+            "Research what is working on subscription platforms and social media",
+            "Your persona must feel like a real person, not a character or cartoon",
+            "Avoid overly specific niches that limit content variety",
+            "Avoid niches that require complex backgrounds or scenarios to generate",
+            "The simpler the niche, the easier it is to maintain consistency"
           ]},
-          {"type": "good_example", "content": "Niche: Cute, approachable college-age girl with a soft aesthetic.\nName: Emma, Lily, Sofia — simple, real, memorable."},
-          {"type": "bad_example", "content": "Niche: 'Cyberpunk alien princess from the future.'\nName: XxDarkAngelxX — unnatural, forgettable."}
+          {"type": "good_example", "content": "Niche: Cute, approachable college-age girl with a soft aesthetic.\nName: Emma, Lily, Sofia — simple, real, memorable.\nWhy it works: Massive audience, easy to generate content, natural settings."},
+          {"type": "bad_example", "content": "Niche: 'Cyberpunk alien princess from the future.'\nName: XxDarkAngelxX — unnatural, forgettable.\nWhy it fails: Tiny audience, hard to generate consistently, looks obviously AI."},
+          {"type": "subheader", "content": "Name Selection Checklist"},
+          {"type": "bullets", "items": [
+            "Sounds like a real person's name — not a brand or character",
+            "Easy to spell and remember after seeing it once",
+            "Available as a username on Instagram, TikTok, and Threads",
+            "Not already used by a well-known creator or public figure",
+            "Works with a last initial for username format (e.g., emma.laine, sofiam)"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Examples of different AI persona styles side by side — show 4 different niche aesthetics with labels: Girl-next-door, Fitness, Alt/Goth, Elegant"}
         ]}
       ]
     },
     {
       "header": "Lesson 2: Generating Your Base Model",
       "blocks": [
-        {"type": "text", "content": "Your base model is the core face and body that will remain consistent across all content. Getting this right is the single most important step. If the face changes between images, your entire page looks fake."},
+        {"type": "text", "content": "Your base model is the core face and body that will remain consistent across all content. Getting this right is the single most important step. If the face changes between images, your entire page looks fake. This lesson covers the exact tools and process for creating a base model that you can reproduce reliably."},
+        {"type": "subheader", "content": "The Image Generation Tools"},
+        {"type": "text", "content": "For this course, all image generation is done using Seedream 4.5 and Nano Banana 2. These tools produce photorealistic output that is indistinguishable from real photos when used correctly. Understanding how to use them effectively is the foundation of your entire content pipeline."},
         {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Seedream 4.5"},
+          {"type": "text", "content": "Seedream 4.5 is your primary image generation tool. It excels at producing natural-looking faces, realistic skin texture, and believable lighting. This is where you will generate the majority of your content."},
+          {"type": "bullets", "items": [
+            "Produces highly photorealistic output — natural skin, lighting, and features",
+            "Strong face consistency when using reference images properly",
+            "Handles a wide range of settings and scenarios",
+            "Best for portrait shots, lifestyle content, and close-ups",
+            "Use detailed prompts for best results — the more specific, the better"
+          ]},
+          {"type": "subheader", "content": "Nano Banana 2"},
+          {"type": "text", "content": "Nano Banana 2 complements Seedream 4.5 with its own strengths. Use both tools depending on the type of content you are generating."},
+          {"type": "bullets", "items": [
+            "Excellent for varied poses and full-body shots",
+            "Strong at generating natural backgrounds and environments",
+            "Good for creating content variety while maintaining the same persona",
+            "Works well for casual and lifestyle-style images",
+            "Experiment with both tools to find which produces better results for your specific persona"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of Seedream 4.5 interface showing base model generation with a sample prompt and output. Show the reference image input and generated result."}
+        ], "right": [
           {"type": "subheader", "content": "Base Model Generation Steps"},
           {"type": "bullets", "items": [
-            "Choose your AI generation tool",
-            "Write a detailed base prompt describing your persona",
-            "Generate multiple variations",
-            "Select the strongest result as your 'seed' image",
-            "Save this image — it becomes your reference for everything"
+            "Write a detailed base prompt describing your persona's face and features",
+            "Generate 20-30 variations using both Seedream 4.5 and Nano Banana 2",
+            "Review all outputs carefully — look for the most natural, clear result",
+            "Select the strongest 1-2 results as your 'seed' images",
+            "Save these images at full resolution — they become your reference for everything",
+            "Test generating new images using your seed as reference to confirm consistency"
           ], "bullet": "→"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of AI generation tool with base model prompt and output"}
-        ], "right": [
           {"type": "subheader", "content": "What Makes a Good Base Model"},
           {"type": "bullets", "items": [
-            "Clear, well-lit face with visible features",
+            "Clear, well-lit face with visible features and natural expression",
             "Natural pose — not overly stylized or dramatic",
-            "Realistic skin texture and proportions",
+            "Realistic skin texture and proportions — no plastic or airbrushed look",
             "No artifacts, extra fingers, or distorted features",
-            "A face that can be recreated consistently"
+            "A face that is distinctive enough to be recognizable across images",
+            "Clean background that does not distract from the face"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Good base model example vs bad base model example (artifacts, inconsistency)"}
+          {"type": "subheader", "content": "When to Use Each Tool"},
+          {"type": "bullets", "items": [
+            "Seedream 4.5 — Best for close-up portraits, headshots, and detailed face shots",
+            "Nano Banana 2 — Best for full-body shots, varied poses, and lifestyle scenes",
+            "Use both — Compare outputs and keep the best from each tool",
+            "Your seed image can come from either tool — what matters is quality, not source"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side by side comparison: Good base model (clear, natural, well-lit face) vs Bad base model (artifacts, weird fingers, over-stylized, plastic skin). Use checkmarks and X marks."}
         ]},
-        {"type": "panel", "title": "Critical Rule", "content": "Your base model is your brand. Every image you generate from this point forward must look like the same person. If you cannot recreate the face reliably, choose a different seed image.", "border": "#FF3131"}
+        {"type": "panel", "title": "Critical Rule", "content": "Your base model is your brand. Every image you generate from this point forward must look like the same person. If you cannot recreate the face reliably, choose a different seed image. Do not proceed until you have a base model you are confident in.", "border": "#FF3131"}
       ]
     },
     {
       "header": "Lesson 3: Ensuring Face & Style Consistency",
       "blocks": [
-        {"type": "text", "content": "Consistency is what separates a believable AI influencer from an obvious fake. Your audience will scroll through your page. If the face changes between posts, trust is destroyed instantly. This lesson covers how to lock in your model's look."},
+        {"type": "text", "content": "Consistency is what separates a believable AI influencer from an obvious fake. Your audience will scroll through your page. If the face changes between posts, trust is destroyed instantly. This lesson covers how to lock in your model's look so every image looks like the same person."},
+        {"type": "subheader", "content": "The Reference Image Method"},
+        {"type": "text", "content": "Both Seedream 4.5 and Nano Banana 2 support reference image workflows. This means you upload your seed image as a reference, and the tool uses it to maintain your character's face across new generations. This is the primary method for achieving consistency."},
         {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Consistency Rules"},
+          {"type": "subheader", "content": "How the Reference Method Works"},
           {"type": "bullets", "items": [
-            "Same face structure across all images — no exceptions",
-            "Same body type and proportions",
-            "Hair color and style should only change naturally (like a real person would)",
-            "Skin tone must remain constant",
-            "Eye color locked in from the start"
+            "Start with your locked-in seed image from Lesson 2",
+            "Upload it as a reference input when generating new images",
+            "Write a new prompt describing the desired scene, outfit, or setting",
+            "The tool preserves the face from your reference while creating the new scene",
+            "Generate multiple outputs and compare against the reference",
+            "Only keep images that match the face consistently"
+          ], "bullet": "→"},
+          {"type": "subheader", "content": "Reference Image Best Practices"},
+          {"type": "bullets", "items": [
+            "Use a clear, front-facing headshot as your primary reference",
+            "Keep 2-3 reference angles saved (front, 3/4 turn, profile) for variety",
+            "Higher resolution reference images produce better consistency",
+            "Never change your primary reference image once your page is live",
+            "Adjust reference strength settings if the face drifts — higher strength means more consistency but less variety"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side-by-side grid showing consistent face across 4-6 different images/settings"}
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "The reference workflow visualized: Seed Image uploaded → New prompt written → Tool generates new image with same face → Compare side by side → Approve or regenerate."}
         ], "right": [
+          {"type": "subheader", "content": "Face Swap as a Backup Method"},
+          {"type": "text", "content": "If a generated image has a great body, pose, and setting but the face drifted slightly, face swapping can save it. This technique replaces the face in the generated image with your reference face."},
+          {"type": "bullets", "items": [
+            "Generate the image with your desired scene and pose",
+            "If the face drifts but the rest is good, use face swap to correct it",
+            "Swap the face from your reference image onto the generated body",
+            "Check that lighting and angle match naturally after the swap",
+            "This is a correction tool, not your primary workflow — reference generation should be your default"
+          ]},
+          {"type": "subheader", "content": "Consistency Rules — What Must Stay Locked"},
+          {"type": "bullets", "items": [
+            "Face structure — jawline, cheekbones, nose shape, lip shape",
+            "Body type and proportions",
+            "Skin tone — must remain constant across all lighting",
+            "Eye color — locked in from the start, never changes",
+            "Core hair color (natural changes like highlights are acceptable)"
+          ]},
           {"type": "subheader", "content": "What Can Vary Naturally"},
           {"type": "bullets", "items": [
-            "Lighting and shadows (indoor vs outdoor)",
-            "Clothing and outfits",
-            "Background and location",
-            "Makeup style (subtle changes only)",
-            "Camera angle and distance"
+            "Lighting and shadows (indoor vs outdoor, golden hour vs studio)",
+            "Clothing and outfits (expected and creates content variety)",
+            "Background and location (home, outdoors, gym, cafe)",
+            "Makeup style (subtle changes only — not dramatic transformations)",
+            "Camera angle and distance (selfie vs full body vs portrait)",
+            "Hair styling (up, down, braided — same base color)"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example showing natural variation (lighting, outfit) while maintaining face consistency"}
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side-by-side grid showing the same AI model across 4-6 different settings. Annotate: same face structure, same skin tone, same eye color, different outfit, different background. Use checkmarks on consistent elements."}
         ]},
-        {"type": "panel", "title": "Visual Consistency Check", "content": "Before posting any image, place it next to your last 3 posts. If the face does not look like the same person at a glance, do not post it. Regenerate until it matches.", "border": "#39FF14"}
+        {"type": "panel", "title": "Visual Consistency Check", "content": "Before posting any image, place it next to your last 3 posts. If the face does not look like the same person at a glance, do not post it. Regenerate until it matches. This 5-second test saves you from destroying trust with your audience.", "border": "#39FF14"}
       ]
     },
     {
       "header": "Lesson 4: Building Your Content Library",
       "blocks": [
-        {"type": "text", "content": "You should never be scrambling for content. Before you post anything publicly, build a library of at least 30-50 images. This gives you a buffer and lets you plan your content calendar without pressure."},
+        {"type": "text", "content": "You should never be scrambling for content. Before you post anything publicly, build a library of at least 30-50 images. This gives you a buffer and lets you plan your content calendar without pressure. Running out of content mid-warmup kills momentum and consistency."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Batch Generation Strategy"},
+          {"type": "text", "content": "Dedicate specific sessions to content generation rather than creating images one at a time. A focused session with Seedream 4.5 and Nano Banana 2 should produce 10-20 usable images."},
           {"type": "bullets", "items": [
-            "Set aside dedicated sessions for content generation",
-            "Generate 10-20 images per session",
-            "Vary outfits, settings, and poses across the batch",
-            "Sort images into categories: casual, lifestyle, glam, close-up",
-            "Keep a 'rejected' folder — you may salvage later"
+            "Set aside 2-3 dedicated sessions per week for content generation",
+            "Generate 10-20 images per session with varied prompts",
+            "Use Seedream 4.5 for close-ups and portraits, Nano Banana 2 for full-body and lifestyle",
+            "Change outfits, settings, and poses across the batch",
+            "Sort images into categories immediately after generation",
+            "Keep a 'rejected' folder — you may salvage these later with editing",
+            "Target: build a 2-week content buffer before launching any account"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of organized content library folder structure"}
+          {"type": "subheader", "content": "Folder Structure"},
+          {"type": "text", "content": "Organization saves time and prevents panic. Set up this folder structure before you start generating."},
+          {"type": "bullets", "items": [
+            "/PersonaName/Reference/ — Your seed images and reference photos",
+            "/PersonaName/Library/Headshots/ — Profile photos and close-ups",
+            "/PersonaName/Library/Casual/ — Lifestyle and everyday content",
+            "/PersonaName/Library/Glam/ — Dressed up and polished shots",
+            "/PersonaName/Library/Stories/ — Casual, raw-feeling content for Stories",
+            "/PersonaName/Rejected/ — Images that did not pass quality check",
+            "/PersonaName/Posted/ — Archive of already-posted content"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of organized content library folder structure showing the categories above with example file counts in each folder."}
         ], "right": [
           {"type": "subheader", "content": "Content Categories to Build"},
           {"type": "bullets", "items": [
-            "Profile photos and headshots (3-5)",
-            "Casual lifestyle shots (10-15)",
-            "Glamour or dressed-up shots (5-10)",
-            "Close-up selfie-style images (5-10)",
-            "Story-ready casual content (10+)"
+            "Profile photos and headshots: 3-5 (your best face shots)",
+            "Casual lifestyle shots: 10-15 (everyday settings, natural poses)",
+            "Glamour or dressed-up shots: 5-10 (polished, curated content)",
+            "Close-up selfie-style images: 5-10 (intimate, personal-feeling)",
+            "Story-ready casual content: 10+ (raw, in-the-moment aesthetic)"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Grid of example content library showing variety across categories"}
+          {"type": "subheader", "content": "Prompt Templates for Each Category"},
+          {"type": "text", "content": "Save these prompt templates and swap out the details for each generation. This ensures consistent quality while creating variety."},
+          {"type": "good_example", "content": "Headshot: 'Close-up portrait, natural light from window, soft smile, looking at camera, photorealistic, iPhone quality'\n\nCasual: 'Sitting on couch in oversized hoodie, warm indoor lighting, relaxed pose, candid feel, photorealistic'\n\nGlam: 'Black dress, mirror selfie, evening lighting, confident pose, photorealistic'\n\nGym: 'Workout outfit, gym mirror selfie, overhead fluorescent lighting, post-workout glow, candid'\n\nStory: 'Taking selfie in car, natural daylight, casual expression, slightly messy hair, iPhone selfie style'"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Grid of example content library showing variety across all 5 categories — headshots, casual, glam, selfie, stories. Show how the face remains consistent while settings and outfits vary."}
         ]},
-        {"type": "panel", "title": "Minimum Before Launch", "content": "Do NOT launch any social media account until you have at least 30 quality images saved and sorted. Running out of content mid-warmup kills momentum and consistency.", "border": "#FF3131"}
+        {"type": "panel", "title": "Minimum Before Launch", "content": "Do NOT launch any social media account until you have at least 30 quality images saved and sorted across multiple categories. Running out of content mid-warmup kills momentum and consistency. Your content library is your business inventory — stock it before you open the store.", "border": "#FF3131"}
       ]
     }
   ],
   "summary_points": [
-    "Choose your niche based on market demand, not personal preference",
-    "Your base model's face is your brand — consistency is everything",
-    "Generate a strong seed image and use it as reference for all future content",
-    "Lock in face, body type, skin tone, and eye color from day one",
-    "Lighting, outfits, and backgrounds can vary naturally",
-    "Build a library of 30-50 images before launching any account"
+    "Choose your niche based on market demand, not personal preference — girl-next-door and fitness niches have the highest proven demand",
+    "Seedream 4.5 and Nano Banana 2 are your primary image generation tools — master both for different content types",
+    "Your base model's face is your brand — generate 20-30 variations and select the strongest as your seed image",
+    "Use the reference image method to maintain face consistency across all future generations",
+    "Face swap is a backup correction tool when reference generation produces a drifted face on an otherwise good image",
+    "Lock in face structure, body type, skin tone, and eye color from day one — only outfits, lighting, and settings should vary",
+    "Build a library of 30-50 images sorted into categories before launching any account"
   ]
 }

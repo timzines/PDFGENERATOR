@@ -6,576 +6,288 @@
     {
       "header": "Lesson 1: Funnel Psychology & Overview",
       "blocks": [
-        {"type": "text", "content": "Followers are not customers. They are potential customers sitting at the top of a funnel. The funnel is the system that takes someone from 'I saw a Reel' to 'I just paid $15/month for a subscription.' Without this system, followers are just a number on your profile. The endpoint is Fanvue. Every other platform exists to support that conversion."},
-        {"type": "text", "content": "Instagram is not a selling platform. Instagram is a distribution engine. The mistake beginners make is attempting to convert users too early, too directly, or too aggressively without warming intent. This ecosystem uses a Hard Gate Funnel. No other routing structures are permitted."},
+        {"type": "text", "content": "Followers are not customers. They are potential customers sitting at the top of a funnel. The funnel is the system that takes someone from 'I saw a Reel' to 'I just paid for a subscription.' Without this system, followers are just a number on your profile. Every other platform exists to support that conversion."},
+        {"type": "text", "content": "Instagram is not a selling platform. Instagram is a distribution engine. The mistake beginners make is attempting to convert users too early, too directly, or too aggressively without warming intent. This module covers the funnel architecture that turns free attention into paid subscriptions — step by step, with no shortcuts."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "The Hard Gate Funnel"},
-          {"type": "text", "content": "A Hard Gate Funnel means every fan must pass through defined stages before reaching the monetization endpoint. There are no shortcuts, no alternative paths, and no direct selling on social media."},
-          {"type": "subheader", "content": "Approved Traffic Paths Only"},
+          {"type": "text", "content": "A Hard Gate Funnel means every fan must pass through defined stages before reaching the monetization endpoint. There are no shortcuts, no alternative paths, and no direct selling on social media. This structure maximizes conversion by building desire before asking for money."},
+          {"type": "subheader", "content": "The Funnel Stages"},
           {"type": "bullets", "items": [
-            "Instagram → Link in Bio → Fanvue",
-            "Instagram → Link in Bio → Free Telegram → Fanvue",
-            "Instagram → Link in Bio → Free Telegram → Link in Bio → Fanvue"
+            "Stage 1: Discovery — They see your content on Instagram, TikTok, Threads, or Reddit",
+            "Stage 2: Curiosity — They visit your profile, scroll your grid, read your bio",
+            "Stage 3: Interest — They follow you, watch your Stories, engage with your content",
+            "Stage 4: Trust — They feel connected to your persona through consistent content",
+            "Stage 5: Desire — They want more than what is available for free",
+            "Stage 6: Action — They click the link, enter the funnel, and convert to a paying subscriber"
           ], "bullet": "→"},
           {"type": "text", "content": "Every step of this funnel must be intentional. If any step is weak, the whole thing leaks. Most people lose fans between Trust and Desire because they try to sell too early."},
-          {"type": "panel", "title": "How It Works", "content": "Instagram builds desire.\nTelegram builds urgency.\nFanvue captures revenue.", "border": "#39FF14"}
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Visual funnel diagram: Wide top showing Discovery (social media icons) → narrowing through Curiosity → Interest → Trust → Desire → Action (subscriber icon at bottom). Show drop-off rates at each stage. Dollar signs increase toward the bottom."}
         ], "right": [
-          {"type": "subheader", "content": "Purpose of This Funnel"},
-          {"type": "bullets", "items": [
-            "Capture attention",
-            "Reduce friction",
-            "Delay commitment",
-            "Increase urgency",
-            "Force monetization at the correct endpoint"
-          ]},
           {"type": "subheader", "content": "Funnel Psychology"},
+          {"type": "text", "content": "Understanding why people pay is more important than understanding how to ask them to pay. The psychology behind the funnel drives every decision."},
           {"type": "bullets", "items": [
-            "People don't pay for content — they pay for connection",
+            "People do not pay for content — they pay for connection and exclusivity",
             "The feeling of being 'close' to someone drives subscriptions",
-            "Free content must tease but never fully satisfy",
+            "Free content must tease but never fully satisfy — the gap creates desire",
             "The gap between free and paid must feel exciting, not frustrating",
-            "Emotional framing always outperforms hard selling"
+            "Emotional framing always outperforms hard selling",
+            "Urgency and scarcity increase conversion — 'limited time' and 'exclusive' work"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Visual funnel diagram: Attention → Curiosity → Trust → Desire → Action with platform labels at each stage"},
-          {"type": "panel", "title": "Core Principle", "content": "You are not selling content. You are selling the feeling of a relationship. Every decision you make should build emotional proximity, not advertise a product.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Funnel Aggression vs Compliance"},
-        {"type": "text", "content": "This funnel is designed to be aggressive. Aggression without structure leads to bans. Structure allows aggression to scale."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Aggressive Elements"},
+          {"type": "subheader", "content": "Common Funnel Mistakes"},
           {"type": "bullets", "items": [
-            "Frequent CTAs across Telegram and Stories",
-            "Repeated Fanvue exposure through multiple touchpoints",
-            "Emotional and sexual framing in captions and messages"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Compliance Guardrails"},
-          {"type": "bullets", "items": [
-            "Instagram remains fully compliant at all times",
-            "Explicit payoff is exclusive to Fanvue only",
-            "Telegram bridges the gap between compliant and explicit"
-          ]}
-        ]},
-        {"type": "panel", "title": "Final Funnel Rule", "content": "This funnel is not optional.\nTraffic without structure is wasted.\nBuild desire. Delay commitment.\nForce the decision at Fanvue.", "border": "#FF3131"}
+            "Trying to sell directly on Instagram (never works, gets you flagged)",
+            "Putting links everywhere too early (screams promotion, kills trust)",
+            "Skipping the trust-building phase (asking for money before connection exists)",
+            "Giving away too much for free (no reason to subscribe)",
+            "Being too aggressive with CTAs (repels instead of attracts)",
+            "Having too many links or options (confusion kills conversion)"
+          ]},
+          {"type": "panel", "title": "Core Principle", "content": "You are not selling content. You are selling the feeling of a relationship. Every decision you make should build emotional proximity, not advertise a product. The fans who spend the most feel the most connected.", "border": "#39FF14"}
+        ]}
       ]
     },
     {
       "header": "Lesson 2: Link in Bio & Funnel Architecture",
       "blocks": [
-        {"type": "text", "content": "The link in bio is the bridge between free attention and paid conversion. It acts as a decision control hub. Fewer choices increase conversion probability. Do not overload the page. Too many options = confusion = lost conversion. This lesson covers the exact architecture."},
+        {"type": "text", "content": "The link in bio is the bridge between free attention and paid conversion. It acts as a decision control hub. Fewer choices increase conversion probability. Do not overload the page. Too many options means confusion, and confusion means lost conversion. This lesson covers the exact architecture that maximizes click-through."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Link in Bio Setup"},
-          {"type": "subheader", "content": "Approved Platforms"},
+          {"type": "subheader", "content": "Approved Link-in-Bio Platforms"},
           {"type": "bullets", "items": [
-            "AllMyLinks",
-            "Linktree",
-            "Hoo.be"
+            "AllMyLinks — Clean, customizable, popular in this space",
+            "Linktree — Well-known, reliable, free tier available",
+            "Hoo.be — Alternative option with good customization"
           ]},
-          {"type": "subheader", "content": "Mandatory Links Only"},
+          {"type": "subheader", "content": "Page Design Rules"},
           {"type": "bullets", "items": [
-            "Fanvue (Primary Monetization)",
-            "Free Telegram (Pre-Sell Funnel)"
-          ], "bullet": "→"},
-          {"type": "panel", "title": "Rule", "content": "Only two links. Nothing else. Fewer choices = higher conversion. No Amazon wishlists, no Spotify, no personal blogs, no extra social links.", "border": "#39FF14"},
-          {"type": "good_example", "content": "Link page:\n1. 'My free private channel' → Telegram\n2. 'Exclusive content' → Fanvue\nClean, simple, two clear paths. Design matches persona aesthetic."},
-          {"type": "bad_example", "content": "Link page:\n8 different links, random colors, Amazon wishlist, Spotify, personal blog, Fanvue buried at the bottom.\nResult: Fan gets confused, clicks nothing."}
+            "Design must match your persona's aesthetic (colors, mood, style)",
+            "Profile photo on the link page should match your Instagram profile photo",
+            "Keep the layout clean and minimal — no clutter",
+            "Maximum 2-3 links visible (fewer choices = higher conversion)",
+            "Primary link should be the most visually prominent"
+          ]},
+          {"type": "panel", "title": "Rule", "content": "Keep it simple. Fewer choices = higher conversion. No Amazon wishlists, no Spotify, no personal blogs, no extra social links. Every additional link dilutes the conversion rate of your primary monetization path.", "border": "#39FF14"},
+          {"type": "good_example", "content": "Link page:\n1. 'My free private channel' → Telegram\n2. 'Exclusive content' → Subscription Platform\n\nClean, simple, two clear paths. Design matches persona aesthetic. Fan knows exactly what to click."},
+          {"type": "bad_example", "content": "Link page:\n8 different links, random colors, Amazon wishlist, Spotify, TikTok link, personal blog, subscription link buried at the bottom.\n\nResult: Fan gets overwhelmed, clicks nothing, leaves."}
         ], "right": [
           {"type": "subheader", "content": "Free Telegram Funnel"},
-          {"type": "text", "content": "Telegram exists to capture users who are interested but busy, in public or at work, or unwilling to enter payment details immediately. Joining a free Telegram requires less commitment than subscribing to Fanvue. This makes Telegram the primary warming layer. Many users leave notifications ON, creating repeated exposure without Instagram risk."},
+          {"type": "text", "content": "Telegram exists to capture users who are interested but not ready to pay immediately. They may be busy, in public, at work, or simply not willing to enter payment details on first contact. Joining a free Telegram channel requires zero commitment — no credit card, no signup, just one tap."},
+          {"type": "subheader", "content": "Why Telegram Works"},
+          {"type": "bullets", "items": [
+            "Zero barrier to entry — one tap to join, no payment info needed",
+            "Captures interest before it fades — they can come back later",
+            "Many users leave notifications ON — creates repeated exposure without relying on Instagram",
+            "Private channel format feels exclusive and personal",
+            "Content can be slightly more personal than Instagram without platform restrictions",
+            "Direct communication channel — not algorithm-dependent"
+          ]},
           {"type": "subheader", "content": "Telegram Content Rules"},
           {"type": "bullets", "items": [
-            "Content must be more NSFW than Instagram but NEVER more explicit than Fanvue",
-            "Thirst traps and suggestive content only",
-            "Maximum 2-3 posts per day — overposting causes muting and exits",
-            "Captions must express desire or urgency",
-            "Captions must imply availability",
-            "Captions must redirect to Fanvue with soft CTAs"
+            "Content should feel more personal and intimate than Instagram — but still SFW",
+            "Behind-the-scenes content, casual selfies, personal thoughts",
+            "Maximum 2-3 posts per day — overposting causes muting and channel exits",
+            "Captions should feel personal and conversational",
+            "Soft CTAs directing to your subscription platform: 'more on my exclusive page'",
+            "Never spam — quality over quantity always"
           ]},
-          {"type": "panel", "title": "Critical Rule", "content": "Telegram content should increase frustration, not relieve it. If a fan can get satisfaction from Telegram, he will never subscribe to Fanvue.", "border": "#FF3131"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example link in bio page layout and Telegram channel screenshot"}
+          {"type": "panel", "title": "Telegram Strategy", "content": "Telegram content should increase curiosity, not satisfy it. If a fan can get everything they want from Telegram, they will never subscribe. The Telegram channel is a warming layer — it builds desire and redirects it to your paid platform.", "border": "#FF3131"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example link-in-bio page layout (clean, 2 links, matching aesthetic) alongside a Telegram channel screenshot showing content style and posting frequency."}
         ]},
         {"type": "subheader", "content": "Instagram Highlight Funnel"},
-        {"type": "text", "content": "Highlights act as a permanent funnel entry point. They catch followers who don't check your bio organically."},
+        {"type": "text", "content": "Highlights act as a permanent funnel entry point. They catch followers who do not check your bio organically. A well-designed highlight is like a 24/7 billboard for your link."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Setup Rules"},
           {"type": "bullets", "items": [
-            "One dedicated highlight only",
-            "Sexier cover image than feed content",
+            "One dedicated highlight for your link funnel",
+            "Cover image should be attention-grabbing and match your aesthetic",
             "Face clearly visible on the cover"
           ]}
         ], "right": [
           {"type": "subheader", "content": "Inside the Highlight"},
           {"type": "bullets", "items": [
-            "Story with Link Sticker directing to Fanvue or Telegram",
-            "CTA text: 'Come chat to me' or 'Talk to me here'",
-            "Update highlights monthly with fresh teaser content"
+            "Story with Link Sticker directing to your link-in-bio page or Telegram",
+            "CTA text: 'Come chat to me' or 'Talk to me here' or 'More of me here'",
+            "Update highlights monthly with fresh content to keep them feeling current"
           ]}
         ]},
-        {"type": "panel", "title": "Funnel Activation Timing", "content": "DO NOT deploy funnel links immediately. Links must never be spammed in captions or comments. Wait approximately 3 weeks of normal posting with stable engagement and green recommendation status before activating. Once activated, links may appear ONLY in: Bio, Story Highlights, and Story Link Stickers. Activating too early screams 'promo account' and causes shadowbans, recommendation suppression, and early account flags.", "border": "#FF3131"},
-        {"type": "subheader", "content": "Common Funnel Mistakes"},
-        {"type": "bullets", "items": [
-          "Too many links in the link page — kills conversion",
-          "Fanvue buried or hidden below other links",
-          "No Telegram buffer between social media and Fanvue",
-          "Explicit previews posted on Instagram",
-          "Activating links before warmup is complete"
+        {"type": "panel", "title": "Funnel Activation Timing", "content": "DO NOT deploy funnel links immediately. Links must never be spammed in captions or comments. Wait approximately 3 weeks of normal posting with stable engagement and green recommendation status before activating. Once activated, links may appear ONLY in: Bio, Story Highlights, and Story Link Stickers. Activating too early screams 'promo account' and causes shadowbans, recommendation suppression, and early account flags.", "border": "#FF3131"}
+      ]
+    },
+    {
+      "header": "Lesson 3: Content Progression & Value Ladder",
+      "blocks": [
+        {"type": "text", "content": "Content must follow a clear ladder. Each layer builds on the previous one and leaves something unfinished so the next layer becomes attractive. This is how you create desire that converts to revenue. If the fan gets full satisfaction at any free layer, they have no reason to move to the next."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "The Content Ladder"},
+          {"type": "bullets", "items": [
+            "Layer 1: Social Media (Instagram, TikTok, Threads) — Builds curiosity and trust",
+            "Layer 2: Telegram — Builds personal connection and desire",
+            "Layer 3: Subscription Platform — Delivers exclusive content and access"
+          ], "bullet": "→"},
+          {"type": "subheader", "content": "Social Media Content (Layer 1)"},
+          {"type": "text", "content": "This is your public face. It must be polished, SFW, and make people want to know more about you. Think of it as the shop window — it shows the best of what you offer without giving everything away."},
+          {"type": "bullets", "items": [
+            "High-quality lifestyle shots and selfies",
+            "Personality-driven captions that create connection",
+            "Reels and video content that showcase your persona's 'life'",
+            "Stories that feel raw and in-the-moment",
+            "Content that makes people think: 'I want to see more of her'"
+          ]},
+          {"type": "subheader", "content": "Telegram Content (Layer 2)"},
+          {"type": "text", "content": "More personal than social media, but still controlled. This layer makes the fan feel like they have special access. It bridges the gap between public following and paid subscription."},
+          {"type": "bullets", "items": [
+            "More casual, behind-the-scenes content",
+            "Personal thoughts and daily updates",
+            "Exclusive photos not posted on Instagram",
+            "Occasional teases of subscription-exclusive content",
+            "Conversational tone — like texting a friend"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Subscription Content (Layer 3)"},
+          {"type": "text", "content": "This is where the full experience is delivered. Subscribers should feel they unlocked something meaningful — content, access, and interaction that justify the price."},
+          {"type": "bullets", "items": [
+            "Content that is genuinely exclusive — never posted anywhere else",
+            "More frequent posting than free platforms",
+            "Personal feel — content looks and feels like it was made for subscribers",
+            "Consistent quality and posting schedule",
+            "Interaction and engagement with subscribers (responses, acknowledgment)"
+          ]},
+          {"type": "panel", "title": "Content Ladder Rule", "content": "If a fan can get satisfaction at Layer 1, they will not join Layer 2.\nIf a fan can get satisfaction at Layer 2, they will not subscribe at Layer 3.\nEach layer must leave something unfinished. Each step up must feel like a meaningful upgrade.", "border": "#FF3131"},
+          {"type": "subheader", "content": "Visual Consistency Across All Layers"},
+          {"type": "text", "content": "All content across all layers must look like it comes from the same person. Sudden changes reduce realism and trust."},
+          {"type": "bullets", "items": [
+            "Backgrounds should be similar across all content layers",
+            "Camera angles and style should be consistent",
+            "Mood and aesthetic should match your persona across every platform",
+            "Hair, makeup, and clothing style should evolve naturally, not change drastically"
+          ]},
+          {"type": "panel", "title": "The Consistency Chain", "content": "Consistency creates realism.\nRealism creates attachment.\nAttachment creates spending.\nBreak any link in this chain and the funnel leaks.", "border": "#39FF14"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Content progression ladder visual: Three ascending steps labeled Layer 1 (Social Media - free), Layer 2 (Telegram - free but exclusive), Layer 3 (Subscription - paid). Show content examples at each level with arrows showing upward progression."}
         ]}
       ]
     },
     {
-      "header": "Lesson 3: Fanvue Page Setup",
+      "header": "Lesson 4: Pricing Strategy & Subscription Setup",
       "blocks": [
-        {"type": "text", "content": "Your Fanvue page is where money is made. Everything else in this course leads to this page. The Fanvue page is not a gallery. It is a conversion environment. Its purpose is to turn curiosity into trust and trust into spending. First impressions matter — a poorly set up Fanvue page will lose subscribers within 24 hours."},
+        {"type": "text", "content": "Your subscription price is not designed to generate maximum profit on its own. Its main purpose is to remove fear and make the fan take the first step. The subscription price should feel like an easy decision — low enough to not trigger resistance, high enough to signal value. This lesson covers the pricing psychology and setup that maximizes conversions."},
         {"type": "two_column", "left": [
-          {"type": "text", "content": "A good Fanvue page feels like entering a private space rather than browsing a product list. The fan should feel invited into a personal world, not pushed into a checkout decision."},
-          {"type": "subheader", "content": "The Page Must Communicate"},
+          {"type": "subheader", "content": "Subscription Pricing Psychology"},
           {"type": "bullets", "items": [
-            "Personality",
-            "Exclusivity",
-            "Emotional safety"
+            "The subscription is a gateway, not the main revenue source",
+            "Low price removes psychological resistance to the first payment",
+            "High price signals value but kills conversion volume",
+            "The sweet spot: $7-$15 per month base subscription",
+            "Promotional pricing: visible discount to $3-$9 makes it feel like a deal",
+            "Below $5 attracts low-quality subscribers who never engage",
+            "Above $20 kills conversion volume for new pages"
           ]},
-          {"type": "text", "content": "The goal is not to show everything. The goal is to suggest everything."}
+          {"type": "subheader", "content": "Pricing Tiers Strategy"},
+          {"type": "bullets", "items": [
+            "Base price: $10-$20 per month (creates perceived value)",
+            "Promotional price: $3-$9 (visible discount that triggers action)",
+            "Show the original price crossed out next to the promo price",
+            "Limited-time framing increases urgency: 'Price going up soon'",
+            "Never discount so heavily that you devalue your content — the promo price should feel like a deal, not charity"
+          ]},
+          {"type": "panel", "title": "Pricing Data", "content": "Industry data shows $7-$15/month is the sweet spot for AI influencer subscriptions. Below $5 attracts subscribers who never buy additional content. Above $20 dramatically reduces conversion rates for pages under 10K followers.", "border": "#39FF14"}
         ], "right": [
-          {"type": "subheader", "content": "Banner: Visual First Impression"},
-          {"type": "text", "content": "The banner is the first emotional signal. It sets the mood of the fantasy before the fan reads anything. The banner answers one question: What kind of world am I entering."},
+          {"type": "subheader", "content": "Page Setup Essentials"},
+          {"type": "text", "content": "Your subscription page is where money is made. Everything else in this course leads to this page. First impressions matter — a poorly set up page loses subscribers within 24 hours."},
+          {"type": "subheader", "content": "Banner"},
           {"type": "bullets", "items": [
-            "AI persona in a natural, believable environment",
-            "Bedroom, couch, mirror, or window settings",
-            "Casual and personal pose, not staged",
-            "Must match the persona type — soft persona = relaxed and approachable, dominant persona = confident and controlled"
+            "High-quality image of your AI persona in a natural, believable setting",
+            "Casual and personal pose — not staged or over-produced",
+            "Must match the mood of your persona (approachable, confident, playful)",
+            "Should suggest lifestyle and personality, not just appearance"
           ]},
-          {"type": "good_example", "content": "Natural bedroom selfie, soft lighting,\ncasual pose, face clearly visible"},
-          {"type": "bad_example", "content": "Oversexualized pose, heavy filter,\nstaged studio shot, no personality"}
-        ]},
-        {"type": "text", "content": "The banner should suggest lifestyle and mood, not explicit sexuality. It should feel like a private moment rather than an advertisement."},
-        {"type": "subheader", "content": "Bio: Identity and Emotional Hook"},
-        {"type": "text", "content": "The bio should sound like a person, not a business. It must feel emotional rather than technical. A bad bio focuses on features instead of feelings. Features do not create desire. Feelings create desire."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Bio Structure (3 Lines)"},
+          {"type": "subheader", "content": "Bio"},
+          {"type": "text", "content": "The bio should sound like a person, not a business. Personality creates desire. Features do not."},
           {"type": "bullets", "items": [
             "First line: personality or mood — who you are",
-            "Second line: type of content/interaction — what happens here",
+            "Second line: type of content or interaction — what happens here",
             "Third line: emotional invitation — why they should stay"
           ]},
-          {"type": "good_example", "content": "Just a girl who loves late nights and private talks.\nI share my daily life and my naughty side here.\nStay and get to know me better."},
-          {"type": "bad_example", "content": "Daily posts. HD videos. Cheap PPV."}
-        ], "right": [
-          {"type": "text", "content": "The bio should never look like a shop description. It should look like a short personal introduction that makes the fan feel emotionally pulled in."},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Fanvue page layout example showing banner, bio, free posts, and subscriber content structure"}
+          {"type": "good_example", "content": "Bio: 'Just a girl who loves late nights and sharing little moments. I post my daily life and things I usually keep private. Stay and get to know me.'"},
+          {"type": "bad_example", "content": "Bio: 'Daily posts. HD content. DM me.'"},
+          {"type": "subheader", "content": "First Week of Content"},
+          {"type": "bullets", "items": [
+            "Have 5-10 posts ready before your first subscriber arrives",
+            "Mix content types: lifestyle shots, casual selfies, personal updates",
+            "Post consistently from Day 1 — empty pages cause immediate unsubscribes",
+            "Captions should feel personal and conversational"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Subscription page layout example: Banner image, bio text, initial posts grid. Annotate: 'Banner sets the mood', 'Bio creates connection', 'Posts show consistent value'."}
         ]},
-        {"type": "subheader", "content": "Content Layers: Free vs Subscriber vs PPV"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Free Posts (Trust & Curiosity)"},
-          {"type": "text", "content": "Free content is for trust and realism, not for sexual satisfaction. Its job is to make the fan feel safe and curious. Free content should feel like daily life, not porn."},
-          {"type": "bullets", "items": [
-            "Clothed selfies and casual mirror shots",
-            "Outfit photos and lifestyle pictures",
-            "Gym or bedroom environments",
-            "Soft teasing angles only"
-          ]},
-          {"type": "subheader", "content": "Caption Styles for Free"},
-          {"type": "bullets", "items": [
-            "'Long day today'",
-            "'Do you like this outfit'",
-            "'Late night vibes again'"
-          ]},
-          {"type": "subheader", "content": "Free Content Must Avoid"},
-          {"type": "bullets", "items": [
-            "Full nudity",
-            "Explicit sexual acts",
-            "Toy play",
-            "Orgasm content"
-          ]},
-          {"type": "panel", "title": "Critical Rule", "content": "If free content already satisfies desire, the fan has no reason to subscribe.", "border": "#FF3131"}
-        ], "right": [
-          {"type": "subheader", "content": "Subscriber Posts (Intimacy & Value)"},
-          {"type": "text", "content": "Subscriber content is where intimacy begins. It must feel like a reward for joining. The fan should feel he unlocked something meaningful, but not the full fantasy."},
-          {"type": "bullets", "items": [
-            "Lingerie, shower shots, bed photos",
-            "More personal and frequent than free content",
-            "Suggests access without showing everything"
-          ]},
-          {"type": "subheader", "content": "Caption Styles for Subscribers"},
-          {"type": "bullets", "items": [
-            "'Only for you here'",
-            "'I would not post this anywhere else'",
-            "'This stays between us'"
-          ]},
-          {"type": "subheader", "content": "PPV Posts (Fantasy & High Value)"},
-          {"type": "text", "content": "PPV is where the full fantasy is delivered. This is the highest value layer. PPV should never be framed like a product. It must be framed like an emotional event."},
-          {"type": "bullets", "items": [
-            "Full nudity, toy play, explicit teasing",
-            "Orgasm scenes, custom fantasies",
-            "Framed as private mistakes or secrets"
-          ]},
-          {"type": "good_example", "content": "PPV caption: 'I should not have done this earlier'\n'I lost control today'\n'I do not usually show this'"},
-          {"type": "bad_example", "content": "PPV caption: 'Buy this video'"}
-        ]},
-        {"type": "subheader", "content": "Content Progression Model"},
-        {"type": "text", "content": "Content must follow a clear ladder. Each layer must leave something unfinished so the next layer becomes attractive."},
-        {"type": "bullets", "items": [
-          "Free content builds curiosity",
-          "Subscriber content builds desire",
-          "PPV content fulfills fantasy"
-        ], "bullet": "→"},
-        {"type": "good_example", "content": "Free: outfit photo → Subscriber: lingerie photo → PPV: nude video"},
-        {"type": "panel", "title": "Content Ladder Rule", "content": "If a fan can get satisfaction for free, he will not subscribe.\nIf a fan can get full satisfaction from subscription, he will not buy PPV.\nEach layer must leave something unfinished.", "border": "#FF3131"},
-        {"type": "subheader", "content": "Automated Messages"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Free Follower Auto-Message"},
-          {"type": "text", "content": "Automated messages to free followers are the first emotional touchpoint. Their purpose is not to sell but to make the fan feel noticed and welcome. The goal is to move the fan from passive follower into active chatter."},
-          {"type": "bullets", "items": [
-            "Friendly greeting with soft personal tone",
-            "No prices, discounts, or PPV mentions",
-            "Create curiosity and encourage a reply"
-          ]},
-          {"type": "good_example", "content": "Hey, I just saw you follow me. That was cute\nof you. Where are you from."},
-          {"type": "bad_example", "content": "Thanks for following. Subscribe now for\nexclusive content."}
-        ], "right": [
-          {"type": "subheader", "content": "Subscriber Auto-Message"},
-          {"type": "text", "content": "Sent after someone subscribes. Their purpose is to emotionally reward the action and guide the fan into deeper engagement. The subscriber must feel that joining unlocked something special and personal."},
-          {"type": "bullets", "items": [
-            "Warm welcome that emotionally rewards the action",
-            "Soft direction toward deeper engagement",
-            "Voice messages also work well here"
-          ]},
-          {"type": "good_example", "content": "I was hoping you would join me here. This feels\nmore private already. Tell me what made you\ndecide to subscribe."},
-          {"type": "bad_example", "content": "Welcome. Here is my content. Check my PPV."}
-        ]},
-        {"type": "subheader", "content": "Pricing Strategy"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Subscription Pricing"},
-          {"type": "text", "content": "The subscription price is not designed to generate profit by itself. Its main purpose is to remove fear and make the fan take the first step. The real money is made from chatting and PPV."},
-          {"type": "bullets", "items": [
-            "Base price: $10-$20 (creates perceived value)",
-            "Promotion discount: visible price $3-$9",
-            "This makes the decision easy and removes psychological resistance"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Revenue Model"},
-          {"type": "bullets", "items": [
-            "Income from subscriptions = small bonus",
-            "Income from chatting and PPV = real business",
-            "Subscription unlocks communication",
-            "Emotional attachment creates spending"
-          ]},
-          {"type": "text", "content": "Never discount so heavily that you devalue your content. The promo price should feel like a deal, not charity."}
-        ]},
-        {"type": "subheader", "content": "Visual Consistency"},
-        {"type": "text", "content": "All content must look like it comes from the same person. Sudden changes reduce realism and trust."},
-        {"type": "bullets", "items": [
-          "Backgrounds should be similar across all content",
-          "Camera angles should be similar",
-          "Style and mood should be consistent",
-          "Hair, makeup, and clothing style should not change drastically"
-        ]},
-        {"type": "panel", "title": "The Consistency Chain", "content": "Consistency creates realism.\nRealism creates attachment.\nAttachment creates spending.", "border": "#39FF14"},
-        {"type": "panel", "title": "Retention Rule", "content": "A subscriber who gets bored unsubscribes. Post consistently, vary content types, and message new subscribers within the first hour. The first 48 hours determine if they stay.", "border": "#39FF14"}
+        {"type": "panel", "title": "Retention Rule", "content": "A subscriber who sees an empty or inconsistent page will unsubscribe immediately. Have content ready before launch. Post consistently. Respond to new subscribers quickly. The first 48 hours determine if they stay or leave.", "border": "#FF3131"}
       ]
     },
     {
-      "header": "Lesson 4: Chat Systems & Revenue Logic",
+      "header": "Lesson 5: Automated Messages & First Impressions",
       "blocks": [
-        {"type": "text", "content": "Chat is where the real money is made. Subscription fees get people in the door. Chat upsells and PPV purchases are where revenue multiplies. A well-run chat system can generate 3-5x more revenue than subscriptions alone. Traffic creates opportunity, but chat creates profit. Images and videos attract attention, yet emotional connection is what keeps a fan spending."},
-        {"type": "text", "content": "If chat quality is weak, fans leave quickly or search for other creators. If chat quality is strong, fans stay longer and naturally increase their spending. Chat is not entertainment and not casual flirting. Chat is structured emotional sales."},
-        {"type": "panel", "title": "Core Philosophy", "content": "Chatting is about directing, not reacting. You do not wait for the fan to decide where the conversation goes. You guide him there subtly. Every message must have a purpose. It must build trust, build desire, or move the fan closer to spending. Messages that do none of these waste attention and time. Every chat must follow logic instead of impulse. Emotion comes first. Money follows emotion.", "border": "#39FF14"},
+        {"type": "text", "content": "Automated messages are the first emotional touchpoint with new followers and subscribers. They set the tone for the entire relationship. A good automated message makes the fan feel noticed and welcome. A bad one makes them feel like they just subscribed to a spam list. This lesson covers how to set up messages that create connection, not resistance."},
         {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Fans Spend When They Feel"},
+          {"type": "subheader", "content": "Welcome Message for New Followers"},
+          {"type": "text", "content": "The purpose of this message is not to sell. It is to make the fan feel noticed and create an opening for conversation. Most fans receive nothing — a warm welcome immediately sets you apart."},
           {"type": "bullets", "items": [
-            "Safe — emotional security is established",
-            "Understood — their needs are recognized",
-            "Curious — desire is building but unfulfilled",
-            "Chosen — they feel special, not like one of many"
+            "Friendly greeting with a soft, personal tone",
+            "No prices, no discounts, no content mentions",
+            "Create curiosity and encourage a reply",
+            "Sound like a real person, not a bot or template"
           ]},
-          {"type": "subheader", "content": "Fans Stop Spending When They Feel"},
+          {"type": "good_example", "content": "Hey, I just saw you follow me. That was sweet of you. Where are you from?\n\n(Simple, warm, creates conversation opening.)"},
+          {"type": "bad_example", "content": "Thanks for following! Subscribe now for exclusive content! Link below!\n\n(Transactional, cold, zero personality. Instant unfollow.)"},
+          {"type": "subheader", "content": "Welcome Message for New Subscribers"},
+          {"type": "text", "content": "Sent immediately after someone subscribes. The purpose is to emotionally reward the action and make the subscriber feel they made a good decision."},
           {"type": "bullets", "items": [
-            "Pressured into purchases",
-            "Rushed through conversations",
-            "Ignored or given slow responses",
-            "Sold to directly without emotional buildup"
+            "Warm welcome that emotionally rewards their decision to subscribe",
+            "Soft direction toward engaging with your content",
+            "Make them feel special — not like subscriber #47",
+            "Ask a question to start a conversation"
           ]},
-          {"type": "text", "content": "The role of chat is to slow the fan emotionally so attachment can form, then speed him up financially at the right moment."}
+          {"type": "good_example", "content": "I was hoping you would join me here. This feels more personal already. Tell me what made you decide to subscribe?\n\n(Warm, personal, creates dialogue.)"},
+          {"type": "bad_example", "content": "Welcome! Check out my content. DM me if you want custom.\n\n(Cold, transactional, no personality. Subscriber regrets joining.)"}
         ], "right": [
-          {"type": "subheader", "content": "Fan Psychology: 6 Emotional Drivers"},
-          {"type": "text", "content": "Fans communicate using surface words, but they act on hidden emotions. When a fan says he is bored, he is asking for attention. When he says you look hot, he is asking for validation. When he asks what you sell, he is testing trust."},
+          {"type": "subheader", "content": "Message Timing & Frequency"},
           {"type": "bullets", "items": [
-            "Loneliness — seeking connection and someone who notices them",
-            "Stress Relief — looking for escape from daily pressure",
-            "Fantasy — want to live out scenarios they cannot in real life",
-            "Escape — desire to disconnect from their reality",
-            "Control — enjoy feeling they have power in the dynamic",
-            "Status — want to feel like a VIP or top fan"
+            "Welcome messages should trigger within minutes of follow/subscribe",
+            "Do not send more than one automated message per trigger event",
+            "Never send automated bulk messages to existing followers — it feels spammy",
+            "If the subscriber replies, respond personally — this is your conversion moment",
+            "Speed of response matters: reply within 30 minutes for best conversion"
           ]},
-          {"type": "panel", "title": "Key Rule", "content": "Never answer only the surface message. Always answer the emotional meaning behind it. Identify which driver is active and build the conversation around it.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Message Priority Order"},
-        {"type": "text", "content": "Profitable operations do not reply randomly. Messages are handled in strict order. New subscribers have the highest chance to buy. Late replies reduce emotional momentum and conversion."},
-        {"type": "bullets", "items": [
-          "Priority 1: Whales (Big Spenders) — respond first, always",
-          "Priority 2: New subscribers — respond within 30 minutes (first impression is critical)",
-          "Priority 3: Unanswered messages — clear the backlog systematically"
-        ], "bullet": "→"},
-        {"type": "panel", "title": "Speed Rule", "content": "Speed protects attention and prevents fans from drifting to other creators. Speed creates loyalty. Loyalty creates revenue.", "border": "#39FF14"},
-        {"type": "subheader", "content": "New Subscriber Handling"},
-        {"type": "text", "content": "New subscribers are treated differently from existing fans. Selling too early reduces long-term value. The first phase exists to establish emotional safety, not to generate instant income."},
-        {"type": "bullets", "items": [
-          "Welcome them warmly — make them feel noticed",
-          "Answer their first question with genuine engagement",
-          "Avoid any immediate selling or PPV mentions",
-          "Build rapport for 3-5 messages before any mention of extra content",
-          "Never open with a sales pitch — ever"
-        ]},
-        {"type": "text", "content": "This builds trust, comfort, and realism. These create higher first purchase rates and longer retention."},
-        {"type": "subheader", "content": "Fan Profiling System"},
-        {"type": "two_column", "left": [
-          {"type": "text", "content": "High-level chatting uses profiling instead of guessing. Profiling must feel natural, not interrogative. The system turns casual conversation into usable data."},
-          {"type": "subheader", "content": "Information Gathered Naturally"},
+          {"type": "subheader", "content": "Tone Guidelines"},
+          {"type": "text", "content": "The tone of every message must match your persona's personality. A playful persona sounds different from a mysterious one. Consistency in tone builds believability."},
           {"type": "bullets", "items": [
-            "Age",
-            "Location",
-            "Daily routine or job",
-            "Dominant or submissive energy"
+            "Playful persona: Light, teasing, uses casual language and questions",
+            "Shy/cute persona: Soft, slightly hesitant, uses 'I hope' and 'maybe'",
+            "Confident persona: Direct, warm, makes the fan feel chosen",
+            "Mysterious persona: Brief, intriguing, leaves questions open",
+            "Whatever tone you choose, maintain it across ALL messages and captions"
           ]},
-          {"type": "text", "content": "This allows better personalization, better timing, better emotional framing, and better upsells."}
-        ], "right": [
-          {"type": "subheader", "content": "Nickname & Memory System"},
-          {"type": "text", "content": "Professional teams use an internal nickname system. Nicknames are internal only and never shown to the fan. They create continuity, memory, and emotional realism across shifts."},
-          {"type": "subheader", "content": "Nickname Format"},
-          {"type": "text", "content": "Age / Location / Job / Sub or Dom"},
-          {"type": "good_example", "content": "23 / Texas / student / sub"},
-          {"type": "panel", "title": "Why This Works", "content": "When a fan feels remembered, trust increases and resistance drops. The nickname system ensures every chatter on your team knows each fan's context instantly.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Timing & Context Checks"},
-        {"type": "text", "content": "Before any selling attempt, the system checks context. Selling without timing reduces open rates and increases objections. Timing turns messages into moments."},
-        {"type": "bullets", "items": [
-          "Is the fan busy? — Do not pitch during work hours",
-          "Is the fan present? — Do not pitch if they are slow to respond",
-          "Is the fan distracted? — Do not pitch if conversation is shallow"
-        ]},
-        {"type": "text", "content": "These checks determine when to escalate and how to frame the message. Selling at the wrong time kills the emotional buildup."},
-        {"type": "subheader", "content": "Chat Flow Structure"},
-        {"type": "text", "content": "All profitable chats follow the same structure. This is not random flirting. It is structured emotional progression."},
-        {"type": "bullets", "items": [
-          "Rapport — builds trust and emotional safety",
-          "Tension — builds curiosity and desire",
-          "First Sale — filters buyers from browsers",
-          "Upsell — increases value per fan",
-          "Retention — increases lifetime value and loyalty"
-        ], "bullet": "→"},
-        {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Chat flow diagram showing new subscriber → rapport building → tension → first sale → upsell → retention cycle"}
-      ]
-    },
-    {
-      "header": "Lesson 5: First Sale & Upsell Logic",
-      "blocks": [
-        {"type": "text", "content": "The first sale is the hardest. After a fan makes their first purchase, the psychological barrier drops dramatically. Every sale after is easier. The first sale is a test of intent, not a profit goal. It must be low risk but meaningful. This lesson covers exactly when and how to make the first sale, and how to structure upsells without being pushy."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "First Sale Logic"},
-          {"type": "text", "content": "Before the first sale, the fan must be engaged, responsive, and emotionally involved. If the fan asks about prices too early, the system delays and continues building emotion. The first sale must feel personal, not transactional."},
+          {"type": "subheader", "content": "What Never to Include in Automated Messages"},
           {"type": "bullets", "items": [
-            "Never pitch on the first message — build rapport first",
-            "Wait for a natural opening: fan compliments you, asks about content, or shows interest",
-            "Frame it as sharing, not selling: 'I actually have something I think you'd love'",
-            "First PPV should be low-priced ($5-$10) to reduce resistance",
-            "After purchase, thank them genuinely — make them feel good about buying"
+            "Prices or payment amounts",
+            "Links to purchase anything",
+            "Mentions of exclusive or paid content",
+            "Sales language ('buy', 'purchase', 'unlock', 'deal')",
+            "Copy-pasted text that sounds robotic or templated",
+            "Emojis overload — keep it to 1-2 maximum"
           ]},
-          {"type": "good_example", "content": "Fan: 'You're so gorgeous'\nResponse: 'Aww you're sweet. I actually just took some new photos I'm really proud of... want to see? I made them just for my favorites'\nNatural, warm, non-pushy."},
-          {"type": "bad_example", "content": "Fan: 'Hey'\nResponse: 'Hi! Check out my new PPV for $15!'\nTransactional, cold, no rapport. Fan leaves."},
-          {"type": "panel", "title": "After the First Sale", "content": "Return to normal conversation instead of pushing immediately. This creates trust and anticipation. The fan should not feel like a wallet — they should feel like spending was a natural part of the connection.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "Upsell Logic"},
-          {"type": "text", "content": "After the first sale, gradually introduce higher-value content. Each upsell should feel like a natural escalation, not a sales ladder. Upselling only happens when the fan reacts positively and remains engaged."},
-          {"type": "subheader", "content": "Upsells Must"},
-          {"type": "bullets", "items": [
-            "Follow a logical sequence from low to high value",
-            "Increase gradually in price and exclusivity",
-            "Feel exclusive and personal — not like a catalog"
-          ]},
-          {"type": "subheader", "content": "Upsell Price Ladder"},
-          {"type": "bullets", "items": [
-            "First PPV: $5-$10 (test purchase, low barrier)",
-            "Second PPV: $10-$20 (slightly more exclusive)",
-            "Custom content: $25-$50+ (personalized, highest value)",
-            "Space upsells out — don't send 3 PPVs in one conversation",
-            "Let the fan ask for more before you offer it"
-          ]},
-          {"type": "panel", "title": "Key Framing", "content": "Upselling should feel like breaking personal rules, not selling from a catalog. The fan should feel he is seeing something he was not supposed to see.", "border": "#39FF14"},
-          {"type": "subheader", "content": "Whale Management"},
-          {"type": "text", "content": "Whales are long-term revenue assets. They are identified by repeat spending, emotional attachment, and frequent interaction. They are internally flagged and prioritized."},
-          {"type": "two_column", "left": [
-            {"type": "subheader", "content": "Whales Require"},
-            {"type": "bullets", "items": [
-              "Faster response times — always first priority",
-              "Higher personalization in every message",
-              "Emotional continuity across all conversations",
-              "Exclusive tone and private language"
-            ]}
-          ], "right": [
-            {"type": "bullets", "items": [
-              "Remember personal details (name, interests, timezone)",
-              "Offer exclusive content only available to them",
-              "Give them rituals such as priority replies",
-              "Never let a whale feel ignored — they will leave and not come back"
-            ]},
-            {"type": "text", "content": "Whales spend when they feel irreplaceable and chosen. They are your most valuable asset. Treat them accordingly."}
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Revenue breakdown example: subscriptions vs PPV vs custom content showing chat-driven revenue multiplier"}
+          {"type": "panel", "title": "First Impression Rule", "content": "The first message sets the tone for the entire relationship. Make the fan feel noticed, welcome, and curious. If the first message feels like a sales pitch, the fan's guard goes up and never comes down. You only get one chance at a first impression.", "border": "#39FF14"}
         ]}
-      ]
-    },
-    {
-      "header": "Lesson 6: Hiring & Managing Chatters",
-      "blocks": [
-        {"type": "text", "content": "As your page grows, you cannot chat with every fan yourself. Chatters are the people who manage conversations on your behalf, acting as your AI persona. Hiring the right chatters and managing them properly is the difference between scaling revenue and losing subscribers. A bad hire does not just reduce income. A bad hire can damage accounts, leak methods, or sabotage operations."},
-        {"type": "text", "content": "Hiring is not about finding cheap labor. It is about finding reliable operators who can follow structure and respect boundaries. You are not hiring personalities. You are hiring discipline."},
-        {"type": "panel", "title": "Core Rule", "content": "Every chatter must be filtered. Every chatter must be tested. Every chatter must be proven before trust is given.", "border": "#39FF14"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Where to Find Chatters"},
-          {"type": "subheader", "content": "Primary Sources"},
-          {"type": "bullets", "items": [
-            "ofmjobs.com — dedicated job board for this industry",
-            "onlinejobs.ph — Filipino VA marketplace with strong English skills"
-          ]},
-          {"type": "text", "content": "These platforms provide higher quality applicants who already understand online work and adult industry communication."},
-          {"type": "subheader", "content": "Secondary Sources"},
-          {"type": "bullets", "items": [
-            "Telegram groups such as ofmjobs on Telegram",
-            "Discord communities — industry-specific servers",
-            "Referrals from other operators — best source of vetted talent"
-          ]},
-          {"type": "text", "content": "Telegram and Discord are usable but lower quality. Many applicants there lack professionalism, discipline, or long term commitment. Never hire friends or family — keep it professional."},
-          {"type": "panel", "title": "Source Quality Rule", "content": "The more public and unstructured the platform, the lower the average candidate quality. Always prioritize platforms where people apply formally.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "First Screening"},
-          {"type": "text", "content": "Before any interview, applicants must be screened. This stage eliminates obvious bad fits before wasting time on interviews."},
-          {"type": "bullets", "items": [
-            "Check previous work history",
-            "Assess basic English level from their written messages",
-            "Evaluate communication tone and professionalism"
-          ]},
-          {"type": "panel", "title": "Filter Rule", "content": "If a candidate cannot write clearly, politely, and in full sentences, they should not move forward.", "border": "#FF3131"},
-          {"type": "subheader", "content": "Interview Process"},
-          {"type": "text", "content": "Every candidate must go through a live interview. The interview is not just about answers. It is about behavior."},
-          {"type": "subheader", "content": "Interview Should Cover"},
-          {"type": "bullets", "items": [
-            "Previous chatting or sales work experience",
-            "Experience with adult platforms if any",
-            "Availability and time zone",
-            "Motivation for the job"
-          ]},
-          {"type": "subheader", "content": "You Must Observe"},
-          {"type": "bullets", "items": [
-            "How they speak and carry themselves",
-            "How confident they are in English",
-            "How they respond under pressure",
-            "How honest they seem about past work"
-          ]},
-          {"type": "panel", "title": "Rejection Rule", "content": "Candidates who avoid direct answers or exaggerate experience should be rejected immediately.", "border": "#FF3131"}
-        ]},
-        {"type": "subheader", "content": "English & Skill Testing"},
-        {"type": "text", "content": "After the interview, every candidate must be tested live. They must join a Discord call with screen sharing. This prevents cheating with translators or AI tools."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "English Test"},
-          {"type": "bullets", "items": [
-            "Must answer questions verbally on the call",
-            "Must write sample chat replies live",
-            "Screen sharing prevents use of translation tools",
-            "Test their tone — it must match your persona's personality"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Typing Speed Test"},
-          {"type": "bullets", "items": [
-            "Words per minute test done live on screen share",
-            "Shows how fast they can respond to fans",
-            "Slow typers create long response times which lose revenue"
-          ]},
-          {"type": "panel", "title": "Rejection Rule", "content": "If a candidate refuses screen sharing or avoids live testing, they should be rejected immediately. No exceptions.", "border": "#FF3131"}
-        ]},
-        {"type": "subheader", "content": "Observation Period"},
-        {"type": "text", "content": "No candidate should get direct access after testing. They must first observe trained chatters for one to two days."},
-        {"type": "bullets", "items": [
-          "Watch how real conversations look and flow",
-          "Understand tone, structure, and pacing",
-          "Learn discipline and the chat flow system",
-          "Only candidates who stay attentive and engaged should move forward"
-        ]},
-        {"type": "text", "content": "This stage filters out people who lose interest quickly or cannot focus. It is a critical step that should never be skipped."},
-        {"type": "subheader", "content": "Access Control Stages"},
-        {"type": "text", "content": "Access must be earned gradually. New chatters should never receive full account access immediately. This reduces damage if a hire turns out to be malicious or incompetent."},
-        {"type": "bullets", "items": [
-          "Stage 1: Read-only access — observation only, no interaction",
-          "Stage 2: Limited supervised chatting — no financial controls, monitored by senior chatter",
-          "Stage 3: Full chatting access — granted only after trust is built through consistent performance"
-        ], "bullet": "→"},
-        {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Chatter hiring pipeline graphic: Source → Screen → Interview → Test → Observe → Limited Access → Full Access"},
-        {"type": "subheader", "content": "Payment Structure"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Standard Pay"},
-          {"type": "bullets", "items": [
-            "Hourly pay: $5-$7 per hour (creates stability)",
-            "Commission: approximately 3% of profits (creates motivation)",
-            "Both components work together — hourly ensures reliability, commission incentivizes performance"
-          ]},
-          {"type": "subheader", "content": "Payment Schedule"},
-          {"type": "bullets", "items": [
-            "Biweekly payments — never monthly for new hires",
-            "Preferred method: Wise",
-            "Clear payment rules must be set before work begins",
-            "Never delay payments — ever",
-            "Never change pay terms without agreement"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Earnings Potential"},
-          {"type": "text", "content": "Top chatters can earn $1,500-$3,000/month at scale when combining hourly pay with commission on growing accounts."},
-          {"type": "panel", "title": "Trust Rule", "content": "A chatter who is paid on time is more loyal.\nA chatter who is not paid becomes a risk.\nDelayed pay creates resentment. Resentment creates sabotage.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Performance Tracking"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Chatters Must Track (Excel)"},
-          {"type": "bullets", "items": [
-            "Hours worked per shift",
-            "Sales made and revenue generated",
-            "Messages sent (if required)",
-            "Response times to priority fans"
-          ]},
-          {"type": "text", "content": "Self-reporting saves management time but requires verification to prevent manipulation."}
-        ], "right": [
-          {"type": "subheader", "content": "Random Checks Must Confirm"},
-          {"type": "bullets", "items": [
-            "Chat activity matches reported hours",
-            "Revenue numbers match platform data",
-            "Time claims are accurate",
-            "Chat quality meets persona standards"
-          ]},
-          {"type": "text", "content": "You must regularly verify stats to ensure accuracy. Replace underperformers quickly — bad chatters lose subscribers. Reward top chatters with bonuses to retain them."}
-        ]},
-        {"type": "subheader", "content": "Risk & Trust Management"},
-        {"type": "text", "content": "Chatters can cause serious damage if mistreated. They can leak methods, sabotage accounts, and spread negative reputation. Fear-based management creates short-term compliance but long-term risk."},
-        {"type": "bullets", "items": [
-          "Always treat chatters with respect and professionalism",
-          "Always pay them on time without exception",
-          "Always communicate clearly about expectations and changes",
-          "Never give chatters access to account passwords directly",
-          "Use platform delegation features where available",
-          "Monitor chat logs regularly for quality and compliance"
-        ]},
-        {"type": "panel", "title": "Trust Principle", "content": "Trust is built through fairness, consistency, and transparency.\nA well-treated chatter protects your system.\nA mistreated chatter becomes a threat.", "border": "#39FF14"}
       ]
     }
   ],
   "summary_points": [
-    "The Hard Gate Funnel is the only approved structure: Social Media → Link in Bio → Telegram → Fanvue",
-    "Instagram builds desire, Telegram builds urgency, Fanvue captures revenue — no shortcuts",
-    "Funnel activation requires 3 weeks of warmup — only 2 links allowed (Fanvue + Telegram)",
-    "Telegram content must increase frustration, not relieve it — more NSFW than Instagram, never more than Fanvue",
-    "Fanvue page setup: banner sets mood, bio is 3 emotional lines, content progresses through free → subscriber → PPV layers",
-    "Subscription pricing: $10-$20 base with $3-$9 promo — real revenue comes from chat and PPV",
-    "Chat is structured emotional sales — fans spend when they feel safe, understood, curious, and chosen",
-    "6 emotional drivers: loneliness, stress relief, fantasy, escape, control, status",
-    "Chat flow: Rapport → Tension → First Sale → Upsell → Retention with timing/context checks",
-    "Fan profiling and nickname system (Age/Location/Job/Energy) creates continuity across chatter shifts",
-    "First sale is low-risk ($5-$10), upsells increase gradually, whales get priority and exclusivity",
-    "Hire chatters from ofmjobs.com and onlinejobs.ph — screen, interview, test live, observe, then grant staged access",
-    "Pay structure: $5-$7/hr + 3% commission, biweekly via Wise — never delay payments"
+    "The Hard Gate Funnel moves followers through defined stages: Discovery → Curiosity → Interest → Trust → Desire → Action",
+    "Instagram is a distribution engine, not a selling platform — never try to sell directly on social media",
+    "Link-in-bio should have maximum 2-3 links — fewer choices means higher conversion",
+    "Telegram is a zero-barrier warming layer that captures interested followers before they are ready to pay",
+    "Content follows a ladder: Social Media (builds curiosity) → Telegram (builds desire) → Subscription (delivers value)",
+    "Each content layer must leave something unfinished — if fans get satisfaction for free, they will not subscribe",
+    "Subscription pricing sweet spot is $7-$15/month — low enough to remove resistance, high enough to signal value",
+    "Have 5-10 posts ready on your subscription page before your first subscriber arrives",
+    "Automated welcome messages must feel personal and warm — never transactional or salesy",
+    "Funnel links activate only after 3+ weeks of stable engagement — never during warmup"
   ]
 }
