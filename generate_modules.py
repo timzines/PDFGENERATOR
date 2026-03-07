@@ -111,12 +111,12 @@ MODULE_OVERVIEWS = {
         ],
     },
     9: {
-        "description": "Followers are worth nothing if they do not convert. This module covers funnel psychology, link-in-bio architecture, Fanvue page setup, chat systems, upsell logic, and how to hire and manage chatters at scale.",
+        "description": "Followers are worth nothing if they do not convert. This module covers funnel psychology, link-in-bio architecture, Telegram strategy, content progression ladders, subscription pricing, and automated welcome messages that turn free attention into paid subscribers.",
         "outcomes": [
             "Understand the psychology behind why followers become paying fans",
             "Build a link-in-bio funnel that drives conversions",
-            "Set up your Fanvue page for maximum subscriber retention",
-            "Implement chat systems, upsell logic, and chatter management",
+            "Set up your subscription page and Telegram channel for maximum retention",
+            "Implement a content progression ladder and pricing strategy that converts",
         ],
     },
     10: {
