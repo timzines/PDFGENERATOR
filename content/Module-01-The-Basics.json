@@ -2,9 +2,10 @@
   "title": "Module 1\nThe Basics",
   "subtitle": "Course Overview and the Complete Basics to Starting AI Models",
   "output_filename": "Module 1 - The Basics/The AI Influencer Method.pdf",
+  "skip_toc": true,
   "sections": [
     {
-      "header": "Lesson 1: The AI Influencer Method",
+      "header": "The AI Influencer Method",
       "blocks": [
         {
           "type": "text",
@@ -12,7 +13,7 @@
         },
         {
           "type": "text",
-          "content": "The technology behind this method has reached a point where AI-generated images and videos are indistinguishable from real content when done correctly. The tools are accessible, the demand is proven, and the window for early movers is wide open. But this is a real business that requires real work, real patience, and real strategy. The people who fail are the ones who skip steps or expect overnight results."
+          "content": "The technology behind this method has reached a point where AI-generated images and videos are indistinguishable from real content when done correctly. The tools are accessible, the demand is proven, and the window for early movers is wide open. But this is a real business that requires real work, real patience, and real strategy."
         },
         {
           "type": "two_column",
@@ -30,7 +31,7 @@
                 "How to warm up accounts so they look human to algorithms",
                 "How to scale to multiple personas once your first page works",
                 "How to protect your accounts from bans and shadowbans",
-                "How to turn free followers into paying subscribers"
+                "How to turn free followers into paying subscribers on Fanvue"
               ]
             },
             {
@@ -57,95 +58,23 @@
             },
             {
               "type": "text",
-              "content": "Attention flows through a funnel. Free content creates interest. Interest creates followers. Followers convert to paying subscribers. Every platform in this system serves a specific role in moving people through that funnel."
+              "content": "Attention flows through a funnel. Free content creates interest. Interest creates followers. Followers convert to paying subscribers on Fanvue, a paid adult subscription platform where your AI persona monetizes through monthly subscriptions, pay-per-view content, custom requests, and tips."
             },
             {
               "type": "bullets",
               "items": [
                 "Instagram / TikTok — Free content drives discovery and builds trust",
                 "Threads — Engagement engine that feeds Instagram growth",
-                "Link in Bio — Bridge between free attention and paid conversion",
+                "Link in Bio (link.me) — Bridge between free attention and paid conversion",
                 "Telegram — Pre-sell warming layer for hesitant followers",
-                "Subscription Platform — Monetization endpoint where revenue is captured"
+                "Fanvue — Paid adult subscription platform where revenue is captured (monthly subs, PPV, custom content, tips)"
               ],
               "bullet": "→"
             },
             {
               "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Visual funnel diagram showing traffic flow: Social Media (top) → Link in Bio → Telegram → Subscription Platform (bottom). Show the funnel narrowing at each stage with dollar signs increasing."
-            },
-            {
-              "type": "panel",
               "title": "Critical Rule",
-              "content": "Revenue comes from the funnel, not from posting. The system works as a whole — no single platform generates money on its own. Every piece of content exists to move someone one step closer to paying.",
-              "border": "#39FF14"
-            }
-          ]
-        },
-        {
-          "type": "subheader",
-          "content": "Realistic Expectations & Timeline"
-        },
-        {
-          "type": "text",
-          "content": "This section exists because most courses skip it and most students quit because of unrealistic expectations. The AI influencer method works, but it does not work overnight. Understanding the real timeline prevents frustration and keeps you focused on what matters."
-        },
-        {
-          "type": "two_column",
-          "left": [
-            {
-              "type": "subheader",
-              "content": "Realistic Revenue Timeline"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Month 1: $0-$200 — You are building the foundation. Model creation, account setup, warmup. Most of this month is preparation with little to no revenue",
-                "Month 2-3: $100-$500 — Accounts are live, content is flowing, first followers converting. Revenue trickles in slowly as the funnel starts working",
-                "Month 3-6: $500-$3,000 — Consistent posting, growing audience, funnel optimized. Revenue grows as follower count and trust increase",
-                "Month 6+: $2,000-$10,000+ — Scaled operations with multiple accounts or personas. Revenue compounds as systems become efficient"
-              ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Bar chart showing realistic monthly revenue ranges: Month 1 ($0-200), Month 2-3 ($100-500), Month 3-6 ($500-3K), Month 6+ ($2K-10K+). Use green gradient bars with dollar ranges labeled."
-            },
-            {
-              "type": "panel",
-              "title": "Reality Check",
-              "content": "Most people earn under $500 in their first three months. This is normal. The operators making $10K+ per month have been grinding for 6-12 months and have systematized everything. Do not compare your Month 1 to someone else's Month 12.",
-              "border": "#FF3131"
-            }
-          ],
-          "right": [
-            {
-              "type": "subheader",
-              "content": "Time Commitment"
-            },
-            {
-              "type": "text",
-              "content": "This is not passive income. During the first 3 months, expect to invest 2-4 hours per day minimum. This includes content generation, posting, engagement, account management, and funnel optimization."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Content generation: 30-60 minutes per day (batched sessions)",
-                "Posting and engagement: 30-60 minutes per day across platforms",
-                "Account management: 15-30 minutes per day (safety checks, metrics)",
-                "Strategy and planning: 15-30 minutes per day",
-                "Total: 2-4 hours daily, 7 days per week during early growth"
-              ]
-            },
-            {
-              "type": "text",
-              "content": "After Month 3-6, once systems are built and content is batched, daily time investment drops to 1-2 hours for maintenance and growth. The early investment of time is what creates the system that eventually runs efficiently."
-            },
-            {
-              "type": "panel",
-              "title": "What Separates Winners from Quitters",
-              "content": "The people who succeed treat this as a business from Day 1. They follow the system, they do not skip steps, and they do not quit during the slow early months. The ones who fail expect instant results, skip the warmup, or abandon ship after 2 weeks of low revenue.",
+              "content": "Revenue comes from the funnel, not from posting. The system works as a whole — no single platform generates money on its own. Every piece of content exists to move someone one step closer to subscribing on Fanvue.",
               "border": "#39FF14"
             }
           ]
@@ -168,20 +97,24 @@
             {
               "type": "bullets",
               "items": [
-                "Dedicated phone or device: $150-$400 (used phones work fine)",
+                "Dedicated iPhone (iPhone 13 or newer recommended — iPhones 13+ get pushed more by the algorithm): $150-$400 (used phones work fine)",
                 "Prepaid SIM card: $10-$30",
-                "VPN service: $5-$12 per month",
-                "AI image generation tools (Seedream 4.5, Nano Banana 2): $0-$50 per month",
-                "Kling video credits: $10-$30 per month",
-                "Link in bio service (AllMyLinks/Linktree): Free",
+                "Higgsfield (all-in-one AI tool for image and video generation): $50/month",
                 "Photo editing tool (Photopea): Free",
+                "Link in bio service (link.me): Free",
                 "Total minimum to start: approximately $200-$500"
               ]
             },
             {
               "type": "panel",
-              "title": "Budget Tip",
-              "content": "Start with the minimum. Do not invest in premium tools until your first page is generating revenue. Free tiers and budget options work perfectly for your first persona.",
+              "title": "Why iPhone 13+?",
+              "content": "iPhones 13 and newer are pushed more favorably by social media algorithms. The metadata and camera signatures from these devices signal authenticity to Instagram and TikTok. A used iPhone 13 is one of the best investments you can make for this business.",
+              "border": "#39FF14"
+            },
+            {
+              "type": "panel",
+              "title": "No VPN Needed",
+              "content": "You do not need a VPN for this method. VPNs are unnecessary and can actually trigger suspicion on social media platforms. Post from your normal connection.",
               "border": "#39FF14"
             }
           ],
@@ -192,25 +125,24 @@
             },
             {
               "type": "text",
-              "content": "These are the tools you will use daily. Each one serves a specific function in the content pipeline. Modules 2-4 cover each tool in detail."
+              "content": "These are the only tools you need. Each one serves a specific function in the content pipeline. Keep it simple — do not overcomplicate your stack."
             },
             {
               "type": "bullets",
               "items": [
-                "Seedream 4.5 + Nano Banana 2 — AI image generation (photorealistic output)",
-                "Kling — AI video generation (turns images into realistic video clips)",
-                "Photopea or Photoshop — Image editing and artifact removal",
-                "CapCut or DaVinci Resolve — Video editing (free)",
-                "VPN — Geo-targeting and account safety",
-                "AllMyLinks or Linktree — Link in bio funnel page",
-                "Telegram — Pre-sell warming channel",
-                "Content calendar — Planning and scheduling (Google Sheets works)"
+                "Seedream 4.5 — AI image generation (photorealistic output)",
+                "Nano Banana 2 — AI image generation (alternative model for variety)",
+                "Photopea — Image editing and artifact removal (free)",
+                "link.me — Link in bio funnel page (free)",
+                "Telegram — Pre-sell warming channel (free)",
+                "CapCut — Video editing (free)"
               ]
             },
             {
               "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Tool stack grid showing each tool with its purpose: Image Gen (Seedream 4.5 / Nano Banana 2), Video Gen (Kling), Editing (Photopea), Video Edit (CapCut), VPN, Link Page, Telegram, Calendar. Use clean icons or logos for each."
+              "title": "Higgsfield — All-in-One Option",
+              "content": "Higgsfield ($50/month) bundles AI image generation, video generation, and editing into a single platform. If you want one tool that does everything instead of juggling multiple services, this is the recommended option.",
+              "border": "#39FF14"
             }
           ]
         },
@@ -226,7 +158,8 @@
               "items": [
                 "Instagram — Main traffic and brand hub. This is your most important platform",
                 "Threads — Engagement and discovery engine that feeds Instagram growth",
-                "Telegram — Pre-sell funnel that warms followers before they subscribe"
+                "Telegram — Pre-sell funnel that warms followers before they subscribe",
+                "Fanvue — Paid adult subscription platform for monetization"
               ]
             },
             {
@@ -245,18 +178,22 @@
           "right": [
             {
               "type": "subheader",
-              "content": "What You Do NOT Need to Start"
+              "content": "Reality Check"
             },
             {
               "type": "text",
-              "content": "People waste money and time on things that do not matter in the first 3 months. Focus on the essentials and add complexity later."
+              "content": "People start seeing actual results within 4-5 months of consistent posting and output. This is not a get-rich-quick scheme. The operators making serious money have put in months of daily work building their systems. If you are not willing to commit to consistent effort for at least 4-5 months, this is not for you."
+            },
+            {
+              "type": "subheader",
+              "content": "What You Do NOT Need to Start"
             },
             {
               "type": "bullets",
               "items": [
                 "You do NOT need a $3,000 PC — cloud-based tools work for beginners",
                 "You do NOT need multiple phones — start with one persona, one device",
-                "You do NOT need paid courses on prompting — this course covers everything",
+                "You do NOT need a VPN — unnecessary and can trigger platform suspicion",
                 "You do NOT need a team — solo operators can run one page profitably",
                 "You do NOT need advanced video editing skills — simple clips outperform complex ones"
               ]
@@ -273,11 +210,11 @@
     }
   ],
   "summary_points": [
-    "The AI Influencer Method is a real business that requires 2-4 hours daily and real patience",
-    "Revenue comes from the funnel, not just from posting — every platform serves a role in moving followers to paying subscribers",
-    "Realistic expectations: $0-200 in Month 1, $500-3K by Month 3-6, $2K-10K+ at Month 6+ with scaled operations",
-    "Minimum startup cost is approximately $200-$500 — start lean and reinvest revenue",
-    "Core tool stack: Seedream 4.5 + Nano Banana 2 for images, Kling for video, Photopea for editing, CapCut for video editing",
+    "The AI Influencer Method is a real business — expect to see actual results within 4-5 months of consistent posting",
+    "Revenue comes from the funnel: Social Media → link.me → Telegram → Fanvue (paid adult subscription platform)",
+    "Minimum startup cost is approximately $200-$500 — Higgsfield ($50/month) is the recommended all-in-one tool",
+    "iPhone 13 or newer recommended — these devices get pushed more by social media algorithms",
+    "Core tools: Seedream 4.5, Nano Banana 2, Photopea, link.me, Telegram, CapCut — no VPN needed",
     "Instagram and Threads are mandatory primary platforms — TikTok, Reddit, and Twitter/X support the system",
     "Start with one persona, master the system, then scale — do not skip steps or rush the process"
   ]
