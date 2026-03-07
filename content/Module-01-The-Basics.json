@@ -97,8 +97,8 @@
             {
               "type": "bullets",
               "items": [
-                "Dedicated iPhone (iPhone 13 or newer recommended — iPhones 13+ get pushed more by the algorithm): $150-$400 (used phones work fine)",
-                "Prepaid SIM card: $10-$30",
+                "Dedicated iPhone (iPhone 13 or newer recommended — iPhones 13+ get pushed more by the algorithm): $150-$300 (used phones work fine)",
+                "Prepaid SIM card: $10-$15",
                 "Higgsfield (all-in-one AI tool for image and video generation): $50/month",
                 "Photo editing tool (Photopea): Free",
                 "Link in bio service (link.me): Free",
@@ -130,8 +130,8 @@
             {
               "type": "bullets",
               "items": [
-                "Seedream 4.5 — AI image generation (photorealistic output)",
-                "Nano Banana 2 — AI image generation (alternative model for variety)",
+                "Seedream 4.5 — AI image generation (NSFW content)",
+                "Nano Banana 2 — AI image generation (SFW photorealistic output)",
                 "Photopea — Image editing and artifact removal (free)",
                 "link.me — Link in bio funnel page (free)",
                 "Telegram — Pre-sell warming channel (free)",
@@ -182,7 +182,7 @@
             },
             {
               "type": "text",
-              "content": "People start seeing actual results within 4-5 months of consistent posting and output. This is not a get-rich-quick scheme. The operators making serious money have put in months of daily work building their systems. If you are not willing to commit to consistent effort for at least 4-5 months, this is not for you."
+              "content": "People start seeing actual results within 2-3 months of consistent posting and output. This is not a get-rich-quick scheme. The operators making serious money have put in months of daily work building their systems. If you are not willing to commit to consistent effort for at least 2-3 months, this is not for you."
             },
             {
               "type": "subheader",
@@ -210,11 +210,10 @@
     }
   ],
   "summary_points": [
-    "The AI Influencer Method is a real business — expect to see actual results within 4-5 months of consistent posting",
+    "The AI Influencer Method is a real business — expect to see actual results within 2-3 months of consistent posting",
     "Revenue comes from the funnel: Social Media → link.me → Telegram → Fanvue (paid adult subscription platform)",
     "Minimum startup cost is approximately $200-$500 — Higgsfield ($50/month) is the recommended all-in-one tool",
-    "iPhone 13 or newer recommended — these devices get pushed more by social media algorithms",
-    "Core tools: Seedream 4.5, Nano Banana 2, Photopea, link.me, Telegram, CapCut — no VPN needed",
+    "Core tools: Seedream 4.5 (NSFW), Nano Banana 2 (SFW), Photopea, link.me, Telegram, CapCut — no VPN needed, use mobile data only",
     "Instagram and Threads are mandatory primary platforms — TikTok, Reddit, and Twitter/X support the system",
     "Start with one persona, master the system, then scale — do not skip steps or rush the process"
   ]
