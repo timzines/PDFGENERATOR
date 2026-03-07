@@ -162,11 +162,8 @@ body {
 
 .page {
     width: 1440px;
-    height: 810px;
     position: relative;
-    overflow: hidden;
     page-break-after: always;
-    page-break-inside: avoid;
 }
 
 .page:last-child {
@@ -178,6 +175,7 @@ body {
     background: #0f1013;
     position: relative;
     overflow: hidden;
+    height: 810px;
 }
 
 /* Atmospheric gradient overlay on cover */
@@ -336,6 +334,7 @@ body {
     padding: 55px 80px;
     position: relative;
     overflow: hidden;
+    height: 810px;
 }
 
 /* Decorative gradient orbs on TOC */
@@ -449,8 +448,9 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 50px 60px 45px 60px;
-    overflow: hidden;
+    padding: 50px 60px 10px 60px;
+    min-height: 775px;
+    page: content-page;
 }
 
 .content-bg {
@@ -513,6 +513,7 @@ body {
     display: flex;
     gap: 20px;
     align-items: stretch;
+    page-break-inside: avoid;
 }
 
 .content-col {
@@ -529,6 +530,7 @@ body {
     position: relative;
     z-index: 2;
     border: 1px solid rgba(255,255,255,0.06);
+    page-break-inside: avoid;
 }
 
 .content-box p {
@@ -636,6 +638,7 @@ body {
     position: relative;
     z-index: 2;
     border: 1px solid rgba(255,255,255,0.06);
+    page-break-inside: avoid;
 }
 
 .content-box-full p {
@@ -958,15 +961,11 @@ def build_content_page_html(header, body_blocks, bg_uri="", logo_uri="", page_nu
 
     return f'''
     <div class="page page-content">
-        {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else '<div class="content-bg" style="background: ' + CONTENT_BG_GRADIENT + ';"></div>'}
         {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
-        <div class="content-top-overlay"></div>
         <div class="content-inner">
             <div class="section-header">{header_html}</div>
             {content_html}
         </div>
-        <div class="content-footer">{FOOTER_TEXT}</div>
-        <div class="page-number page-number-light">{page_num} / {total_pages}</div>
     </div>
     '''
 
@@ -979,9 +978,7 @@ def build_summary_page_html(points, bg_uri="", logo_uri="", page_num=1, total_pa
 
     return f'''
     <div class="page page-content">
-        {"<img class='content-bg' src='" + bg_uri + "' />" if bg_uri else ""}
         {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
-        <div class="content-top-overlay"></div>
         <div class="content-inner">
             <div class="section-header">END <span class="fade">SUMMARY</span></div>
             <div class="content-columns">
@@ -999,8 +996,6 @@ def build_summary_page_html(points, bg_uri="", logo_uri="", page_num=1, total_pa
                 </div>
             </div>
         </div>
-        <div class="content-footer">{FOOTER_TEXT}</div>
-        <div class="page-number page-number-light">{page_num} / {total_pages}</div>
     </div>
     '''
 
@@ -1085,6 +1080,34 @@ def generate_pdf(config, output_path):
             total_pages=total_pages,
         )
 
+    # Build dynamic @page CSS for content pages (background + footer on every page)
+    footer_escaped = FOOTER_TEXT.replace('"', '\\"')
+    dynamic_page_css = f"""
+@page content-page {{
+    margin: 0 0 35px 0;
+    background-image:
+        linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 15%),
+        url('{content_bg_uri}');
+    background-size: 100% 120px, cover;
+    background-position: top left, center;
+    background-repeat: no-repeat, no-repeat;
+    @bottom-center {{
+        content: "{footer_escaped}";
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        color: #8a6a72;
+        letter-spacing: 0.5px;
+    }}
+    @bottom-right {{
+        content: counter(page) " / " counter(pages);
+        font-size: 11px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        color: #8a6a72;
+    }}
+}}
+"""
+
     # Full HTML document
     full_html = f"""<!DOCTYPE html>
 <html>
@@ -1092,6 +1115,7 @@ def generate_pdf(config, output_path):
 <meta charset="utf-8">
 <style>
 {CSS_BASE}
+{dynamic_page_css}
 </style>
 </head>
 <body>
