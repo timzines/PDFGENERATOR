@@ -422,76 +422,23 @@
           "content": "You should never be scrambling for content. Before you post anything publicly, build a library of at least 30-50 images. This gives you a buffer and lets you plan your content calendar without pressure. Running out of content mid-warmup kills momentum and consistency."
         },
         {
-          "type": "two_column",
-          "left": [
-            {
-              "type": "subheader",
-              "content": "Batch Generation Strategy"
-            },
-            {
-              "type": "text",
-              "content": "Dedicate specific sessions to content generation rather than creating images one at a time. A focused session with Nano Banana 2 should produce 10-20 usable SFW images. Remember — generate at least 3 versions of each and only keep the best."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Set aside 2-3 dedicated sessions per week for content generation",
-                "Generate 10-20 usable images per session with varied prompts",
-                "Use Nano Banana 2 for all SFW content (Instagram, Threads, TikTok)",
-                "Change outfits, settings, and poses across the batch",
-                "Sort images into categories immediately after generation",
-                "Keep a 'rejected' folder — you may salvage these later with editing",
-                "Target: build a 2-week content buffer before launching any account"
-              ]
-            },
-            {
-              "type": "subheader",
-              "content": "Folder Structure"
-            },
-            {
-              "type": "text",
-              "content": "Organization saves time and prevents panic. Set up this folder structure before you start generating."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "/PersonaName/Reference/ — Your seed images and reference photos",
-                "/PersonaName/Library/Headshots/ — Profile photos and close-ups",
-                "/PersonaName/Library/Casual/ — Lifestyle and everyday content",
-                "/PersonaName/Library/Glam/ — Dressed up and polished shots",
-                "/PersonaName/Library/Stories/ — Casual, raw-feeling content for Stories",
-                "/PersonaName/Rejected/ — Images that did not pass quality check",
-                "/PersonaName/Posted/ — Archive of already-posted content"
-              ]
-            }
-          ],
-          "right": [
-            {
-              "type": "subheader",
-              "content": "Content Categories to Build"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Profile photos and headshots: 3-5 (your best face shots)",
-                "Casual lifestyle shots: 10-15 (everyday settings, natural poses)",
-                "Glamour or dressed-up shots: 5-10 (polished, curated content)",
-                "Close-up selfie-style images: 5-10 (intimate, personal-feeling)",
-                "Story-ready casual content: 10+ (raw, in-the-moment aesthetic)"
-              ]
-            },
-            {
-              "type": "subheader",
-              "content": "Prompt Templates for Each Category"
-            },
-            {
-              "type": "text",
-              "content": "Save these prompt templates and swap out the details for each generation. This ensures consistent quality while creating variety."
-            },
-            {
-              "type": "good_example",
-              "content": "Headshot: 'Close-up portrait, natural light from window, soft smile, looking at camera, photorealistic, iPhone quality'\n\nCasual: 'Sitting on couch in oversized hoodie, warm indoor lighting, relaxed pose, candid feel, photorealistic'\n\nGlam: 'Black dress, mirror selfie, evening lighting, confident pose, photorealistic'\n\nGym: 'Workout outfit, gym mirror selfie, overhead fluorescent lighting, post-workout glow, candid'\n\nStory: 'Taking selfie in car, natural daylight, casual expression, slightly messy hair, iPhone selfie style'"
-            }
+          "type": "subheader",
+          "content": "Batch Generation Strategy"
+        },
+        {
+          "type": "text",
+          "content": "Dedicate specific sessions to content generation rather than creating images one at a time. A focused session with Nano Banana 2 should produce 10-20 usable SFW images. Remember — generate at least 3 versions of each and only keep the best."
+        },
+        {
+          "type": "bullets",
+          "items": [
+            "Set aside 2-3 dedicated sessions per week for content generation",
+            "Generate 10-20 usable images per session with varied prompts",
+            "Use Nano Banana 2 for all SFW content (Instagram, Threads, TikTok)",
+            "Change outfits, settings, and poses across the batch",
+            "Sort images into categories immediately after generation",
+            "Keep a 'rejected' folder — you may salvage these later with editing",
+            "Target: build a 2-week content buffer before launching any account"
           ]
         },
         {
