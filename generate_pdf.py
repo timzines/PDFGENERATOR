@@ -902,7 +902,6 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
-        <div class="toc-footer">Sign up to fanvue &amp; start monetizing your AI models \u2192 {FANVUE_URL}</div>
         <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
@@ -934,7 +933,7 @@ def build_toc_html(sections, logo_uri="", page_num=2, total_pages=1):
             <div class="toc-column">{left_html}</div>
             <div class="toc-column">{right_html}</div>
         </div>
-        <div class="toc-footer">{FOOTER_TEXT}  |  Sign up to fanvue &amp; start monetizing your AI models \u2192 {FANVUE_URL}</div>
+        <div class="toc-footer">{FOOTER_TEXT}<br>Sign up to fanvue &amp; start monetizing your AI models &rarr; {FANVUE_URL}</div>
         <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
@@ -1117,15 +1116,22 @@ def generate_pdf(config, output_path):
     fanvue_footer_escaped = fanvue_footer.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0 0 60px 0;
+    margin: 0 0 45px 0;
     padding: 0;
     background: linear-gradient(160deg, #2d2230 0%, #1a1b1f 40%, #0f1013 100%);
     @bottom-center {{
-        content: "{footer_escaped}  |  {fanvue_footer_escaped}";
+        content: "{footer_escaped}";
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 10px;
+        color: rgba(255,255,255,0.25);
+        letter-spacing: 0.5px;
+    }}
+    @bottom-left {{
+        content: "{fanvue_footer_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 9px;
-        color: rgba(196,154,133,0.5);
-        letter-spacing: 0.5px;
+        color: rgba(196,154,133,0.45);
+        letter-spacing: 0.3px;
     }}
     @bottom-right {{
         content: counter(page) " / " counter(pages);
