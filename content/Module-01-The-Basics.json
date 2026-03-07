@@ -8,6 +8,12 @@
       "header": "The AI Influencer Method",
       "blocks": [
         {
+          "type": "panel",
+          "title": "Choosing Your Niche — Read This First",
+          "content": "Do not just pick a generic blonde girl — that space is completely oversaturated and you will not stand out. You need to choose a niche that is currently working and has demand. Look at what's trending, what audiences are engaging with, and build your persona around that.\n\nExotic niches (vitiligo, heterochromia, and similar unique traits) are highly not recommended. Fanvue has been actively cracking down on these types of models. While you can technically sell them on other platforms for AI content, the reality is that generating NSFW content for these models is extremely difficult for no good reason — the tools just don't handle it well. Save yourself the headache and pick a niche that works with the current tools and platforms.",
+          "border": "#FF6B35"
+        },
+        {
           "type": "two_column",
           "left": [
             {
