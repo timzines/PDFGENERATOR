@@ -369,42 +369,6 @@
           ]
         },
         {
-          "type": "two_column",
-          "left": [
-            {
-              "type": "subheader",
-              "content": "Consistency Rules — What Must Stay Locked"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Face structure — jawline, cheekbones, nose shape, lip shape",
-                "Body type and proportions",
-                "Skin tone — must remain constant across all lighting",
-                "Eye color — locked in from the start, never changes",
-                "Core hair color (natural changes like highlights are acceptable)"
-              ]
-            }
-          ],
-          "right": [
-            {
-              "type": "subheader",
-              "content": "What Can Vary Naturally"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Lighting and shadows (indoor vs outdoor, golden hour vs studio)",
-                "Clothing and outfits (expected and creates content variety)",
-                "Background and location (home, outdoors, gym, cafe)",
-                "Makeup style (subtle changes only — not dramatic transformations)",
-                "Camera angle and distance (selfie vs full body vs portrait)",
-                "Hair styling (up, down, braided — same base color)"
-              ]
-            }
-          ]
-        },
-        {
           "type": "panel",
           "title": "Visual Consistency Check",
           "content": "Before posting any image, place it next to your last 3 posts. If the face does not look like the same person at a glance, do not post it. Regenerate until it matches. This 5-second test saves you from destroying trust with your audience.",
