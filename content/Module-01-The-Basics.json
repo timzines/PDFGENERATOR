@@ -34,6 +34,31 @@
               "title": "Higgsfield — All-in-One Option",
               "content": "Higgsfield ($50/month) bundles AI image generation, video generation, and editing into a single platform. If you want one tool that does everything instead of juggling multiple services, this is the recommended option.",
               "border": "#39FF14"
+            },
+            {
+              "type": "subheader",
+              "content": "Primary Platforms"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram — Main traffic and brand hub. This is your most important platform",
+                "Threads — Engagement and discovery engine that feeds Instagram growth",
+                "Telegram — Pre-sell funnel that warms followers before they subscribe",
+                "Fanvue — Paid adult subscription platform for monetization"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Support Platforms"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "TikTok — Secondary reach and discovery (supplements Instagram)",
+                "Reddit — Niche viral exposure inside specific communities",
+                "Twitter/X — Brand presence and discovery through conversations"
+              ]
             }
           ],
           "right": [
@@ -43,7 +68,7 @@
             },
             {
               "type": "text",
-              "content": "People start seeing actual results within 2-3 months of consistent posting and output. This is not a get-rich-quick scheme. The operators making serious money have put in months of daily work building their systems. If you are not willing to commit to consistent effort for at least 2-3 months, this is not for you."
+              "content": "Results vary — you can start seeing results within weeks or months. Consistency is key. The operators making serious money have put in consistent daily work building their systems. This is not a get-rich-quick scheme, but those who stay consistent see real returns."
             },
             {
               "type": "subheader",
@@ -60,48 +85,12 @@
               ]
             }
           ]
-        },
-        {
-          "type": "subheader",
-          "content": "Platforms"
-        },
-        {
-          "type": "two_column",
-          "left": [
-            {
-              "type": "subheader",
-              "content": "Primary Platforms"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Instagram — Main traffic and brand hub. This is your most important platform",
-                "Threads — Engagement and discovery engine that feeds Instagram growth",
-                "Telegram — Pre-sell funnel that warms followers before they subscribe",
-                "Fanvue — Paid adult subscription platform for monetization"
-              ]
-            }
-          ],
-          "right": [
-            {
-              "type": "subheader",
-              "content": "Support Platforms"
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "TikTok — Secondary reach and discovery (supplements Instagram)",
-                "Reddit — Niche viral exposure inside specific communities",
-                "Twitter/X — Brand presence and discovery through conversations"
-              ]
-            }
-          ]
         }
       ]
     }
   ],
   "summary_points": [
-    "The AI Influencer Method is a real business — expect to see actual results within 2-3 months of consistent posting",
+    "The AI Influencer Method is a real business — results vary, you can see results within weeks or months. Consistency is key",
     "Revenue comes from the funnel: Social Media → link.me → Telegram → Fanvue (paid adult subscription platform)",
     "Core tools: Seedream 4.5 (NSFW), Nano Banana 2 (SFW), Photopea, link.me, Telegram, CapCut — Higgsfield ($50/month) as all-in-one alternative",
     "Instagram and Threads are mandatory primary platforms — TikTok, Reddit, and Twitter/X support the system",

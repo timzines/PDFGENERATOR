@@ -919,7 +919,7 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             <div class="cover-brand-row">
                 <div class="cover-brand">{BRAND_NAME}</div>
                 <div class="cover-brand-sep"></div>
-                <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method">Discord</a>
+                <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord</a>
             </div>
         </div>
         <div class="cover-logo-wrap">
