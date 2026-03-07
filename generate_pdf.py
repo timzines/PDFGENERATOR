@@ -356,7 +356,7 @@ body {
     color: #c49a85;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
 .cover-module-label {
@@ -439,7 +439,7 @@ body {
     width: 50px;
     height: 2px;
     background: linear-gradient(90deg, #c49a85, transparent);
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     border-radius: 1px;
 }
 
@@ -910,8 +910,8 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             <div class="cover-logo-dot cover-logo-dot-3"></div>
         </div>
         <div class="cover-left">
-            <div class="cover-divider"></div>
             <div class="cover-tag">Premium Course Material</div>
+            <div class="cover-divider"></div>
             {"<div class='cover-module-label'>" + module_label + "</div>" if module_label else ""}
             {"<div class='cover-lesson-label'>" + lesson_label + "</div>" if lesson_label else ""}
             <div class="cover-title">{title_html}</div>
