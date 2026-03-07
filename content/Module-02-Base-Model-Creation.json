@@ -193,6 +193,10 @@
               "title": "Do NOT Clone the Reference",
               "content": "We do not condone or recommend this method. Using someone's likeness as a base — even if modified — carries real legal and ethical risks. If you choose to go this route despite our recommendation, you must change the appearance so it looks nothing like the original. Do not create an exact clone — that is not allowed and can get you in serious trouble. The Ethical Route below is the recommended approach.",
               "border": "#FF3131"
+            },
+            {
+              "type": "image",
+              "path": "images/shady-route.jpg"
             }
           ],
           "right": [
@@ -222,6 +226,10 @@
             {
               "type": "text",
               "content": "You will need to play around with your prompt to get good results — do not expect perfection on the first try. Adjust wording, swap out details, and regenerate until the output matches what you are going for. Once you have a solid base image, run it through the Skin Enhancer on Higgsfield to really make the image look realistic. This step makes a noticeable difference in skin texture and overall believability."
+            },
+            {
+              "type": "image",
+              "path": "images/ethical-route.jpg"
             }
           ]
         },
