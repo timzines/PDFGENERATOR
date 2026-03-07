@@ -109,117 +109,173 @@
       "blocks": [
         {
           "type": "text",
-          "content": "Your base model is the core face and body that will remain consistent across all content. Getting this right is the single most important step. If the face changes between images, your entire page looks fake. This lesson covers the exact tools and process for creating a base model that you can reproduce reliably."
+          "content": "Your base model is the core face and body that will remain consistent across all content. Getting this right is the single most important step. If the face changes between images, your entire page looks fake. This lesson covers the exact tools, the two different approaches, and the full process for creating a base model you can reproduce reliably."
         },
         {
           "type": "subheader",
           "content": "The Image Generation Tools"
         },
         {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Nano Banana 2 — SFW Generation"
+            },
+            {
+              "type": "text",
+              "content": "Nano Banana 2 is your primary tool for all SFW (safe for work) content. This is what you will use for Instagram, Threads, TikTok, and any public-facing content. It produces highly photorealistic output that works perfectly for social media posts."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Used exclusively for SFW content generation",
+                "Excellent for varied poses, full-body shots, and lifestyle scenes",
+                "Strong at generating natural backgrounds and environments",
+                "Produces photorealistic output ideal for social media platforms",
+                "This is where you will generate the majority of your public content"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Seedream 4.5 — NSFW Generation"
+            },
+            {
+              "type": "text",
+              "content": "Seedream 4.5 is used only for NSFW content generation. This is the tool you will use for paid subscription content on platforms like Fanvue. Do not use Seedream for your public social media content."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Used exclusively for NSFW content generation",
+                "Produces highly photorealistic output — natural skin, lighting, and features",
+                "Strong face consistency when using reference images properly",
+                "Best for detailed, intimate content behind paywalls",
+                "Keep this content separate from your public-facing social media"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Two Routes to Creating Your Base Model"
+        },
+        {
           "type": "text",
-          "content": "For this course, all image generation is done using Seedream 4.5 and Nano Banana 2. These tools produce photorealistic output that is indistinguishable from real photos when used correctly. Understanding how to use them effectively is the foundation of your entire content pipeline."
+          "content": "There are two approaches to generating your base model. Both work — choose the one that fits your situation. Regardless of which route you take, the end goal is the same: two solid reference images (face and body) that you will use for every generation going forward."
         },
         {
           "type": "two_column",
           "left": [
             {
               "type": "subheader",
-              "content": "Seedream 4.5"
+              "content": "The Shady Route"
             },
             {
               "type": "text",
-              "content": "Seedream 4.5 is your primary image generation tool. It excels at producing natural-looking faces, realistic skin texture, and believable lighting. This is where you will generate the majority of your content."
+              "content": "This approach uses a real reference image from Pinterest or similar platforms as a starting point, then modifies the appearance so the final result looks nothing like the original."
             },
             {
               "type": "bullets",
               "items": [
-                "Produces highly photorealistic output — natural skin, lighting, and features",
-                "Strong face consistency when using reference images properly",
-                "Handles a wide range of settings and scenarios",
-                "Best for portrait shots, lifestyle content, and close-ups",
-                "Use detailed prompts for best results — the more specific, the better"
-              ]
-            },
-            {
-              "type": "subheader",
-              "content": "Nano Banana 2"
-            },
-            {
-              "type": "text",
-              "content": "Nano Banana 2 complements Seedream 4.5 with its own strengths. Use both tools depending on the type of content you are generating."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Excellent for varied poses and full-body shots",
-                "Strong at generating natural backgrounds and environments",
-                "Good for creating content variety while maintaining the same persona",
-                "Works well for casual and lifestyle-style images",
-                "Experiment with both tools to find which produces better results for your specific persona"
-              ]
+                "Find a reference image on Pinterest of the look or aesthetic you want",
+                "Feed the reference image to ChatGPT or Gemini",
+                "Ask it to give you a perfect 1:1 description of the model from the waist up, standing in front of a white wall",
+                "Use that text description as your generation prompt — the white wall ensures no background items bleed into your final image",
+                "Generate your base model using this description"
+              ],
+              "bullet": "→"
             },
             {
               "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Screenshot of Seedream 4.5 interface showing base model generation with a sample prompt and output. Show the reference image input and generated result."
+              "title": "Do NOT Clone the Reference",
+              "content": "You must change up the appearance so it looks nothing like the original reference image. Do not create an exact clone — that is not allowed and can get you in serious trouble. Change the hair, features, and overall look. The reference is just a starting point for a description, not a face to copy.",
+              "border": "#FF3131"
             }
           ],
           "right": [
             {
               "type": "subheader",
-              "content": "Base Model Generation Steps"
+              "content": "The Ethical Route"
+            },
+            {
+              "type": "text",
+              "content": "This approach builds your persona entirely from scratch using only text prompts — no reference images from real people involved at any stage."
             },
             {
               "type": "bullets",
               "items": [
-                "Write a detailed base prompt describing your persona's face and features",
-                "Generate 20-30 variations using both Seedream 4.5 and Nano Banana 2",
-                "Review all outputs carefully — look for the most natural, clear result",
-                "Select the strongest 1-2 results as your 'seed' images",
-                "Save these images at full resolution — they become your reference for everything",
-                "Test generating new images using your seed as reference to confirm consistency"
+                "Write a detailed text description of your ideal persona from scratch",
+                "Include specifics: face shape, hair color and style, skin tone, eye color, body type, age range",
+                "Generate 20-30 variations using your text prompt",
+                "Review all outputs and select the most natural, consistent result",
+                "Refine your prompt based on what works until you lock in the look"
               ],
               "bullet": "→"
             },
             {
+              "type": "good_example",
+              "content": "Prompt: 'Photorealistic portrait of a 22-year-old woman with warm olive skin, dark brown wavy hair past her shoulders, light hazel eyes, soft jawline, natural makeup, standing in front of a plain white wall, waist up, iPhone photo quality, natural lighting'"
+            }
+          ]
+        },
+        {
+          "type": "subheader",
+          "content": "Building Your Two Reference Images"
+        },
+        {
+          "type": "text",
+          "content": "Regardless of which route you chose, you now need to create your two core reference images. These two images are what you will use as reference inputs for every single generation from this point forward."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
               "type": "subheader",
-              "content": "What Makes a Good Base Model"
+              "content": "Reference Image 1: The Face"
+            },
+            {
+              "type": "text",
+              "content": "Your first reference image should be a clear, well-lit shot of your model's face from the waist up. This is your primary identity reference — every future generation will use this to maintain face consistency."
             },
             {
               "type": "bullets",
               "items": [
-                "Clear, well-lit face with visible features and natural expression",
-                "Natural pose — not overly stylized or dramatic",
-                "Realistic skin texture and proportions — no plastic or airbrushed look",
-                "No artifacts, extra fingers, or distorted features",
-                "A face that is distinctive enough to be recognizable across images",
-                "Clean background that does not distract from the face"
+                "Waist-up shot with face clearly visible and facing the camera",
+                "Clean white or neutral background — no distracting objects",
+                "Natural lighting, natural expression",
+                "No artifacts, distortions, or extra fingers",
+                "Save at full resolution — this is your most important asset"
               ]
-            },
+            }
+          ],
+          "right": [
             {
               "type": "subheader",
-              "content": "When to Use Each Tool"
+              "content": "Reference Image 2: The Body"
+            },
+            {
+              "type": "text",
+              "content": "Your second reference image should be a full-body picture of the model with her face turned towards the camera and her back visible as well. This gives you an accurate depiction of her body that you can reference for all future content."
             },
             {
               "type": "bullets",
               "items": [
-                "Seedream 4.5 — Best for close-up portraits, headshots, and detailed face shots",
-                "Nano Banana 2 — Best for full-body shots, varied poses, and lifestyle scenes",
-                "Use both — Compare outputs and keep the best from each tool",
-                "Your seed image can come from either tool — what matters is quality, not source"
+                "Full-body shot showing front and proportions clearly",
+                "Face turned towards the camera so it stays consistent with Reference 1",
+                "Clean background — same white wall approach works best",
+                "Natural pose, no dramatic angles",
+                "Save at full resolution alongside your face reference"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Side by side comparison: Good base model (clear, natural, well-lit face) vs Bad base model (artifacts, weird fingers, over-stylized, plastic skin). Use checkmarks and X marks."
             }
           ]
         },
         {
           "type": "panel",
           "title": "Critical Rule",
-          "content": "Your base model is your brand. Every image you generate from this point forward must look like the same person. If you cannot recreate the face reliably, choose a different seed image. Do not proceed until you have a base model you are confident in.",
+          "content": "You now have your two base reference images — the face and the body. These two images will be used as reference inputs for ALL of your generations going forward. Your base model is your brand. Every image you generate from this point must look like the same person. If you cannot recreate the face reliably, go back and generate a better seed image. Do not proceed until you are confident in both references.",
           "border": "#FF3131"
         }
       ]
