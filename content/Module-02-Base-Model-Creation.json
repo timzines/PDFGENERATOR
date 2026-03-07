@@ -32,7 +32,7 @@
               "items": [
                 "Age range and look (18-25 is the standard sweet spot for engagement)",
                 "Ethnicity and features — pick what resonates with your target audience",
-                "Style and aesthetic (e.g., girl-next-door, alt, fitness, elegant, cute)",
+                "Style and aesthetic (e.g., goth, alt, fitness, elegant, cute)",
                 "Personality tone (shy, bold, playful, mysterious) — this shapes all captions",
                 "Name — must sound real, be memorable, easy to search, and available across platforms"
               ]
@@ -44,9 +44,9 @@
             {
               "type": "bullets",
               "items": [
-                "Girl-next-door / College aesthetic — highest mass appeal, easiest to grow",
+                "Goth / Alt aesthetic — passionate niche audience, high engagement, strong monetization",
                 "Fitness / Gym — strong engagement, clear content themes",
-                "Alt / Goth — passionate niche audience, less competition",
+                "Girl-next-door / College — broad appeal, more competition",
                 "Elegant / Luxury — attracts higher-spending audience",
                 "Cute / Soft — strong on Threads and TikTok for discovery"
               ]
@@ -75,7 +75,7 @@
             },
             {
               "type": "good_example",
-              "content": "Niche: Cute, approachable college-age girl with a soft aesthetic.\nName: Emma, Lily, Sofia — simple, real, memorable.\nWhy it works: Massive audience, easy to generate content, natural settings."
+              "content": "Niche: Dark, edgy goth girl with an alt aesthetic.\nName: Raven, Luna, Lilith — memorable, fits the vibe.\nWhy it works: Passionate audience, high engagement, strong monetization potential."
             },
             {
               "type": "bad_example",
@@ -98,7 +98,7 @@
             {
               "type": "panel",
               "title": "IMAGE PLACEHOLDER",
-              "content": "Examples of different AI persona styles side by side — show 4 different niche aesthetics with labels: Girl-next-door, Fitness, Alt/Goth, Elegant"
+              "content": "Examples of different AI persona styles side by side — show 4 different niche aesthetics with labels: Goth, Fitness, Girl-next-door, Elegant"
             }
           ]
         }
@@ -415,7 +415,7 @@
     }
   ],
   "summary_points": [
-    "Choose your niche based on market demand, not personal preference — girl-next-door and fitness niches have the highest proven demand",
+    "Choose your niche based on market demand, not personal preference — goth and fitness niches have the highest proven demand",
     "Seedream 4.5 and Nano Banana 2 are your primary image generation tools — master both for different content types",
     "Your base model's face is your brand - keep it consistent",
     "Use the reference image method in Nano Banana 2 to maintain face consistency across all future SFW generations",
