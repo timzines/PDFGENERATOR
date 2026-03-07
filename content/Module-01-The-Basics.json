@@ -114,7 +114,7 @@
             {
               "type": "panel",
               "title": "No VPN Needed",
-              "content": "You do not need a VPN for this method. VPNs are unnecessary and can actually trigger suspicion on social media platforms. Post from your normal connection.",
+              "content": "You do not need a VPN for this method. VPNs are unnecessary and can actually trigger suspicion on social media platforms. Always post using mobile data on your phone, not WiFi. WiFi connections can be shared across multiple devices and accounts, which platforms flag as suspicious.",
               "border": "#39FF14"
             }
           ],
