@@ -196,7 +196,7 @@
             },
             {
               "type": "image",
-              "path": "images/shady-route.jpg"
+              "path": "images/shady-route.png"
             }
           ],
           "right": [
@@ -229,7 +229,7 @@
             },
             {
               "type": "image",
-              "path": "images/ethical-route.jpg"
+              "path": "images/ethical-route.png"
             }
           ]
         },
