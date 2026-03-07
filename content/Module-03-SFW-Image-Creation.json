@@ -70,31 +70,23 @@
       "header": "Lesson 2: Prompt Engineering & Editing AI Images",
       "blocks": [
         {
-          "type": "text",
-          "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. JSON prompts are the best way to prompt because they carry far more data about posing, lighting, camera settings, and environment than a traditional text prompt ever could. A single JSON prompt can specify exact depth of field, shadow behavior, color temperature, and composition — details that get lost or ignored in a one-line text prompt."
-        },
-        {
-          "type": "subheader",
-          "content": "Why JSON Prompts Beat Traditional Prompts"
-        },
-        {
-          "type": "text",
-          "content": "A traditional text prompt like 'woman walking on street, sunny, fashion photo' gives the AI almost nothing to work with. A JSON prompt breaks the image down into every detail — composition, subject, environment, lighting, color palette, camera settings, and artistic style. The AI gets structured instructions for every aspect of the image instead of guessing. This is why JSON prompts produce results that actually match your Pinterest reference."
-        },
-        {
           "type": "two_column",
           "left": [
             {
               "type": "subheader",
-              "content": "JSON vs Traditional Prompts"
+              "content": "Why JSON Prompts Beat Traditional Prompts"
+            },
+            {
+              "type": "text",
+              "content": "Your prompt is everything. JSON prompts are the best way to prompt because they carry far more data about posing, lighting, camera settings, and environment than a traditional text prompt ever could. A JSON prompt specifies exact depth of field, shadow behavior, color temperature, and composition — details that get lost in a one-line text prompt. The AI gets structured instructions for every aspect of the image instead of guessing."
             },
             {
               "type": "bad_example",
-              "content": "Traditional prompt:\n'Woman walking on city street, blue gingham outfit, sunny day, fashion photography, photorealistic'\n\nThis tells the AI almost nothing about pose, lighting direction, camera angle, depth of field, color grading, or composition. You get random results every time."
+              "content": "Traditional prompt:\n'Woman walking on city street, blue gingham outfit, sunny day, fashion photography, photorealistic'\n\nThis tells the AI nothing about pose, lighting direction, camera angle, depth of field, color grading, or composition. You get random results every time."
             },
             {
               "type": "good_example",
-              "content": "JSON prompt advantage:\n→ Composition: exact framing, crop, camera angle, depth of field\n→ Subject: specific wardrobe details, expression, gesture\n→ Environment: location elements, architectural details\n→ Lighting: source, direction, quality, color temperature, shadow behavior\n→ Color palette: dominant colors, contrast, saturation, tone curve\n→ Technical: camera type, focal length, aperture, ISO, sharpness\n→ Artistic: aesthetic, mood, stylistic influences, texture rendering\n\nEvery detail is specified — nothing is left to chance."
+              "content": "JSON prompt advantage:\n→ Composition: exact framing, crop, camera angle, depth of field\n→ Subject: specific wardrobe details, expression, gesture\n→ Environment: location elements, architectural details\n→ Lighting: source, direction, color temperature, shadow behavior\n→ Technical: focal length, aperture, ISO, sharpness\n→ Artistic: aesthetic, mood, stylistic influences, texture rendering\n\nEvery detail is specified — nothing is left to chance."
             },
             {
               "type": "subheader",
@@ -104,9 +96,9 @@
               "type": "bullets",
               "items": [
                 "Find your reference image on Pinterest",
-                "Feed the reference image into an AI and ask it to generate a JSON prompt describing everything about the image",
-                "The AI breaks down the pose, lighting, environment, camera settings, and style into structured JSON",
-                "Take that JSON prompt and feed it into Nano Banana 2 along with your base model image",
+                "Feed it into an AI and ask it to generate a JSON prompt describing everything about the image",
+                "The AI breaks down pose, lighting, environment, camera settings, and style into structured JSON",
+                "Feed that JSON prompt into Nano Banana 2 along with your base model image",
                 "The output matches the reference's pose and lighting — but with your AI model"
               ],
               "bullet": "→"
@@ -118,8 +110,9 @@
               "content": "Example JSON Prompt"
             },
             {
-              "type": "good_example",
-              "content": "{\n  \"prompt_modifiers\": [\"character from reference images\"],\n  \"image_type\": \"outdoor fashion street portrait\",\n  \"composition\": {\n    \"framing\": \"vertical orientation, mid-thigh crop\",\n    \"camera_angle\": \"eye-level perspective\",\n    \"pose\": \"walking forward on city sidewalk, torso facing camera, one arm holding handbag\",\n    \"depth_of_field\": \"moderate, subject sharp, background softly blurred\"\n  },\n  \"subject\": {\n    \"representation\": \"character from reference images\",\n    \"wardrobe\": \"blue and white gingham button-up top, matching mini skirt, brown suede handbag\",\n    \"expression\": \"composed, neutral with soft direct gaze\"\n  },\n  \"environment\": {\n    \"location_type\": \"urban street setting\",\n    \"elements\": [\"storefront windows\", \"stone building facade\", \"paved sidewalk\"],\n    \"style\": \"luxury shopping district\"\n  },\n  \"lighting\": {\n    \"source\": \"natural direct sunlight\",\n    \"direction\": \"front-side from upper left\",\n    \"color_temperature\": \"warm daylight (~5600K)\",\n    \"shadows\": \"soft shadow outlines on ground\"\n  },\n  \"technical_characteristics\": {\n    \"focal_length_equivalent\": \"28-35mm\",\n    \"aperture_estimate\": \"f/2.8-f/4\",\n    \"sharpness\": \"high with clear fabric texture\"\n  },\n  \"artistic_elements\": {\n    \"aesthetic\": \"chic European summer street style\",\n    \"mood\": \"confident, polished, effortless\"\n  }\n}"
+              "type": "code_block",
+              "label": "Example JSON Prompt:",
+              "content": "{\n  \"prompt_modifiers\": [\"character from reference images\"],\n  \"image_type\": \"outdoor fashion street portrait\",\n  \"composition\": {\n    \"framing\": \"vertical, mid-thigh crop\",\n    \"camera_angle\": \"eye-level perspective\",\n    \"pose\": \"walking forward on sidewalk, torso facing camera\",\n    \"depth_of_field\": \"moderate, subject sharp, background blurred\"\n  },\n  \"subject\": {\n    \"wardrobe\": \"blue gingham button-up top, matching mini skirt, brown suede handbag\",\n    \"expression\": \"composed, neutral with soft direct gaze\"\n  },\n  \"environment\": {\n    \"location_type\": \"urban street setting\",\n    \"elements\": [\"storefront windows\", \"stone facade\", \"paved sidewalk\"],\n    \"style\": \"luxury shopping district\"\n  },\n  \"lighting\": {\n    \"source\": \"natural direct sunlight\",\n    \"direction\": \"front-side from upper left\",\n    \"color_temperature\": \"warm daylight (~5600K)\",\n    \"shadows\": \"soft shadow outlines on ground\"\n  },\n  \"technical_characteristics\": {\n    \"focal_length\": \"28-35mm\",\n    \"aperture\": \"f/2.8-f/4\",\n    \"sharpness\": \"high with clear fabric texture\"\n  },\n  \"artistic_elements\": {\n    \"aesthetic\": \"chic European summer street style\",\n    \"mood\": \"confident, polished, effortless\"\n  }\n}"
             }
           ]
         },

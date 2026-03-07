@@ -692,6 +692,21 @@ body {
     page-break-inside: avoid;
 }
 
+.content-box .code-block,
+.content-box-full .code-block {
+    border-left: 3px solid #7dba6d;
+    background: rgba(125,186,109,0.06);
+    padding: 8px 12px;
+    margin: 10px 0;
+    color: #c8e6c0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8.5px;
+    line-height: 1.4;
+    border-radius: 0 6px 6px 0;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
 .content-box .example-bad,
 .content-box-full .example-bad {
     border-left: 3px solid #c9665a;
@@ -868,6 +883,12 @@ def render_blocks_html(blocks):
         elif btype == "good_example":
             lines = block["content"].replace("\n", "<br>")
             html += f'<div class="example-good"><div class="example-label">Good example:</div>{lines}</div>\n'
+
+        elif btype == "code_block":
+            label = block.get("label", "")
+            content = block["content"]
+            label_html = f'<div class="example-label" style="font-family: inherit; margin-bottom: 6px;">{label}</div>' if label else ''
+            html += f'<div class="code-block">{label_html}{content}</div>\n'
 
         elif btype == "bad_example":
             lines = block["content"].replace("\n", "<br>")
