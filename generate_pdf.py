@@ -440,22 +440,13 @@ body {
 
 .cover-fanvue-bottom {
     position: absolute;
-    bottom: 30px;
+    bottom: 28px;
     left: 0;
     right: 0;
     text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 32px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    background: #39FF14;
+    color: rgba(255,255,255,0.3);
+    font-size: 10px;
+    letter-spacing: 0.5px;
     text-decoration: none;
 }
 
