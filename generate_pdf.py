@@ -401,63 +401,65 @@ body {
 .cover-brand-row {
     display: flex;
     align-items: center;
-    gap: 0;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
 .cover-brand {
     display: inline-block;
     border: 1px solid rgba(196,154,133,0.4);
     border-radius: 30px;
-    padding: 11px 28px;
+    padding: 9px 22px;
     color: #c49a85;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     background: rgba(196,154,133,0.06);
 }
 
-.cover-brand-sep {
-    width: 1px;
-    height: 28px;
-    background: rgba(196,154,133,0.3);
-    margin: 0 16px;
+.cover-buttons-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
 .cover-discord {
     display: inline-block;
     border: 1px solid rgba(140,160,196,0.4);
     border-radius: 30px;
-    padding: 11px 28px;
+    padding: 9px 22px;
     color: #8ca0c4;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     background: rgba(140,160,196,0.06);
     text-decoration: none;
 }
 
-.cover-fanvue-bottom {
-    position: absolute;
-    bottom: 30px;
-    left: 0;
-    right: 0;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
-    width: fit-content;
-    border: none;
+.cover-fanvue-btn {
+    display: inline-block;
+    border: 1px solid rgba(34,120,60,0.5);
     border-radius: 30px;
-    padding: 12px 32px;
-    color: #ffffff;
-    font-size: 12px;
-    font-weight: 600;
-    letter-spacing: 1px;
+    padding: 9px 22px;
+    color: #2d8a4e;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
-    background: #39FF14;
+    background: rgba(34,120,60,0.06);
     text-decoration: none;
 }
+
+.cover-btn-arrow {
+    font-size: 10px;
+    margin-left: 5px;
+    opacity: 0.7;
+}
+
 
 .cover-divider {
     width: 50px;
@@ -781,6 +783,22 @@ body {
     color: #d4bcc4;
 }
 
+.content-image {
+    margin: 8px 0;
+    text-align: center;
+}
+.content-image img {
+    max-width: 100%;
+    max-height: 260px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+.content-image-caption {
+    font-size: 10px;
+    color: rgba(255,255,255,0.45);
+    margin-top: 4px;
+}
+
 .content-footer {
     position: absolute;
     bottom: 18px;
@@ -893,58 +911,6 @@ body {
     white-space: nowrap;
 }
 
-.fanvue-promo-url {
-    font-size: 10px;
-    color: #c49a85;
-    margin-top: 3px;
-    letter-spacing: 0.3px;
-}
-
-/* Summary page promo - larger version */
-.fanvue-promo-summary {
-    background: linear-gradient(135deg, rgba(196,154,133,0.25) 0%, rgba(180,100,140,0.3) 50%, rgba(196,154,133,0.2) 100%);
-    border: 1px solid rgba(196,154,133,0.35);
-    border-radius: 12px;
-    padding: 20px 28px;
-    margin-top: 16px;
-    text-align: center;
-}
-
-.fanvue-promo-summary .promo-headline {
-    font-size: 16px;
-    font-weight: 700;
-    color: #ffffff;
-    margin-bottom: 6px;
-    letter-spacing: 0.5px;
-}
-
-.fanvue-promo-summary .promo-subtext {
-    font-size: 12px;
-    color: #d4bcc4;
-    margin-bottom: 12px;
-    line-height: 1.5;
-}
-
-.fanvue-promo-summary .promo-cta-large {
-    display: inline-block;
-    background: linear-gradient(135deg, #c49a85 0%, #d4a090 100%);
-    color: #1a1b1f;
-    font-size: 13px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 1.2px;
-    padding: 10px 28px;
-    border-radius: 8px;
-    text-decoration: none;
-    margin-bottom: 8px;
-}
-
-.fanvue-promo-summary .promo-url {
-    font-size: 11px;
-    color: #c49a85;
-    margin-top: 6px;
-    letter-spacing: 0.3px;
-}
 """
 
 
@@ -1021,6 +987,18 @@ def render_blocks_html(blocks):
             html += f'  <div class="panel-body">{content}</div>\n'
             html += '</div>\n'
 
+        elif btype == "image":
+            img_path = block.get("path", "")
+            caption = block.get("caption", "")
+            if not os.path.isabs(img_path):
+                img_path = str(BASE_DIR / img_path)
+            if os.path.exists(img_path):
+                uri = img_to_data_uri(img_path)
+                html += f'<div class="content-image"><img src="{uri}" />'
+                if caption:
+                    html += f'<div class="content-image-caption">{caption}</div>'
+                html += '</div>\n'
+
         elif btype == "page_break":
             html += '<div style="page-break-before: always;"></div>\n'
 
@@ -1060,14 +1038,15 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             <div class="cover-subtitle">{subtitle}</div>
             <div class="cover-brand-row">
                 <div class="cover-brand">{BRAND_NAME}</div>
-                <div class="cover-brand-sep"></div>
-                <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord</a>
+            </div>
+            <div class="cover-buttons-row">
+                <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord <span class="cover-btn-arrow">&rarr;</span></a>
+                <a class="cover-fanvue-btn" href="{FANVUE_URL}" target="_blank">Sign Up To Fanvue <span class="cover-btn-arrow">&rarr;</span></a>
             </div>
         </div>
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
-        <a class="cover-fanvue-bottom" href="{FANVUE_URL}" target="_blank">Sign up to Fanvue — Start monetizing your AI models</a>
     </div>
     '''
 
@@ -1210,18 +1189,12 @@ def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
                         <div class="summary-brand-name">{BRAND_NAME}</div>
                         <div class="summary-brand-line"></div>
                         <div class="summary-brand-text">All materials are strictly protected.</div>
-                        <div style="margin-top:18px;padding:12px 20px;border:1px solid rgba(57,255,20,0.35);border-radius:10px;background:rgba(57,255,20,0.04);">
-                            <div style="color:#39FF14;font-size:13px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Ready to monetize your AI models?</div>
-                            <div style="color:rgba(255,255,255,0.5);font-size:11px;line-height:1.5;">Sign up to Fanvue with our link and start earning today:<br/><span style="color:rgba(57,255,20,0.7);font-weight:600;">fanvue.com/signup?referral=FV-C4WPNC</span></div>
-                        </div>
-                    </div>
-                    <div class="fanvue-promo-summary">
-                        <div class="promo-headline">Ready to Start Earning with Your AI Models?</div>
-                        <div class="promo-subtext">Fanvue is the premier platform for creators to monetize AI-generated content. Join thousands of creators already earning.</div>
-                        <div class="promo-cta-large">Sign Up to Fanvue Now</div>
-                        <div class="promo-url">{FANVUE_URL}</div>
                     </div>
                 </div>
+            </div>
+            <div style="margin-top:14px;padding:10px 20px;border:1px solid rgba(34,120,60,0.5);border-radius:10px;background:rgba(34,120,60,0.08);text-align:center;page-break-inside:avoid;">
+                <div style="color:#2d8a4e;font-size:11px;font-weight:700;letter-spacing:0.5px;margin-bottom:3px;">Start monetizing your AI models</div>
+                <div style="color:rgba(255,255,255,0.45);font-size:9px;line-height:1.4;">Sign up to Fanvue with our link: <span style="color:#2d8a4e;font-weight:600;">fanvue.com/signup?referral=FV-C4WPNC</span></div>
             </div>
         </div>
     </div>
