@@ -325,6 +325,14 @@
       ]
     }
   ],
+  "overview_extra_blocks": [
+    {
+      "type": "panel",
+      "title": "Important",
+      "content": "<b>Make sure you connect your Discord account with your Whop to get access to the role.</b> Without this step, you will not be able to see the advanced channels or access the community resources.",
+      "border": "#FF3131"
+    }
+  ],
   "summary_points": [
     "Complete the full checklist from Modules 1-9 before moving to advanced content — no shortcuts",
     "Week 1: Build foundation (model, content library, device setup)",

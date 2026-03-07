@@ -64,6 +64,10 @@ def generate_overview_config(module_config, module_folder):
         overview_blocks.append({"type": "subheader", "content": "Key Takeaways"})
         overview_blocks.append({"type": "bullets", "items": module_config["summary_points"]})
 
+    # Append any extra blocks specified for the overview
+    if module_config.get("overview_extra_blocks"):
+        overview_blocks.extend(module_config["overview_extra_blocks"])
+
     sections.append({
         "header": f"{module_num_line}: {module_name} Overview",
         "blocks": overview_blocks,
