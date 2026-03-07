@@ -453,7 +453,7 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 50px 60px 20px 60px;
+    padding: 10px 60px 0 60px;
     page: content-page;
     color: #e0ccd2;
 }
@@ -469,12 +469,14 @@ body {
     font-weight: 700;
     font-style: italic;
     color: #ffffff;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+    margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
     position: relative;
     padding-left: 16px;
+    padding-top: 5px;
     page-break-before: always;
     page-break-after: avoid;
 }
@@ -502,23 +504,16 @@ body {
 
 /* ---- TWO-COLUMN LAYOUT ---- */
 .content-columns {
+    display: flex;
+    gap: 40px;
     width: 100%;
     margin-bottom: 6px;
-}
-.content-columns::after {
-    content: "";
-    display: block;
-    clear: both;
+    page-break-inside: avoid;
 }
 
 .content-col {
-    width: calc(50% - 20px);
-}
-.content-col:first-child {
-    float: left;
-}
-.content-col:last-child {
-    float: right;
+    flex: 1;
+    min-width: 0;
 }
 
 /* ---- CONTENT BLOCKS (no background boxes) ---- */
@@ -1012,9 +1007,9 @@ def generate_pdf(config, output_path):
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0 0 45px 0;
+    margin: 45px 0;
     padding: 0;
-    background: linear-gradient(160deg, #2d2230 0%, #1a1b1f 40%, #0f1013 100%);
+    background: #1a1b1f;
     @bottom-center {{
         content: "{footer_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
