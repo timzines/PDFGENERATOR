@@ -12,7 +12,7 @@
         },
         {
           "type": "text",
-          "content": "Both Seedream 4.5 and Nano Banana 2 support reference-based generation. You upload your seed image, write a prompt describing the new scene, and the tool generates output that preserves your character's face while creating the new content. This lesson covers how to use this workflow effectively."
+          "content": "Nano Banana 2 is your main tool for all SFW image generation. It supports reference-based generation — you upload your seed image, write a prompt describing the new scene, and it generates output that preserves your character's face while creating the new content. This lesson covers how to use this workflow effectively."
         },
         {
           "type": "two_column",
@@ -25,9 +25,9 @@
               "type": "bullets",
               "items": [
                 "Start with your locked-in seed image from Module 2",
-                "Upload it as a reference/input image in Seedream 4.5 or Nano Banana 2",
+                "Upload it as a reference/input image in Nano Banana 2",
                 "Write a new prompt describing the desired scene, outfit, or setting",
-                "Generate multiple outputs (3-5 per prompt) and compare against the reference",
+                "Generate at least 3 outputs per prompt and compare against the reference",
                 "Only keep images that match the face consistently",
                 "If the face drifts, increase reference strength or try a different seed angle"
               ],
@@ -40,37 +40,14 @@
             {
               "type": "bullets",
               "items": [
-                "Use a clear, front-facing headshot as your primary reference",
-                "Keep 2-3 reference angles saved (front, 3/4 turn, profile) for variety",
+                "Always use both your face and body reference images together",
                 "Higher resolution reference images produce better consistency",
                 "Never change your reference image once your page is live",
-                "When switching between Seedream and Nano Banana, use the same reference image"
+                "Adjust reference strength if the face drifts — higher strength means more consistency but less variety"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Step-by-step visual of the reference workflow: 1. Upload seed image → 2. Write new prompt → 3. Generate variations → 4. Compare to reference → 5. Keep or regenerate. Show example reference image producing 3-4 different outputs."
             }
           ],
           "right": [
-            {
-              "type": "subheader",
-              "content": "Choosing the Right Tool for Each Shot"
-            },
-            {
-              "type": "text",
-              "content": "Seedream 4.5 and Nano Banana 2 have different strengths. Knowing when to use each one saves time and produces better results."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Seedream 4.5 — Best for close-up portraits, headshots, and detailed facial expressions. Strongest at preserving fine facial details",
-                "Nano Banana 2 — Best for full-body shots, varied poses, and lifestyle scenes with complex backgrounds",
-                "For critical content (profile photos, first grid posts), generate with both tools and compare",
-                "For daily content, use whichever tool handles that content type best"
-              ]
-            },
             {
               "type": "subheader",
               "content": "Common Mistakes in Reference Workflow"
@@ -82,13 +59,9 @@
                 "Setting reference strength too low — face drifts from your model",
                 "Setting reference strength too high — every image looks identical (no variety)",
                 "Ignoring face drift on 'almost good enough' images — never post a drifted face",
-                "Changing reference images between sessions — stick with the same seed"
+                "Changing reference images between sessions — stick with the same seed",
+                "Only generating one version — always generate at least 3 and pick the best"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Example showing reference image → 3-4 different output images generated from it, with annotations showing face consistency maintained across different settings and outfits"
             }
           ]
         }
@@ -397,9 +370,8 @@
     }
   ],
   "summary_points": [
-    "Always generate new images using your base model as a reference in Seedream 4.5 or Nano Banana 2",
+    "Always generate new images using your base model as a reference in Nano Banana 2",
     "Write detailed prompts with setting, lighting, outfit, and camera angle — save templates that produce good results",
-    "Use Seedream 4.5 for portraits and close-ups, Nano Banana 2 for full-body and lifestyle shots",
     "Edit AI outputs to fix hands, artifacts, and background issues using Photopea (free)",
     "Always add approximately 2% grain/noise as the final editing step — this is what makes AI images pass as real photos",
     "Use inpainting to fix specific problem areas without regenerating the entire image",
