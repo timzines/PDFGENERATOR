@@ -1,0 +1,154 @@
+{
+  "title": "Module 1\nThe Basics",
+  "subtitle": "Course Overview and the Complete Basics to Starting AI Models",
+  "output_filename": "Module-01-The-Basics.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: What Is the AI Influencer Method",
+      "blocks": [
+        {"type": "text", "content": "The AI Influencer Method is a system for building and monetizing social media pages using AI-generated personas. These personas look, act, and engage like real influencers but are entirely created and managed through artificial intelligence tools."},
+        {"type": "text", "content": "This is not about catfishing or deception. This is a business model. The audience knows they are interacting with a curated persona. The value they receive is entertainment, attention, and content. You are building a brand, not pretending to be a real person."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "What You Will Learn"},
+          {"type": "bullets", "items": [
+            "How to create an AI influencer from scratch",
+            "Which platforms to use and why",
+            "How to grow from zero to monetization",
+            "The exact content pipeline that works",
+            "How to scale to multiple pages"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "What This Is NOT"},
+          {"type": "bullets", "items": [
+            "A get-rich-quick scheme",
+            "A passive income fantasy",
+            "A one-click automation tool",
+            "Something that works without effort"
+          ]},
+          {"type": "panel", "title": "Mindset", "content": "This is a real business. Treat it like one. The people who fail are the ones who skip steps, rush the process, or expect results without work."}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: Why AI Influencers Work",
+      "blocks": [
+        {"type": "two_column", "left": [
+          {"type": "text", "content": "Traditional influencer marketing requires a real person. That person has limitations: scheduling, energy, aging, mood, location. AI influencers have none of these limitations. The persona is consistent. The content is controllable. The output is scalable."},
+          {"type": "text", "content": "The market for parasocial relationships is massive and growing. People pay for connection, attention, and fantasy. This is not new. What is new is that AI allows you to deliver it at scale without needing a real person behind the screen."},
+          {"type": "panel", "title": "Industry Growth", "content": "The AI influencer market is projected to grow significantly year over year. Early movers have the strongest advantage. The window is open now. It will not stay open forever."}
+        ], "right": [
+          {"type": "subheader", "content": "Key Advantages Over Traditional Models"},
+          {"type": "bullets", "items": [
+            "No physical limitations on content output",
+            "Consistent brand and persona across all content",
+            "Scalable to multiple personas simultaneously",
+            "Lower operating cost than real influencers",
+            "Full creative control over every aspect",
+            "No burnout, no scheduling conflicts",
+            "Can operate 24/7 across time zones"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Comparison graphic: Traditional Influencer vs AI Influencer (limitations vs advantages)"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 3: The Business Model & Revenue Sources",
+      "blocks": [
+        {"type": "text", "content": "The business model is simple. Attention flows through a funnel. Free content creates interest. Interest creates followers. Followers convert to paying subscribers. Subscribers generate revenue through multiple streams."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Revenue Sources"},
+          {"type": "bullets", "items": [
+            "Fanvue / subscription platform monthly fees",
+            "Pay-per-view (PPV) locked content",
+            "Custom content requests via chat",
+            "Tips and gifts from engaged fans"
+          ]},
+          {"type": "subheader", "content": "The Traffic Funnel"},
+          {"type": "bullets", "items": [
+            "Instagram / TikTok → Link in Bio",
+            "Link in Bio → Free Telegram",
+            "Free Telegram → Fanvue subscription",
+            "Fanvue chat → Upsells and PPV"
+          ], "bullet": "→"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Visual funnel diagram showing traffic flow from social media to monetization"}
+        ], "right": [
+          {"type": "subheader", "content": "Revenue Reality"},
+          {"type": "text", "content": "Most of your revenue will NOT come from subscription fees alone. The real money is in the chat. Fans who feel a personal connection spend significantly more on PPV content, custom requests, and tips."},
+          {"type": "text", "content": "Chat quality determines profit more than follower count. A page with 500 engaged subscribers who are chatted well will out-earn a page with 5,000 neglected subscribers every single time."},
+          {"type": "panel", "title": "Critical Rule", "content": "Revenue comes from the funnel, not from posting. Posting creates attention. The funnel converts attention into money. Without the funnel, followers are just numbers.", "border": "#39FF14"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 4: Platform Overview & Priority",
+      "blocks": [
+        {"type": "text", "content": "Not all platforms are equal. Each one serves a specific role in your system. Understanding the role of each platform prevents wasted effort and keeps your strategy focused."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Primary Platforms (Mandatory)"},
+          {"type": "bullets", "items": [
+            "Instagram — Main traffic and brand hub. This is where most of your followers will come from. Reels and Stories drive discovery.",
+            "Threads — Engagement and discovery engine. Threads feeds directly into Instagram growth through replies and viral text posts.",
+            "Fanvue — Your monetization endpoint. This is where followers become paying subscribers.",
+            "Telegram — Pre-sell funnel. Free channel that warms cold traffic before they hit the paywall."
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Support Platforms (Recommended)"},
+          {"type": "bullets", "items": [
+            "TikTok — Secondary reach and discovery. Stricter moderation but massive audience potential.",
+            "Reddit — Niche viral exposure. Not a main platform, but a multiplier when posts hit the right audience.",
+            "Twitter/X — Brand presence and discovery. Slower growth but strong for reaching affluent audiences."
+          ]},
+          {"type": "panel", "title": "Priority Order", "content": "1. Instagram (mandatory)\n2. Threads (mandatory)\n3. Fanvue (mandatory)\n4. Telegram (recommended)\n5. TikTok (recommended)\n6. Reddit (optional multiplier)\n7. Twitter/X (optional presence)"}
+        ]},
+        {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Platform overview graphic showing each platform's role in the ecosystem"}
+      ]
+    },
+    {
+      "header": "Lesson 5: Tools & Resources You'll Need",
+      "blocks": [
+        {"type": "text", "content": "Before you start building, you need the right tools. This lesson covers everything you will use across the entire course. You do not need all of these on day one. Start with the essentials and add tools as you scale."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Content Generation"},
+          {"type": "bullets", "items": [
+            "AI image generation tools (covered in Module 2)",
+            "Kling — AI video generation (covered in Module 4)",
+            "Photo editing software for refinements",
+            "Face consistency tools and workflows"
+          ]},
+          {"type": "subheader", "content": "Platform Management"},
+          {"type": "bullets", "items": [
+            "Separate phone or device for each persona",
+            "VPN or proxy service for geo-targeting",
+            "Content scheduling tools",
+            "Analytics monitoring per platform"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Monetization Tools"},
+          {"type": "bullets", "items": [
+            "Fanvue account (primary monetization)",
+            "Telegram account (free funnel channel)",
+            "AllMyLinks or Linktree (link in bio)",
+            "Payment processing setup"
+          ]},
+          {"type": "subheader", "content": "Operations"},
+          {"type": "bullets", "items": [
+            "Chat management system or spreadsheet",
+            "Revenue tracking spreadsheet",
+            "Content calendar template",
+            "Fan profiling system (covered in Module 9)"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Tool stack overview graphic showing essential vs optional tools"}
+        ]}
+      ]
+    }
+  ],
+  "summary_points": [
+    "The AI Influencer Method is a real business that requires real effort and patience",
+    "AI personas have key advantages: consistency, scalability, full creative control",
+    "Revenue comes from the funnel, not just from posting content",
+    "Chat quality determines profit more than follower count",
+    "Instagram and Threads are mandatory primary platforms",
+    "Start with essential tools and add more as you scale",
+    "The window for early movers is open now — treat this seriously"
+  ]
+}

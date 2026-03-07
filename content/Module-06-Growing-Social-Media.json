@@ -1,0 +1,239 @@
+{
+  "title": "Module 6\nGrowing Social Media",
+  "subtitle": "Grow Your Social Medias: Instagram, Threads, Reddit, Twitter",
+  "output_filename": "Module-06-Growing-Social-Media.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: Instagram Growth Strategy",
+      "blocks": [
+        {"type": "text", "content": "Instagram is your primary traffic source. Everything else feeds into it or supports it. After warmup is complete (Module 5), you are ready to launch your real growth phase. This is where your page goes from looking human to actually growing."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Reels Launch Process"},
+          {"type": "bullets", "items": [
+            "Start Reels only AFTER warmup is fully complete",
+            "First Reel should be simple: face-focused, trending audio, 5-10 seconds",
+            "Post 3-5 Reels per week during the growth phase",
+            "Use trending sounds — check the Reels audio library daily",
+            "Keep captions short and personality-driven, not salesy"
+          ]},
+          {"type": "subheader", "content": "Content Hierarchy"},
+          {"type": "bullets", "items": [
+            "Reels — Primary discovery tool (reach new people)",
+            "Stories — Daily engagement (keep existing followers active)",
+            "Carousels — Profile building (make your grid look real)",
+            "Feed posts — Support content (fills out your page)"
+          ], "bullet": "→"}
+        ], "right": [
+          {"type": "subheader", "content": "Instagram Content Execution"},
+          {"type": "bullets", "items": [
+            "Instagram gets your BEST content first — always",
+            "Never post the same image on Instagram and another platform same day",
+            "Vary content: selfies, lifestyle, casual, glam — not all one type",
+            "Stories should feel raw and 'in the moment' even if AI-generated",
+            "Carousel posts: 3-5 images, first image is the hook"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example Instagram grid layout showing content variety and posting pattern"},
+          {"type": "panel", "title": "Growth Trigger", "content": "The algorithm pushes Reels when early engagement is strong. Post when your audience is online (check Insights). The first 30 minutes determine if the Reel gets distributed or dies.", "border": "#39FF14"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: Threads Growth Strategy",
+      "blocks": [
+        {"type": "text", "content": "Threads is not a separate platform — it is a tool that feeds directly into your Instagram growth. Threads gives new pages reach without history. You use it to manufacture demand and curiosity, then push that attention to your Instagram profile."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Threads Phase 1: How to Post & Reply"},
+          {"type": "text", "content": "Threads posts should make someone think: 'Who is this girl?' Not 'She is selling something.'"},
+          {"type": "bullets", "items": [
+            "Post relatable, personality-driven text posts",
+            "Reply to trending threads with witty or relatable takes",
+            "Use your AI model's persona voice — casual, human, not corporate",
+            "Posts that trigger comments get pushed to more people",
+            "Post 3-5 times per day on Threads"
+          ]},
+          {"type": "good_example", "content": "Thread post: 'accidentally made eye contact with someone at the gym and now we're married i guess'\nRelatable, funny, conversation-starting."},
+          {"type": "bad_example", "content": "Thread post: 'Check out my page for exclusive content! Link in bio 🔥'\nSales pitch. No one engages. Algorithm buries it."}
+        ], "right": [
+          {"type": "subheader", "content": "Threads Phase 2: Scaling & Testing"},
+          {"type": "bullets", "items": [
+            "Track which post styles get the most replies",
+            "Double down on formats that work (opinions, hot takes, relatable moments)",
+            "Test different posting times",
+            "Increase to 5-8 posts per day as engagement grows",
+            "Every Threads post that pops sends people to your IG profile"
+          ]},
+          {"type": "subheader", "content": "Thread Types That Work"},
+          {"type": "bullets", "items": [
+            "Hot takes and opinions (generates replies)",
+            "Relatable daily moments",
+            "Questions that spark conversation",
+            "Slightly controversial (not offensive) statements",
+            "Personal stories that feel authentic"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example Threads posts that drove Instagram profile visits"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 3: Reddit Growth Strategy",
+      "blocks": [
+        {"type": "text", "content": "Reddit is not a main platform. It is a multiplier. Reddit works best as an opportunistic traffic source. Not as a main platform. But as a multiplier when a post hits the right audience."},
+        {"type": "text", "content": "Reddit is slow, strict, and heavily moderated. Most subreddits do not allow promotion and remove content quickly. But only if the account looks fake, rushed, and natural. A good Reddit account does not look like a model account. It looks like a normal user who belongs to a niche."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Profile Setup"},
+          {"type": "bullets", "items": [
+            "Username: cute or quirky, no sexual terms",
+            "Bio: short, personality-driven, no links during warmup",
+            "Avatar: use your AI model's face",
+            "The fan should feel like they discovered you inside their own community"
+          ]},
+          {"type": "subheader", "content": "Subreddit Targeting"},
+          {"type": "bullets", "items": [
+            "Find niche subreddits that match your persona's aesthetic",
+            "Read each subreddit's rules before posting anything",
+            "Start with SFW subreddits only",
+            "Target subreddits with 50k-500k members (sweet spot for visibility)",
+            "Join 10-15 relevant subreddits"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example subreddit list organized by niche type"}
+        ], "right": [
+          {"type": "subheader", "content": "Warmup & Karma Farming"},
+          {"type": "bullets", "items": [
+            "Spend 7 days building karma before posting your own content",
+            "Comment on popular posts with genuine, helpful replies",
+            "Upvote and engage naturally",
+            "Post memes or relatable content in non-model subreddits",
+            "Need ~100 karma minimum before most subreddits allow image posts"
+          ]},
+          {"type": "subheader", "content": "Posting Phase"},
+          {"type": "bullets", "items": [
+            "Post 1-2 images per subreddit per week maximum",
+            "Titles should be casual, not promotional: 'felt cute today' not 'check me out'",
+            "Respond to every comment on your posts",
+            "Rotate subreddits — don't spam the same one",
+            "One viral Reddit post can drive hundreds of profile visits"
+          ]},
+          {"type": "panel", "title": "Reddit Rule", "content": "Reddit users hate self-promotion. If your account looks like it exists only to post images, you will be downvoted and banned. Blend in first, post second.", "border": "#FF3131"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 4: TikTok Growth Strategy",
+      "blocks": [
+        {"type": "text", "content": "TikTok is a secondary traffic source. Instagram remains the main platform. TikTok converts worse than Instagram — estimated 5 to 10 times worse in CVR. Its value is extra reach when combined with other organic marketing."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Content Strategy"},
+          {"type": "bullets", "items": [
+            "Only post very safe content — TikTok moderation is stricter",
+            "Carousel/photo format is the safest content type",
+            "Recycle your best Instagram content (but not same day)",
+            "Short video clips (3-10 seconds) with trending sounds",
+            "Face-focused content outperforms everything else"
+          ]},
+          {"type": "subheader", "content": "Daily Behavior (Trust Signals)"},
+          {"type": "bullets", "items": [
+            "Scroll and watch content for 15-20 min/day",
+            "Like and comment on other creators' posts",
+            "Reply to comments on your own posts",
+            "Post consistently: 1-2 posts per day",
+            "Never use banned sounds or effects"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "What TikTok Rewards"},
+          {"type": "bullets", "items": [
+            "Accounts that look human and act slowly",
+            "Content that stays within platform comfort zones",
+            "Consistent posting schedule over time",
+            "High watch time and completion rate on videos"
+          ]},
+          {"type": "subheader", "content": "Expected Results"},
+          {"type": "text", "content": "If done correctly, TikTok should add approximately 20% more subscribers to your overall funnel. It is not the main driver. It is a supplement. Treat it as leverage, not focus."},
+          {"type": "panel", "title": "Safety Rule", "content": "If content feels risky, do not post it on TikTok. Safe posting beats frequent posting. One strike on TikTok can shadow your account for weeks.", "border": "#FF3131"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "TikTok content examples: safe carousel format vs risky content that gets flagged"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 5: Twitter/X Growth Strategy",
+      "blocks": [
+        {"type": "text", "content": "Twitter/X is a discovery platform, not a sales platform. It is built on replies, not posts. Your growth on Twitter comes from being seen in other people's conversations, not from broadcasting your own content. This is the opposite of Instagram."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Profile Setup"},
+          {"type": "bullets", "items": [
+            "Profile photo: best AI model face shot, high quality",
+            "Banner: lifestyle or aesthetic image of your persona",
+            "Bio: short, personality-driven, casual tone",
+            "Pinned tweet: your best-performing or most engaging post",
+            "No links in bio during warmup"
+          ]},
+          {"type": "subheader", "content": "Reply-Based Growth Engine"},
+          {"type": "bullets", "items": [
+            "Find popular accounts your target audience follows",
+            "Reply to their tweets with witty, relevant, engaging takes",
+            "Every reply is seen by that account's followers",
+            "Goal: make people click on your profile from your reply",
+            "Reply 10-20 times per day to build visibility"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Target Audience"},
+          {"type": "text", "content": "Twitter/X is strong for reaching affluent men aged 30-50+. This demographic spends more per subscriber than younger audiences. Target accounts and conversations that this audience follows."},
+          {"type": "subheader", "content": "Warmup (14 Days)"},
+          {"type": "bullets", "items": [
+            "Days 1-3: Scroll, like, retweet. No original posts.",
+            "Days 4-7: Start replying to popular tweets. 5-10 replies/day.",
+            "Days 8-10: First original posts. Mix of text and images.",
+            "Days 11-14: Increase posting. Add images to tweets.",
+            "After 14 days: Full posting schedule, add link in bio."
+          ]},
+          {"type": "panel", "title": "Shadowban Check", "content": "Check your shadowban status regularly. If your replies stop getting likes, you may be shadowbanned. Reduce activity for 48 hours and resume slowly.", "border": "#FF3131"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 6: Cross-Platform Coordination",
+      "blocks": [
+        {"type": "text", "content": "You are not growing on five separate platforms. You are running one system with multiple tools. Each platform serves a role. Coordination between them is what multiplies your results."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Content Distribution Rules"},
+          {"type": "bullets", "items": [
+            "Instagram gets your best content FIRST — always",
+            "Never post the same image on two platforms on the same day",
+            "Threads content is text-only — don't duplicate Instagram captions",
+            "TikTok recycles Instagram content (delayed by 2-3 days minimum)",
+            "Reddit gets unique content tailored to each subreddit",
+            "Twitter gets a mix of text posts and image tweets"
+          ]},
+          {"type": "subheader", "content": "Weekly Posting Schedule"},
+          {"type": "bullets", "items": [
+            "Instagram: 4-5 Reels + daily Stories + 2-3 carousels",
+            "Threads: 3-8 text posts per day",
+            "TikTok: 1-2 posts per day",
+            "Reddit: 3-5 posts per week across subreddits",
+            "Twitter: 2-3 tweets + 10-20 replies per day"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "Traffic Flow Between Platforms"},
+          {"type": "bullets", "items": [
+            "Threads → drives profile visits to Instagram",
+            "Instagram → converts followers via link in bio",
+            "TikTok → supplements Instagram traffic",
+            "Reddit → niche viral spikes to profile",
+            "Twitter → steady discovery and brand presence",
+            "All platforms → Link in Bio → Telegram → Fanvue"
+          ], "bullet": "→"},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Cross-platform content calendar template showing weekly distribution across all 5 platforms"},
+          {"type": "panel", "title": "Coordination Rule", "content": "Your persona must feel like the same person across all platforms. Same face, same name, same personality. The only thing that changes is the content format and tone for each platform.", "border": "#39FF14"}
+        ]}
+      ]
+    }
+  ],
+  "summary_points": [
+    "Instagram is the primary platform — Reels drive discovery, Stories drive engagement",
+    "Threads manufactures demand that feeds directly into Instagram growth",
+    "Reddit is a multiplier, not a main platform — blend in before posting",
+    "TikTok is secondary reach — only safe content, carousel format is safest",
+    "Twitter/X grows through replies, not broadcasting — target affluent audiences",
+    "Coordinate content across platforms — same persona, different formats, never same day",
+    "Instagram always gets your best content first"
+  ]
+}

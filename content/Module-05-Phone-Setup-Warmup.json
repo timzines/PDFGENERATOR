@@ -1,0 +1,166 @@
+{
+  "title": "Module 5\nPhone Setup / Warmup",
+  "subtitle": "Setup for Your Phone and Warmup for Your Social Media Accounts",
+  "output_filename": "Module-05-Phone-Setup-Warmup.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: Phone & Device Setup",
+      "blocks": [
+        {"type": "text", "content": "Your device setup is the foundation of account safety. Platforms track device IDs, IP addresses, and usage patterns. If you run multiple AI personas from the same phone on the same network, you are asking to get flagged. This lesson covers the correct way to set up your devices before creating a single account."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Device Requirements"},
+          {"type": "bullets", "items": [
+            "One dedicated phone per persona (ideal)",
+            "If sharing a device: max 2 accounts per phone",
+            "Use separate browser profiles or app clones if needed",
+            "Never log into two personas on the same app simultaneously",
+            "Factory reset any used phone before starting a new persona"
+          ]},
+          {"type": "subheader", "content": "Network & IP Setup"},
+          {"type": "bullets", "items": [
+            "Use mobile data (4G/5G) during warmup — not WiFi",
+            "If using WiFi: use a VPN set to a US location",
+            "Each persona should ideally have a different IP footprint",
+            "Never use public WiFi for account activity"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "SIM Card & Phone Number"},
+          {"type": "bullets", "items": [
+            "Each account needs a unique phone number for verification",
+            "Prepaid SIM cards work perfectly",
+            "Virtual numbers (Google Voice, etc.) are riskier but usable",
+            "Never share a phone number across multiple personas"
+          ]},
+          {"type": "subheader", "content": "Essential Apps to Install"},
+          {"type": "bullets", "items": [
+            "Instagram",
+            "Threads (linked to Instagram)",
+            "TikTok",
+            "Telegram",
+            "VPN app (if needed)",
+            "Photo gallery app for content storage"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Phone setup checklist graphic showing device, SIM, VPN, and app configuration"}
+        ]}
+      ]
+    },
+    {
+      "header": "Lesson 2: Creating & Configuring Accounts",
+      "blocks": [
+        {"type": "text", "content": "Account creation is not just signing up. Every decision you make in the first 24 hours sends signals to the platform's algorithm. This lesson covers how to create accounts that look human from the very first second."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Username Rules"},
+          {"type": "bullets", "items": [
+            "Human-sounding name — first name or first name + initial",
+            "No random numbers (e.g., emma38472)",
+            "No sexual or suggestive words",
+            "Easy to remember and search",
+            "Same username across all platforms for this persona"
+          ]},
+          {"type": "good_example", "content": "Username: emma.laine / lilyy.rose / sofiamrr\nReal-sounding, memorable, no red flags."},
+          {"type": "bad_example", "content": "Username: hotgirl_2024 / xXsexyEmmaXx / model.promo.page\nInstant red flags for platforms and audiences."}
+        ], "right": [
+          {"type": "subheader", "content": "Profile Setup (First 24 Hours)"},
+          {"type": "bullets", "items": [
+            "Add a profile photo (clear face shot of your AI model)",
+            "Write a short, casual bio — personality-driven, not salesy",
+            "No links in bio during warmup — add after 3+ weeks",
+            "No selling language, no emojis spam",
+            "Set account to public"
+          ]},
+          {"type": "subheader", "content": "Bio Examples"},
+          {"type": "good_example", "content": "Bio: '22 ☀️ dreaming in california'\nSimple, human, personality-driven."},
+          {"type": "bad_example", "content": "Bio: '🔥 DM for exclusive content 🔥 Link below 👇'\nScreams promotional account. Will get flagged."}
+        ]},
+        {"type": "panel", "title": "TikTok Exception", "content": "On TikTok, do NOT add username, bio, or profile picture immediately after account creation. Close the app for 20 minutes after creating the account. Then come back and add details slowly over the first 2-3 days.", "border": "#FF3131"}
+      ]
+    },
+    {
+      "header": "Lesson 3: The Warmup Protocol",
+      "blocks": [
+        {"type": "text", "content": "The warmup phase is the most important phase of your entire account lifecycle. It exists to teach the algorithm that your account is a real human. If you rush this, everything after breaks. There are no shortcuts."},
+        {"type": "text", "content": "Duration: 21-28 days for Instagram/Threads. 9 days for TikTok. This phase is boring on purpose."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Instagram Warmup (21-28 Days)"},
+          {"type": "subheader", "content": "What to POST"},
+          {"type": "bullets", "items": [
+            "2-3 carousels per week (face-focused, lifestyle, clean, SFW)",
+            "2-3 stories per week (selfies, food, random daily stuff)",
+            "No questions, no CTA, no suggestive captions",
+            "No links, no selling"
+          ]},
+          {"type": "subheader", "content": "What to DO Daily"},
+          {"type": "bullets", "items": [
+            "Scroll for 15-30 minutes",
+            "Like posts from English-speaking creators",
+            "Comment occasionally (normal comments only)",
+            "Watch Reels and Stories naturally",
+            "Follow 5-10 accounts per day max"
+          ]}
+        ], "right": [
+          {"type": "subheader", "content": "TikTok Warmup (9 Days)"},
+          {"type": "subheader", "content": "Day 1-3"},
+          {"type": "bullets", "items": [
+            "No posting, no bio changes",
+            "Scroll and watch content for 20-30 min/day",
+            "Like 10-15 videos per session",
+            "Follow 3-5 accounts per day"
+          ]},
+          {"type": "subheader", "content": "Day 4-6"},
+          {"type": "bullets", "items": [
+            "Add profile photo and bio",
+            "Post first piece of content (safe, simple)",
+            "Continue scrolling and engaging"
+          ]},
+          {"type": "subheader", "content": "Day 7-9"},
+          {"type": "bullets", "items": [
+            "Post 2-3 more pieces of content",
+            "Increase engagement slightly",
+            "Account is ready for regular posting"
+          ]}
+        ]},
+        {"type": "panel", "title": "Critical Rule", "content": "If you rush the warmup, everything after breaks. There are no shortcuts. The platforms are watching your first 21 days more closely than any other period. Behave like a normal person, not a marketer.", "border": "#FF3131"}
+      ]
+    },
+    {
+      "header": "Lesson 4: Warmup Mistakes That Get You Banned",
+      "blocks": [
+        {"type": "text", "content": "Most account bans happen during the warmup phase because people cannot resist skipping steps. This lesson covers every common mistake and why each one triggers platform flags."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "Mistakes That Kill Accounts"},
+          {"type": "bullets", "items": [
+            "Posting content on Day 1 (the platform has no trust in you yet)",
+            "Adding a link in bio during warmup (screams promotional account)",
+            "Following 50+ accounts per day (bot behavior)",
+            "Liking hundreds of posts in a session (automated pattern)",
+            "Using the same caption style on every post",
+            "Posting suggestive content before the account has trust",
+            "Using hashtags aggressively during warmup"
+          ]},
+          {"type": "panel", "title": "The Invisible Flag", "content": "You will NOT get a warning. Platforms silently reduce your reach. You will not know you are shadowbanned until weeks later when nothing grows. Prevention is the only cure.", "border": "#FF3131"}
+        ], "right": [
+          {"type": "subheader", "content": "What Winners Do Instead"},
+          {"type": "bullets", "items": [
+            "Wait 3-5 days before first post",
+            "Keep all warmup content clean and casual",
+            "Engage like a real user, not a marketer",
+            "Add link in bio only after week 3",
+            "Keep follow/unfollow activity low and natural",
+            "Post slowly and increase frequency gradually",
+            "Let the algorithm come to you — don't force it"
+          ]},
+          {"type": "good_example", "content": "Week 1: Scroll, like, follow 5 accounts. Week 2: First carousel post, 2 stories. Week 3: 3 carousels, daily stories. Week 4: Add link in bio, start Reels."},
+          {"type": "bad_example", "content": "Day 1: 5 posts, 100 follows, link in bio, hashtag spam.\nResult: Shadowban within 48 hours. Account is dead."}
+        ]}
+      ]
+    }
+  ],
+  "summary_points": [
+    "One dedicated phone per persona — never share devices or IP addresses",
+    "Usernames must be human-sounding, memorable, and consistent across platforms",
+    "No links, no selling language, and no suggestive content during warmup",
+    "Instagram warmup takes 21-28 days — TikTok takes 9 days — no shortcuts",
+    "Behave like a real person: scroll, like, comment naturally before posting",
+    "Most bans happen during warmup because people rush — patience is mandatory"
+  ]
+}

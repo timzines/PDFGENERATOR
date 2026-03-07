@@ -1,0 +1,39 @@
+{
+  "title": "Module 10\nContinued on Discord",
+  "subtitle": "Advanced Training, NSFW Content, and Community Support",
+  "output_filename": "Module-10-Continued-On-Discord.pdf",
+  "sections": [
+    {
+      "header": "Lesson 1: What Comes Next",
+      "blocks": [
+        {"type": "text", "content": "Congratulations on completing Modules 1-9. You now have the complete foundation: model creation, content pipeline, platform growth, account safety, and monetization systems. Everything you need to launch and run a profitable AI influencer business."},
+        {"type": "text", "content": "Module 10 continues on Discord. The advanced training covers NSFW content creation, advanced monetization strategies, and ongoing community support that cannot be delivered in a static PDF format."},
+        {"type": "two_column", "left": [
+          {"type": "subheader", "content": "What You'll Find on Discord"},
+          {"type": "bullets", "items": [
+            "NSFW image and video creation techniques",
+            "Advanced content strategies that push beyond SFW",
+            "Live Q&A sessions and real-time support",
+            "Community of operators sharing strategies and results",
+            "Template libraries, prompt databases, and shared resources",
+            "Direct feedback on your pages from experienced operators"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Discord server invite graphic or screenshot of channel structure"}
+        ], "right": [
+          {"type": "subheader", "content": "Why Discord?"},
+          {"type": "text", "content": "NSFW content and advanced monetization strategies require a platform that allows open discussion without content restrictions. Discord provides the privacy, flexibility, and real-time interaction that this material demands."},
+          {"type": "text", "content": "Additionally, this industry evolves constantly. Platform rules change, new AI tools launch, and strategies that work today may need adjustment tomorrow. Discord allows the community to stay current in a way that static PDFs cannot."},
+          {"type": "panel", "title": "How to Join", "content": "Access to the Discord server is included with your course purchase. Check your purchase confirmation email for the invite link. If you don't have it, reach out to support.", "border": "#39FF14"}
+        ]},
+        {"type": "panel", "title": "Before You Move On", "content": "Make sure you have completed Modules 1-9 and have your first page set up before jumping into advanced content. The fundamentals must be solid before you scale into NSFW and advanced strategies. Build the foundation first.", "border": "#FF3131"}
+      ]
+    }
+  ],
+  "summary_points": [
+    "Modules 1-9 give you the complete foundation to launch and monetize an AI influencer",
+    "Module 10 continues on Discord with NSFW content and advanced strategies",
+    "Discord provides real-time support, community feedback, and evolving strategies",
+    "Complete Modules 1-9 and set up your first page before moving to advanced content",
+    "Check your purchase confirmation for the Discord invite link"
+  ]
+}
