@@ -1,227 +1,431 @@
 {
   "title": "Module 8\nAccount Safety & Precautions",
   "subtitle": "Learn How to Protect Your Social Media Accounts from Bans and What to Do if It Happens",
-  "output_filename": "Module-08-Account-Safety.pdf",
+  "output_filename": "Module 8 - Account Safety & Precautions/Module 8 - Account Safety & Precautions.pdf",
   "sections": [
     {
       "header": "Lesson 1: Understanding Platform Bans & Shadowbans",
       "blocks": [
-        {"type": "text", "content": "There are two types of bans: visible bans and invisible bans. Visible bans are when the platform tells you directly. Invisible bans (shadowbans) are far more dangerous because you will not know it happened until your growth flatlines. Understanding both is critical to protecting your accounts."},
-        {"type": "panel", "title": "The 2025 Instagram AI Moderation Shift", "content": "In 2025, Meta deployed LLaMA-based AI moderation that fundamentally changed the landscape. This system is hyper-sensitive to AI-generated content and caused a mass ban wave from May through August 2025. Key implications: Instagram actively flags AI-generated images, IMEI/device bans can affect ALL accounts linked to a banned phone, and false positives are common (even legitimate accounts get caught). This is not going away — it is the new normal. Every safety habit in this module exists because of this reality.", "border": "#FF3131"},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Types of Platform Actions"},
-          {"type": "bullets", "items": [
-            "Content removal — single post taken down (warning level)",
-            "Temporary restriction — limited features for 24-72 hours",
-            "Shadowban — content stops being shown to non-followers (invisible, most dangerous)",
-            "Account suspension — temporary lockout requiring appeal",
-            "Permanent ban — account deleted, usually not recoverable",
-            "Device/IMEI ban — ALL accounts on that device are affected (Instagram-specific, post-2025)"
-          ]},
-          {"type": "subheader", "content": "What Triggers Flags"},
-          {"type": "bullets", "items": [
-            "Posting suggestive content too early (no trust built)",
-            "Aggressive follow/unfollow behavior (bot-like patterns)",
-            "Spam-like posting patterns (too much, too fast)",
-            "Link sharing during warmup phase",
-            "Multiple accounts on same device/IP behaving identically",
-            "Reports from other users",
-            "AI-generated content detected by platform moderation",
-            "Using banned hashtags on Instagram",
-            "Third-party apps that require Instagram login"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Shadowban Detection"},
-          {"type": "text", "content": "A shadowban will NOT show a notification. Your content simply stops reaching new people. The only way to detect it is by monitoring your metrics daily."},
-          {"type": "bullets", "items": [
-            "Instagram: Check Insights — if 'reach from non-followers' drops to near zero, you are likely shadowbanned",
-            "Instagram: Check Account Status in Settings → Account → Account Status weekly for any flags",
-            "TikTok: If views suddenly drop from thousands to double digits, check notifications for content violations",
-            "Twitter/X: Check account health at shadowban.yuzurisa.com — warmup continues until ALL indicators are green",
-            "Reddit: If your posts get zero upvotes consistently in subreddits where they used to perform, you may be site-wide shadowbanned"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Instagram Insights comparison: Left shows healthy reach (steady 'reach from non-followers' graph). Right shows shadowbanned reach (graph drops to near zero). Annotate the difference clearly."},
-          {"type": "panel", "title": "Early Detection Rule", "content": "By the time you notice a shadowban, it has usually been active for days. Check your metrics every single day. Early detection means faster recovery. Late detection means weeks of lost growth.", "border": "#FF3131"}
-        ]}
+        {
+          "type": "text",
+          "content": "There are two types of bans: visible bans and invisible bans. Visible bans are when the platform tells you directly. Invisible bans (shadowbans) are far more dangerous because you will not know it happened until your growth flatlines. Understanding both is critical to protecting your accounts."
+        },
+        {
+          "type": "panel",
+          "title": "The 2025 Instagram AI Moderation Shift",
+          "content": "In 2025, Meta deployed LLaMA-based AI moderation that fundamentally changed the landscape. This system is hyper-sensitive to AI-generated content and caused a mass ban wave from May through August 2025. Key implications: Instagram actively flags AI-generated images, IMEI/device bans can affect ALL accounts linked to a banned phone, and false positives are common (even legitimate accounts get caught). This is not going away — it is the new normal. Every safety habit in this module exists because of this reality.",
+          "border": "#FF3131"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Types of Platform Actions"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Content removal — single post taken down (warning level)",
+                "Temporary restriction — limited features for 24-72 hours",
+                "Shadowban — content stops being shown to non-followers (invisible, most dangerous)",
+                "Account suspension — temporary lockout requiring appeal",
+                "Permanent ban — account deleted, usually not recoverable",
+                "Device/IMEI ban — ALL accounts on that device are affected (Instagram-specific, post-2025)"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "What Triggers Flags"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Posting suggestive content too early (no trust built)",
+                "Aggressive follow/unfollow behavior (bot-like patterns)",
+                "Spam-like posting patterns (too much, too fast)",
+                "Link sharing during warmup phase",
+                "Multiple accounts on same device/IP behaving identically",
+                "Reports from other users",
+                "AI-generated content detected by platform moderation",
+                "Using banned hashtags on Instagram",
+                "Third-party apps that require Instagram login"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Shadowban Detection"
+            },
+            {
+              "type": "text",
+              "content": "A shadowban will NOT show a notification. Your content simply stops reaching new people. The only way to detect it is by monitoring your metrics daily."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram: Check Insights — if 'reach from non-followers' drops to near zero, you are likely shadowbanned",
+                "Instagram: Check Account Status in Settings → Account → Account Status weekly for any flags",
+                "TikTok: If views suddenly drop from thousands to double digits, check notifications for content violations",
+                "Twitter/X: Check account health at shadowban.yuzurisa.com — warmup continues until ALL indicators are green",
+                "Reddit: If your posts get zero upvotes consistently in subreddits where they used to perform, you may be site-wide shadowbanned"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Instagram Insights comparison: Left shows healthy reach (steady 'reach from non-followers' graph). Right shows shadowbanned reach (graph drops to near zero). Annotate the difference clearly."
+            },
+            {
+              "type": "panel",
+              "title": "Early Detection Rule",
+              "content": "By the time you notice a shadowban, it has usually been active for days. Check your metrics every single day. Early detection means faster recovery. Late detection means weeks of lost growth.",
+              "border": "#FF3131"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 2: Daily Safety Habits",
       "blocks": [
-        {"type": "text", "content": "Prevention is infinitely easier than recovery. These daily habits keep your accounts healthy and your algorithmic trust high. Treat these as non-negotiable rules, not suggestions. Every operator who has lost an account wishes they had been more disciplined with these habits."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Daily Trust Signals"},
-          {"type": "bullets", "items": [
-            "Scroll your feed for 10-15 minutes before posting anything",
-            "Like and comment on other creators' posts genuinely",
-            "Reply to every comment on your own posts (engagement signal)",
-            "Watch Stories and Reels from accounts you follow",
-            "Keep follow/unfollow activity low — max 10-15 per day",
-            "Post at consistent times each day (algorithm learns your schedule)"
-          ]},
-          {"type": "subheader", "content": "Content Safety Rules"},
-          {"type": "bullets", "items": [
-            "Never push content boundaries on Instagram or TikTok",
-            "Keep swimwear/lingerie content to absolute minimum on strict platforms",
-            "No sexual captions, no suggestive language, no innuendo",
-            "If unsure whether content is safe, do not post it — always err on caution",
-            "Instagram is your revenue engine — protect it above everything",
-            "Always add 2% grain to AI images before posting (Module 3)"
-          ]},
-          {"type": "subheader", "content": "Content Backup Strategy"},
-          {"type": "text", "content": "If an account gets banned, you lose all posted content. A proper backup strategy prevents losing weeks of work."},
-          {"type": "bullets", "items": [
-            "Keep every posted image in your /Posted/ archive folder",
-            "Save all caption text in a separate document",
-            "Screenshot your best-performing posts and their metrics",
-            "Back up your content library to cloud storage (Google Drive, Dropbox)",
-            "Never rely on platform storage — always have local copies of everything"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Technical Safety"},
-          {"type": "bullets", "items": [
-            "Never switch between accounts rapidly on the same device",
-            "Log out of personal accounts before using persona accounts",
-            "Keep VPN consistent — do not jump between locations mid-session",
-            "Do not use third-party apps that require Instagram login",
-            "Avoid automation tools that violate platform ToS",
-            "Keep your phone's OS and apps updated at all times"
-          ]},
-          {"type": "subheader", "content": "Platform-Specific Safety Rules"},
-          {"type": "bullets", "items": [
-            "Instagram: Engage 10 minutes before AND after posting. Captions typed manually, never copy-pasted. Stay under 150 likes/hour, 60 comments/hour, 60 follows/hour",
-            "TikTok: Browse FYP at least 20 minutes daily. Wait 4+ hours between posts. Never batch upload. Captions typed manually",
-            "Twitter/X: Each account must use one device and one IP. Enable 2FA. Mark media as sensitive if needed. Check shadowban status weekly",
-            "Reddit: Never post links or promotions until karma is built. All comments must sound human and non-promotional. Avoid ChatGPT-sounding responses"
-          ]},
-          {"type": "subheader", "content": "Metrics to Monitor Daily"},
-          {"type": "bullets", "items": [
-            "Reach from non-followers (should be steady or growing)",
-            "Engagement rate per post (likes + comments / followers)",
-            "Story views (should be 10-30% of follower count)",
-            "Profile visits (should be steady or growing)",
-            "Any warning notifications from the platform",
-            "Instagram Account Status (Settings → Account → Account Status)"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Daily safety checklist graphic: Morning routine showing timeline of trust signals, content rules, and metrics to monitor in a clean, scannable checklist format."}
-        ]}
+        {
+          "type": "text",
+          "content": "Prevention is infinitely easier than recovery. These daily habits keep your accounts healthy and your algorithmic trust high. Treat these as non-negotiable rules, not suggestions. Every operator who has lost an account wishes they had been more disciplined with these habits."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Daily Trust Signals"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Scroll your feed for 10-15 minutes before posting anything",
+                "Like and comment on other creators' posts genuinely",
+                "Reply to every comment on your own posts (engagement signal)",
+                "Watch Stories and Reels from accounts you follow",
+                "Keep follow/unfollow activity low — max 10-15 per day",
+                "Post at consistent times each day (algorithm learns your schedule)"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Content Safety Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Never push content boundaries on Instagram or TikTok",
+                "Keep swimwear/lingerie content to absolute minimum on strict platforms",
+                "No sexual captions, no suggestive language, no innuendo",
+                "If unsure whether content is safe, do not post it — always err on caution",
+                "Instagram is your revenue engine — protect it above everything",
+                "Always add 2% grain to AI images before posting (Module 3)"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Content Backup Strategy"
+            },
+            {
+              "type": "text",
+              "content": "If an account gets banned, you lose all posted content. A proper backup strategy prevents losing weeks of work."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Keep every posted image in your /Posted/ archive folder",
+                "Save all caption text in a separate document",
+                "Screenshot your best-performing posts and their metrics",
+                "Back up your content library to cloud storage (Google Drive, Dropbox)",
+                "Never rely on platform storage — always have local copies of everything"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Technical Safety"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Never switch between accounts rapidly on the same device",
+                "Log out of personal accounts before using persona accounts",
+                "Keep VPN consistent — do not jump between locations mid-session",
+                "Do not use third-party apps that require Instagram login",
+                "Avoid automation tools that violate platform ToS",
+                "Keep your phone's OS and apps updated at all times"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Platform-Specific Safety Rules"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram: Engage 10 minutes before AND after posting. Captions typed manually, never copy-pasted. Stay under 150 likes/hour, 60 comments/hour, 60 follows/hour",
+                "TikTok: Browse FYP at least 20 minutes daily. Wait 4+ hours between posts. Never batch upload. Captions typed manually",
+                "Twitter/X: Each account must use one device and one IP. Enable 2FA. Mark media as sensitive if needed. Check shadowban status weekly",
+                "Reddit: Never post links or promotions until karma is built. All comments must sound human and non-promotional. Avoid ChatGPT-sounding responses"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Metrics to Monitor Daily"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Reach from non-followers (should be steady or growing)",
+                "Engagement rate per post (likes + comments / followers)",
+                "Story views (should be 10-30% of follower count)",
+                "Profile visits (should be steady or growing)",
+                "Any warning notifications from the platform",
+                "Instagram Account Status (Settings → Account → Account Status)"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "IMAGE PLACEHOLDER",
+              "content": "Daily safety checklist graphic: Morning routine showing timeline of trust signals, content rules, and metrics to monitor in a clean, scannable checklist format."
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 3: What to Do If You Get Banned",
       "blocks": [
-        {"type": "text", "content": "Despite best practices, bans happen. They are part of operating in this space. What separates winners from quitters is how fast and smart you respond. This lesson covers exact steps for each scenario, including appeal templates you can use immediately."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "If You Get Shadowbanned"},
-          {"type": "bullets", "items": [
-            "STOP posting immediately — do not try to 'post through it'",
-            "Reduce all activity to passive scrolling only for 48-72 hours",
-            "Remove any recently posted content that may have triggered it",
-            "Check if you violated any content guidelines recently",
-            "After 48-72 hours, resume posting slowly (50% of normal frequency)",
-            "Monitor reach metrics daily — shadowbans typically lift in 7-14 days",
-            "If reach does not recover after 14 days, the account may be permanently suppressed"
-          ]},
-          {"type": "subheader", "content": "If You Get Suspended"},
-          {"type": "bullets", "items": [
-            "Submit an appeal immediately through the platform's process",
-            "Be polite, professional, and brief in your appeal",
-            "Do not create a new account on the same device/IP while suspended",
-            "Wait for the appeal — most platforms respond within 24-72 hours",
-            "If first appeal fails, wait 30 days and try again with different wording"
-          ]},
-          {"type": "subheader", "content": "Appeal Template — Instagram"},
-          {"type": "good_example", "content": "Subject: Account Review Request\n\nHi Instagram team,\n\nMy account @[username] was recently restricted/suspended. I believe this may have been flagged in error. I always try to follow community guidelines and post appropriate content.\n\nI would really appreciate it if you could review my account. I am happy to remove any content that may have caused an issue.\n\nThank you for your time.\n[Name]"},
-          {"type": "subheader", "content": "Appeal Template — TikTok"},
-          {"type": "good_example", "content": "Hi TikTok team,\n\nMy account @[username] was restricted. I believe this was a mistake. I follow community guidelines and only post appropriate content. Could you please review my account?\n\nThank you.\n[Name]"},
-          {"type": "panel", "title": "Appeal Strategy", "content": "Appeals should be short, polite, and non-confrontational. Never argue, never threaten, never mention other accounts. Sound like a confused normal user, not an angry marketer. This tone has the highest success rate.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "If You Get Permanently Banned"},
-          {"type": "bullets", "items": [
-            "Accept the loss — do not waste time on repeated appeals (one attempt is fine)",
-            "Analyze what went wrong so you do not repeat the mistake",
-            "Start fresh with a NEW persona (different look, name, niche)",
-            "Use a completely new device, phone number, and IP address",
-            "Do NOT try to recreate the same persona — platforms detect this",
-            "Follow the warmup protocol from Module 5 with extra caution",
-            "Your content library and systems still exist — rebuilding is faster than starting from zero"
-          ]},
-          {"type": "subheader", "content": "Device/IMEI Ban Recovery (Instagram)"},
-          {"type": "text", "content": "Since 2025, Instagram can ban at the device level. This means every account on that phone is compromised. If you suspect a device ban:"},
-          {"type": "bullets", "items": [
-            "Do NOT create any new accounts on that device",
-            "All existing accounts on that device should be considered at risk",
-            "You need a completely new phone (factory reset alone may not work)",
-            "New SIM, new IP, new email — everything must be fresh",
-            "Consider using a cloud phone solution (GeeLark) to avoid future device bans"
-          ]},
-          {"type": "panel", "title": "Recovery Timeline", "content": "Shadowban: 7-14 days of reduced activity, then gradual return.\nTemporary suspension: 24-72 hours for appeal response.\nPermanent ban: Full restart required — new device, new persona, 21-28 day warmup.\nDevice ban: New phone required.", "border": "#39FF14"},
-          {"type": "subheader", "content": "The Rebuild Mindset"},
-          {"type": "text", "content": "A ban is not the end. It is a setback. If your system works, you can rebuild. The knowledge, content pipeline, and processes you have built do not disappear because one account does. Experienced operators budget for account losses — they always have backup accounts warming up."},
-          {"type": "bullets", "items": [
-            "Always have at least one backup account warming up on a separate device",
-            "Keep your content library backed up locally and in the cloud",
-            "Document your best-performing strategies so you can replicate them quickly",
-            "Build your system to be account-independent — the system survives any single ban",
-            "The operators making real money have been banned multiple times — they just rebuild faster each time"
-          ]},
-          {"type": "panel", "title": "Mindset", "content": "Getting banned is not a sign of failure. It is a sign that you are operating in a competitive space. The winners are the ones who prepare for bans, respond quickly, and rebuild smarter. The quitters are the ones who take it personally.", "border": "#39FF14"}
-        ]}
+        {
+          "type": "text",
+          "content": "Despite best practices, bans happen. They are part of operating in this space. What separates winners from quitters is how fast and smart you respond. This lesson covers exact steps for each scenario, including appeal templates you can use immediately."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "If You Get Shadowbanned"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "STOP posting immediately — do not try to 'post through it'",
+                "Reduce all activity to passive scrolling only for 48-72 hours",
+                "Remove any recently posted content that may have triggered it",
+                "Check if you violated any content guidelines recently",
+                "After 48-72 hours, resume posting slowly (50% of normal frequency)",
+                "Monitor reach metrics daily — shadowbans typically lift in 7-14 days",
+                "If reach does not recover after 14 days, the account may be permanently suppressed"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "If You Get Suspended"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Submit an appeal immediately through the platform's process",
+                "Be polite, professional, and brief in your appeal",
+                "Do not create a new account on the same device/IP while suspended",
+                "Wait for the appeal — most platforms respond within 24-72 hours",
+                "If first appeal fails, wait 30 days and try again with different wording"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Appeal Template — Instagram"
+            },
+            {
+              "type": "good_example",
+              "content": "Subject: Account Review Request\n\nHi Instagram team,\n\nMy account @[username] was recently restricted/suspended. I believe this may have been flagged in error. I always try to follow community guidelines and post appropriate content.\n\nI would really appreciate it if you could review my account. I am happy to remove any content that may have caused an issue.\n\nThank you for your time.\n[Name]"
+            },
+            {
+              "type": "subheader",
+              "content": "Appeal Template — TikTok"
+            },
+            {
+              "type": "good_example",
+              "content": "Hi TikTok team,\n\nMy account @[username] was restricted. I believe this was a mistake. I follow community guidelines and only post appropriate content. Could you please review my account?\n\nThank you.\n[Name]"
+            },
+            {
+              "type": "panel",
+              "title": "Appeal Strategy",
+              "content": "Appeals should be short, polite, and non-confrontational. Never argue, never threaten, never mention other accounts. Sound like a confused normal user, not an angry marketer. This tone has the highest success rate.",
+              "border": "#39FF14"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "If You Get Permanently Banned"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Accept the loss — do not waste time on repeated appeals (one attempt is fine)",
+                "Analyze what went wrong so you do not repeat the mistake",
+                "Start fresh with a NEW persona (different look, name, niche)",
+                "Use a completely new device, phone number, and IP address",
+                "Do NOT try to recreate the same persona — platforms detect this",
+                "Follow the warmup protocol from Module 5 with extra caution",
+                "Your content library and systems still exist — rebuilding is faster than starting from zero"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Device/IMEI Ban Recovery (Instagram)"
+            },
+            {
+              "type": "text",
+              "content": "Since 2025, Instagram can ban at the device level. This means every account on that phone is compromised. If you suspect a device ban:"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Do NOT create any new accounts on that device",
+                "All existing accounts on that device should be considered at risk",
+                "You need a completely new phone (factory reset alone may not work)",
+                "New SIM, new IP, new email — everything must be fresh",
+                "Consider using a cloud phone solution (GeeLark) to avoid future device bans"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Recovery Timeline",
+              "content": "Shadowban: 7-14 days of reduced activity, then gradual return.\nTemporary suspension: 24-72 hours for appeal response.\nPermanent ban: Full restart required — new device, new persona, 21-28 day warmup.\nDevice ban: New phone required.",
+              "border": "#39FF14"
+            },
+            {
+              "type": "subheader",
+              "content": "The Rebuild Mindset"
+            },
+            {
+              "type": "text",
+              "content": "A ban is not the end. It is a setback. If your system works, you can rebuild. The knowledge, content pipeline, and processes you have built do not disappear because one account does. Experienced operators budget for account losses — they always have backup accounts warming up."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Always have at least one backup account warming up on a separate device",
+                "Keep your content library backed up locally and in the cloud",
+                "Document your best-performing strategies so you can replicate them quickly",
+                "Build your system to be account-independent — the system survives any single ban",
+                "The operators making real money have been banned multiple times — they just rebuild faster each time"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Mindset",
+              "content": "Getting banned is not a sign of failure. It is a sign that you are operating in a competitive space. The winners are the ones who prepare for bans, respond quickly, and rebuild smarter. The quitters are the ones who take it personally.",
+              "border": "#39FF14"
+            }
+          ]
+        }
       ]
     },
     {
       "header": "Lesson 4: Multi-Account Safety Rules",
       "blocks": [
-        {"type": "text", "content": "Running multiple accounts is the highest-risk activity in this business. Platforms are designed to detect multi-account operations. One mistake can cascade and take down all your accounts simultaneously. These rules are absolute and non-negotiable."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Device Separation (Non-Negotiable)"},
-          {"type": "bullets", "items": [
-            "One phone per persona (ideal and safest)",
-            "Max 2 accounts per device (absolute maximum — still risky)",
-            "TikTok: max 3 accounts per device",
-            "Never log into two personas in the same app session",
-            "Never switch between accounts rapidly — wait 30+ minutes between logins",
-            "Factory reset devices completely if reusing hardware for a new persona"
-          ]},
-          {"type": "subheader", "content": "IP & Network Separation"},
-          {"type": "bullets", "items": [
-            "Each persona should use a different IP address",
-            "Use mobile data (different SIM) or separate VPN/proxy profiles",
-            "Never access two personas from the same WiFi network at the same time",
-            "Keep VPN locations consistent per persona — do not jump between cities",
-            "Residential or mobile proxies are safest for multi-account operations",
-            "Ensure timezone matches your IP geolocation (timezone mismatch is a detection signal)"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "Identity Separation"},
-          {"type": "bullets", "items": [
-            "Each persona gets a unique email address",
-            "Each persona gets a unique phone number",
-            "Never cross-follow between your own accounts",
-            "Never share links between your own accounts",
-            "Never mention one persona from another",
-            "Different content niches, posting schedules, and caption styles"
-          ]},
-          {"type": "subheader", "content": "What Gets Multi-Accounts Caught"},
-          {"type": "bullets", "items": [
-            "Same IP address across accounts (most common cause)",
-            "Same device fingerprint (IMEI, browser fingerprint, etc.)",
-            "Cross-following between your own accounts",
-            "Identical posting patterns (same times, same hashtags, same caption style)",
-            "Shared link-in-bio URLs across accounts",
-            "Logging into multiple accounts from one device in rapid succession",
-            "Synchronized activity patterns (all accounts post at the same time daily)"
-          ]},
-          {"type": "panel", "title": "Nuclear Rule", "content": "If one account gets banned, do NOT access your other accounts from the same device or IP for at least 72 hours. A ban investigation can cascade to linked accounts. Quarantine immediately. This is the single most important multi-account safety rule.", "border": "#FF3131"},
-          {"type": "subheader", "content": "Proactive Account Health Monitoring"},
-          {"type": "bullets", "items": [
-            "Check Instagram Account Status (Settings → Account → Account Status) weekly",
-            "Check Twitter/X shadowban status weekly using shadowban.yuzurisa.com",
-            "Monitor reach metrics on all platforms daily — any sudden drop signals trouble",
-            "Set calendar reminders for weekly health checks on all accounts",
-            "Keep a log of any platform warnings or content removals per account"
-          ]}
-        ]}
+        {
+          "type": "text",
+          "content": "Running multiple accounts is the highest-risk activity in this business. Platforms are designed to detect multi-account operations. One mistake can cascade and take down all your accounts simultaneously. These rules are absolute and non-negotiable."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Device Separation (Non-Negotiable)"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "One phone per persona (ideal and safest)",
+                "Max 2 accounts per device (absolute maximum — still risky)",
+                "TikTok: max 3 accounts per device",
+                "Never log into two personas in the same app session",
+                "Never switch between accounts rapidly — wait 30+ minutes between logins",
+                "Factory reset devices completely if reusing hardware for a new persona"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "IP & Network Separation"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Each persona should use a different IP address",
+                "Use mobile data (different SIM) or separate VPN/proxy profiles",
+                "Never access two personas from the same WiFi network at the same time",
+                "Keep VPN locations consistent per persona — do not jump between cities",
+                "Residential or mobile proxies are safest for multi-account operations",
+                "Ensure timezone matches your IP geolocation (timezone mismatch is a detection signal)"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Identity Separation"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Each persona gets a unique email address",
+                "Each persona gets a unique phone number",
+                "Never cross-follow between your own accounts",
+                "Never share links between your own accounts",
+                "Never mention one persona from another",
+                "Different content niches, posting schedules, and caption styles"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "What Gets Multi-Accounts Caught"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Same IP address across accounts (most common cause)",
+                "Same device fingerprint (IMEI, browser fingerprint, etc.)",
+                "Cross-following between your own accounts",
+                "Identical posting patterns (same times, same hashtags, same caption style)",
+                "Shared link-in-bio URLs across accounts",
+                "Logging into multiple accounts from one device in rapid succession",
+                "Synchronized activity patterns (all accounts post at the same time daily)"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Nuclear Rule",
+              "content": "If one account gets banned, do NOT access your other accounts from the same device or IP for at least 72 hours. A ban investigation can cascade to linked accounts. Quarantine immediately. This is the single most important multi-account safety rule.",
+              "border": "#FF3131"
+            },
+            {
+              "type": "subheader",
+              "content": "Proactive Account Health Monitoring"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Check Instagram Account Status (Settings → Account → Account Status) weekly",
+                "Check Twitter/X shadowban status weekly using shadowban.yuzurisa.com",
+                "Monitor reach metrics on all platforms daily — any sudden drop signals trouble",
+                "Set calendar reminders for weekly health checks on all accounts",
+                "Keep a log of any platform warnings or content removals per account"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],

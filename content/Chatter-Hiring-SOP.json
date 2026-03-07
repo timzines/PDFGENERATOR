@@ -1,7 +1,7 @@
 {
   "title": "Chatter Hiring SOP",
   "subtitle": "Recruitment and Vetting Manual",
-  "output_filename": "Chatter-Hiring-SOP.pdf",
+  "output_filename": "SOPs/Chatter Hiring SOP.pdf",
   "sections": [
     {
       "header": "Intro: Why Hiring Matters",
@@ -229,7 +229,7 @@
             "Second stage: Limited supervised chatting, no financial controls",
             "Final stage: Full chatting access after trust is built"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         }
       ]
     },
