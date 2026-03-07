@@ -402,39 +402,39 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    gap: 0;
+    gap: 12px;
+    margin-bottom: 10px;
 }
 
 .cover-brand {
     display: inline-block;
     border: 1px solid rgba(196,154,133,0.4);
     border-radius: 30px;
-    padding: 11px 28px;
+    padding: 9px 22px;
     color: #c49a85;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     background: rgba(196,154,133,0.06);
 }
 
-.cover-brand-sep {
-    width: 1px;
-    height: 28px;
-    background: rgba(196,154,133,0.3);
-    margin: 0 16px;
+.cover-buttons-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
 }
 
 .cover-discord {
     display: inline-block;
     border: 1px solid rgba(140,160,196,0.4);
     border-radius: 30px;
-    padding: 11px 28px;
+    padding: 9px 22px;
     color: #8ca0c4;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     background: rgba(140,160,196,0.06);
     text-decoration: none;
@@ -444,19 +444,19 @@ body {
     display: inline-block;
     border: 1px solid rgba(34,120,60,0.5);
     border-radius: 30px;
-    padding: 11px 28px;
+    padding: 9px 22px;
     color: #2d8a4e;
-    font-size: 14px;
+    font-size: 11px;
     font-weight: 500;
-    letter-spacing: 1.5px;
+    letter-spacing: 1.2px;
     text-transform: uppercase;
     background: rgba(34,120,60,0.06);
     text-decoration: none;
 }
 
 .cover-btn-arrow {
-    font-size: 12px;
-    margin-left: 6px;
+    font-size: 10px;
+    margin-left: 5px;
     opacity: 0.7;
 }
 
@@ -1010,9 +1010,9 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             <div class="cover-subtitle">{subtitle}</div>
             <div class="cover-brand-row">
                 <div class="cover-brand">{BRAND_NAME}</div>
-                <div class="cover-brand-sep"></div>
+            </div>
+            <div class="cover-buttons-row">
                 <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord <span class="cover-btn-arrow">&rarr;</span></a>
-                <div class="cover-brand-sep"></div>
                 <a class="cover-fanvue-btn" href="{FANVUE_URL}" target="_blank">Sign Up To Fanvue <span class="cover-btn-arrow">&rarr;</span></a>
             </div>
         </div>
