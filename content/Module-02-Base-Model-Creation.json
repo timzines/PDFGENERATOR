@@ -164,18 +164,18 @@
         },
         {
           "type": "text",
-          "content": "There are two approaches to generating your base model. Both work — choose the one that fits your situation. Regardless of which route you take, the end goal is the same: two solid reference images (face and body) that you will use for every generation going forward."
+          "content": "There are two approaches people use to generate their base model. We strongly recommend the Ethical Route — building your persona from scratch. The Shady Route is included here only so you are aware it exists and understand how others do it. We do not endorse or recommend it. Regardless of which route someone takes, the end goal is the same: two solid reference images (face and body) that you will use for every generation going forward."
         },
         {
           "type": "two_column",
           "left": [
             {
               "type": "subheader",
-              "content": "The Shady Route"
+              "content": "The Shady Route (Not Recommended)"
             },
             {
               "type": "text",
-              "content": "This approach uses a real reference image from Pinterest or similar platforms as a starting point, then modifies the appearance so the final result looks nothing like the original."
+              "content": "We do not recommend this approach. Some operators use a real reference image from Pinterest or similar platforms as a starting point, then modify the appearance so the final result looks nothing like the original. This is included for awareness only — we advise against it."
             },
             {
               "type": "bullets",
@@ -191,14 +191,14 @@
             {
               "type": "panel",
               "title": "Do NOT Clone the Reference",
-              "content": "You must change up the appearance so it looks nothing like the original reference image. Do not create an exact clone — that is not allowed and can get you in serious trouble. Change the hair, features, and overall look. The reference is just a starting point for a description, not a face to copy.",
+              "content": "We do not condone or recommend this method. Using someone's likeness as a base — even if modified — carries real legal and ethical risks. If you choose to go this route despite our recommendation, you must change the appearance so it looks nothing like the original. Do not create an exact clone — that is not allowed and can get you in serious trouble. The Ethical Route below is the recommended approach.",
               "border": "#FF3131"
             }
           ],
           "right": [
             {
               "type": "subheader",
-              "content": "The Ethical Route"
+              "content": "The Ethical Route (Recommended)"
             },
             {
               "type": "text",
