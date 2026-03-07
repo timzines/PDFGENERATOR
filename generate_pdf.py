@@ -412,7 +412,7 @@ body {
     width: 50px;
     height: 2px;
     background: linear-gradient(90deg, #c49a85, transparent);
-    margin-bottom: 14px;
+    margin-bottom: 28px;
     border-radius: 1px;
 }
 
