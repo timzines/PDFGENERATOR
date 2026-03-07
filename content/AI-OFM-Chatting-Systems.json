@@ -1,7 +1,7 @@
 {
   "title": "AI OFM Chatting System",
   "subtitle": "Chatting Structure & Revenue Logic",
-  "output_filename": "AI-OFM-Chatting-Systems.pdf",
+  "output_filename": "SOPs/AI OFM Chatting Systems.pdf",
   "sections": [
     {
       "header": "Why Chatting Creates Revenue",
@@ -131,7 +131,7 @@
             "New subscribers — second",
             "Unanswered messages — third"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         },
         {
           "type": "panel",
@@ -265,7 +265,7 @@
             "Upsell — increases value",
             "Retention — increases lifetime value"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         }
       ]
     },
@@ -355,7 +355,7 @@
     "Fans spend when they feel safe, understood, curious, and chosen",
     "Message priority: Whales first, new subscribers second, unanswered third",
     "Profiling replaces guessing — gather data naturally through conversation",
-    "All chats follow: Rapport \u2192 Tension \u2192 First Sale \u2192 Upsell \u2192 Retention",
+    "All chats follow: Rapport → Tension → First Sale → Upsell → Retention",
     "Never beg, never rush, never argue, never explain prices",
     "Chat builds lifetime value, not instant money"
   ]

@@ -1,7 +1,7 @@
 {
   "title": "AI Fanvue Page SOP",
   "subtitle": "Profile and Content Structure Manual",
-  "output_filename": "AI-Fanvue-Page-SOP.pdf",
+  "output_filename": "SOPs/AI Fanvue Page SOP.pdf",
   "sections": [
     {
       "header": "Intro: The Role of the Fanvue Page",
@@ -417,11 +417,11 @@
             "Subscriber content builds desire",
             "PPV content fulfills fantasy"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         },
         {
           "type": "good_example",
-          "content": "Free: outfit photo \u2192 Subscriber: lingerie photo \u2192 PPV: nude video"
+          "content": "Free: outfit photo → Subscriber: lingerie photo → PPV: nude video"
         },
         {
           "type": "panel",
