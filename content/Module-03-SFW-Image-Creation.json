@@ -8,11 +8,11 @@
       "blocks": [
         {
           "type": "text",
-          "content": "Once you have your base model from Module 2, every new image you create should be generated using that base as a reference. This is how you maintain consistency across hundreds of images. The reference image workflow is the backbone of your content pipeline. Without it, every image looks like a different person and your page screams fake."
+          "content": "The reference image workflow is the backbone of your content pipeline. Instead of writing prompts from scratch and hoping for good results, you find real photos that have the exact pose, lighting, and setting you want — then you recreate them with your AI model. This is how you produce content that looks like a real photoshoot, not random AI generations."
         },
         {
           "type": "text",
-          "content": "Nano Banana 2 is your main tool for all SFW image generation. It supports reference-based generation — you upload your seed image, write a prompt describing the new scene, and it generates output that preserves your character's face while creating the new content. This lesson covers how to use this workflow effectively."
+          "content": "Nano Banana 2 is your main tool for all SFW image generation. The workflow is simple: find a reference image on Pinterest, generate a JSON prompt from it, then feed that JSON prompt into Nano Banana 2 along with your base model image. The output matches the reference image's pose and lighting — but with your AI model's face and body."
         },
         {
           "type": "two_column",
@@ -24,26 +24,26 @@
             {
               "type": "bullets",
               "items": [
-                "Start with your locked-in seed image from Module 2",
-                "Upload it as a reference/input image in Nano Banana 2",
-                "Write a new prompt describing the desired scene, outfit, or setting",
-                "Generate at least 3 outputs per prompt and compare against the reference",
-                "Only keep images that match the face consistently",
-                "If the face drifts, increase reference strength or try a different seed angle"
+                "Find a reference image on Pinterest with the pose, lighting, and setting you want",
+                "Generate a JSON prompt from that reference image",
+                "Feed the JSON prompt into Nano Banana 2 along with your base model image",
+                "Nano Banana 2 generates an image that copies the pose and lighting from the reference — but with your AI model",
+                "Generate at least 3 outputs and compare — pick the one that best matches your model's face",
+                "If the face drifts, regenerate — do not settle for inconsistent results"
               ],
               "bullet": "→"
             },
             {
               "type": "subheader",
-              "content": "Reference Image Best Practices"
+              "content": "Finding Good Reference Images"
             },
             {
               "type": "bullets",
               "items": [
-                "Always use both your face and body reference images together",
-                "Higher resolution reference images produce better consistency",
-                "Never change your reference image once your page is live",
-                "Adjust reference strength if the face drifts — higher strength means more consistency but less variety"
+                "Pinterest is your main source — search for poses, outfits, and settings you want to recreate",
+                "Look for images with clear lighting and simple backgrounds — these produce the best results",
+                "Save references into categories (casual, glam, gym, selfie, etc.) so you always have ideas ready",
+                "The better the reference image, the better your output — do not use blurry or cluttered photos"
               ]
             }
           ],
@@ -55,12 +55,11 @@
             {
               "type": "bullets",
               "items": [
-                "Using a low-quality or small reference image — always use full resolution",
-                "Setting reference strength too low — face drifts from your model",
-                "Setting reference strength too high — every image looks identical (no variety)",
+                "Using blurry or low-quality reference images from Pinterest — find clean, well-lit photos",
+                "Picking reference poses that are too complex — start with simple, natural poses",
                 "Ignoring face drift on 'almost good enough' images — never post a drifted face",
-                "Changing reference images between sessions — stick with the same seed",
-                "Only generating one version — always generate at least 3 and pick the best"
+                "Only generating one version — always generate at least 3 and pick the best",
+                "Not saving your working JSON prompts — keep a library of prompts that produce good results"
               ]
             }
           ]
