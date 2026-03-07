@@ -371,7 +371,7 @@
   "summary_points": [
     "Always generate new images using your base model as a reference in Nano Banana 2",
     "Write detailed prompts with setting, lighting, outfit, and camera angle — save templates that produce good results",
-    "Edit AI outputs to fix hands, artifacts, and background issues using Photopea (free)",
+    "Use Photopea (free) to export Instagram carousels — this helps avoid the AI filter on Instagram",
     "Always add approximately 2% grain/noise as the final editing step — this is what makes AI images pass as real photos",
     "Use inpainting to fix specific problem areas without regenerating the entire image",
     "Know each platform's content rules — TikTok and Instagram are strictest, Reddit is most flexible",
