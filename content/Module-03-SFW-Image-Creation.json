@@ -71,75 +71,62 @@
       "blocks": [
         {
           "type": "text",
-          "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. This lesson covers how to write prompts that consistently produce natural, platform-safe images. A well-crafted prompt saves hours of regeneration."
+          "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. JSON prompts are the best way to prompt because they carry far more data about posing, lighting, camera settings, and environment than a traditional text prompt ever could. A single JSON prompt can specify exact depth of field, shadow behavior, color temperature, and composition — details that get lost or ignored in a one-line text prompt."
+        },
+        {
+          "type": "subheader",
+          "content": "Why JSON Prompts Beat Traditional Prompts"
+        },
+        {
+          "type": "text",
+          "content": "A traditional text prompt like 'woman walking on street, sunny, fashion photo' gives the AI almost nothing to work with. A JSON prompt breaks the image down into every detail — composition, subject, environment, lighting, color palette, camera settings, and artistic style. The AI gets structured instructions for every aspect of the image instead of guessing. This is why JSON prompts produce results that actually match your Pinterest reference."
         },
         {
           "type": "two_column",
           "left": [
             {
               "type": "subheader",
-              "content": "Prompt Structure"
+              "content": "JSON vs Traditional Prompts"
             },
             {
-              "type": "text",
-              "content": "Every prompt should follow this structure. Missing any component leads to random or unusable results."
+              "type": "bad_example",
+              "content": "Traditional prompt:\n'Woman walking on city street, blue gingham outfit, sunny day, fashion photography, photorealistic'\n\nThis tells the AI almost nothing about pose, lighting direction, camera angle, depth of field, color grading, or composition. You get random results every time."
+            },
+            {
+              "type": "good_example",
+              "content": "JSON prompt advantage:\n→ Composition: exact framing, crop, camera angle, depth of field\n→ Subject: specific wardrobe details, expression, gesture\n→ Environment: location elements, architectural details\n→ Lighting: source, direction, quality, color temperature, shadow behavior\n→ Color palette: dominant colors, contrast, saturation, tone curve\n→ Technical: camera type, focal length, aperture, ISO, sharpness\n→ Artistic: aesthetic, mood, stylistic influences, texture rendering\n\nEvery detail is specified — nothing is left to chance."
+            },
+            {
+              "type": "subheader",
+              "content": "How to Generate JSON Prompts"
             },
             {
               "type": "bullets",
               "items": [
-                "Subject description (handled by reference image — keep light)",
-                "Setting/background (indoor, outdoor, studio, cafe, car, gym, etc.)",
-                "Outfit/clothing description (specific helps: 'white sundress' not 'nice outfit')",
-                "Lighting and mood (natural light, golden hour, soft studio, overhead gym)",
-                "Camera angle and framing (selfie, portrait, full body, mirror shot)",
-                "Style keywords (photorealistic, candid, editorial, iPhone quality, raw)"
-              ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Annotated prompt example showing each component color-coded: [Setting] + [Outfit] + [Lighting] + [Camera Angle] + [Style]. Each segment highlighted in a different color with labels."
-            },
-            {
-              "type": "subheader",
-              "content": "The Prompt Template Method"
-            },
-            {
-              "type": "text",
-              "content": "Do not write prompts from scratch every time. Create templates that work and swap out the variables. This is how professional operators generate dozens of images efficiently."
-            },
-            {
-              "type": "good_example",
-              "content": "{\n  \"prompt_modifiers\": [\"character from reference images\"],\n  \"image_type\": \"outdoor fashion street portrait\",\n  \"composition\": {\n    \"framing\": \"vertical orientation, mid-thigh crop\",\n    \"camera_angle\": \"eye-level perspective\",\n    \"perspective\": \"standard wide smartphone or mirrorless lens perspective with natural proportions\",\n    \"pose\": \"character from reference images walking forward on city sidewalk, torso facing camera, one arm holding structured handbag, the other relaxed by side\",\n    \"crop\": \"centered composition with architectural framing elements on both sides\",\n    \"depth_of_field\": \"moderate depth of field with subject in sharp focus and softly blurred storefront background\"\n  },\n  \"subject\": {\n    \"type\": \"human\",\n    \"representation\": \"character from reference images\",\n    \"wardrobe\": \"blue and white gingham short-sleeve button-up top with fitted waist and lace trim hem, matching mini skirt with lace trim and small bow detail, large brown structured suede handbag\",\n    \"expression\": \"composed, neutral expression with soft direct gaze slightly off-camera\",\n    \"gesture\": \"mid-stride posture holding handbag with relaxed arm positioning\"\n  },\n  \"environment\": {\n    \"location_type\": \"urban street setting\",\n    \"elements\": [\"storefront windows with reflective glass\", \"dark stone building facade\", \"display case inset in wall\", \"paved sidewalk with linear stone pattern\"],\n    \"style\": \"luxury shopping district or upscale city street\"\n  },\n  \"lighting\": {\n    \"source\": \"natural direct sunlight\",\n    \"direction\": \"front-side lighting from upper left\",\n    \"quality\": \"bright, directional sunlight creating defined shadows\",\n    \"color_temperature\": \"warm daylight (~5600K)\",\n    \"shadows\": \"soft but visible shadow outlines on ground and subtle contour shadows on subject\",\n    \"highlight_behavior\": \"bright highlights on hair and skin with warm glow effect\"\n  },\n  \"color_palette\": {\n    \"dominant_colors\": [\"blue\", \"white\", \"warm beige\", \"brown\", \"charcoal gray\"],\n    \"contrast_level\": \"medium to high contrast due to sunlight\",\n    \"saturation\": \"moderate saturation with warm tonal emphasis\",\n    \"tone_curve\": \"clean contrast curve with bright highlights and defined midtones\"\n  },\n  \"technical_characteristics\": {\n    \"camera_type\": \"smartphone or compact mirrorless camera\",\n    \"focal_length_equivalent\": \"28-35mm equivalent\",\n    \"aperture_estimate\": \"f/2.8-f/4 equivalent\",\n    \"iso_estimate\": \"low ISO (100-200)\",\n    \"shutter_speed_estimate\": \"fast shutter speed for daylight exposure\",\n    \"white_balance\": \"daylight white balance setting\",\n    \"sharpness\": \"high overall sharpness with clear fabric texture detail\",\n    \"grain\": \"no visible noise\"\n  },\n  \"artistic_elements\": {\n    \"aesthetic\": \"chic European summer street style aesthetic\",\n    \"mood\": \"confident, polished, effortless\",\n    \"stylistic_influences\": [\"luxury street fashion photography\", \"influencer editorial lifestyle imagery\"],\n    \"retouching\": \"subtle skin smoothing and color grading with warm glow enhancement\",\n    \"texture_rendering\": \"crisp textile pattern visibility and suede bag texture detail\"\n  },\n  \"background\": {\n    \"depth\": \"layered urban depth with storefront reflections adding dimensionality\",\n    \"clutter_level\": \"minimal visual clutter, clean architectural backdrop\",\n    \"separation\": \"subject separation achieved through depth of field and tonal contrast\"\n  },\n  \"typography\": { \"present\": false }\n}"
+                "Find your reference image on Pinterest",
+                "Feed the reference image into an AI and ask it to generate a JSON prompt describing everything about the image",
+                "The AI breaks down the pose, lighting, environment, camera settings, and style into structured JSON",
+                "Take that JSON prompt and feed it into Nano Banana 2 along with your base model image",
+                "The output matches the reference's pose and lighting — but with your AI model"
+              ],
+              "bullet": "→"
             }
           ],
           "right": [
             {
               "type": "subheader",
-              "content": "10 Proven Prompt Examples"
-            },
-            {
-              "type": "text",
-              "content": "These prompts are tested and produce consistent, platform-safe results. Use them as starting points and adjust for your persona."
+              "content": "Example JSON Prompt"
             },
             {
               "type": "good_example",
-              "content": "1. 'Young woman in white sundress at outdoor cafe, golden hour, candid smile at camera, photorealistic'\n\n2. 'Close-up selfie in bathroom mirror, messy bun, no makeup look, soft morning light, iPhone quality'\n\n3. 'Full body shot in gym, grey workout outfit, overhead lighting, confident stance, candid feel'\n\n4. 'Sitting on bed in oversized t-shirt, warm bedside lamp light, relaxed pose, looking down at phone, photorealistic'\n\n5. 'Walking on city street, casual jeans and crop top, natural afternoon light, candid mid-stride, street photography style'"
-            },
-            {
-              "type": "good_example",
-              "content": "6. 'Beach sunset, swimsuit, golden hour backlight, hair blowing in wind, looking over shoulder, photorealistic'\n\n7. 'Car selfie, front seat, casual top, natural daylight from window, slight smile, iPhone selfie style'\n\n8. 'Couch with coffee mug, oversized sweater, rainy window background, cozy mood lighting, candid reading pose'\n\n9. 'Restaurant dinner table, black dress, ambient warm lighting, leaning forward, soft eye contact with camera'\n\n10. 'Bedroom mirror selfie, casual loungewear, evening lamp lighting, relaxed standing pose, photorealistic'"
-            },
-            {
-              "type": "bad_example",
-              "content": "Bad prompts:\n'Beautiful girl photo' — Too vague, no direction\n'Hot model posing sexy' — Too generic, produces AI-looking results\n'Woman' — Produces random, unusable output\n\nAll bad prompts share the same problem: no specific setting, lighting, outfit, or style direction."
+              "content": "{\n  \"prompt_modifiers\": [\"character from reference images\"],\n  \"image_type\": \"outdoor fashion street portrait\",\n  \"composition\": {\n    \"framing\": \"vertical orientation, mid-thigh crop\",\n    \"camera_angle\": \"eye-level perspective\",\n    \"pose\": \"walking forward on city sidewalk, torso facing camera, one arm holding handbag\",\n    \"depth_of_field\": \"moderate, subject sharp, background softly blurred\"\n  },\n  \"subject\": {\n    \"representation\": \"character from reference images\",\n    \"wardrobe\": \"blue and white gingham button-up top, matching mini skirt, brown suede handbag\",\n    \"expression\": \"composed, neutral with soft direct gaze\"\n  },\n  \"environment\": {\n    \"location_type\": \"urban street setting\",\n    \"elements\": [\"storefront windows\", \"stone building facade\", \"paved sidewalk\"],\n    \"style\": \"luxury shopping district\"\n  },\n  \"lighting\": {\n    \"source\": \"natural direct sunlight\",\n    \"direction\": \"front-side from upper left\",\n    \"color_temperature\": \"warm daylight (~5600K)\",\n    \"shadows\": \"soft shadow outlines on ground\"\n  },\n  \"technical_characteristics\": {\n    \"focal_length_equivalent\": \"28-35mm\",\n    \"aperture_estimate\": \"f/2.8-f/4\",\n    \"sharpness\": \"high with clear fabric texture\"\n  },\n  \"artistic_elements\": {\n    \"aesthetic\": \"chic European summer street style\",\n    \"mood\": \"confident, polished, effortless\"\n  }\n}"
             }
           ]
         },
         {
           "type": "panel",
           "title": "Pro Tip",
-          "content": "Keep a prompt document. When you find a prompt that produces consistently good results, save it. Swap out the setting and outfit details for each new batch. This saves time and maintains quality. Over time you will build a library of 20-30 proven templates.",
+          "content": "Save every JSON prompt that produces good results. Build a library organized by scene type (street, cafe, gym, beach, home, etc.). When you need new content, grab a working JSON prompt, swap out the wardrobe and environment details, and generate. This is how you produce dozens of images efficiently without starting from scratch.",
           "border": "#39FF14"
         },
         {
