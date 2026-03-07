@@ -98,9 +98,10 @@ def generate_all_modules():
 
             # Build individual lesson config
             lesson_config = {
-                "title": f"Lesson {lesson_num}\n{lesson_title}",
+                "title": lesson_title,
                 "subtitle": subtitle,
                 "module_label": module_label,
+                "lesson_label": f"Lesson {lesson_num}",
                 "skip_toc": True,
                 "skip_summary": True,
                 "sections": [section],
