@@ -438,25 +438,25 @@ body {
     text-decoration: none;
 }
 
-.cover-fanvue {
-    display: inline-block;
-    border: 1px solid rgba(57,255,20,0.4);
+.cover-fanvue-bottom {
+    position: absolute;
+    bottom: 30px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    width: fit-content;
+    border: none;
     border-radius: 30px;
-    padding: 11px 28px;
-    color: #39FF14;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 1.5px;
+    padding: 12px 32px;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 1px;
     text-transform: uppercase;
-    background: rgba(57,255,20,0.06);
+    background: #39FF14;
     text-decoration: none;
-}
-
-.cover-fanvue-hint {
-    margin-top: 10px;
-    font-size: 11px;
-    color: rgba(255,255,255,0.35);
-    letter-spacing: 0.3px;
 }
 
 .cover-divider {
@@ -1062,14 +1062,12 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
                 <div class="cover-brand">{BRAND_NAME}</div>
                 <div class="cover-brand-sep"></div>
                 <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord</a>
-                <div class="cover-brand-sep"></div>
-                <a class="cover-fanvue" href="https://www.fanvue.com/?ref=aiinfluencermethod" target="_blank">Sign Up To Fanvue</a>
             </div>
-            <div class="cover-fanvue-hint">Fanvue is the platform to start monetizing your AI models</div>
         </div>
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
+        <a class="cover-fanvue-bottom" href="{FANVUE_URL}" target="_blank">Sign up to Fanvue — Start monetizing your AI models</a>
     </div>
     '''
 
