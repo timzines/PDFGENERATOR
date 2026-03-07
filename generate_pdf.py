@@ -882,6 +882,9 @@ def render_blocks_html(blocks):
             html += f'  <div class="panel-body">{content}</div>\n'
             html += '</div>\n'
 
+        elif btype == "page_break":
+            html += '<div style="page-break-before: always;"></div>\n'
+
     return html
 
 
@@ -1005,6 +1008,9 @@ def build_section_html(header, body_blocks):
                     <div class="content-col">{right_box}</div>
                 </div>
                 '''
+        elif block.get("type") == "page_break":
+            content_html += flush_pending()
+            content_html += '<div style="page-break-before: always;"></div>\n'
         elif block.get("type") == "panel" and block.get("border"):
             # Bordered panels (rules, tips) are standalone — flush first
             content_html += flush_pending()

@@ -222,6 +222,9 @@
           ]
         },
         {
+          "type": "page_break"
+        },
+        {
           "type": "subheader",
           "content": "Building Your Two Reference Images"
         },
