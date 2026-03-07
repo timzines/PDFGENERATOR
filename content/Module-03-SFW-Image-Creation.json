@@ -227,20 +227,20 @@
             },
             {
               "type": "subheader",
-              "content": "Inpainting — Fixing Specific Areas"
+              "content": "Nano Banana 2 Edit Feature — Fixing Specific Areas"
             },
             {
               "type": "text",
-              "content": "When a generated image is almost perfect but has one bad area (a distorted hand, a weird background element), inpainting lets you regenerate just that area without redoing the entire image."
+              "content": "When a generated image is almost perfect but has one bad area (a distorted hand, a weird background element), use the edit feature in Nano Banana 2 to fix just that area without regenerating the entire image."
             },
             {
               "type": "bullets",
               "items": [
-                "Select the problem area using your generation tool's inpainting feature",
+                "Use the edit feature in Nano Banana 2 to select the problem area",
                 "Write a prompt describing what should be in that area",
-                "The tool regenerates only the selected region while keeping everything else",
+                "Nano Banana 2 regenerates only the selected region while keeping everything else",
                 "This saves images that would otherwise be rejected entirely",
-                "Use inpainting for: hands, background artifacts, clothing seams, jewelry errors"
+                "Use it for: hands, background artifacts, clothing seams, jewelry errors"
               ]
             }
           ]
