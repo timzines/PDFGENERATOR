@@ -45,20 +45,16 @@ COVER_BG = "#1a1b1f"
 COVER_BG_GRADIENT = "radial-gradient(ellipse at 30% 50%, #3d3036 0%, #1a1b1f 50%, #141519 100%)"
 TOC_BG_GRADIENT = "linear-gradient(180deg, #5f4657 0%, #1a1b1f 40%, #141519 100%)"
 
-# Content page rose/mauve palette
-CONTENT_BG_BASE = "#c7a5b2"
-CONTENT_BG_LIGHT = "#d4b6be"
-CONTENT_BG_GRADIENT = "radial-gradient(ellipse at 50% 50%, #d4b6be 0%, #c7a5b2 40%, #a07d83 100%)"
-
-# Content box (semi-transparent dark rose)
-BOX_BG = "rgba(111, 76, 83, 0.82)"
-BOX_BG_SOLID = "#6f4c53"
+# Content page dark palette (matches cover page)
+CONTENT_BG_BASE = "#1a1b1f"
+CONTENT_BG_LIGHT = "#242529"
+CONTENT_BG_GRADIENT = "radial-gradient(ellipse at 30% 50%, #3d3036 0%, #1a1b1f 50%, #141519 100%)"
 
 # Text colors
 TEXT_WHITE = "#ffffff"
 TEXT_LIGHT = "#e8d5dc"
-TEXT_DARK = "#2a1a1f"
-TEXT_MUTED_DARK = "#4a3038"
+TEXT_DARK = "#ffffff"
+TEXT_MUTED_DARK = "#b0a0a5"
 TEXT_MUTED_LIGHT = "#999999"
 HEADER_FADE = "#c49a85"  # The faded last-word color in headers
 
@@ -89,31 +85,31 @@ def pil_to_data_uri(img, fmt="PNG"):
 
 
 def generate_content_bg():
-    """Generate dusty rose gradient background image."""
+    """Generate dark gradient background image matching cover page style."""
     w, h = PAGE_W, PAGE_H
     img = Image.new("RGB", (w, h))
     draw = ImageDraw.Draw(img)
 
-    # Radial gradient: center is lighter, edges are darker rose
-    cx, cy = w // 2, h // 2
+    # Radial gradient: dark atmospheric look matching cover
+    cx, cy = int(w * 0.3), int(h * 0.5)
     max_r = ((w/2)**2 + (h/2)**2) ** 0.5
 
-    # Base colors
-    center = (212, 182, 190)  # #d4b6be
-    edge = (160, 125, 131)    # #a07d83
-    mid = (199, 165, 178)     # #c7a5b2
+    # Dark palette matching cover page
+    center = (61, 48, 54)     # #3d3036 warm dark rose center
+    mid = (26, 27, 31)        # #1a1b1f near-black
+    edge = (20, 21, 25)       # #141519 deepest dark
 
     for y_pos in range(h):
         for x_pos in range(w):
             dist = ((x_pos - cx)**2 + (y_pos - cy)**2) ** 0.5
             t = min(dist / max_r, 1.0)
-            if t < 0.5:
-                t2 = t / 0.5
+            if t < 0.4:
+                t2 = t / 0.4
                 r = int(center[0] + (mid[0] - center[0]) * t2)
                 g = int(center[1] + (mid[1] - center[1]) * t2)
                 b = int(center[2] + (mid[2] - center[2]) * t2)
             else:
-                t2 = (t - 0.5) / 0.5
+                t2 = (t - 0.4) / 0.6
                 r = int(mid[0] + (edge[0] - mid[0]) * t2)
                 g = int(mid[1] + (edge[1] - mid[1]) * t2)
                 b = int(mid[2] + (edge[2] - mid[2]) * t2)
@@ -447,9 +443,11 @@ body {
 
 /* ---- CONTENT PAGE ---- */
 .page-content {
+    background: #0f1013;
     position: relative;
     padding: 50px 60px 10px 60px;
     min-height: 775px;
+    overflow: hidden;
     page: content-page;
 }
 
@@ -463,14 +461,18 @@ body {
     z-index: 0;
 }
 
-/* Subtle top gradient overlay on content pages */
+/* Atmospheric gradient overlay on content pages (matches cover) */
 .content-top-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    height: 120px;
-    background: linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 100%);
+    height: 100%;
+    background:
+        radial-gradient(ellipse at 25% 40%, rgba(90, 50, 65, 0.35) 0%, transparent 60%),
+        radial-gradient(ellipse at 75% 60%, rgba(60, 35, 50, 0.25) 0%, transparent 55%),
+        radial-gradient(ellipse at 50% 100%, rgba(40, 25, 35, 0.4) 0%, transparent 50%),
+        linear-gradient(180deg, #1a1b1f 0%, #0f1013 100%);
     z-index: 1;
 }
 
@@ -484,7 +486,7 @@ body {
     font-size: 32px;
     font-weight: 700;
     font-style: italic;
-    color: #2a1a1f;
+    color: #ffffff;
     margin-bottom: 22px;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -501,7 +503,7 @@ body {
     top: 4px;
     width: 4px;
     height: 32px;
-    background: linear-gradient(180deg, #c49a85, rgba(42,26,31,0.4));
+    background: linear-gradient(180deg, #c49a85, transparent);
     border-radius: 2px;
 }
 
@@ -511,7 +513,7 @@ body {
 
 .content-columns {
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: stretch;
     page-break-inside: avoid;
 }
@@ -521,15 +523,16 @@ body {
     min-width: 0;
 }
 
+/* No-box content styling — content flows directly on dark background */
 .content-box {
-    background: rgba(111, 76, 83, 0.82);
-    border-radius: 14px;
-    padding: 22px 24px;
-    color: #f0e0e6;
+    background: none;
+    border-radius: 0;
+    padding: 0 8px;
+    color: #e0d0d6;
     margin-bottom: 14px;
     position: relative;
     z-index: 2;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: none;
     page-break-inside: avoid;
 }
 
@@ -538,7 +541,7 @@ body {
     line-height: 1.65;
     margin-bottom: 10px;
     text-align: justify;
-    color: #f0e0e6;
+    color: rgba(255,255,255,0.8);
 }
 
 .content-box p:last-child {
@@ -548,7 +551,7 @@ body {
 .content-box .sub-header {
     font-size: 14.5px;
     font-weight: 700;
-    color: #ffffff;
+    color: #c49a85;
     margin-bottom: 8px;
     margin-top: 14px;
     letter-spacing: 0.3px;
@@ -566,13 +569,13 @@ body {
 .content-box ul li {
     font-size: 13.5px;
     line-height: 1.6;
-    color: #f0e0e6;
+    color: rgba(255,255,255,0.75);
     margin-bottom: 3px;
 }
 
 .content-box .example-good {
     border-left: 3px solid #7dba6d;
-    background: rgba(125,186,109,0.08);
+    background: rgba(125,186,109,0.1);
     padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
@@ -584,7 +587,7 @@ body {
 
 .content-box .example-bad {
     border-left: 3px solid #c9665a;
-    background: rgba(201,102,90,0.08);
+    background: rgba(201,102,90,0.1);
     padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
@@ -604,8 +607,8 @@ body {
 }
 
 .content-box .panel-box {
-    background: rgba(90, 60, 68, 0.55);
-    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(90, 60, 68, 0.3);
+    border: 1px solid rgba(196,154,133,0.2);
     border-left: 3px solid rgba(196,154,133,0.6);
     border-radius: 8px;
     padding: 14px 18px;
@@ -624,20 +627,20 @@ body {
 .content-box .panel-body {
     font-size: 13px;
     line-height: 1.55;
-    color: #e8d5dc;
+    color: rgba(255,255,255,0.75);
 }
 
-/* Full-width content box (no columns) */
+/* Full-width content (no box) */
 .content-box-full {
-    background: rgba(111, 76, 83, 0.82);
-    border-radius: 14px;
-    padding: 22px 24px;
-    color: #f0e0e6;
+    background: none;
+    border-radius: 0;
+    padding: 0 8px;
+    color: #e0d0d6;
     margin-bottom: 14px;
     max-width: 75%;
     position: relative;
     z-index: 2;
-    border: 1px solid rgba(255,255,255,0.06);
+    border: none;
     page-break-inside: avoid;
 }
 
@@ -646,7 +649,7 @@ body {
     line-height: 1.65;
     margin-bottom: 10px;
     text-align: justify;
-    color: #f0e0e6;
+    color: rgba(255,255,255,0.8);
 }
 
 .content-box-full p:last-child {
@@ -656,7 +659,7 @@ body {
 .content-box-full .sub-header {
     font-size: 14.5px;
     font-weight: 700;
-    color: #ffffff;
+    color: #c49a85;
     margin-bottom: 8px;
     margin-top: 14px;
     letter-spacing: 0.3px;
@@ -674,13 +677,13 @@ body {
 .content-box-full ul li {
     font-size: 13.5px;
     line-height: 1.6;
-    color: #f0e0e6;
+    color: rgba(255,255,255,0.75);
     margin-bottom: 3px;
 }
 
 .content-box-full .example-good {
     border-left: 3px solid #7dba6d;
-    background: rgba(125,186,109,0.08);
+    background: rgba(125,186,109,0.1);
     padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
@@ -692,7 +695,7 @@ body {
 
 .content-box-full .example-bad {
     border-left: 3px solid #c9665a;
-    background: rgba(201,102,90,0.08);
+    background: rgba(201,102,90,0.1);
     padding: 8px 12px;
     margin: 10px 0;
     font-style: italic;
@@ -712,8 +715,8 @@ body {
 }
 
 .content-box-full .panel-box {
-    background: rgba(90, 60, 68, 0.55);
-    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(90, 60, 68, 0.3);
+    border: 1px solid rgba(196,154,133,0.2);
     border-left: 3px solid rgba(196,154,133,0.6);
     border-radius: 8px;
     padding: 14px 18px;
@@ -732,7 +735,7 @@ body {
 .content-box-full .panel-body {
     font-size: 13px;
     line-height: 1.55;
-    color: #e8d5dc;
+    color: rgba(255,255,255,0.75);
 }
 
 .content-footer {
@@ -742,7 +745,7 @@ body {
     right: 0;
     text-align: center;
     font-size: 10px;
-    color: #8a6a72;
+    color: rgba(255,255,255,0.25);
     z-index: 2;
     letter-spacing: 0.5px;
 }
@@ -795,7 +798,7 @@ body {
 }
 
 .page-number-light {
-    color: #8a6a72;
+    color: rgba(255,255,255,0.3);
 }
 
 /* ---- SMALL TOP-RIGHT LOGO ON CONTENT PAGES ---- */
@@ -1085,17 +1088,12 @@ def generate_pdf(config, output_path):
     dynamic_page_css = f"""
 @page content-page {{
     margin: 0 0 35px 0;
-    background-image:
-        linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 15%),
-        url('{content_bg_uri}');
-    background-size: 100% 120px, cover;
-    background-position: top left, center;
-    background-repeat: no-repeat, no-repeat;
+    background: #0f1013;
     @bottom-center {{
         content: "{footer_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 10px;
-        color: #8a6a72;
+        color: rgba(255,255,255,0.25);
         letter-spacing: 0.5px;
     }}
     @bottom-right {{
@@ -1103,7 +1101,7 @@ def generate_pdf(config, output_path):
         font-size: 11px;
         font-weight: 500;
         letter-spacing: 1px;
-        color: #8a6a72;
+        color: rgba(255,255,255,0.3);
     }}
 }}
 """
