@@ -63,6 +63,7 @@ TEXT_MUTED_LIGHT = "#999999"
 HEADER_FADE = "#c49a85"  # The faded last-word color in headers
 
 FOOTER_TEXT = "All materials are strictly protected under AI Influencer Method\u00AE rights"
+FANVUE_CTA = "\u2728 Start monetizing your AI models today \u2014 Sign up to Fanvue: fanvue.com/signup?referral=FV-C4WPNC \u2728"
 BRAND_NAME = "AI Influencer Method"
 
 
@@ -433,6 +434,27 @@ body {
     text-transform: uppercase;
     background: rgba(140,160,196,0.06);
     text-decoration: none;
+}
+
+.cover-fanvue {
+    display: inline-block;
+    border: 1px solid rgba(57,255,20,0.4);
+    border-radius: 30px;
+    padding: 11px 28px;
+    color: #39FF14;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(57,255,20,0.06);
+    text-decoration: none;
+}
+
+.cover-fanvue-hint {
+    margin-top: 10px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.3px;
 }
 
 .cover-divider {
@@ -944,7 +966,10 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
                 <div class="cover-brand">{BRAND_NAME}</div>
                 <div class="cover-brand-sep"></div>
                 <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord</a>
+                <div class="cover-brand-sep"></div>
+                <a class="cover-fanvue" href="https://www.fanvue.com/?ref=aiinfluencermethod" target="_blank">Sign Up To Fanvue</a>
             </div>
+            <div class="cover-fanvue-hint">Fanvue is the platform to start monetizing your AI models</div>
         </div>
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
@@ -979,7 +1004,7 @@ def build_toc_html(sections, logo_uri="", page_num=2, total_pages=1):
             <div class="toc-column">{left_html}</div>
             <div class="toc-column">{right_html}</div>
         </div>
-        <div class="toc-footer">{FOOTER_TEXT}</div>
+        <div class="toc-footer">{FOOTER_TEXT}<br/><span style="color:rgba(57,255,20,0.5);font-size:9px;">{FANVUE_CTA}</span></div>
     </div>
     '''
 
@@ -1090,6 +1115,10 @@ def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
                         <div class="summary-brand-name">{BRAND_NAME}</div>
                         <div class="summary-brand-line"></div>
                         <div class="summary-brand-text">All materials are strictly protected.</div>
+                        <div style="margin-top:18px;padding:12px 20px;border:1px solid rgba(57,255,20,0.35);border-radius:10px;background:rgba(57,255,20,0.04);">
+                            <div style="color:#39FF14;font-size:13px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Ready to monetize your AI models?</div>
+                            <div style="color:rgba(255,255,255,0.5);font-size:11px;line-height:1.5;">Sign up to Fanvue with our link and start earning today:<br/><span style="color:rgba(57,255,20,0.7);font-weight:600;">fanvue.com/signup?referral=FV-C4WPNC</span></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1154,17 +1183,25 @@ def generate_pdf(config, output_path):
 
     # Build dynamic @page CSS for content pages (dark background + footer)
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
+    fanvue_escaped = FANVUE_CTA.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 45px 60px;
+    margin: 45px 60px 55px 60px;
     padding: 0;
     background: #1a1b1f;
     @bottom-center {{
-        content: "{footer_escaped}";
+        content: "{fanvue_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 10px;
-        color: rgba(255,255,255,0.25);
-        letter-spacing: 0.5px;
+        color: rgba(57,255,20,0.55);
+        letter-spacing: 0.3px;
+    }}
+    @bottom-left {{
+        content: "{footer_escaped}";
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 8px;
+        color: rgba(255,255,255,0.2);
+        letter-spacing: 0.3px;
     }}
     @bottom-right {{
         content: counter(page) " / " counter(pages);
