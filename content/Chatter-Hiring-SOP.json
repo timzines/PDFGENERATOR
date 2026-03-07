@@ -229,7 +229,7 @@
             "Second stage: Limited supervised chatting, no financial controls",
             "Final stage: Full chatting access after trust is built"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         }
       ]
     },

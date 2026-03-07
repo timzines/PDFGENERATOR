@@ -4,134 +4,332 @@
   "output_filename": "Module-01-The-Basics.pdf",
   "sections": [
     {
-      "header": "Lesson 1: The AI Influencer Method",
+      "header": "What Is the AI Influencer Method",
       "blocks": [
-        {"type": "text", "content": "The AI Influencer Method is a system for building and monetizing social media pages using AI-generated personas. These personas look, act, and engage like real influencers but are entirely created and managed through artificial intelligence tools. This is not about catfishing or deception. This is a business model. You are building a brand, not pretending to be a real person."},
-        {"type": "text", "content": "The technology behind this method has reached a point where AI-generated images and videos are indistinguishable from real content when done correctly. The tools are accessible, the demand is proven, and the window for early movers is wide open. But this is a real business that requires real work, real patience, and real strategy. The people who fail are the ones who skip steps or expect overnight results."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "What You Will Learn"},
-          {"type": "bullets", "items": [
-            "How to create an AI influencer from scratch using professional tools",
-            "Which platforms to use and exactly how to grow on each one",
-            "The content pipeline that produces consistent, believable content",
-            "How to warm up accounts so they look human to algorithms",
-            "How to scale to multiple personas once your first page works",
-            "How to protect your accounts from bans and shadowbans",
-            "How to turn free followers into paying subscribers"
-          ]},
-          {"type": "subheader", "content": "Why AI Influencers Work"},
-          {"type": "bullets", "items": [
-            "No physical limitations on content output — generate 24/7",
-            "Consistent brand and persona across all content — the face never changes",
-            "Scalable to multiple personas simultaneously — one operator, many pages",
-            "Lower operating cost than managing real influencers",
-            "Full creative control over every aspect of the persona",
-            "You own the model — no creator dependency or contract issues",
-            "Content pipeline can be systematized and batched efficiently"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "The Business Model"},
-          {"type": "text", "content": "Attention flows through a funnel. Free content creates interest. Interest creates followers. Followers convert to paying subscribers. Every platform in this system serves a specific role in moving people through that funnel."},
-          {"type": "bullets", "items": [
-            "Instagram / TikTok — Free content drives discovery and builds trust",
-            "Threads — Engagement engine that feeds Instagram growth",
-            "Link in Bio — Bridge between free attention and paid conversion",
-            "Telegram — Pre-sell warming layer for hesitant followers",
-            "Subscription Platform — Monetization endpoint where revenue is captured"
-          ], "bullet": "→"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Visual funnel diagram showing traffic flow: Social Media (top) → Link in Bio → Telegram → Subscription Platform (bottom). Show the funnel narrowing at each stage with dollar signs increasing."},
-          {"type": "panel", "title": "Critical Rule", "content": "Revenue comes from the funnel, not from posting. The system works as a whole — no single platform generates money on its own. Every piece of content exists to move someone one step closer to paying.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Realistic Expectations & Timeline"},
-        {"type": "text", "content": "This section exists because most courses skip it and most students quit because of unrealistic expectations. The AI influencer method works, but it does not work overnight. Understanding the real timeline prevents frustration and keeps you focused on what matters."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Realistic Revenue Timeline"},
-          {"type": "bullets", "items": [
-            "Month 1: $0-$200 — You are building the foundation. Model creation, account setup, warmup. Most of this month is preparation with little to no revenue",
-            "Month 2-3: $100-$500 — Accounts are live, content is flowing, first followers converting. Revenue trickles in slowly as the funnel starts working",
-            "Month 3-6: $500-$3,000 — Consistent posting, growing audience, funnel optimized. Revenue grows as follower count and trust increase",
-            "Month 6+: $2,000-$10,000+ — Scaled operations with multiple accounts or personas. Revenue compounds as systems become efficient"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Bar chart showing realistic monthly revenue ranges: Month 1 ($0-200), Month 2-3 ($100-500), Month 3-6 ($500-3K), Month 6+ ($2K-10K+). Use green gradient bars with dollar ranges labeled."},
-          {"type": "panel", "title": "Reality Check", "content": "Most people earn under $500 in their first three months. This is normal. The operators making $10K+ per month have been grinding for 6-12 months and have systematized everything. Do not compare your Month 1 to someone else's Month 12.", "border": "#FF3131"}
-        ], "right": [
-          {"type": "subheader", "content": "Time Commitment"},
-          {"type": "text", "content": "This is not passive income. During the first 3 months, expect to invest 2-4 hours per day minimum. This includes content generation, posting, engagement, account management, and funnel optimization."},
-          {"type": "bullets", "items": [
-            "Content generation: 30-60 minutes per day (batched sessions)",
-            "Posting and engagement: 30-60 minutes per day across platforms",
-            "Account management: 15-30 minutes per day (safety checks, metrics)",
-            "Strategy and planning: 15-30 minutes per day",
-            "Total: 2-4 hours daily, 7 days per week during early growth"
-          ]},
-          {"type": "text", "content": "After Month 3-6, once systems are built and content is batched, daily time investment drops to 1-2 hours for maintenance and growth. The early investment of time is what creates the system that eventually runs efficiently."},
-          {"type": "panel", "title": "What Separates Winners from Quitters", "content": "The people who succeed treat this as a business from Day 1. They follow the system, they do not skip steps, and they do not quit during the slow early months. The ones who fail expect instant results, skip the warmup, or abandon ship after 2 weeks of low revenue.", "border": "#39FF14"}
-        ]},
-        {"type": "subheader", "content": "Startup Costs & Tool Stack"},
-        {"type": "text", "content": "One of the advantages of the AI influencer model is the low barrier to entry. You do not need tens of thousands in capital to start. However, there are real costs you need to budget for. Going in underfunded leads to cutting corners, which leads to bans and wasted effort."},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Minimum Startup Budget"},
-          {"type": "bullets", "items": [
-            "Dedicated phone or device: $150-$400 (used phones work fine)",
-            "Prepaid SIM card: $10-$30",
-            "VPN service: $5-$12 per month",
-            "AI image generation tools (Seedream 4.5, Nano Banana 2): $0-$50 per month",
-            "Kling video credits: $10-$30 per month",
-            "Link in bio service (AllMyLinks/Linktree): Free",
-            "Photo editing tool (Photopea): Free",
-            "Total minimum to start: approximately $200-$500"
-          ]},
-          {"type": "panel", "title": "Budget Tip", "content": "Start with the minimum. Do not invest in premium tools until your first page is generating revenue. Free tiers and budget options work perfectly for your first persona.", "border": "#39FF14"}
-        ], "right": [
-          {"type": "subheader", "content": "The Core Tool Stack"},
-          {"type": "text", "content": "These are the tools you will use daily. Each one serves a specific function in the content pipeline. Modules 2-4 cover each tool in detail."},
-          {"type": "bullets", "items": [
-            "Seedream 4.5 + Nano Banana 2 — AI image generation (photorealistic output)",
-            "Kling — AI video generation (turns images into realistic video clips)",
-            "Photopea or Photoshop — Image editing and artifact removal",
-            "CapCut or DaVinci Resolve — Video editing (free)",
-            "VPN — Geo-targeting and account safety",
-            "AllMyLinks or Linktree — Link in bio funnel page",
-            "Telegram — Pre-sell warming channel",
-            "Content calendar — Planning and scheduling (Google Sheets works)"
-          ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Tool stack grid showing each tool with its purpose: Image Gen (Seedream 4.5 / Nano Banana 2), Video Gen (Kling), Editing (Photopea), Video Edit (CapCut), VPN, Link Page, Telegram, Calendar. Use clean icons or logos for each."}
-        ]},
-        {"type": "two_column", "left": [
-          {"type": "subheader", "content": "Primary Platforms (Mandatory)"},
-          {"type": "bullets", "items": [
-            "Instagram — Main traffic and brand hub. This is your most important platform",
-            "Threads — Engagement and discovery engine that feeds Instagram growth",
-            "Telegram — Pre-sell funnel that warms followers before they subscribe"
-          ]},
-          {"type": "subheader", "content": "Support Platforms"},
-          {"type": "bullets", "items": [
-            "TikTok — Secondary reach and discovery (supplements Instagram)",
-            "Reddit — Niche viral exposure inside specific communities",
-            "Twitter/X — Brand presence and discovery through conversations"
-          ]}
-        ], "right": [
-          {"type": "subheader", "content": "What You Do NOT Need to Start"},
-          {"type": "text", "content": "People waste money and time on things that do not matter in the first 3 months. Focus on the essentials and add complexity later."},
-          {"type": "bullets", "items": [
-            "You do NOT need a $3,000 PC — cloud-based tools work for beginners",
-            "You do NOT need multiple phones — start with one persona, one device",
-            "You do NOT need paid courses on prompting — this course covers everything",
-            "You do NOT need a team — solo operators can run one page profitably",
-            "You do NOT need advanced video editing skills — simple clips outperform complex ones"
-          ]},
-          {"type": "panel", "title": "Mindset", "content": "This is a real business. The people who fail are the ones who skip steps, rush the process, or expect results without work. The window for early movers is open now. But the window rewards builders, not browsers.", "border": "#39FF14"}
-        ]}
+        {
+          "type": "text",
+          "content": "The AI Influencer Method is a system for building and monetizing social media pages using AI-generated personas. You create a fictional character — face, name, personality — using AI image and video tools, then grow that character's social media presence and convert followers into paying subscribers."
+        },
+        {
+          "type": "text",
+          "content": "The persona looks and behaves like a real influencer. The audience follows for entertainment, attention, and content. You are running a media brand, not pretending to be a real person. The business works because the demand for parasocial content is massive and growing, and AI tools now produce output that is visually indistinguishable from real photos and videos."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "How It Works"
+            },
+            {
+              "type": "text",
+              "content": "You generate a base AI model (a consistent face), then produce images and videos of that character in different settings, outfits, and scenarios. You post this content across social media platforms to build an audience, then funnel that audience toward a paid subscription where they access exclusive content."
+            },
+            {
+              "type": "text",
+              "content": "Every part of the system is controlled by you: the face, the brand, the content schedule, and the revenue. There is no creator dependency, no contracts, and no negotiations. You own the entire operation."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Why It Works Now"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "AI image tools (Seedream 4.5, Nano Banana 2) produce photorealistic output that passes as real",
+                "AI video tools (Kling) generate natural-looking video clips from single images",
+                "Social platforms reward high-volume, consistent content — AI delivers that at scale",
+                "One operator can run the entire pipeline: generation, editing, posting, monetization",
+                "Startup costs are under $500 — no studio, no equipment, no talent"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "The Revenue Funnel",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Revenue does not come from posting content. It comes from moving people through a funnel. Each platform in this system has one job: push the audience one step closer to paying. No single platform generates money on its own — the system works as a connected chain."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "The Five Funnel Stages"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Stage 1: Discovery — Free content on Instagram, TikTok, Threads, Reddit draws attention",
+                "Stage 2: Follow — The viewer likes the content enough to follow the account",
+                "Stage 3: Click — The follower taps the link in your bio to see what else exists",
+                "Stage 4: Warm — The follower joins your free Telegram channel, sees teaser content, builds desire",
+                "Stage 5: Convert — The warmed follower subscribes to your paid platform for exclusive access"
+              ],
+              "bullet": "→"
+            },
+            {
+              "type": "text",
+              "content": "Every piece of content you create exists to move someone from one stage to the next. A Reel on Instagram is not the product — it is the advertisement. The subscription is the product."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Platform Roles in the Funnel"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram — Primary discovery and trust platform. Largest audience, highest conversion potential",
+                "Threads — Engagement engine that feeds Instagram's algorithm with activity",
+                "TikTok — Secondary discovery. Viral reach supplements Instagram growth",
+                "Reddit — Niche exposure inside specific communities. High intent traffic",
+                "Twitter/X — Brand presence and discovery through conversations and replies",
+                "Link in Bio — Bridge between free social media and paid conversion",
+                "Telegram — Warming layer. Followers see teaser content that builds desire before subscribing",
+                "Subscription Platform — Monetization endpoint where revenue is captured"
+              ],
+              "bullet": "→"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Your Platform Stack",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Not every platform matters equally. Instagram is the foundation — everything else supports it. Your priority order determines where your time goes. Spreading effort equally across six platforms is a mistake. Concentrate on what drives revenue."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Primary Platforms (Mandatory)"
+            },
+            {
+              "type": "text",
+              "content": "These three platforms form the core of your system. You cannot skip any of them. Instagram is the traffic engine, Threads amplifies Instagram's reach, and Telegram warms followers before conversion."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Instagram — Your most important platform. Reels, Stories, and carousels drive discovery. Profile visits convert to followers. This is where the majority of your funnel traffic originates",
+                "Threads — Text-based engagement platform linked directly to your Instagram. Threads activity increases your Instagram visibility. Post 3-4 times daily to generate profile visits",
+                "Telegram — Free channel where followers access teaser content. Acts as a warming layer between following you and paying. Post 2-3 times daily with content that creates desire for your paid platform"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Support Platforms (Recommended)"
+            },
+            {
+              "type": "text",
+              "content": "These platforms supplement your primary stack. They are not mandatory at launch. Add them once your Instagram and Threads system is stable and producing consistent growth."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "TikTok — Short-form video platform with massive organic reach. Supplements Instagram by reaching a different audience segment. Carousel posts perform especially well for AI content",
+                "Reddit — Community-driven platform where niche content goes viral inside specific subreddits. High-intent traffic but requires careful warmup to avoid bans. Do not post links until karma is established",
+                "Twitter/X — Conversation-driven platform. Growth comes from replying to large accounts, not from posting original content. Requires Twitter Premium for meaningful visibility"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Priority Rule",
+              "content": "If you only have 2 hours per day, spend 100% of it on Instagram and Threads. Only expand to TikTok, Reddit, or Twitter/X when your primary platforms are running smoothly and you have bandwidth to add complexity."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Startup Costs & Tool Stack",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "The AI influencer model has a low barrier to entry. Total startup cost is approximately $200-$500. Most tools have free tiers that work for your first persona. Do not invest in premium tools until your first page is generating revenue."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Required Expenses"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Dedicated phone or device — $150-$400 (used phones work). One persona per device for account safety",
+                "Prepaid SIM card — $10-$30. Needed for phone verification on platform signups",
+                "VPN service — $5-$12 per month. Required for geo-targeting your content to US audiences",
+                "AI image generation credits (Seedream 4.5, Nano Banana 2) — $0-$50 per month depending on usage",
+                "Kling video credits — $10-$30 per month. Standard mode is sufficient for starting"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Free Tools"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Photopea — Free browser-based Photoshop alternative for image editing and artifact removal",
+                "CapCut — Free video editor. Handles cuts, transitions, trending audio, and text overlays",
+                "AllMyLinks or Linktree — Free link in bio pages for your conversion funnel",
+                "Google Sheets — Free content calendar and metrics tracking",
+                "Telegram — Free messaging platform for your warming channel"
+              ]
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "The Core Tool Stack"
+            },
+            {
+              "type": "text",
+              "content": "Every tool in this stack serves a specific function in the content pipeline. Modules 2-4 cover each tool in detail with step-by-step workflows."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Seedream 4.5 — Primary AI image generator. Produces photorealistic images from text prompts. Best for generating your base model and standard content",
+                "Nano Banana 2 — Secondary AI image generator. Stronger face consistency when using reference images. Use alongside Seedream for variety",
+                "Kling — AI video generator. Converts a single image into a realistic 5-10 second video clip. Standard and Professional modes available",
+                "Photopea — Image editor for fixing AI artifacts, adjusting lighting, and adding the 2% grain that makes images look real",
+                "CapCut — Video editor for trimming clips, adding trending audio, stitching multiple clips, and optimizing export settings per platform"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Realistic Revenue Timeline",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Revenue builds slowly. The first 30 days are almost entirely setup and warmup with zero to minimal income. This is normal and expected. The operators earning $5K-$10K+ per month have been running their systems for 6-12 months."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Month-by-Month Expectations"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Month 1: $0-$200 — Model creation, account setup, warmup protocols. Most of this month is preparation. Revenue is near zero",
+                "Month 2-3: $100-$500 — Accounts are live, content is flowing, first followers start converting. Revenue trickles in as the funnel begins working",
+                "Month 3-6: $500-$3,000 — Consistent posting and growing audience. Funnel is optimized. Revenue grows as follower count and trust increase",
+                "Month 6+: $2,000-$10,000+ — Scaled operations, possibly multiple personas. Revenue compounds as systems become efficient and audience compounds"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Revenue Reality",
+              "content": "Most operators earn under $500 in their first three months. This is normal. Do not compare your Month 1 to someone else's Month 12. The system works, but it requires patience and consistency.",
+              "border": "#FF3131"
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "What Drives Revenue Growth"
+            },
+            {
+              "type": "text",
+              "content": "Revenue scales based on three factors. Understanding which lever to pull at each stage prevents wasted effort."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Follower volume — More followers means more people entering your funnel. Driven by content quality and posting consistency",
+                "Conversion rate — Percentage of followers who become paying subscribers. Driven by funnel optimization, Telegram warming, and subscription page quality",
+                "Retention — How long subscribers stay. Driven by content quality on the paid platform and how regularly you post exclusive content"
+              ]
+            },
+            {
+              "type": "text",
+              "content": "In Month 1-3, focus entirely on follower volume. You need audience before you can optimize conversion. In Month 3-6, shift focus to conversion rate and funnel optimization. In Month 6+, focus on retention and scaling to additional personas."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "header": "Daily Time Investment",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "This is not passive income. During the first 3 months, expect to invest 2-4 hours per day, seven days per week. After Month 3-6, daily time drops to 1-2 hours once systems are built and content batching is established."
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Daily Task Breakdown (Month 1-3)"
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Content generation — 30-60 minutes. Batch image and video generation sessions. Aim to produce 3-5 days of content in one session",
+                "Posting and engagement — 30-60 minutes. Post across platforms, respond to comments, engage with other accounts to build algorithmic trust",
+                "Account management — 15-30 minutes. Check metrics, verify account health, monitor for shadowbans or warnings",
+                "Strategy and planning — 15-30 minutes. Plan content calendar, review what performed well, adjust posting schedule"
+              ]
+            },
+            {
+              "type": "panel",
+              "title": "Total Daily Investment",
+              "content": "2-4 hours per day during the first 3 months. After Month 3-6, this drops to 1-2 hours as content batching and systems become efficient. The early time investment builds the system that eventually runs lean."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "How Time Shifts Over Months"
+            },
+            {
+              "type": "text",
+              "content": "The balance of tasks changes as your system matures. Early months are heavy on content creation and warmup. Later months shift toward engagement and optimization."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Month 1 — 70% content creation, 20% warmup and engagement, 10% setup and planning",
+                "Month 2-3 — 50% content creation, 30% posting and engagement, 20% funnel and strategy",
+                "Month 3-6 — 30% content creation (batched), 40% engagement and community, 30% optimization and scaling",
+                "Month 6+ — 20% content creation (highly batched), 30% engagement, 30% monetization optimization, 20% scaling to new personas"
+              ]
+            }
+          ]
+        }
       ]
     }
   ],
   "summary_points": [
-    "The AI Influencer Method is a real business that requires 2-4 hours daily and real patience",
-    "Revenue comes from the funnel, not just from posting — every platform serves a role in moving followers to paying subscribers",
-    "Realistic expectations: $0-200 in Month 1, $500-3K by Month 3-6, $2K-10K+ at Month 6+ with scaled operations",
-    "Minimum startup cost is approximately $200-$500 — start lean and reinvest revenue",
-    "Core tool stack: Seedream 4.5 + Nano Banana 2 for images, Kling for video, Photopea for editing, CapCut for video editing",
-    "Instagram and Threads are mandatory primary platforms — TikTok, Reddit, and Twitter/X support the system",
-    "Start with one persona, master the system, then scale — do not skip steps or rush the process"
+    "The AI Influencer Method creates and monetizes fictional social media personas using AI image and video tools",
+    "Revenue comes from the funnel: Discovery → Follow → Click → Warm → Convert. Every platform serves a specific role",
+    "Instagram and Threads are mandatory primary platforms. TikTok, Reddit, and Twitter/X are support platforms added later",
+    "Startup cost is $200-$500. Core tools: Seedream 4.5, Nano Banana 2, Kling, Photopea, CapCut",
+    "Realistic revenue: $0-200 Month 1, $500-3K by Month 3-6, $2K-10K+ at Month 6+ with scaled operations",
+    "Daily time investment: 2-4 hours for first 3 months, dropping to 1-2 hours once systems are established"
   ]
 }

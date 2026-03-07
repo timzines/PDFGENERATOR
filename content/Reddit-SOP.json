@@ -261,7 +261,9 @@
             },
             {
               "type": "bullets",
-              "items": ["Log in and do nothing"]
+              "items": [
+                "Log in and do nothing"
+              ]
             },
             {
               "type": "subheader",
@@ -269,7 +271,11 @@
             },
             {
               "type": "bullets",
-              "items": ["Scroll for 15 to 20 minutes", "No posts", "No comments"]
+              "items": [
+                "Scroll for 15 to 20 minutes",
+                "No posts",
+                "No comments"
+              ]
             },
             {
               "type": "subheader",
@@ -277,7 +283,11 @@
             },
             {
               "type": "bullets",
-              "items": ["Scroll 25 to 30 minutes", "Upvote 2 to 3 posts", "Join 2 subreddits"]
+              "items": [
+                "Scroll 25 to 30 minutes",
+                "Upvote 2 to 3 posts",
+                "Join 2 subreddits"
+              ]
             },
             {
               "type": "subheader",
@@ -285,7 +295,12 @@
             },
             {
               "type": "bullets",
-              "items": ["Scroll 30 to 40 minutes", "Upvote 5 to 7 posts", "Write 1 comment maximum", "No posts"]
+              "items": [
+                "Scroll 30 to 40 minutes",
+                "Upvote 5 to 7 posts",
+                "Write 1 comment maximum",
+                "No posts"
+              ]
             }
           ],
           "right": [
@@ -295,7 +310,12 @@
             },
             {
               "type": "bullets",
-              "items": ["Scroll 30 to 40 minutes", "Upvote 8 to 10 posts", "Write 2 comments", "Post 1 safe-for-work post"]
+              "items": [
+                "Scroll 30 to 40 minutes",
+                "Upvote 8 to 10 posts",
+                "Write 2 comments",
+                "Post 1 safe-for-work post"
+              ]
             },
             {
               "type": "subheader",
@@ -303,7 +323,12 @@
             },
             {
               "type": "bullets",
-              "items": ["Scroll 30 to 40 minutes", "Upvote 8 to 10 posts", "Write 2 comments", "Post 2 to 3 safe posts"]
+              "items": [
+                "Scroll 30 to 40 minutes",
+                "Upvote 8 to 10 posts",
+                "Write 2 comments",
+                "Post 2 to 3 safe posts"
+              ]
             },
             {
               "type": "panel",
@@ -345,7 +370,7 @@
             "Soft content builds curiosity",
             "Fanvue fulfills fantasy"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         },
         {
           "type": "panel",

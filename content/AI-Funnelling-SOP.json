@@ -51,11 +51,11 @@
         {
           "type": "bullets",
           "items": [
-            "Instagram \u2192 Link in Bio \u2192 Fanvue",
-            "Instagram \u2192 Link in Bio \u2192 Free Telegram \u2192 Fanvue",
-            "Instagram \u2192 Link in Bio \u2192 Free Telegram \u2192 Link in Bio \u2192 Fanvue"
+            "Instagram → Link in Bio → Fanvue",
+            "Instagram → Link in Bio → Free Telegram → Fanvue",
+            "Instagram → Link in Bio → Free Telegram → Link in Bio → Fanvue"
           ],
-          "bullet": "\u2192"
+          "bullet": "→"
         },
         {
           "type": "panel",
@@ -151,7 +151,7 @@
                 "Fanvue (Primary Monetization)",
                 "Free Telegram (Pre-Sell Funnel)"
               ],
-              "bullet": "\u2192"
+              "bullet": "→"
             },
             {
               "type": "panel",

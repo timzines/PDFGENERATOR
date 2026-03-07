@@ -117,7 +117,11 @@
             },
             {
               "type": "bullets",
-              "items": ["Human", "Simple", "No spam patterns"]
+              "items": [
+                "Human",
+                "Simple",
+                "No spam patterns"
+              ]
             },
             {
               "type": "subheader",
@@ -125,7 +129,10 @@
             },
             {
               "type": "bullets",
-              "items": ["Unique per account", "Non-explicit"]
+              "items": [
+                "Unique per account",
+                "Non-explicit"
+              ]
             }
           ],
           "right": [
@@ -161,7 +168,13 @@
             },
             {
               "type": "bullets",
-              "items": ["Create the account", "No username, bio, or picture", "Close app for 20 minutes", "Browse FYP 30-60 minutes", "No likes, no posts"]
+              "items": [
+                "Create the account",
+                "No username, bio, or picture",
+                "Close app for 20 minutes",
+                "Browse FYP 30-60 minutes",
+                "No likes, no posts"
+              ]
             },
             {
               "type": "subheader",
@@ -169,7 +182,10 @@
             },
             {
               "type": "bullets",
-              "items": ["Browse FYP 30 minutes", "No follows, no posts, no likes"]
+              "items": [
+                "Browse FYP 30 minutes",
+                "No follows, no posts, no likes"
+              ]
             },
             {
               "type": "subheader",
@@ -177,7 +193,11 @@
             },
             {
               "type": "bullets",
-              "items": ["Browse FYP 30 minutes", "Like 3-5 videos", "No follows, no posts"]
+              "items": [
+                "Browse FYP 30 minutes",
+                "Like 3-5 videos",
+                "No follows, no posts"
+              ]
             },
             {
               "type": "subheader",
@@ -185,7 +205,12 @@
             },
             {
               "type": "bullets",
-              "items": ["Browse FYP 30-40 minutes", "Like 5-7 videos", "Write 1 comment", "No follows, no posts"]
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 5-7 videos",
+                "Write 1 comment",
+                "No follows, no posts"
+              ]
             }
           ],
           "right": [
@@ -195,7 +220,13 @@
             },
             {
               "type": "bullets",
-              "items": ["Add profile picture, bio, and username manually", "Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2 comments", "No posts"]
+              "items": [
+                "Add profile picture, bio, and username manually",
+                "Browse FYP 30-40 minutes",
+                "Like 8-10 videos",
+                "Write 2 comments",
+                "No posts"
+              ]
             },
             {
               "type": "subheader",
@@ -203,7 +234,12 @@
             },
             {
               "type": "bullets",
-              "items": ["Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2 comments", "No posting"]
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 8-10 videos",
+                "Write 2 comments",
+                "No posting"
+              ]
             },
             {
               "type": "subheader",
@@ -211,7 +247,12 @@
             },
             {
               "type": "bullets",
-              "items": ["Browse FYP 30-40 minutes", "Like 10 videos", "Write 3 comments", "Post the first TikTok"]
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 10 videos",
+                "Write 3 comments",
+                "Post the first TikTok"
+              ]
             },
             {
               "type": "subheader",
@@ -219,7 +260,13 @@
             },
             {
               "type": "bullets",
-              "items": ["Browse FYP 30-40 minutes", "Like 8-10 videos", "Write 2-3 comments", "Post second and third TikToks", "Activate analytics"]
+              "items": [
+                "Browse FYP 30-40 minutes",
+                "Like 8-10 videos",
+                "Write 2-3 comments",
+                "Post second and third TikToks",
+                "Activate analytics"
+              ]
             }
           ]
         },
