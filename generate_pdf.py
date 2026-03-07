@@ -453,7 +453,7 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 50px 60px 40px 60px;
+    padding: 50px 60px 20px 60px;
     page: content-page;
 }
 
@@ -521,14 +521,22 @@ body {
 }
 
 .content-columns {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
+    width: 100%;
+}
+.content-columns::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
 .content-col {
-    flex: 1;
-    min-width: 0;
+    width: calc(50% - 10px);
+}
+.content-col:first-child {
+    float: left;
+}
+.content-col:last-child {
+    float: right;
 }
 
 .content-box {
@@ -561,6 +569,7 @@ body {
     margin-bottom: 8px;
     margin-top: 14px;
     letter-spacing: 0.3px;
+    page-break-after: avoid;
 }
 
 .content-box .sub-header:first-child {
@@ -589,6 +598,7 @@ body {
     font-size: 13px;
     line-height: 1.55;
     border-radius: 0 6px 6px 0;
+    page-break-inside: avoid;
 }
 
 .content-box .example-bad {
@@ -601,6 +611,7 @@ body {
     font-size: 13px;
     line-height: 1.55;
     border-radius: 0 6px 6px 0;
+    page-break-inside: avoid;
 }
 
 .content-box .example-label {
@@ -619,6 +630,7 @@ body {
     border-radius: 8px;
     padding: 14px 18px;
     margin: 12px 0 6px 0;
+    page-break-inside: avoid;
 }
 
 .content-box .panel-title {
@@ -650,14 +662,14 @@ body {
 
 .content-box-full p { font-size: 13.5px; line-height: 1.65; margin-bottom: 10px; text-align: justify; color: #f0e0e6; }
 .content-box-full p:last-child { margin-bottom: 0; }
-.content-box-full .sub-header { font-size: 14.5px; font-weight: 700; color: #ffffff; margin-bottom: 8px; margin-top: 14px; letter-spacing: 0.3px; }
+.content-box-full .sub-header { font-size: 14.5px; font-weight: 700; color: #ffffff; margin-bottom: 8px; margin-top: 14px; letter-spacing: 0.3px; page-break-after: avoid; }
 .content-box-full .sub-header:first-child { margin-top: 0; }
 .content-box-full ul { margin: 6px 0 10px 18px; padding: 0; }
 .content-box-full ul li { font-size: 13.5px; line-height: 1.6; color: #f0e0e6; margin-bottom: 3px; }
-.content-box-full .example-good { border-left: 3px solid #7dba6d; background: rgba(125,186,109,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #c8e6c0; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; }
-.content-box-full .example-bad { border-left: 3px solid #c9665a; background: rgba(201,102,90,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #eaaca5; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; }
+.content-box-full .example-good { border-left: 3px solid #7dba6d; background: rgba(125,186,109,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #c8e6c0; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; page-break-inside: avoid; }
+.content-box-full .example-bad { border-left: 3px solid #c9665a; background: rgba(201,102,90,0.08); padding: 8px 12px; margin: 10px 0; font-style: italic; color: #eaaca5; font-size: 13px; line-height: 1.55; border-radius: 0 6px 6px 0; page-break-inside: avoid; }
 .content-box-full .example-label { font-weight: 700; font-style: normal; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
-.content-box-full .panel-box { background: rgba(90, 60, 68, 0.55); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid rgba(196,154,133,0.6); border-radius: 8px; padding: 14px 18px; margin: 12px 0 6px 0; }
+.content-box-full .panel-box { background: rgba(90, 60, 68, 0.55); border: 1px solid rgba(255,255,255,0.12); border-left: 3px solid rgba(196,154,133,0.6); border-radius: 8px; padding: 14px 18px; margin: 12px 0 6px 0; page-break-inside: avoid; }
 .content-box-full .panel-title { font-size: 12px; font-weight: 700; color: #c49a85; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.8px; }
 .content-box-full .panel-body { font-size: 13px; line-height: 1.55; color: #e8d5dc; }
 
@@ -746,6 +758,26 @@ def split_header_two_tone(header_text):
     main = " ".join(words[:-1])
     fade = words[-1]
     return main, fade
+
+
+def group_blocks_into_chunks(blocks):
+    """Group blocks into logical chunks, splitting at each subheader.
+
+    A chunk starts at a subheader (or from the beginning) and includes
+    everything up to the next subheader.  This keeps each chunk small
+    enough to fit on a single page, avoiding the monolithic-column
+    problem with WeasyPrint floats.
+    """
+    chunks = []
+    current_chunk = []
+    for block in blocks:
+        if block.get("type") == "subheader" and current_chunk:
+            chunks.append(current_chunk)
+            current_chunk = []
+        current_chunk.append(block)
+    if current_chunk:
+        chunks.append(current_chunk)
+    return chunks
 
 
 def render_blocks_html(blocks):
@@ -865,19 +897,46 @@ def build_section_html(header, body_blocks):
 
     content_html = ""
 
+    # Group consecutive non-two-column blocks into a single content-box-full
+    # so they flow together naturally instead of each being an isolated box.
+    pending_blocks = []
+
+    def flush_pending():
+        nonlocal pending_blocks
+        if not pending_blocks:
+            return ""
+        block_html = render_blocks_html(pending_blocks)
+        pending_blocks = []
+        return f'<div class="content-box-full">{block_html}</div>\n'
+
     for block in body_blocks:
         if block.get("type") == "two_column":
-            left_html = render_blocks_html(block["left"])
-            right_html = render_blocks_html(block["right"])
-            content_html += f'''
-            <div class="content-columns">
-                <div class="content-col"><div class="content-box">{left_html}</div></div>
-                <div class="content-col"><div class="content-box">{right_html}</div></div>
-            </div>
-            '''
-        else:
+            content_html += flush_pending()
+            # Split each column into small logical chunks (one per subheader
+            # group) so each paired row is small enough for a single page.
+            left_chunks = group_blocks_into_chunks(block["left"])
+            right_chunks = group_blocks_into_chunks(block["right"])
+            max_chunks = max(len(left_chunks), len(right_chunks))
+            for i in range(max_chunks):
+                left_html = render_blocks_html(left_chunks[i]) if i < len(left_chunks) else ""
+                right_html = render_blocks_html(right_chunks[i]) if i < len(right_chunks) else ""
+                left_box = f'<div class="content-box">{left_html}</div>' if left_html else ""
+                right_box = f'<div class="content-box">{right_html}</div>' if right_html else ""
+                content_html += f'''
+                <div class="content-columns">
+                    <div class="content-col">{left_box}</div>
+                    <div class="content-col">{right_box}</div>
+                </div>
+                '''
+        elif block.get("type") == "panel" and block.get("border"):
+            # Bordered panels (rules, tips) are standalone — flush first
+            content_html += flush_pending()
             block_html = render_blocks_html([block])
             content_html += f'<div class="content-box-full">{block_html}</div>\n'
+        else:
+            pending_blocks.append(block)
+
+    content_html += flush_pending()
 
     return f'''
         <div class="section-header">{header_html}</div>
@@ -1001,7 +1060,7 @@ def generate_pdf(config, output_path):
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0;
+    margin: 0 0 45px 0;
     padding: 0;
     background-image:
         linear-gradient(180deg, rgba(80,55,65,0.15) 0%, transparent 15%),
