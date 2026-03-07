@@ -6,129 +6,205 @@
     {
       "header": "Lesson 1: Reference Image Workflow",
       "blocks": [
-        {"type": "text", "content": "Once you have your base model from Module 2, every new image you create should be generated using that base as a reference. This is how you maintain consistency across hundreds of images. The reference image workflow is the backbone of your content pipeline."},
+        {"type": "text", "content": "Once you have your base model from Module 2, every new image you create should be generated using that base as a reference. This is how you maintain consistency across hundreds of images. The reference image workflow is the backbone of your content pipeline. Without it, every image looks like a different person and your page screams fake."},
+        {"type": "text", "content": "Both Seedream 4.5 and Nano Banana 2 support reference-based generation. You upload your seed image, write a prompt describing the new scene, and the tool generates output that preserves your character's face while creating the new content. This lesson covers how to use this workflow effectively."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "The Reference Workflow"},
           {"type": "bullets", "items": [
             "Start with your locked-in seed image from Module 2",
-            "Upload it as a reference/input image in your generation tool",
+            "Upload it as a reference/input image in Seedream 4.5 or Nano Banana 2",
             "Write a new prompt describing the desired scene, outfit, or setting",
-            "Generate multiple outputs and compare against the reference",
-            "Only keep images that match the face consistently"
+            "Generate multiple outputs (3-5 per prompt) and compare against the reference",
+            "Only keep images that match the face consistently",
+            "If the face drifts, increase reference strength or try a different seed angle"
           ], "bullet": "→"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Step-by-step screenshot of uploading reference image and generating a new variation"}
-        ], "right": [
           {"type": "subheader", "content": "Reference Image Best Practices"},
           {"type": "bullets", "items": [
             "Use a clear, front-facing headshot as your primary reference",
-            "Keep 2-3 reference angles (front, 3/4 turn, profile) for variety",
-            "Higher resolution reference = better consistency in outputs",
-            "Never change your reference image once your page is live"
+            "Keep 2-3 reference angles saved (front, 3/4 turn, profile) for variety",
+            "Higher resolution reference images produce better consistency",
+            "Never change your reference image once your page is live",
+            "When switching between Seedream and Nano Banana, use the same reference image"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example showing reference image → 3-4 different output images generated from it"}
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Step-by-step visual of the reference workflow: 1. Upload seed image → 2. Write new prompt → 3. Generate variations → 4. Compare to reference → 5. Keep or regenerate. Show example reference image producing 3-4 different outputs."}
+        ], "right": [
+          {"type": "subheader", "content": "Choosing the Right Tool for Each Shot"},
+          {"type": "text", "content": "Seedream 4.5 and Nano Banana 2 have different strengths. Knowing when to use each one saves time and produces better results."},
+          {"type": "bullets", "items": [
+            "Seedream 4.5 — Best for close-up portraits, headshots, and detailed facial expressions. Strongest at preserving fine facial details",
+            "Nano Banana 2 — Best for full-body shots, varied poses, and lifestyle scenes with complex backgrounds",
+            "For critical content (profile photos, first grid posts), generate with both tools and compare",
+            "For daily content, use whichever tool handles that content type best"
+          ]},
+          {"type": "subheader", "content": "Common Mistakes in Reference Workflow"},
+          {"type": "bullets", "items": [
+            "Using a low-quality or small reference image — always use full resolution",
+            "Setting reference strength too low — face drifts from your model",
+            "Setting reference strength too high — every image looks identical (no variety)",
+            "Ignoring face drift on 'almost good enough' images — never post a drifted face",
+            "Changing reference images between sessions — stick with the same seed"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Example showing reference image → 3-4 different output images generated from it, with annotations showing face consistency maintained across different settings and outfits"}
         ]}
       ]
     },
     {
       "header": "Lesson 2: Prompt Engineering for SFW Images",
       "blocks": [
-        {"type": "text", "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. This lesson covers how to write prompts that consistently produce natural, platform-safe images."},
+        {"type": "text", "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. This lesson covers how to write prompts that consistently produce natural, platform-safe images. A well-crafted prompt saves hours of regeneration."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Prompt Structure"},
+          {"type": "text", "content": "Every prompt should follow this structure. Missing any component leads to random or unusable results."},
           {"type": "bullets", "items": [
-            "Subject description (already handled by reference image)",
-            "Setting/background (indoor, outdoor, studio, café, etc.)",
-            "Outfit/clothing description",
-            "Lighting and mood (natural light, golden hour, soft studio)",
-            "Camera angle and framing (selfie, portrait, full body)",
-            "Style keywords (photorealistic, candid, editorial)"
+            "Subject description (handled by reference image — keep light)",
+            "Setting/background (indoor, outdoor, studio, cafe, car, gym, etc.)",
+            "Outfit/clothing description (specific helps: 'white sundress' not 'nice outfit')",
+            "Lighting and mood (natural light, golden hour, soft studio, overhead gym)",
+            "Camera angle and framing (selfie, portrait, full body, mirror shot)",
+            "Style keywords (photorealistic, candid, editorial, iPhone quality, raw)"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Annotated prompt example showing each component highlighted"}
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Annotated prompt example showing each component color-coded: [Setting] + [Outfit] + [Lighting] + [Camera Angle] + [Style]. Each segment highlighted in a different color with labels."},
+          {"type": "subheader", "content": "The Prompt Template Method"},
+          {"type": "text", "content": "Do not write prompts from scratch every time. Create templates that work and swap out the variables. This is how professional operators generate dozens of images efficiently."},
+          {"type": "good_example", "content": "Template: '[setting], [outfit], [lighting], [pose/angle], photorealistic, candid feel'\n\nSwap variables:\nCafe: 'Outdoor cafe table, white sundress, golden hour natural light, looking at camera with soft smile, photorealistic, candid'\n\nGym: 'Gym mirror, grey sports bra and leggings, overhead fluorescent lighting, post-workout selfie, photorealistic, iPhone quality'\n\nHome: 'Living room couch, oversized hoodie, warm lamp lighting, relaxed sitting pose, photorealistic, casual candid'"}
         ], "right": [
-          {"type": "good_example", "content": "Prompt: 'Young woman in a white sundress sitting at an outdoor café, golden hour lighting, candid pose, looking at camera with soft smile, iPhone selfie style, photorealistic'"},
-          {"type": "bad_example", "content": "Prompt: 'Beautiful girl photo'\n(Too vague — no setting, lighting, or style direction. Results will be random and inconsistent.)"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side-by-side comparison: output from a good prompt vs output from a vague prompt"}
+          {"type": "subheader", "content": "10 Proven Prompt Examples"},
+          {"type": "text", "content": "These prompts are tested and produce consistent, platform-safe results. Use them as starting points and adjust for your persona."},
+          {"type": "good_example", "content": "1. 'Young woman in white sundress at outdoor cafe, golden hour, candid smile at camera, photorealistic'\n\n2. 'Close-up selfie in bathroom mirror, messy bun, no makeup look, soft morning light, iPhone quality'\n\n3. 'Full body shot in gym, grey workout outfit, overhead lighting, confident stance, candid feel'\n\n4. 'Sitting on bed in oversized t-shirt, warm bedside lamp light, relaxed pose, looking down at phone, photorealistic'\n\n5. 'Walking on city street, casual jeans and crop top, natural afternoon light, candid mid-stride, street photography style'"},
+          {"type": "good_example", "content": "6. 'Beach sunset, swimsuit, golden hour backlight, hair blowing in wind, looking over shoulder, photorealistic'\n\n7. 'Car selfie, front seat, casual top, natural daylight from window, slight smile, iPhone selfie style'\n\n8. 'Couch with coffee mug, oversized sweater, rainy window background, cozy mood lighting, candid reading pose'\n\n9. 'Restaurant dinner table, black dress, ambient warm lighting, leaning forward, soft eye contact with camera'\n\n10. 'Bedroom mirror selfie, casual loungewear, evening lamp lighting, relaxed standing pose, photorealistic'"},
+          {"type": "bad_example", "content": "Bad prompts:\n'Beautiful girl photo' — Too vague, no direction\n'Hot model posing sexy' — Too generic, produces AI-looking results\n'Woman' — Produces random, unusable output\n\nAll bad prompts share the same problem: no specific setting, lighting, outfit, or style direction."}
         ]},
-        {"type": "panel", "title": "Pro Tip", "content": "Keep a prompt template document. When you find a prompt structure that works well, save it. Swap out the setting and outfit details for each new batch. This saves time and maintains quality.", "border": "#39FF14"}
+        {"type": "panel", "title": "Pro Tip", "content": "Keep a prompt document. When you find a prompt that produces consistently good results, save it. Swap out the setting and outfit details for each new batch. This saves time and maintains quality. Over time you will build a library of 20-30 proven templates.", "border": "#39FF14"}
       ]
     },
     {
       "header": "Lesson 3: Editing & Refining AI Images",
       "blocks": [
-        {"type": "text", "content": "Raw AI outputs are rarely perfect. Even the best generations need minor editing before they are ready to post. This lesson covers what to look for and how to fix common issues without over-processing the image."},
+        {"type": "text", "content": "Raw AI outputs are rarely perfect. Even the best generations need minor editing before they are ready to post. This lesson covers what to look for, how to fix common issues, and the critical trick that makes AI images pass as real photos. Skipping the editing step is how pages get exposed as AI."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Common Issues to Fix"},
           {"type": "bullets", "items": [
-            "Extra or distorted fingers/hands",
-            "Asymmetric facial features",
-            "Text or watermark artifacts in background",
-            "Unnatural skin smoothing or shine",
-            "Weird jewelry, accessories, or clothing seams",
-            "Background inconsistencies or blending errors"
+            "Extra or distorted fingers/hands — the most common AI artifact",
+            "Asymmetric facial features — one eye larger or different height",
+            "Text or watermark artifacts in background — AI loves generating fake text",
+            "Unnatural skin smoothing or plastic shine — too perfect is too fake",
+            "Weird jewelry, accessories, or clothing seams that break reality",
+            "Background inconsistencies — impossible geometry, blending errors, floating objects"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Before/after examples of common AI artifacts being fixed"}
+          {"type": "subheader", "content": "Editing Tools (Free Options)"},
+          {"type": "bullets", "items": [
+            "Photopea (photopea.com) — Free browser-based Photoshop alternative. Handles everything you need",
+            "GIMP — Free desktop app for advanced editing",
+            "Canva — Basic cropping, filters, and text overlay",
+            "Snapseed — Mobile editing for quick adjustments",
+            "For most editing tasks, Photopea is all you need"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Before/after examples of common AI artifacts being fixed: distorted hand corrected, background text removed, skin smoothing reduced, asymmetric eyes fixed"}
         ], "right": [
           {"type": "subheader", "content": "Editing Workflow"},
           {"type": "bullets", "items": [
-            "Inspect hands and fingers first (most common issue)",
-            "Check face symmetry and eye alignment",
-            "Scan background for text, artifacts, or impossible geometry",
-            "Adjust color grading for natural skin tones",
-            "Crop or reframe for platform-specific aspect ratios",
-            "Export at appropriate resolution"
+            "Step 1: Inspect hands and fingers first (most common issue)",
+            "Step 2: Check face symmetry and eye alignment",
+            "Step 3: Scan background for text, artifacts, or impossible geometry",
+            "Step 4: Adjust color grading for natural skin tones",
+            "Step 5: Add approximately 2% grain/noise for realism (critical step)",
+            "Step 6: Crop or reframe for platform-specific aspect ratios",
+            "Step 7: Export at appropriate resolution"
           ], "bullet": "→"},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Screenshot of editing workflow in photo editing tool"}
+          {"type": "subheader", "content": "The Grain Trick — Critical"},
+          {"type": "text", "content": "This is the single most important editing technique in this entire course. Raw AI images look too clean, too smooth, too perfect. Real photos from phones have subtle grain and noise. Adding approximately 2% grain in your editing tool makes AI images pass as real."},
+          {"type": "bullets", "items": [
+            "In Photopea: Filter → Noise → Add Noise → set to 2-3%, Gaussian, Monochromatic",
+            "This simulates camera sensor noise that exists in every real photo",
+            "Without grain, experienced eyes can spot AI images immediately",
+            "The difference is subtle but it is the difference between 'this looks real' and 'this looks AI'",
+            "Apply grain as the very last step before export"
+          ]},
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Side by side comparison: Raw AI output (too smooth, no grain, plastic-looking) vs Edited output (grain added, color corrected, natural-looking). Label the differences clearly."},
+          {"type": "subheader", "content": "Inpainting — Fixing Specific Areas"},
+          {"type": "text", "content": "When a generated image is almost perfect but has one bad area (a distorted hand, a weird background element), inpainting lets you regenerate just that area without redoing the entire image."},
+          {"type": "bullets", "items": [
+            "Select the problem area using your generation tool's inpainting feature",
+            "Write a prompt describing what should be in that area",
+            "The tool regenerates only the selected region while keeping everything else",
+            "This saves images that would otherwise be rejected entirely",
+            "Use inpainting for: hands, background artifacts, clothing seams, jewelry errors"
+          ]}
         ]},
-        {"type": "panel", "title": "Rule", "content": "Do not over-edit. The goal is to fix obvious AI artifacts, not to create a heavily processed image. Over-edited photos look fake and reduce engagement.", "border": "#FF3131"}
+        {"type": "panel", "title": "Rule", "content": "Do not over-edit. The goal is to fix obvious AI artifacts and add grain, not to create a heavily processed image. Over-edited photos look fake in a different way. Fix the problems, add grain, and stop. Natural-looking beats polished-looking every time.", "border": "#FF3131"}
       ]
     },
     {
       "header": "Lesson 4: Platform-Specific Image Rules",
       "blocks": [
-        {"type": "text", "content": "Each platform has different content guidelines. What works on Reddit will get you banned on Instagram. Understanding what is 'safe' per platform prevents account strikes and keeps your content flowing without interruption."},
+        {"type": "text", "content": "Each platform has different content guidelines. What works on Reddit will get you banned on Instagram. Understanding what is 'safe' per platform prevents account strikes and keeps your content flowing without interruption. One wrong post can shadowban your account for weeks. Know the rules before you post."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Instagram (Strictest)"},
           {"type": "bullets", "items": [
-            "No nudity, implied or explicit",
-            "No underwear as primary clothing",
-            "Cleavage must be modest and natural",
-            "Swimwear is allowed in context (beach, pool)",
-            "No sexual poses or suggestive hand placement"
+            "No nudity, implied or explicit — zero tolerance",
+            "No underwear as primary clothing (bras/panties as the outfit)",
+            "Cleavage must be modest and natural — no extreme push-up",
+            "Swimwear is allowed in context (beach, pool settings only)",
+            "No sexual poses or suggestive hand placement",
+            "No sexual captions or innuendo in text",
+            "AI-generated content is increasingly flagged — realism is critical"
           ]},
           {"type": "subheader", "content": "TikTok (Strict)"},
           {"type": "bullets", "items": [
-            "Similar rules to Instagram, often stricter",
-            "Carousels and photo content are safest",
+            "Similar rules to Instagram, often stricter enforcement",
+            "Carousels and photo content are the safest format",
             "Avoid anything that could be flagged as 'adult content'",
-            "When in doubt, keep it casual and clothed"
+            "When in doubt, keep it casual and fully clothed",
+            "TikTok's moderation is faster and harsher than Instagram's",
+            "One content strike can shadow your account for weeks"
+          ]},
+          {"type": "subheader", "content": "Threads (Moderate)"},
+          {"type": "bullets", "items": [
+            "Linked to Instagram — violations can affect your IG account",
+            "Text-based posts are safest for Threads",
+            "Optional photo attachments should be SFW casual only",
+            "No explicit images, no suggestive poses in attached photos",
+            "Keep it conversational — Threads is for personality, not photos"
           ]}
         ], "right": [
           {"type": "subheader", "content": "Reddit (Most Flexible)"},
           {"type": "bullets", "items": [
-            "Varies by subreddit rules",
-            "SFW subreddits still require tasteful content",
-            "Read each subreddit's rules before posting",
-            "Some SFW subs allow swimwear, others don't"
+            "Rules vary dramatically by subreddit — always read before posting",
+            "SFW subreddits still require tasteful, appropriate content",
+            "Some SFW subs allow swimwear, others do not",
+            "NSFW subreddits have their own specific content rules",
+            "Mark your profile as NSFW in settings before any NSFW posting",
+            "Moderators are human and strict — one violation can get you permanently banned from a subreddit"
           ]},
           {"type": "subheader", "content": "Twitter/X (Flexible)"},
           {"type": "bullets", "items": [
-            "More lenient than Instagram",
-            "SFW content performs better for discovery",
-            "Mark sensitive content appropriately",
-            "Keep main feed clean, use media for variety"
+            "More lenient than Instagram overall",
+            "SFW content actually performs better for discovery and growth",
+            "Mark sensitive content appropriately in media settings",
+            "Keep main feed clean — use the sensitive content flag for anything borderline",
+            "Explicit content is allowed but must be properly marked"
           ]},
-          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Content tier chart: what's safe for each platform (green/yellow/red zones)"}
+          {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Platform safety scale: horizontal gradient from 'Strictest' to 'Most Flexible'. Left: TikTok → Instagram → Threads → Twitter/X → Reddit. Show what's allowed at each level with checkmark and X icons for content types."},
+          {"type": "subheader", "content": "The 'When In Doubt' Decision Process"},
+          {"type": "bullets", "items": [
+            "Is the outfit something you would see at a mall? → Safe for Instagram/TikTok",
+            "Is there visible underwear as the main outfit? → Not safe for Instagram",
+            "Would this photo make you uncomfortable if your boss saw it? → Borderline — test with a trial post first",
+            "Could this be interpreted as sexual? → Do not post on Instagram or TikTok"
+          ]}
         ]},
-        {"type": "panel", "title": "Golden Rule", "content": "When in doubt, keep it safe. One content strike on Instagram can shadow your account for weeks. It is always better to post something slightly too modest than to risk a ban.", "border": "#39FF14"}
+        {"type": "panel", "title": "Golden Rule", "content": "When in doubt, keep it safe. One content strike on Instagram can shadow your account for weeks. It is always better to post something slightly too modest than to risk a ban. You can always push boundaries gradually once trust is established — you cannot undo a strike.", "border": "#39FF14"}
       ]
     }
   ],
   "summary_points": [
-    "Always generate new images using your base model as a reference",
-    "Write detailed prompts with setting, lighting, outfit, and camera angle",
-    "Save prompt templates that produce consistently good results",
-    "Edit AI outputs to fix hands, artifacts, and background issues — but don't over-edit",
-    "Know each platform's content rules — Instagram is strictest, Reddit is most flexible",
+    "Always generate new images using your base model as a reference in Seedream 4.5 or Nano Banana 2",
+    "Write detailed prompts with setting, lighting, outfit, and camera angle — save templates that produce good results",
+    "Use Seedream 4.5 for portraits and close-ups, Nano Banana 2 for full-body and lifestyle shots",
+    "Edit AI outputs to fix hands, artifacts, and background issues using Photopea (free)",
+    "Always add approximately 2% grain/noise as the final editing step — this is what makes AI images pass as real photos",
+    "Use inpainting to fix specific problem areas without regenerating the entire image",
+    "Know each platform's content rules — TikTok and Instagram are strictest, Reddit is most flexible",
     "When in doubt, keep it safe — a content strike can derail weeks of progress"
   ]
 }

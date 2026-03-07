@@ -7,6 +7,7 @@
       "header": "Lesson 1: Instagram Growth Strategy",
       "blocks": [
         {"type": "text", "content": "Instagram is your primary traffic source. Everything else feeds into it or supports it. After warmup is complete (Module 5), you are ready to launch your real growth phase. Instagram does not push new accounts because content is 'good'. It pushes content when behavior looks human, consistent, and socially validated. This is where your page goes from looking human to actually growing."},
+        {"type": "panel", "title": "2025-2026 Instagram Reality Check", "content": "Meta deployed LLaMA-based AI moderation in 2025 that is hyper-sensitive to AI-generated content. This caused a mass ban wave (May-August 2025) affecting many AI influencer accounts. Instagram now actively flags and deranks AI-generated content. This means: your content must pass as real (the grain trick from Module 3 is critical), your accounts WILL get flagged eventually (always have backup accounts warming up), and IMEI/device bans can affect all accounts linked to that phone. Be prepared, not surprised.", "border": "#FF3131"},
         {"type": "text", "content": "Instagram rewards pages that already look wanted. Threads manufactures demand first, then Instagram amplifies it. You are not growing on two separate platforms — you are running one system with two tools."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Platform Role: Instagram"},
@@ -86,6 +87,7 @@
       "header": "Lesson 2: Threads Growth Strategy",
       "blocks": [
         {"type": "text", "content": "Threads is not a separate platform — it is a tool that feeds directly into your Instagram growth. Threads gives new pages reach without history. You use it to manufacture demand and curiosity, then push that attention to your Instagram profile. The fan should think: 'Who is this girl?' Not 'She is selling something.'"},
+        {"type": "panel", "title": "Critical Warning: Threads and Instagram Are Linked", "content": "Your Threads and Instagram accounts are connected. Spamming on Threads, getting reported on Threads, or violating community guidelines on Threads can directly affect your Instagram account. A Threads ban can trigger an Instagram flag. Treat Threads with the same safety discipline you apply to Instagram — it is not a throwaway platform.", "border": "#FF3131"},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Platform Role: Threads"},
           {"type": "bullets", "items": [
@@ -177,6 +179,7 @@
       "header": "Lesson 3: Reddit Growth Strategy",
       "blocks": [
         {"type": "text", "content": "Reddit is not a main platform. It is a niche amplifier. Reddit is slow, strict, and heavily moderated. Most subreddits do not allow promotion and remove content quickly. However, Reddit can be extremely powerful when a post goes viral inside the correct niche subreddit. One viral post inside the right subreddit can generate large traffic in a short time."},
+        {"type": "panel", "title": "Reddit Reality Check (2025-2026)", "content": "Reddit has become extremely hostile to promotional accounts. Operators running 5-15 promo accounts report daily bans even with residential proxies, manual warmup, and isolated environments. New accounts get flagged and banned within 1-2 days. Reddit's Contributor Quality Score (CQS) now heavily favors genuine engagement — comments are valued far more than posts. Expect to lose accounts regularly. Budget for it. Always have new accounts warming up. This is a war of attrition, not a set-and-forget strategy.", "border": "#FF3131"},
         {"type": "text", "content": "Reddit does not reward creators. It rewards relevance inside specific communities. A good Reddit account does not look like a model account. It looks like a normal user who belongs to a niche. The fan should feel like they discovered you inside their own community, not that you came to advertise."},
         {"type": "two_column", "left": [
           {"type": "subheader", "content": "Profile Setup: First Impression"},
@@ -260,7 +263,7 @@
         ], "right": [
           {"type": "subheader", "content": "Never Comment Like This"},
           {"type": "bad_example", "content": "check my profile\nlink in bio\ndm me"},
-          {"type": "text", "content": "Comments should look like real reactions, not strategy. One promotional comment can get your entire account flagged."}
+          {"type": "text", "content": "Comments should look like real reactions, not strategy. One promotional comment can get your entire account flagged. Reddit's Contributor Quality Score (CQS) tracks your comment patterns — comments are valued far more than posts for building account legitimacy. Avoid ChatGPT-sounding text and emoji-heavy responses. Write like a real person who belongs in the community."}
         ]},
         {"type": "subheader", "content": "Posting Phase & Content Progression"},
         {"type": "two_column", "left": [
@@ -389,11 +392,14 @@
             "Only post very safe content — TikTok moderation is stricter"
           ]},
           {"type": "subheader", "content": "Why Carousels Work"},
+          {"type": "text", "content": "Carousels are the safest and often most effective content format on TikTok for AI personas. They avoid the AI detection risks of video while still getting strong algorithmic reach."},
           {"type": "bullets", "items": [
-            "Easy to consume",
-            "Lower ban risk than video",
-            "Often get strong reach",
-            "Best for new accounts and risk-averse posting"
+            "Easy to consume — users swipe through naturally",
+            "Significantly lower ban risk than video content",
+            "Often get strong reach — TikTok's algorithm treats them favorably",
+            "Best for new accounts and risk-averse posting",
+            "Less chance of AI detection compared to AI-generated video",
+            "Can be repurposed directly from your Instagram carousel content"
           ]},
           {"type": "subheader", "content": "Carousel Ideas"},
           {"type": "bullets", "items": [
@@ -584,7 +590,7 @@
           ]}
         ], "right": [
           {"type": "subheader", "content": "Premium & Premium Plus"},
-          {"type": "text", "content": "Premium increases reply ranking. Only activate after the account shows green status and stable reach. The purpose is not status — the purpose is reach. Premium helps replies appear higher under big posts, increasing profile clicks and followers."},
+          {"type": "text", "content": "Premium dramatically increases reply visibility and ranking. It is not optional for serious operators on Twitter/X — it is a growth multiplier. Only activate after the account shows green status on the shadowban checker and has stable reach. The purpose is not status — the purpose is reach. Premium helps your replies appear higher under big posts, significantly increasing profile clicks and followers. The investment pays for itself quickly through increased discovery."},
           {"type": "subheader", "content": "Content Progression Ladder"},
           {"type": "bullets", "items": [
             "Soft public content builds curiosity",
