@@ -395,6 +395,12 @@ body {
     line-height: 1.5;
 }
 
+.cover-brand-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
 .cover-brand {
     display: inline-block;
     border: 1px solid rgba(196,154,133,0.4);
@@ -406,6 +412,27 @@ body {
     letter-spacing: 1.5px;
     text-transform: uppercase;
     background: rgba(196,154,133,0.06);
+}
+
+.cover-brand-sep {
+    width: 1px;
+    height: 28px;
+    background: rgba(196,154,133,0.3);
+    margin: 0 16px;
+}
+
+.cover-discord {
+    display: inline-block;
+    border: 1px solid rgba(196,154,133,0.4);
+    border-radius: 30px;
+    padding: 11px 28px;
+    color: #c49a85;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(196,154,133,0.06);
+    text-decoration: none;
 }
 
 .cover-divider {
@@ -889,7 +916,11 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             {"<div class='cover-lesson-label'>" + lesson_label + "</div>" if lesson_label else ""}
             <div class="cover-title">{title_html}</div>
             <div class="cover-subtitle">{subtitle}</div>
-            <div class="cover-brand">{BRAND_NAME}</div>
+            <div class="cover-brand-row">
+                <div class="cover-brand">{BRAND_NAME}</div>
+                <div class="cover-brand-sep"></div>
+                <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method">Discord</a>
+            </div>
         </div>
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
