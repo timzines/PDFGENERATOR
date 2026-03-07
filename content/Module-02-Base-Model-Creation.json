@@ -288,11 +288,17 @@
       ]
     },
     {
-      "header": "Lesson 3: Consistency & Building Your Content Library",
+      "header": "Lesson 3: Face Consistency & Building Your Content Library",
       "blocks": [
         {
           "type": "text",
-          "content": "Consistency is what separates a believable AI influencer from an obvious fake. Your audience will scroll through your page. If the face changes between posts, trust is destroyed instantly. This lesson covers how to lock in your model's look so every image looks like the same person."
+          "content": "Consistency is what separates a believable AI influencer from an obvious fake. Your audience will scroll through your page. If the face changes between posts, trust is destroyed instantly. This lesson covers how to maintain your model's look using Nano Banana 2 for all SFW content, why you need to generate multiple versions of every image, and how to build a content library before you launch."
+        },
+        {
+          "type": "panel",
+          "title": "Inconsistent Faces Will Get You Caught",
+          "content": "If your model's face looks different between posts, people will notice. Followers will get suspicious, call you out in comments, or report your page. One inconsistent image is all it takes to lose credibility. Every single image you post must look like the same person — no exceptions. This is the number one reason AI pages get exposed.",
+          "border": "#FF3131"
         },
         {
           "type": "subheader",
@@ -300,7 +306,7 @@
         },
         {
           "type": "text",
-          "content": "Both Seedream 4.5 and Nano Banana 2 support reference image workflows. This means you upload your seed image as a reference, and the tool uses it to maintain your character's face across new generations. This is the primary method for achieving consistency."
+          "content": "Nano Banana 2 is your main tool for all SFW content generation. It supports reference image workflows — you upload your seed images from Lesson 2 as references, and the tool uses them to maintain your character's face and body across new generations. This is how you keep every image looking like the same person."
         },
         {
           "type": "two_column",
@@ -312,54 +318,59 @@
             {
               "type": "bullets",
               "items": [
-                "Start with your locked-in seed image from Lesson 2",
-                "Upload it as a reference input when generating new images",
+                "Start with your two locked-in reference images from Lesson 2 (face + body)",
+                "Upload them as reference inputs when generating new images in Nano Banana 2",
                 "Write a new prompt describing the desired scene, outfit, or setting",
-                "The tool preserves the face from your reference while creating the new scene",
-                "Generate multiple outputs and compare against the reference",
-                "Only keep images that match the face consistently"
+                "The tool preserves the face and body from your references while creating the new scene",
+                "Generate at least 3 versions of every image — pick the best one",
+                "Only keep images where the face matches your reference consistently"
               ],
               "bullet": "→"
             },
             {
               "type": "subheader",
-              "content": "Reference Image Best Practices"
+              "content": "Reference Best Practices"
             },
             {
               "type": "bullets",
               "items": [
-                "Use a clear, front-facing headshot as your primary reference",
-                "Keep 2-3 reference angles saved (front, 3/4 turn, profile) for variety",
+                "Always use both your face and body reference images together",
                 "Higher resolution reference images produce better consistency",
-                "Never change your primary reference image once your page is live",
+                "Never change your primary reference images once your page is live",
                 "Adjust reference strength settings if the face drifts — higher strength means more consistency but less variety"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "The reference workflow visualized: Seed Image uploaded → New prompt written → Tool generates new image with same face → Compare side by side → Approve or regenerate."
             }
           ],
           "right": [
             {
               "type": "subheader",
-              "content": "Face Swap as a Backup Method"
+              "content": "Why You Must Generate at Least 3 Per Image"
             },
             {
               "type": "text",
-              "content": "If a generated image has a great body, pose, and setting but the face drifted slightly, face swapping can save it. This technique replaces the face in the generated image with your reference face."
+              "content": "Nano Banana 2 will not produce a perfect result every time. Some generations will have inconsistent faces, unrealistic features, or subtle artifacts. This is normal — it is part of the process. You need to generate at least 3 versions of every piece of content and pick the best one."
             },
             {
               "type": "bullets",
               "items": [
-                "Generate the image with your desired scene and pose",
-                "If the face drifts but the rest is good, use face swap to correct it",
-                "Swap the face from your reference image onto the generated body",
-                "Check that lighting and angle match naturally after the swap",
-                "This is a correction tool, not your primary workflow — reference generation should be your default"
+                "Generation 1 might have a slightly different jawline or eye shape",
+                "Generation 2 might nail the face but have a weird hand or background",
+                "Generation 3 might be the one that looks perfect",
+                "Sometimes you will need 5-10 generations to get one usable image",
+                "Never settle for 'close enough' — if the face is off, regenerate"
               ]
             },
+            {
+              "type": "panel",
+              "title": "3 Generations Minimum",
+              "content": "Make this your rule: never post the first image you generate. Always generate at least 3 versions, compare them against your reference images, and only keep the one that matches best. This single habit will save your page from getting exposed.",
+              "border": "#39FF14"
+            }
+          ]
+        },
+        {
+          "type": "two_column",
+          "left": [
             {
               "type": "subheader",
               "content": "Consistency Rules — What Must Stay Locked"
@@ -373,7 +384,9 @@
                 "Eye color — locked in from the start, never changes",
                 "Core hair color (natural changes like highlights are acceptable)"
               ]
-            },
+            }
+          ],
+          "right": [
             {
               "type": "subheader",
               "content": "What Can Vary Naturally"
@@ -388,11 +401,6 @@
                 "Camera angle and distance (selfie vs full body vs portrait)",
                 "Hair styling (up, down, braided — same base color)"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Side-by-side grid showing the same AI model across 4-6 different settings. Annotate: same face structure, same skin tone, same eye color, different outfit, different background. Use checkmarks on consistent elements."
             }
           ]
         },
@@ -401,6 +409,13 @@
           "title": "Visual Consistency Check",
           "content": "Before posting any image, place it next to your last 3 posts. If the face does not look like the same person at a glance, do not post it. Regenerate until it matches. This 5-second test saves you from destroying trust with your audience.",
           "border": "#39FF14"
+        },
+        {
+          "type": "page_break"
+        },
+        {
+          "type": "subheader",
+          "content": "Building Your Content Library"
         },
         {
           "type": "text",
@@ -415,14 +430,14 @@
             },
             {
               "type": "text",
-              "content": "Dedicate specific sessions to content generation rather than creating images one at a time. A focused session with Seedream 4.5 and Nano Banana 2 should produce 10-20 usable images."
+              "content": "Dedicate specific sessions to content generation rather than creating images one at a time. A focused session with Nano Banana 2 should produce 10-20 usable SFW images. Remember — generate at least 3 versions of each and only keep the best."
             },
             {
               "type": "bullets",
               "items": [
                 "Set aside 2-3 dedicated sessions per week for content generation",
-                "Generate 10-20 images per session with varied prompts",
-                "Use Seedream 4.5 for close-ups and portraits, Nano Banana 2 for full-body and lifestyle",
+                "Generate 10-20 usable images per session with varied prompts",
+                "Use Nano Banana 2 for all SFW content (Instagram, Threads, TikTok)",
                 "Change outfits, settings, and poses across the batch",
                 "Sort images into categories immediately after generation",
                 "Keep a 'rejected' folder — you may salvage these later with editing",
@@ -448,11 +463,6 @@
                 "/PersonaName/Rejected/ — Images that did not pass quality check",
                 "/PersonaName/Posted/ — Archive of already-posted content"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Screenshot of organized content library folder structure showing the categories above with example file counts in each folder."
             }
           ],
           "right": [
@@ -481,11 +491,6 @@
             {
               "type": "good_example",
               "content": "Headshot: 'Close-up portrait, natural light from window, soft smile, looking at camera, photorealistic, iPhone quality'\n\nCasual: 'Sitting on couch in oversized hoodie, warm indoor lighting, relaxed pose, candid feel, photorealistic'\n\nGlam: 'Black dress, mirror selfie, evening lighting, confident pose, photorealistic'\n\nGym: 'Workout outfit, gym mirror selfie, overhead fluorescent lighting, post-workout glow, candid'\n\nStory: 'Taking selfie in car, natural daylight, casual expression, slightly messy hair, iPhone selfie style'"
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Grid of example content library showing variety across all 5 categories — headshots, casual, glam, selfie, stories. Show how the face remains consistent while settings and outfits vary."
             }
           ]
         },
