@@ -54,11 +54,7 @@ def generate_overview_config(module_config, module_folder):
     for s in section_list:
         lesson_items.append(s["header"])
 
-    overview_blocks = [
-        {"type": "text", "content": module_config.get("subtitle", "")},
-        {"type": "subheader", "content": "What You'll Learn"},
-        {"type": "bullets", "items": lesson_items},
-    ]
+    overview_blocks = []
 
     if module_config.get("summary_points"):
         overview_blocks.append({"type": "subheader", "content": "Key Takeaways"})
