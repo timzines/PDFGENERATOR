@@ -8,11 +8,11 @@
       "blocks": [
         {
           "type": "text",
-          "content": "Once you have your base model from Module 2, every new image you create should be generated using that base as a reference. This is how you maintain consistency across hundreds of images. The reference image workflow is the backbone of your content pipeline. Without it, every image looks like a different person and your page screams fake."
+          "content": "The reference image workflow is the backbone of your content pipeline. Instead of writing prompts from scratch and hoping for good results, you find real photos that have the exact pose, lighting, and setting you want — then you recreate them with your AI model. This is how you produce content that looks like a real photoshoot, not random AI generations."
         },
         {
           "type": "text",
-          "content": "Both Seedream 4.5 and Nano Banana 2 support reference-based generation. You upload your seed image, write a prompt describing the new scene, and the tool generates output that preserves your character's face while creating the new content. This lesson covers how to use this workflow effectively."
+          "content": "Nano Banana 2 is your main tool for all SFW image generation. The workflow is simple: find a reference image on Pinterest, generate a JSON prompt from it, then feed that JSON prompt into Nano Banana 2 along with your base model image. The output matches the reference image's pose and lighting — but with your AI model's face and body."
         },
         {
           "type": "two_column",
@@ -24,53 +24,30 @@
             {
               "type": "bullets",
               "items": [
-                "Start with your locked-in seed image from Module 2",
-                "Upload it as a reference/input image in Seedream 4.5 or Nano Banana 2",
-                "Write a new prompt describing the desired scene, outfit, or setting",
-                "Generate multiple outputs (3-5 per prompt) and compare against the reference",
-                "Only keep images that match the face consistently",
-                "If the face drifts, increase reference strength or try a different seed angle"
+                "Find a reference image on Pinterest with the pose, lighting, and setting you want",
+                "Generate a JSON prompt from that reference image",
+                "Feed the JSON prompt into Nano Banana 2 along with your base model image",
+                "Nano Banana 2 generates an image that copies the pose and lighting from the reference — but with your AI model",
+                "Generate at least 3 outputs and compare — pick the one that best matches your model's face",
+                "If the face drifts, regenerate — do not settle for inconsistent results"
               ],
               "bullet": "→"
             },
             {
               "type": "subheader",
-              "content": "Reference Image Best Practices"
+              "content": "Finding Good Reference Images"
             },
             {
               "type": "bullets",
               "items": [
-                "Use a clear, front-facing headshot as your primary reference",
-                "Keep 2-3 reference angles saved (front, 3/4 turn, profile) for variety",
-                "Higher resolution reference images produce better consistency",
-                "Never change your reference image once your page is live",
-                "When switching between Seedream and Nano Banana, use the same reference image"
+                "Pinterest is your main source — search for poses, outfits, and settings you want to recreate",
+                "Look for images with clear lighting and simple backgrounds — these produce the best results",
+                "Save references into categories (casual, glam, gym, selfie, etc.) so you always have ideas ready",
+                "The better the reference image, the better your output — do not use blurry or cluttered photos"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Step-by-step visual of the reference workflow: 1. Upload seed image → 2. Write new prompt → 3. Generate variations → 4. Compare to reference → 5. Keep or regenerate. Show example reference image producing 3-4 different outputs."
             }
           ],
           "right": [
-            {
-              "type": "subheader",
-              "content": "Choosing the Right Tool for Each Shot"
-            },
-            {
-              "type": "text",
-              "content": "Seedream 4.5 and Nano Banana 2 have different strengths. Knowing when to use each one saves time and produces better results."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Seedream 4.5 — Best for close-up portraits, headshots, and detailed facial expressions. Strongest at preserving fine facial details",
-                "Nano Banana 2 — Best for full-body shots, varied poses, and lifestyle scenes with complex backgrounds",
-                "For critical content (profile photos, first grid posts), generate with both tools and compare",
-                "For daily content, use whichever tool handles that content type best"
-              ]
-            },
             {
               "type": "subheader",
               "content": "Common Mistakes in Reference Workflow"
@@ -78,17 +55,12 @@
             {
               "type": "bullets",
               "items": [
-                "Using a low-quality or small reference image — always use full resolution",
-                "Setting reference strength too low — face drifts from your model",
-                "Setting reference strength too high — every image looks identical (no variety)",
+                "Using blurry or low-quality reference images from Pinterest — find clean, well-lit photos",
+                "Picking reference poses that are too complex — start with simple, natural poses",
                 "Ignoring face drift on 'almost good enough' images — never post a drifted face",
-                "Changing reference images between sessions — stick with the same seed"
+                "Only generating one version — always generate at least 3 and pick the best",
+                "Not saving your working JSON prompts — keep a library of prompts that produce good results"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Example showing reference image → 3-4 different output images generated from it, with annotations showing face consistency maintained across different settings and outfits"
             }
           ]
         }
@@ -98,76 +70,56 @@
       "header": "Lesson 2: Prompt Engineering & Editing AI Images",
       "blocks": [
         {
-          "type": "text",
-          "content": "Your prompt is everything. The same reference image with a bad prompt produces unusable results. A great prompt produces content that looks like a real photoshoot. This lesson covers how to write prompts that consistently produce natural, platform-safe images. A well-crafted prompt saves hours of regeneration."
-        },
-        {
           "type": "two_column",
           "left": [
             {
               "type": "subheader",
-              "content": "Prompt Structure"
+              "content": "Why JSON Prompts Beat Traditional Prompts"
             },
             {
               "type": "text",
-              "content": "Every prompt should follow this structure. Missing any component leads to random or unusable results."
+              "content": "Your prompt is everything. JSON prompts are the best way to prompt because they carry far more data about posing, lighting, camera settings, and environment than a traditional text prompt ever could. A JSON prompt specifies exact depth of field, shadow behavior, color temperature, and composition — details that get lost in a one-line text prompt. The AI gets structured instructions for every aspect of the image instead of guessing."
+            },
+            {
+              "type": "bad_example",
+              "content": "Traditional prompt:\n'Woman walking on city street, blue gingham outfit, sunny day, fashion photography, photorealistic'\n\nThis tells the AI nothing about pose, lighting direction, camera angle, depth of field, color grading, or composition. You get random results every time."
+            },
+            {
+              "type": "good_example",
+              "content": "JSON prompt advantage:\n→ Composition: exact framing, crop, camera angle, depth of field\n→ Subject: specific wardrobe details, expression, gesture\n→ Environment: location elements, architectural details\n→ Lighting: source, direction, color temperature, shadow behavior\n→ Technical: focal length, aperture, ISO, sharpness\n→ Artistic: aesthetic, mood, stylistic influences, texture rendering\n\nEvery detail is specified — nothing is left to chance."
+            },
+            {
+              "type": "subheader",
+              "content": "How to Generate JSON Prompts"
             },
             {
               "type": "bullets",
               "items": [
-                "Subject description (handled by reference image — keep light)",
-                "Setting/background (indoor, outdoor, studio, cafe, car, gym, etc.)",
-                "Outfit/clothing description (specific helps: 'white sundress' not 'nice outfit')",
-                "Lighting and mood (natural light, golden hour, soft studio, overhead gym)",
-                "Camera angle and framing (selfie, portrait, full body, mirror shot)",
-                "Style keywords (photorealistic, candid, editorial, iPhone quality, raw)"
-              ]
-            },
-            {
-              "type": "panel",
-              "title": "IMAGE PLACEHOLDER",
-              "content": "Annotated prompt example showing each component color-coded: [Setting] + [Outfit] + [Lighting] + [Camera Angle] + [Style]. Each segment highlighted in a different color with labels."
-            },
-            {
-              "type": "subheader",
-              "content": "The Prompt Template Method"
-            },
-            {
-              "type": "text",
-              "content": "Do not write prompts from scratch every time. Create templates that work and swap out the variables. This is how professional operators generate dozens of images efficiently."
-            },
-            {
-              "type": "good_example",
-              "content": "Template: '[setting], [outfit], [lighting], [pose/angle], photorealistic, candid feel'\n\nSwap variables:\nCafe: 'Outdoor cafe table, white sundress, golden hour natural light, looking at camera with soft smile, photorealistic, candid'\n\nGym: 'Gym mirror, grey sports bra and leggings, overhead fluorescent lighting, post-workout selfie, photorealistic, iPhone quality'\n\nHome: 'Living room couch, oversized hoodie, warm lamp lighting, relaxed sitting pose, photorealistic, casual candid'"
+                "Find your reference image on Pinterest",
+                "Feed it into an AI and ask it to generate a JSON prompt describing everything about the image",
+                "The AI breaks down pose, lighting, environment, camera settings, and style into structured JSON",
+                "Feed that JSON prompt into Nano Banana 2 along with your base model image",
+                "The output matches the reference's pose and lighting — but with your AI model"
+              ],
+              "bullet": "→"
             }
           ],
           "right": [
             {
               "type": "subheader",
-              "content": "10 Proven Prompt Examples"
+              "content": "Example JSON Prompt"
             },
             {
-              "type": "text",
-              "content": "These prompts are tested and produce consistent, platform-safe results. Use them as starting points and adjust for your persona."
-            },
-            {
-              "type": "good_example",
-              "content": "1. 'Young woman in white sundress at outdoor cafe, golden hour, candid smile at camera, photorealistic'\n\n2. 'Close-up selfie in bathroom mirror, messy bun, no makeup look, soft morning light, iPhone quality'\n\n3. 'Full body shot in gym, grey workout outfit, overhead lighting, confident stance, candid feel'\n\n4. 'Sitting on bed in oversized t-shirt, warm bedside lamp light, relaxed pose, looking down at phone, photorealistic'\n\n5. 'Walking on city street, casual jeans and crop top, natural afternoon light, candid mid-stride, street photography style'"
-            },
-            {
-              "type": "good_example",
-              "content": "6. 'Beach sunset, swimsuit, golden hour backlight, hair blowing in wind, looking over shoulder, photorealistic'\n\n7. 'Car selfie, front seat, casual top, natural daylight from window, slight smile, iPhone selfie style'\n\n8. 'Couch with coffee mug, oversized sweater, rainy window background, cozy mood lighting, candid reading pose'\n\n9. 'Restaurant dinner table, black dress, ambient warm lighting, leaning forward, soft eye contact with camera'\n\n10. 'Bedroom mirror selfie, casual loungewear, evening lamp lighting, relaxed standing pose, photorealistic'"
-            },
-            {
-              "type": "bad_example",
-              "content": "Bad prompts:\n'Beautiful girl photo' — Too vague, no direction\n'Hot model posing sexy' — Too generic, produces AI-looking results\n'Woman' — Produces random, unusable output\n\nAll bad prompts share the same problem: no specific setting, lighting, outfit, or style direction."
+              "type": "code_block",
+              "label": "Example JSON Prompt:",
+              "content": "{\n  \"prompt_modifiers\": [\"character from reference images\"],\n  \"image_type\": \"outdoor fashion street portrait\",\n  \"composition\": {\n    \"framing\": \"vertical, mid-thigh crop\",\n    \"camera_angle\": \"eye-level perspective\",\n    \"pose\": \"walking forward on sidewalk, torso facing camera\",\n    \"depth_of_field\": \"moderate, subject sharp, background blurred\"\n  },\n  \"subject\": {\n    \"wardrobe\": \"blue gingham button-up top, matching mini skirt, brown suede handbag\",\n    \"expression\": \"composed, neutral with soft direct gaze\"\n  },\n  \"environment\": {\n    \"location_type\": \"urban street setting\",\n    \"elements\": [\"storefront windows\", \"stone facade\", \"paved sidewalk\"],\n    \"style\": \"luxury shopping district\"\n  },\n  \"lighting\": {\n    \"source\": \"natural direct sunlight\",\n    \"direction\": \"front-side from upper left\",\n    \"color_temperature\": \"warm daylight (~5600K)\",\n    \"shadows\": \"soft shadow outlines on ground\"\n  },\n  \"technical_characteristics\": {\n    \"focal_length\": \"28-35mm\",\n    \"aperture\": \"f/2.8-f/4\",\n    \"sharpness\": \"high with clear fabric texture\"\n  },\n  \"artistic_elements\": {\n    \"aesthetic\": \"chic European summer street style\",\n    \"mood\": \"confident, polished, effortless\"\n  }\n}"
             }
           ]
         },
         {
           "type": "panel",
           "title": "Pro Tip",
-          "content": "Keep a prompt document. When you find a prompt that produces consistently good results, save it. Swap out the setting and outfit details for each new batch. This saves time and maintains quality. Over time you will build a library of 20-30 proven templates.",
+          "content": "Save every JSON prompt that produces good results. Build a library organized by scene type (street, cafe, gym, beach, home, etc.). When you need new content, grab a working JSON prompt, swap out the wardrobe and environment details, and generate. This is how you produce dozens of images efficiently without starting from scratch.",
           "border": "#39FF14"
         },
         {
@@ -255,20 +207,20 @@
             },
             {
               "type": "subheader",
-              "content": "Inpainting — Fixing Specific Areas"
+              "content": "Nano Banana 2 Edit Feature — Fixing Specific Areas"
             },
             {
               "type": "text",
-              "content": "When a generated image is almost perfect but has one bad area (a distorted hand, a weird background element), inpainting lets you regenerate just that area without redoing the entire image."
+              "content": "When a generated image is almost perfect but has one bad area (a distorted hand, a weird background element), use the edit feature in Nano Banana 2 to fix just that area without regenerating the entire image."
             },
             {
               "type": "bullets",
               "items": [
-                "Select the problem area using your generation tool's inpainting feature",
+                "Use the edit feature in Nano Banana 2 to select the problem area",
                 "Write a prompt describing what should be in that area",
-                "The tool regenerates only the selected region while keeping everything else",
+                "Nano Banana 2 regenerates only the selected region while keeping everything else",
                 "This saves images that would otherwise be rejected entirely",
-                "Use inpainting for: hands, background artifacts, clothing seams, jewelry errors"
+                "Use it for: hands, background artifacts, clothing seams, jewelry errors"
               ]
             }
           ]
@@ -397,12 +349,11 @@
     }
   ],
   "summary_points": [
-    "Always generate new images using your base model as a reference in Seedream 4.5 or Nano Banana 2",
+    "Always generate new images using your base model as a reference in Nano Banana 2",
     "Write detailed prompts with setting, lighting, outfit, and camera angle — save templates that produce good results",
-    "Use Seedream 4.5 for portraits and close-ups, Nano Banana 2 for full-body and lifestyle shots",
-    "Edit AI outputs to fix hands, artifacts, and background issues using Photopea (free)",
+    "Use Photopea (free) to export Instagram carousels — this helps avoid the AI filter on Instagram",
     "Always add approximately 2% grain/noise as the final editing step — this is what makes AI images pass as real photos",
-    "Use inpainting to fix specific problem areas without regenerating the entire image",
+    "Use the edit feature in Nano Banana 2 to fix specific problem areas without regenerating the entire image",
     "Know each platform's content rules — TikTok and Instagram are strictest, Reddit is most flexible",
     "When in doubt, keep it safe — a content strike can derail weeks of progress"
   ]

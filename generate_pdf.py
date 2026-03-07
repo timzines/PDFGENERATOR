@@ -63,6 +63,7 @@ TEXT_MUTED_LIGHT = "#999999"
 HEADER_FADE = "#c49a85"  # The faded last-word color in headers
 
 FOOTER_TEXT = "All materials are strictly protected under AI Influencer Method\u00AE rights"
+FANVUE_CTA = "\u2728 Start monetizing your AI models today \u2014 Sign up to Fanvue: fanvue.com/signup?referral=FV-C4WPNC \u2728"
 BRAND_NAME = "AI Influencer Method"
 FANVUE_URL = "https://www.fanvue.com/signup?referral=FV-C4WPNC"
 FANVUE_PROMO_TEXT = "Start monetizing your AI models today"
@@ -269,13 +270,96 @@ body {
     border-radius: 50%;
 }
 
+/* Subtle geometric design behind the logo */
+.cover-logo-design {
+    position: absolute;
+    right: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 520px;
+    height: 520px;
+    z-index: 1;
+}
+
+.cover-logo-ring {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid rgba(196,154,133,0.08);
+}
+
+.cover-logo-ring-1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 500px;
+    height: 500px;
+}
+
+.cover-logo-ring-2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 380px;
+    height: 380px;
+    border-color: rgba(196,154,133,0.06);
+}
+
+.cover-logo-ring-3 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 260px;
+    height: 260px;
+    border-color: rgba(196,154,133,0.04);
+}
+
+/* Decorative arc lines */
+.cover-logo-arc {
+    position: absolute;
+    border-radius: 50%;
+    border: 1px solid transparent;
+}
+
+.cover-logo-arc-1 {
+    top: 10%;
+    right: 5%;
+    width: 200px;
+    height: 200px;
+    border-top-color: rgba(196,154,133,0.1);
+    border-right-color: rgba(196,154,133,0.06);
+    transform: rotate(-30deg);
+}
+
+.cover-logo-arc-2 {
+    bottom: 15%;
+    left: 10%;
+    width: 160px;
+    height: 160px;
+    border-bottom-color: rgba(196,154,133,0.08);
+    border-left-color: rgba(196,154,133,0.04);
+    transform: rotate(20deg);
+}
+
+/* Small decorative dots */
+.cover-logo-dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: rgba(196,154,133,0.15);
+}
+
+.cover-logo-dot-1 { top: 20%; right: 15%; }
+.cover-logo-dot-2 { bottom: 25%; left: 20%; }
+.cover-logo-dot-3 { top: 60%; right: 8%; width: 3px; height: 3px; background: rgba(196,154,133,0.1); }
+
 .cover-tag {
     font-size: 11px;
     font-weight: 600;
     color: #c49a85;
     text-transform: uppercase;
     letter-spacing: 3px;
-    margin-bottom: 18px;
+    margin-bottom: 8px;
 }
 
 .cover-module-label {
@@ -314,6 +398,12 @@ body {
     line-height: 1.5;
 }
 
+.cover-brand-row {
+    display: flex;
+    align-items: center;
+    gap: 0;
+}
+
 .cover-brand {
     display: inline-block;
     border: 1px solid rgba(196,154,133,0.4);
@@ -327,11 +417,53 @@ body {
     background: rgba(196,154,133,0.06);
 }
 
+.cover-brand-sep {
+    width: 1px;
+    height: 28px;
+    background: rgba(196,154,133,0.3);
+    margin: 0 16px;
+}
+
+.cover-discord {
+    display: inline-block;
+    border: 1px solid rgba(140,160,196,0.4);
+    border-radius: 30px;
+    padding: 11px 28px;
+    color: #8ca0c4;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(140,160,196,0.06);
+    text-decoration: none;
+}
+
+.cover-fanvue {
+    display: inline-block;
+    border: 1px solid rgba(57,255,20,0.4);
+    border-radius: 30px;
+    padding: 11px 28px;
+    color: #39FF14;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    background: rgba(57,255,20,0.06);
+    text-decoration: none;
+}
+
+.cover-fanvue-hint {
+    margin-top: 10px;
+    font-size: 11px;
+    color: rgba(255,255,255,0.35);
+    letter-spacing: 0.3px;
+}
+
 .cover-divider {
     width: 50px;
     height: 2px;
     background: linear-gradient(90deg, #c49a85, transparent);
-    margin-bottom: 20px;
+    margin-bottom: 18px;
     border-radius: 1px;
 }
 
@@ -455,7 +587,7 @@ body {
 /* ---- CONTENT PAGE ---- */
 .page-content {
     position: relative;
-    padding: 50px 60px 20px 60px;
+    padding: 10px 0 0 0;
     page: content-page;
     color: #e0ccd2;
 }
@@ -471,12 +603,14 @@ body {
     font-weight: 700;
     font-style: italic;
     color: #ffffff;
-    margin-bottom: 22px;
+    margin-bottom: 18px;
+    margin-top: 0;
     text-transform: uppercase;
     letter-spacing: 1px;
     line-height: 1.2;
     position: relative;
     padding-left: 16px;
+    padding-top: 5px;
     page-break-before: always;
     page-break-after: avoid;
 }
@@ -504,23 +638,16 @@ body {
 
 /* ---- TWO-COLUMN LAYOUT ---- */
 .content-columns {
+    display: flex;
+    gap: 40px;
     width: 100%;
     margin-bottom: 6px;
-}
-.content-columns::after {
-    content: "";
-    display: block;
-    clear: both;
+    page-break-inside: avoid;
 }
 
 .content-col {
-    width: calc(50% - 20px);
-}
-.content-col:first-child {
-    float: left;
-}
-.content-col:last-child {
-    float: right;
+    flex: 1;
+    min-width: 0;
 }
 
 /* ---- CONTENT BLOCKS (no background boxes) ---- */
@@ -587,6 +714,21 @@ body {
     line-height: 1.55;
     border-radius: 0 6px 6px 0;
     page-break-inside: avoid;
+}
+
+.content-box .code-block,
+.content-box-full .code-block {
+    border-left: 3px solid #7dba6d;
+    background: rgba(125,186,109,0.06);
+    padding: 8px 12px;
+    margin: 10px 0;
+    color: #c8e6c0;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 8.5px;
+    line-height: 1.4;
+    border-radius: 0 6px 6px 0;
+    white-space: pre-wrap;
+    word-break: break-word;
 }
 
 .content-box .example-bad,
@@ -860,6 +1002,12 @@ def render_blocks_html(blocks):
             lines = block["content"].replace("\n", "<br>")
             html += f'<div class="example-good"><div class="example-label">Good example:</div>{lines}</div>\n'
 
+        elif btype == "code_block":
+            label = block.get("label", "")
+            content = block["content"]
+            label_html = f'<div class="example-label" style="font-family: inherit; margin-bottom: 6px;">{label}</div>' if label else ''
+            html += f'<div class="code-block">{label_html}{content}</div>\n'
+
         elif btype == "bad_example":
             lines = block["content"].replace("\n", "<br>")
             html += f'<div class="example-bad"><div class="example-label">Bad example:</div>{lines}</div>\n'
@@ -872,6 +1020,9 @@ def render_blocks_html(blocks):
                 html += f'  <div class="panel-title">{title}</div>\n'
             html += f'  <div class="panel-body">{content}</div>\n'
             html += '</div>\n'
+
+        elif btype == "page_break":
+            html += '<div style="page-break-before: always;"></div>\n'
 
     return html
 
@@ -890,6 +1041,16 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
         <div class="cover-glow"></div>
         <div class="cover-accent-line"></div>
         <div class="cover-accent-line-bottom"></div>
+        <div class="cover-logo-design">
+            <div class="cover-logo-ring cover-logo-ring-1"></div>
+            <div class="cover-logo-ring cover-logo-ring-2"></div>
+            <div class="cover-logo-ring cover-logo-ring-3"></div>
+            <div class="cover-logo-arc cover-logo-arc-1"></div>
+            <div class="cover-logo-arc cover-logo-arc-2"></div>
+            <div class="cover-logo-dot cover-logo-dot-1"></div>
+            <div class="cover-logo-dot cover-logo-dot-2"></div>
+            <div class="cover-logo-dot cover-logo-dot-3"></div>
+        </div>
         <div class="cover-left">
             <div class="cover-tag">Premium Course Material</div>
             <div class="cover-divider"></div>
@@ -897,12 +1058,18 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
             {"<div class='cover-lesson-label'>" + lesson_label + "</div>" if lesson_label else ""}
             <div class="cover-title">{title_html}</div>
             <div class="cover-subtitle">{subtitle}</div>
-            <div class="cover-brand">{BRAND_NAME}</div>
+            <div class="cover-brand-row">
+                <div class="cover-brand">{BRAND_NAME}</div>
+                <div class="cover-brand-sep"></div>
+                <a class="cover-discord" href="https://discord.com/invite/ai-influencer-method" target="_blank">Our Discord</a>
+                <div class="cover-brand-sep"></div>
+                <a class="cover-fanvue" href="https://www.fanvue.com/?ref=aiinfluencermethod" target="_blank">Sign Up To Fanvue</a>
+            </div>
+            <div class="cover-fanvue-hint">Fanvue is the platform to start monetizing your AI models</div>
         </div>
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
-        <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
 
@@ -984,6 +1151,9 @@ def build_section_html(header, body_blocks):
                     <div class="content-col">{right_box}</div>
                 </div>
                 '''
+        elif block.get("type") == "page_break":
+            content_html += flush_pending()
+            content_html += '<div style="page-break-before: always;"></div>\n'
         elif block.get("type") == "panel" and block.get("border"):
             # Bordered panels (rules, tips) are standalone — flush first
             content_html += flush_pending()
@@ -1042,6 +1212,10 @@ def build_summary_page_html(points, logo_uri="", page_num=1, total_pages=1):
                         <div class="summary-brand-name">{BRAND_NAME}</div>
                         <div class="summary-brand-line"></div>
                         <div class="summary-brand-text">All materials are strictly protected.</div>
+                        <div style="margin-top:18px;padding:12px 20px;border:1px solid rgba(57,255,20,0.35);border-radius:10px;background:rgba(57,255,20,0.04);">
+                            <div style="color:#39FF14;font-size:13px;font-weight:700;letter-spacing:0.5px;margin-bottom:4px;">Ready to monetize your AI models?</div>
+                            <div style="color:rgba(255,255,255,0.5);font-size:11px;line-height:1.5;">Sign up to Fanvue with our link and start earning today:<br/><span style="color:rgba(57,255,20,0.7);font-weight:600;">fanvue.com/signup?referral=FV-C4WPNC</span></div>
+                        </div>
                     </div>
                     <div class="fanvue-promo-summary">
                         <div class="promo-headline">Ready to Start Earning with Your AI Models?</div>
@@ -1112,25 +1286,26 @@ def generate_pdf(config, output_path):
 
     # Build dynamic @page CSS for content pages (dark background + footer)
     footer_escaped = FOOTER_TEXT.replace('"', '\\"')
+    fanvue_escaped = FANVUE_CTA.replace('"', '\\"')
     fanvue_footer = f"Sign up to fanvue and start monetizing your AI models \u2192 {FANVUE_URL}"
     fanvue_footer_escaped = fanvue_footer.replace('"', '\\"')
     dynamic_page_css = f"""
 @page content-page {{
-    margin: 0 0 45px 0;
+    margin: 45px 60px 55px 60px;
     padding: 0;
-    background: linear-gradient(160deg, #2d2230 0%, #1a1b1f 40%, #0f1013 100%);
+    background: #1a1b1f;
     @bottom-center {{
-        content: "{footer_escaped}";
-        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-        font-size: 10px;
-        color: rgba(255,255,255,0.25);
-        letter-spacing: 0.5px;
-    }}
-    @bottom-left {{
         content: "{fanvue_footer_escaped}";
         font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
         font-size: 9px;
         color: rgba(196,154,133,0.45);
+        letter-spacing: 0.3px;
+    }}
+    @bottom-left {{
+        content: "{footer_escaped}";
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        font-size: 8px;
+        color: rgba(255,255,255,0.2);
         letter-spacing: 0.3px;
     }}
     @bottom-right {{
@@ -1139,6 +1314,7 @@ def generate_pdf(config, output_path):
         font-weight: 500;
         letter-spacing: 1px;
         color: rgba(255,255,255,0.3);
+        margin-right: 0;
     }}
 }}
 """
