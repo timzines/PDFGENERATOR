@@ -507,8 +507,8 @@
     "Choose your niche based on market demand, not personal preference — girl-next-door and fitness niches have the highest proven demand",
     "Seedream 4.5 and Nano Banana 2 are your primary image generation tools — master both for different content types",
     "Your base model's face is your brand — generate 20-30 variations and select the strongest as your seed image",
-    "Use the reference image method to maintain face consistency across all future generations",
-    "Face swap is a backup correction tool when reference generation produces a drifted face on an otherwise good image",
+    "Use the reference image method in Nano Banana 2 to maintain face consistency across all future SFW generations",
+    "Always generate at least 3 versions of every image — Nano Banana 2 will produce inconsistent or unrealistic results, so pick only the best",
     "Lock in face structure, body type, skin tone, and eye color from day one — only outfits, lighting, and settings should vary",
     "Build a library of 30-50 images sorted into categories before launching any account"
   ]
