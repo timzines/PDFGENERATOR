@@ -217,7 +217,11 @@
             },
             {
               "type": "good_example",
-              "content": "Prompt: 'Photorealistic portrait of a 22-year-old woman with warm olive skin, dark brown wavy hair past her shoulders, light hazel eyes, soft jawline, natural makeup, standing in front of a plain white wall, waist up, iPhone photo quality, natural lighting'"
+              "content": "Prompt: 'Hyper-realistic, front-facing studio portrait of a woman with a modern goth aesthetic. Symmetrical composition, centered framing, eye-level shot. She has pale skin, sharp winged eyeliner, and matte black lipstick. Straight raven-black hair with micro-bangs. Wearing a simple black high-neck velvet outfit. Soft, even cinematic lighting to capture skin texture and fine details without heavy shadows. 8k resolution, shot on 85mm lens, neutral grey background, highly detailed features.'"
+            },
+            {
+              "type": "text",
+              "content": "You will need to play around with your prompt to get good results — do not expect perfection on the first try. Adjust wording, swap out details, and regenerate until the output matches what you are going for. Once you have a solid base image, run it through the Skin Enhancer on Higgsfield to really make the image look realistic. This step makes a noticeable difference in skin texture and overall believability."
             }
           ]
         },
