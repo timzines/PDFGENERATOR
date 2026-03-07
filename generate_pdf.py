@@ -423,15 +423,15 @@ body {
 
 .cover-discord {
     display: inline-block;
-    border: 1px solid rgba(196,154,133,0.4);
+    border: 1px solid rgba(140,160,196,0.4);
     border-radius: 30px;
     padding: 11px 28px;
-    color: #c49a85;
+    color: #8ca0c4;
     font-size: 14px;
     font-weight: 500;
     letter-spacing: 1.5px;
     text-transform: uppercase;
-    background: rgba(196,154,133,0.06);
+    background: rgba(140,160,196,0.06);
     text-decoration: none;
 }
 
