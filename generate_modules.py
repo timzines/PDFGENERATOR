@@ -157,35 +157,55 @@ def sanitize_filename(name):
     return name
 
 
-def build_overview_config(module_num, module_label, subtitle, sections, logo_path):
-    """Build a config dict for the module overview PDF."""
+def build_overview_config(module_num, module_label, subtitle, sections, logo_path,
+                          merge_lessons=False):
+    """Build a config dict for the module overview PDF.
+
+    If merge_lessons is True, the lesson content sections are appended after the
+    overview page so the module becomes a single PDF.
+    """
     overview = MODULE_OVERVIEWS.get(module_num, {})
     description = overview.get("description", "")
     outcomes = overview.get("outcomes", [])
 
-    # Build lesson listing bullets
-    lesson_bullets = []
-    for i, section in enumerate(sections):
-        num = extract_lesson_number(section["header"]) or (i + 1)
-        title = extract_lesson_title(section["header"])
-        lesson_bullets.append(f"Lesson {num}: {title}")
-
     # Build the overview content blocks
     blocks = []
-
     blocks.append({"type": "text", "content": description})
 
-    blocks.append({
-        "type": "two_column",
-        "left": [
-            {"type": "subheader", "content": "What You Will Learn"},
-            {"type": "bullets", "items": outcomes},
-        ],
-        "right": [
-            {"type": "subheader", "content": "Lessons in This Module"},
-            {"type": "bullets", "items": lesson_bullets, "bullet": "→"},
-        ],
-    })
+    if merge_lessons:
+        # No lesson listing needed — the content follows directly
+        blocks.append({
+            "type": "two_column",
+            "left": [
+                {"type": "subheader", "content": "What You Will Learn"},
+                {"type": "bullets", "items": outcomes},
+            ],
+            "right": [],
+        })
+    else:
+        # Build lesson listing bullets
+        lesson_bullets = []
+        for i, section in enumerate(sections):
+            num = extract_lesson_number(section["header"]) or (i + 1)
+            title = extract_lesson_title(section["header"])
+            lesson_bullets.append(f"Lesson {num}: {title}")
+
+        blocks.append({
+            "type": "two_column",
+            "left": [
+                {"type": "subheader", "content": "What You Will Learn"},
+                {"type": "bullets", "items": outcomes},
+            ],
+            "right": [
+                {"type": "subheader", "content": "Lessons in This Module"},
+                {"type": "bullets", "items": lesson_bullets, "bullet": "→"},
+            ],
+        })
+
+    all_sections = [{"header": "Module Overview", "blocks": blocks}]
+
+    if merge_lessons:
+        all_sections.extend(sections)
 
     config = {
         "title": "Overview",
@@ -194,12 +214,7 @@ def build_overview_config(module_num, module_label, subtitle, sections, logo_pat
         "lesson_label": "",
         "skip_toc": True,
         "skip_summary": True,
-        "sections": [
-            {
-                "header": "Module Overview",
-                "blocks": blocks,
-            }
-        ],
+        "sections": all_sections,
     }
 
     if logo_path and os.path.exists(logo_path):
@@ -239,39 +254,50 @@ def generate_all_modules():
         print(f"  {module_folder_name} ({len(sections)} lessons)")
         print(f"{'='*60}")
 
-        # Generate Overview PDF first
-        overview_config = build_overview_config(
-            module_num, module_label, subtitle, sections, logo_path
-        )
-        overview_path = str(module_dir / "Overview.pdf")
-        generate_pdf(overview_config, overview_path)
+        # Modules with a single lesson merge overview + lesson into one PDF
+        single_pdf_modules = {1, 10}
 
-        # Generate individual lesson PDFs
-        for i, section in enumerate(sections):
-            lesson_num = extract_lesson_number(section["header"]) or (i + 1)
-            lesson_title = extract_lesson_title(section["header"])
+        if module_num in single_pdf_modules:
+            # Merged: overview page + lesson content in one PDF
+            overview_config = build_overview_config(
+                module_num, module_label, subtitle, sections, logo_path,
+                merge_lessons=True,
+            )
+            merged_title = extract_lesson_title(sections[0]["header"])
+            safe_title = sanitize_filename(merged_title)
+            merged_path = str(module_dir / f"{safe_title}.pdf")
+            generate_pdf(overview_config, merged_path)
+        else:
+            # Generate Overview PDF first
+            overview_config = build_overview_config(
+                module_num, module_label, subtitle, sections, logo_path
+            )
+            overview_path = str(module_dir / "Overview.pdf")
+            generate_pdf(overview_config, overview_path)
 
-            # Build individual lesson config
-            lesson_config = {
-                "title": lesson_title,
-                "subtitle": subtitle,
-                "module_label": module_label,
-                "lesson_label": f"Lesson {lesson_num}",
-                "skip_toc": True,
-                "skip_summary": True,
-                "sections": [section],
-            }
+            # Generate individual lesson PDFs
+            for i, section in enumerate(sections):
+                lesson_num = extract_lesson_number(section["header"]) or (i + 1)
+                lesson_title = extract_lesson_title(section["header"])
 
-            # Find logo
-            if logo_path:
-                lesson_config["logo_path"] = logo_path
+                lesson_config = {
+                    "title": lesson_title,
+                    "subtitle": subtitle,
+                    "module_label": module_label,
+                    "lesson_label": f"Lesson {lesson_num}",
+                    "skip_toc": True,
+                    "skip_summary": True,
+                    "sections": [section],
+                }
 
-            # Output path
-            safe_title = sanitize_filename(lesson_title)
-            pdf_filename = f"Lesson {lesson_num} - {safe_title}.pdf"
-            output_path = str(module_dir / pdf_filename)
+                if logo_path:
+                    lesson_config["logo_path"] = logo_path
 
-            generate_pdf(lesson_config, output_path)
+                safe_title = sanitize_filename(lesson_title)
+                pdf_filename = f"Lesson {lesson_num} - {safe_title}.pdf"
+                output_path = str(module_dir / pdf_filename)
+
+                generate_pdf(lesson_config, output_path)
 
     print(f"\n{'='*60}")
     print(f"  All modules generated!")

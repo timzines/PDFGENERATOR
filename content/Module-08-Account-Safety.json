@@ -30,9 +30,9 @@
           {"type": "text", "content": "A shadowban will NOT show a notification. Your content simply stops reaching new people. The only way to detect it is by monitoring your metrics."},
           {"type": "bullets", "items": [
             "Instagram: Check Insights — if 'reach from non-followers' drops to near zero, you are likely shadowbanned",
-            "TikTok: If views suddenly drop from thousands to double digits",
-            "Twitter: Use shadowban checking tools to verify",
-            "Reddit: If your posts get zero upvotes consistently in subreddits where they used to perform"
+            "TikTok: If views suddenly drop from thousands to double digits, check for content violations in notifications",
+            "Twitter/X: Check account health at shadowban.yuzurisa.com — warm up continues until ALL indicators are green. Only green accounts are ready for real posting",
+            "Reddit: If your posts get zero upvotes consistently in subreddits where they used to perform, check if you are site-wide shadowbanned"
           ]},
           {"type": "panel", "title": "IMAGE PLACEHOLDER", "content": "Instagram Insights screenshot comparing normal reach vs shadowbanned reach"},
           {"type": "panel", "title": "Warning", "content": "By the time you notice a shadowban, it has usually been active for days. Check your metrics daily. Early detection = faster recovery.", "border": "#FF3131"}
@@ -70,6 +70,13 @@
             "Don't use third-party apps that require Instagram login",
             "Avoid automation tools that violate platform ToS",
             "Keep your phone's OS and apps updated"
+          ]},
+          {"type": "subheader", "content": "Platform-Specific Safety Rules"},
+          {"type": "bullets", "items": [
+            "Instagram: Engage 10 minutes before AND after posting. Captions typed manually, never copy-pasted",
+            "TikTok: Browse FYP at least 20 minutes daily. Wait 4+ hours between posts. Never batch upload",
+            "Twitter/X: Each account must use one device and one IP. Enable 2FA. Mark media as sensitive if NSFW",
+            "Reddit: Never post links or promotions until karma is built. All comments must sound human and non-promotional"
           ]},
           {"type": "subheader", "content": "Metrics to Monitor Daily"},
           {"type": "bullets", "items": [
