@@ -158,8 +158,11 @@ def main():
             print(f"  Skipping (no folder in output_filename)")
             continue
 
-        # Generate individual lesson PDFs
+        # Generate individual lesson PDFs (skip modules with only 1 section — they're overviews)
         lesson_configs = generate_lesson_configs(module_config)
+        if len(module_config.get("sections", [])) <= 1:
+            print(f"  Skipping lesson generation (single-section overview module)")
+            lesson_configs = []
         for lc in lesson_configs:
             output_path = str(OUTPUT_DIR / lc["output_filename"])
             print(f"  Generating: {lc['output_filename']}")
