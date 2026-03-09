@@ -417,6 +417,110 @@
           ]
         }
       ]
+    },
+    {
+      "header": "Lesson 5: GEO Targeting & Hitting the USA Audience",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "One of the biggest issues you will face is having the wrong audience demographics. You check your analytics and 70% of your viewers are from India, or the majority of your audience is women. We have experienced this firsthand. Even if you get 5 million views, it does not matter — those views will not convert to paying subscribers if the demographics are wrong."
+        },
+        {
+          "type": "text",
+          "content": "The USA audience is the highest-converting demographic for this business model. Your entire strategy depends on reaching American men aged 18-34. If your metrics show a non-USA dominant audience, you need to fix it immediately. Below are the solutions ranked from safest to last resort."
+        },
+        {
+          "type": "panel",
+          "title": "IMPORTANT",
+          "content": "Do not ignore your audience demographics. Check them weekly in your Instagram Insights under Followers → Top Locations. If the USA is not your #1 country by a significant margin, apply these fixes immediately. Views without the right audience are worthless.",
+          "border": "#FF3131"
+        },
+        {
+          "type": "two_column",
+          "left": [
+            {
+              "type": "subheader",
+              "content": "Method 1: Follow USA Accounts (Safest)"
+            },
+            {
+              "type": "text",
+              "content": "Follow American media accounts, USA celebrities, major US brands, and American news outlets from your persona account. This signals to the algorithm that your account is interested in American content, which pushes your content onto the American FYP."
+            },
+            {
+              "type": "panel",
+              "title": "Common Mistake",
+              "content": "A lot of people make the mistake of following random American users and hoping it somehow shows up in their statistics. It does not work that way. You need to follow major USA media accounts and American celebrity accounts — these are the accounts that carry geo-weight with the algorithm.",
+              "border": "#FF3131"
+            },
+            {
+              "type": "subheader",
+              "content": "Method 2: USA Flag in Bio"
+            },
+            {
+              "type": "text",
+              "content": "Add a USA flag emoji somewhere in your bio. Simple but effective. The platform reads bio text as identity signals. A US flag tells the algorithm this account is American-oriented. Combine it with a US city name like 'LA' or 'Miami' for stronger effect."
+            },
+            {
+              "type": "subheader",
+              "content": "Method 3: Tag US Locations on Posts"
+            },
+            {
+              "type": "text",
+              "content": "When you post a picture of your AI model at a bar, on a beach, or anywhere with a setting — tag a real US city in the location. Use locations like Miami Beach, Los Angeles, New York, Scottsdale, etc. The algorithm uses location tags as a strong geo signal for content distribution."
+            }
+          ],
+          "right": [
+            {
+              "type": "subheader",
+              "content": "Method 4: USA Signals in Content"
+            },
+            {
+              "type": "text",
+              "content": "Add more English text on screen in your Reels. Include a USA flag in your posts or Reels — even a small one in the corner works. Use American slang and references in your captions. Every visual and text signal reinforces the geo-targeting."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Add English text overlays on Reels",
+                "Include a small USA flag graphic in posts",
+                "Use American slang in captions",
+                "Reference American cities, culture, or events"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "Method 5: Instagram Age Limit (Last Resort)"
+            },
+            {
+              "type": "text",
+              "content": "This one is risky but it works. You can set an age limit for specific countries on Instagram. When enabled, users from that country below the age threshold cannot see your content. We have noticed that with this feature enabled, the targeted country drops out of your top percentage entirely."
+            },
+            {
+              "type": "panel",
+              "title": "Warning",
+              "content": "This method can temporarily reduce your overall engagement while the algorithm adjusts. Only use this as a last resort after Methods 1-4 have not resolved the issue. Monitor your metrics closely after enabling.",
+              "border": "#FF3131"
+            },
+            {
+              "type": "subheader",
+              "content": "How to Set Country Age Limits"
+            },
+            {
+              "type": "text",
+              "content": "Go to Settings and Privacy → Business/Creator Tools and Controls → Minimum Age. Select the countries you want to restrict and set the minimum age."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Minimum age you can set: 13",
+                "Maximum age you can set: 25",
+                "Select the specific countries flooding your demographics",
+                "Monitor your audience demographics weekly after applying"
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "summary_points": [
@@ -429,6 +533,8 @@
     "Always keep backup accounts warming up and content backed up locally and in the cloud",
     "Multi-account safety requires complete separation: device, IP, email, phone number — no exceptions",
     "If one account gets banned, quarantine all other accounts for 72 hours minimum",
-    "Use appeal templates that are short, polite, and non-confrontational — never argue or threaten"
+    "Use appeal templates that are short, polite, and non-confrontational — never argue or threaten",
+    "GEO target the USA audience — wrong demographics means zero conversions even with millions of views",
+    "Fix geo issues progressively: follow US accounts, flag in bio, tag US locations, US content signals, then age limits as last resort"
   ]
 }
