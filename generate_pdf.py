@@ -856,9 +856,12 @@ def render_blocks_html(blocks):
         elif btype == "panel":
             title = block.get("title", "")
             content = block.get("content", "").replace("\n", "<br>")
-            html += '<div class="panel-box">\n'
+            border_color = block.get("border", "")
+            border_style = f' style="border: 1px solid {border_color}40; border-left: 3px solid {border_color};"' if border_color else ""
+            title_style = f' style="color: {border_color};"' if border_color else ""
+            html += f'<div class="panel-box"{border_style}>\n'
             if title:
-                html += f'  <div class="panel-title">{title}</div>\n'
+                html += f'  <div class="panel-title"{title_style}>{title}</div>\n'
             html += f'  <div class="panel-body">{content}</div>\n'
             html += '</div>\n'
 
