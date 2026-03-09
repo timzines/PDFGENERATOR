@@ -258,16 +258,34 @@
               "content": "If You Get Permanently Banned"
             },
             {
+              "type": "text",
+              "content": "Do NOT accept a permanent ban without fighting it. Most permanent bans on Instagram are triggered by AI moderation — not a human reviewer. Your first step is always to appeal through the app. If that fails, you escalate to live support through Meta Verified."
+            },
+            {
               "type": "bullets",
               "items": [
-                "Accept the loss — do not waste time on repeated appeals (one attempt is fine)",
-                "Analyze what went wrong so you do not repeat the mistake",
-                "Start fresh with a NEW persona (different look, name, niche)",
-                "Use a completely new device, phone number, and IP address",
-                "Do NOT try to recreate the same persona — platforms detect this",
-                "Follow the warmup protocol from Module 5 with extra caution",
-                "Your content library and systems still exist — rebuilding is faster than starting from zero"
+                "Step 1: Submit an appeal immediately through the Instagram app",
+                "Step 2: If the in-app appeal is denied or ignored, move to the Meta Verified method below",
+                "Step 3: Only after exhausting both options should you consider starting fresh"
               ]
+            },
+            {
+              "type": "subheader",
+              "content": "Meta Verified Appeal (Best Method)"
+            },
+            {
+              "type": "text",
+              "content": "This is the most effective way to recover a permanently banned Instagram account. You need to purchase Meta Verified on a Facebook account linked to your identity. Your Facebook profile picture must be your real face — this is required for the verification process. Once verified, you gain access to live support chat with an actual human at Meta."
+            },
+            {
+              "type": "good_example",
+              "content": "Hello, recently my account has gotten flagged by your AI moderation on Instagram and by the result of it I've gotten permanently banned on Instagram. I believe I have done nothing wrong and would like to request for a manual review. Thank you so much."
+            },
+            {
+              "type": "panel",
+              "title": "Meta Verified Steps",
+              "content": "1. Create or use an existing Facebook account with your real face as the profile picture\n2. Purchase Meta Verified on that Facebook account\n3. Contact live support through the Meta Verified chat\n4. Use the message template above — request a manual review\n5. A human agent will review your case instead of the AI moderation system",
+              "border": "#39FF14"
             },
             {
               "type": "subheader",
@@ -290,16 +308,16 @@
             {
               "type": "panel",
               "title": "Recovery Timeline",
-              "content": "Shadowban: 7-14 days of reduced activity, then gradual return.\nTemporary suspension: 24-72 hours for appeal response.\nPermanent ban: Full restart required — new device, new persona, 21-28 day warmup.\nDevice ban: New phone required.",
+              "content": "Shadowban: 7-14 days of reduced activity, then gradual return.\nTemporary suspension: 24-72 hours for appeal response.\nPermanent ban: Appeal first, then Meta Verified live support.\nDevice ban: New phone required.",
               "border": "#39FF14"
             },
             {
               "type": "subheader",
-              "content": "The Rebuild Mindset"
+              "content": "If All Recovery Fails"
             },
             {
               "type": "text",
-              "content": "A ban is not the end. It is a setback. If your system works, you can rebuild. The knowledge, content pipeline, and processes you have built do not disappear because one account does. Experienced operators budget for account losses — they always have backup accounts warming up."
+              "content": "Only after you have appealed through the app AND through Meta Verified live support should you consider starting fresh. If both methods fail, then rebuild with a new persona, new device, new phone number, and new IP address. Follow the warmup protocol from Module 5 with extra caution. Your content library and systems still exist — rebuilding is faster than starting from zero."
             },
             {
               "type": "bullets",
@@ -307,15 +325,8 @@
                 "Always have at least one backup account warming up on a separate device",
                 "Keep your content library backed up locally and in the cloud",
                 "Document your best-performing strategies so you can replicate them quickly",
-                "Build your system to be account-independent — the system survives any single ban",
-                "The operators making real money have been banned multiple times — they just rebuild faster each time"
+                "Build your system to be account-independent — the system survives any single ban"
               ]
-            },
-            {
-              "type": "panel",
-              "title": "Mindset",
-              "content": "Getting banned is not a sign of failure. It is a sign that you are operating in a competitive space. The winners are the ones who prepare for bans, respond quickly, and rebuild smarter. The quitters are the ones who take it personally.",
-              "border": "#39FF14"
             }
           ]
         }
@@ -541,7 +552,7 @@
     "Shadowbans are invisible — monitor reach from non-followers daily to detect them early",
     "Prevention beats recovery: daily trust signals, safe content, and platform rate limits keep accounts healthy",
     "If shadowbanned: stop posting, go passive for 48-72 hours, resume at 50% frequency",
-    "If permanently banned: start fresh with new device, new persona, new everything — rebuild smarter",
+    "If permanently banned: appeal first, then use Meta Verified live support to request a manual review before starting fresh",
     "Device/IMEI bans affect ALL accounts on that phone — you may need a completely new device",
     "Always keep backup accounts warming up and content backed up locally and in the cloud",
     "Multi-account safety requires complete separation: device, IP, email, phone number — no exceptions",
