@@ -987,11 +987,13 @@ def build_content_page_html(header, body_blocks, bg_uri="", logo_uri="", page_nu
         all_html = render_blocks_html(body_blocks)
         content_html = f'<div class="content-box-full">{all_html}</div>\n'
 
+    header_div = f'<div class="section-header">{header_html}</div>' if header_html.strip() else ""
+
     return f'''
     <div class="page page-content">
         {"<img class='content-logo-small' src='" + logo_uri + "' />" if logo_uri else ""}
         <div class="content-inner">
-            <div class="section-header">{header_html}</div>
+            {header_div}
             {content_html}
         </div>
     </div>
@@ -1099,8 +1101,8 @@ def generate_pdf(config, output_path):
         for gi, group in enumerate(block_groups):
             if not group:
                 continue
-            # First group uses original header; continuations use header + "(cont.)" or no header
-            header = section["header"] if gi == 0 else section["header"]
+            # First group uses original header; continuations skip the header
+            header = section["header"] if gi == 0 else ""
             pages_html += build_content_page_html(
                 header,
                 group,

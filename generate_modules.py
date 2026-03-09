@@ -283,13 +283,17 @@ def generate_all_modules():
                 # Use section-level subtitle override if provided
                 lesson_subtitle = section.get("subtitle", subtitle)
 
+                # Check for section-level summary points
+                lesson_summary = section.get("summary_points", [])
+
                 lesson_config = {
                     "title": lesson_title,
                     "subtitle": lesson_subtitle,
                     "module_label": module_label,
                     "lesson_label": f"Lesson {lesson_num}",
                     "skip_toc": True,
-                    "skip_summary": True,
+                    "skip_summary": not lesson_summary,
+                    "summary_points": lesson_summary,
                     "sections": [section],
                 }
 
