@@ -894,7 +894,6 @@ def build_cover_html(title, subtitle, logo_uri="", page_num=1, total_pages=1, mo
         <div class="cover-logo-wrap">
             {"<img class='cover-logo-img' src='" + logo_uri + "' />" if logo_uri else ""}
         </div>
-        <div class="page-number page-number-dark">{page_num} / {total_pages}</div>
     </div>
     '''
 

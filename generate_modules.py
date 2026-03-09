@@ -280,9 +280,12 @@ def generate_all_modules():
                 lesson_num = extract_lesson_number(section["header"]) or (i + 1)
                 lesson_title = extract_lesson_title(section["header"])
 
+                # Use section-level subtitle override if provided
+                lesson_subtitle = section.get("subtitle", subtitle)
+
                 lesson_config = {
                     "title": lesson_title,
-                    "subtitle": subtitle,
+                    "subtitle": lesson_subtitle,
                     "module_label": module_label,
                     "lesson_label": f"Lesson {lesson_num}",
                     "skip_toc": True,

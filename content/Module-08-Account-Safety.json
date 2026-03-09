@@ -420,6 +420,7 @@
     },
     {
       "header": "Lesson 5: GEO Targeting & Hitting the USA Audience",
+      "subtitle": "Learn How to GEO Target the USA and Avoid Audiences from Unwanted Countries",
       "blocks": [
         {
           "type": "text",
@@ -451,7 +452,9 @@
               "title": "Common Mistake",
               "content": "A lot of people make the mistake of following random American users and hoping it somehow shows up in their statistics. It does not work that way. You need to follow major USA media accounts and American celebrity accounts — these are the accounts that carry geo-weight with the algorithm.",
               "border": "#FF3131"
-            },
+            }
+          ],
+          "right": [
             {
               "type": "subheader",
               "content": "Method 2: USA Flag in Bio"
@@ -468,8 +471,11 @@
               "type": "text",
               "content": "When you post a picture of your AI model at a bar, on a beach, or anywhere with a setting — tag a real US city in the location. Use locations like Miami Beach, Los Angeles, New York, Scottsdale, etc. The algorithm uses location tags as a strong geo signal for content distribution."
             }
-          ],
-          "right": [
+          ]
+        },
+        {
+          "type": "two_column",
+          "left": [
             {
               "type": "subheader",
               "content": "Method 4: USA Signals in Content"
@@ -486,7 +492,9 @@
                 "Use American slang in captions",
                 "Reference American cities, culture, or events"
               ]
-            },
+            }
+          ],
+          "right": [
             {
               "type": "subheader",
               "content": "Method 5: Instagram Age Limit (Last Resort)"
