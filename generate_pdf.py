@@ -518,6 +518,16 @@ body {
     page-break-inside: avoid;
 }
 
+.content-columns-flow {
+    column-count: 2;
+    column-gap: 40px;
+}
+
+.content-columns-flow .flow-block {
+    break-inside: avoid;
+    margin-bottom: 14px;
+}
+
 .content-col {
     flex: 1;
     min-width: 0;
@@ -949,12 +959,25 @@ def build_content_page_html(header, body_blocks, bg_uri="", logo_uri="", page_nu
             if block.get("type") == "two_column":
                 left_html = render_blocks_html(block["left"])
                 right_html = render_blocks_html(block["right"])
-                content_html += f'''
-                <div class="content-columns">
-                    <div class="content-col"><div class="content-box">{left_html}</div></div>
-                    <div class="content-col"><div class="content-box">{right_html}</div></div>
-                </div>
-                '''
+                if block.get("flow"):
+                    # CSS multi-column layout: each sub-block wrapped individually
+                    # so page breaks can happen between methods
+                    flow_items = ""
+                    for sub in block["left"] + block["right"]:
+                        sub_html = render_blocks_html([sub])
+                        flow_items += f'<div class="flow-block content-box">{sub_html}</div>\n'
+                    content_html += f'''
+                    <div class="content-columns-flow">
+                        {flow_items}
+                    </div>
+                    '''
+                else:
+                    content_html += f'''
+                    <div class="content-columns">
+                        <div class="content-col"><div class="content-box">{left_html}</div></div>
+                        <div class="content-col"><div class="content-box">{right_html}</div></div>
+                    </div>
+                    '''
             else:
                 # Full-width block rendered as a content box
                 block_html = render_blocks_html([block])
@@ -1065,15 +1088,28 @@ def generate_pdf(config, output_path):
 
     # Content pages — small logo in top-right corner
     for section in sections:
-        pages_html += build_content_page_html(
-            section["header"],
-            section["blocks"],
-            bg_uri=content_bg_uri,
-            logo_uri=logo_uri,
-            page_num=current_page,
-            total_pages=total_pages,
-        )
-        current_page += 1
+        # Split blocks at section_break markers into multiple pages
+        block_groups = [[]]
+        for blk in section["blocks"]:
+            if blk.get("type") == "section_break":
+                block_groups.append([])
+            else:
+                block_groups[-1].append(blk)
+
+        for gi, group in enumerate(block_groups):
+            if not group:
+                continue
+            # First group uses original header; continuations use header + "(cont.)" or no header
+            header = section["header"] if gi == 0 else section["header"]
+            pages_html += build_content_page_html(
+                header,
+                group,
+                bg_uri=content_bg_uri,
+                logo_uri=logo_uri,
+                page_num=current_page,
+                total_pages=total_pages,
+            )
+            current_page += 1
 
     # Summary
     if summary_points and not skip_summary:

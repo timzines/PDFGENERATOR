@@ -424,21 +424,17 @@
       "blocks": [
         {
           "type": "text",
-          "content": "One of the biggest issues you will face is having the wrong audience demographics. You check your analytics and 70% of your viewers are from India, or the majority of your audience is women. We have experienced this firsthand. Even if you get 5 million views, it does not matter — those views will not convert to paying subscribers if the demographics are wrong."
-        },
-        {
-          "type": "text",
-          "content": "The USA audience is the highest-converting demographic for this business model. Your entire strategy depends on reaching American men aged 18-34. If your metrics show a non-USA dominant audience, you need to fix it immediately. Below are the solutions ranked from safest to last resort."
-        },
-        {
-          "type": "panel",
-          "title": "IMPORTANT",
-          "content": "Do not ignore your audience demographics. Check them weekly in your Instagram Insights under Followers → Top Locations. If the USA is not your #1 country by a significant margin, apply these fixes immediately. Views without the right audience are worthless.",
-          "border": "#FF3131"
+          "content": "One of the biggest issues you will face is having the wrong audience demographics. Even if you get 5 million views, those views will not convert to paying subscribers if the demographics are wrong. The USA audience is the highest-converting demographic for this business model. Your entire strategy depends on reaching American men aged 18-34. Below are the solutions ranked from safest to last resort."
         },
         {
           "type": "two_column",
           "left": [
+            {
+              "type": "panel",
+              "title": "IMPORTANT",
+              "content": "Check your demographics weekly in Instagram Insights under Followers → Top Locations. If the USA is not your #1 country by a significant margin, apply these fixes immediately. Views without the right audience are worthless.",
+              "border": "#FF3131"
+            },
             {
               "type": "subheader",
               "content": "Method 1: Follow USA Accounts (Safest)"
@@ -474,6 +470,9 @@
           ]
         },
         {
+          "type": "section_break"
+        },
+        {
           "type": "two_column",
           "left": [
             {
@@ -491,6 +490,23 @@
                 "Include a small USA flag graphic in posts",
                 "Use American slang in captions",
                 "Reference American cities, culture, or events"
+              ]
+            },
+            {
+              "type": "subheader",
+              "content": "How to Set Country Age Limits"
+            },
+            {
+              "type": "text",
+              "content": "Go to Settings and Privacy → Business/Creator Tools and Controls → Minimum Age. Select the countries you want to restrict and set the minimum age."
+            },
+            {
+              "type": "bullets",
+              "items": [
+                "Minimum age you can set: 13",
+                "Maximum age you can set: 25",
+                "Select the specific countries flooding your demographics",
+                "Monitor your audience demographics weekly after applying"
               ]
             }
           ],
@@ -510,21 +526,10 @@
               "border": "#FF3131"
             },
             {
-              "type": "subheader",
-              "content": "How to Set Country Age Limits"
-            },
-            {
-              "type": "text",
-              "content": "Go to Settings and Privacy → Business/Creator Tools and Controls → Minimum Age. Select the countries you want to restrict and set the minimum age."
-            },
-            {
-              "type": "bullets",
-              "items": [
-                "Minimum age you can set: 13",
-                "Maximum age you can set: 25",
-                "Select the specific countries flooding your demographics",
-                "Monitor your audience demographics weekly after applying"
-              ]
+              "type": "panel",
+              "title": "Quick Reference — All Methods",
+              "content": "Method 1: Follow major USA media accounts and celebrities (safest, do first)\nMethod 2: Add USA flag emoji and US city name to bio\nMethod 3: Tag real US city locations on every post\nMethod 4: Add English text, US flags, and American slang to content\nMethod 5: Set country age limits in Instagram settings (last resort only)",
+              "border": "#39FF14"
             }
           ]
         }
