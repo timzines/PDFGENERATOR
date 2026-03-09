@@ -193,12 +193,12 @@
       "header": "Lesson 3: What to Do If You Get Banned",
       "blocks": [
         {
-          "type": "text",
-          "content": "Despite best practices, bans happen. They are part of operating in this space. What separates winners from quitters is how fast and smart you respond. This lesson covers exact steps for each scenario, including appeal templates you can use immediately."
-        },
-        {
           "type": "two_column",
           "left": [
+            {
+              "type": "text",
+              "content": "Despite best practices, bans happen. What separates winners from quitters is how fast and smart you respond. This lesson covers exact steps for each scenario."
+            },
             {
               "type": "subheader",
               "content": "If You Get Shadowbanned"
@@ -209,7 +209,6 @@
                 "STOP posting immediately — do not try to 'post through it'",
                 "Reduce all activity to passive scrolling only for 48-72 hours",
                 "Remove any recently posted content that may have triggered it",
-                "Check if you violated any content guidelines recently",
                 "After 48-72 hours, resume posting slowly (50% of normal frequency)",
                 "Monitor reach metrics daily — shadowbans typically lift in 7-14 days",
                 "If reach does not recover after 14 days, the account may be permanently suppressed"
@@ -228,7 +227,9 @@
                 "Wait for the appeal — most platforms respond within 24-72 hours",
                 "If first appeal fails, wait 30 days and try again with different wording"
               ]
-            },
+            }
+          ],
+          "right": [
             {
               "type": "subheader",
               "content": "Appeal Template — Instagram"
@@ -248,11 +249,17 @@
             {
               "type": "panel",
               "title": "Appeal Strategy",
-              "content": "Appeals should be short, polite, and non-confrontational. Never argue, never threaten, never mention other accounts. Sound like a confused normal user, not an angry marketer. This tone has the highest success rate.",
+              "content": "Appeals should be short, polite, and non-confrontational. Never argue, never threaten, never mention other accounts. Sound like a confused normal user, not an angry marketer.",
               "border": "#39FF14"
             }
-          ],
-          "right": [
+          ]
+        },
+        {
+          "type": "section_break"
+        },
+        {
+          "type": "two_column",
+          "left": [
             {
               "type": "subheader",
               "content": "If You Get Permanently Banned"
@@ -286,7 +293,9 @@
               "title": "Meta Verified Steps",
               "content": "1. Create or use an existing Facebook account with your real face as the profile picture\n2. Purchase Meta Verified on that Facebook account\n3. Contact live support through the Meta Verified chat\n4. Use the message template above — request a manual review\n5. A human agent will review your case instead of the AI moderation system",
               "border": "#39FF14"
-            },
+            }
+          ],
+          "right": [
             {
               "type": "subheader",
               "content": "Device/IMEI Ban Recovery (Instagram)"
@@ -317,7 +326,7 @@
             },
             {
               "type": "text",
-              "content": "Only after you have appealed through the app AND through Meta Verified live support should you consider starting fresh. If both methods fail, then rebuild with a new persona, new device, new phone number, and new IP address. Follow the warmup protocol from Module 5 with extra caution. Your content library and systems still exist — rebuilding is faster than starting from zero."
+              "content": "Only after you have appealed through the app AND through Meta Verified live support should you consider starting fresh. If both methods fail, then rebuild with a new persona, new device, new phone number, and new IP address. Follow the warmup protocol from Module 5 with extra caution."
             },
             {
               "type": "bullets",
