@@ -31,21 +31,25 @@ Canva-designed PDFs.
 | Cover Muted        | `#999999`                            | Subtitle text                      |
 | Cover Brand Border | `#555555`                            | Pill border around brand name      |
 
-### Content Pages (Rose/Mauve Theme)
+### Content Pages (Dark Theme — matches Cover/TOC)
 | Role               | Hex / Value                          | Usage                              |
 |--------------------|--------------------------------------|------------------------------------|
-| BG Center          | `#d4b6be`                            | Light dusty rose (gradient center) |
-| BG Mid             | `#c7a5b2`                            | Medium mauve (gradient mid)        |
-| BG Edge            | `#a07d83`                            | Dark rose (gradient edges)         |
-| Content Box BG     | `rgba(111, 76, 83, 0.82)`           | Semi-transparent dark panels       |
-| Box Text           | `#f0e0e6`                            | Light pink-white body text         |
-| Header Dark        | `#2a1a1f`                            | Section header primary color       |
+| BG Base            | `#1a1b1f`                            | Dark near-black base (same as cover) |
+| BG Light           | `#242529`                            | Slightly lighter dark              |
+| BG Gradient        | Radial from `#3d3036` → `#1a1b1f`   | Same warm dark gradient as cover   |
+| Content Box BG     | `rgba(80, 55, 65, 0.6)`             | Semi-transparent dark panels       |
+| Box Text           | `#e8d5dc`                            | Light warm body text               |
+| Header Text        | `#ffffff`                            | Section header primary color       |
 | Header Fade        | `#c49a85`                            | Section header last-word fade      |
 | Sub-header         | `#ffffff`                            | Bold white within boxes            |
-| Footer Text        | `#8a6a72`                            | Muted rose footer text             |
+| Footer Text        | `#b0a0a5`                            | Muted light footer text            |
 | Good Example       | `#7dba6d` border, `#c8e6c0` text    | Green-tinted examples              |
 | Bad Example        | `#c9665a` border, `#eaaca5` text    | Red-tinted examples                |
 | Panel BG           | `rgba(90, 60, 68, 0.5)`             | Inner highlight panels             |
+
+> **IMPORTANT:** The old rose/mauve content page theme (`#d4b6be`, `#c7a5b2`, `#a07d83`) is
+> **DEPRECATED and must NEVER be used**. ALL pages (cover, TOC, and content) use the same
+> dark theme. Do not revert to the pink/rose palette under any circumstances.
 
 ---
 
@@ -55,12 +59,12 @@ Canva-designed PDFs.
 |----------------------|---------------------|-----------|-----------|-------------|---------------|------------|
 | Cover Title          | Helvetica / Arial   | Bold 700  | 44        | Normal      | `#ffffff`     | Title Case |
 | Cover Subtitle       | Helvetica / Arial   | Regular   | 16        | Normal      | `#999999`     | Sentence   |
-| Section Header       | Helvetica / Arial   | Bold 700  | 32        | **Italic**  | `#2a1a1f`     | ALL CAPS   |
+| Section Header       | Helvetica / Arial   | Bold 700  | 32        | **Italic**  | `#ffffff`     | ALL CAPS   |
 | Header Last Word     | Helvetica / Arial   | Bold 700  | 32        | **Italic**  | `#c49a85`     | ALL CAPS   |
 | Sub-Header           | Helvetica / Arial   | Bold 700  | 14.5      | Normal      | `#ffffff`     | Title Case |
 | Body Text            | Helvetica / Arial   | Regular   | 13.5      | Normal      | `#f0e0e6`     | Sentence   |
 | Bullet Points        | Helvetica / Arial   | Regular   | 13.5      | Normal      | `#f0e0e6`     | Sentence   |
-| Footer               | Helvetica / Arial   | Regular   | 10        | Normal      | `#8a6a72`     | Sentence   |
+| Footer               | Helvetica / Arial   | Regular   | 10        | Normal      | `#b0a0a5`     | Sentence   |
 | TOC Header           | Helvetica / Arial   | Bold 700  | 36        | **Italic**  | `#ffffff`     | Title Case |
 | TOC Entry            | Helvetica / Arial   | Regular   | 14        | Normal      | `#e0ccd2`     | Title Case |
 | Cover Brand          | Helvetica / Arial   | Regular   | 16        | Normal      | `#cccccc`     | Title Case |
@@ -75,7 +79,7 @@ Canva-designed PDFs.
 - **Cover statue:** Right half of cover page, extracted from original Canva design (`assets/cover_statue.png`)
 - **Content statue:** Small, top-right corner of content pages, ~200px height, 35% opacity (`assets/content_statue.png`)
 - **Content decor:** Bottom-right decoration, ~200px height, 18% opacity (`assets/content_decor.png`)
-- **Background gradient:** Pre-rendered radial gradient in dusty rose (`assets/content_bg_generated.png`)
+- **Background gradient:** Pre-rendered radial gradient in dark tones matching cover (`assets/content_bg_generated.png`)
 
 ### Course Logo
 - `PDF/Course Logo.png` — used on cover page next to title (48×48px, rounded corners)
@@ -102,7 +106,7 @@ Every PDF must contain these pages **in this exact order**:
 - Footer present
 
 ### Pages 3–N — Content Pages
-- Dusty rose/mauve gradient background
+- **Dark gradient background** (same as cover — `#1a1b1f` base with warm radial gradient)
 - Small statue decoration top-right (subtle)
 - Dollar sign decoration bottom-right (subtle)
 - Section header: italic, bold, uppercase, two-tone coloring
@@ -112,7 +116,7 @@ Every PDF must contain these pages **in this exact order**:
 - Footer on every page
 
 ### Final Page — Summary / End
-- Same rose gradient background as content pages
+- Same dark gradient background as content pages
 - Two-column box layout with summary points
 - Brand name panel
 - Footer present
@@ -139,10 +143,10 @@ Every PDF must contain these pages **in this exact order**:
 ## 7. Content Panels & Cards
 
 Content is displayed inside semi-transparent dark rounded boxes:
-- Background: `rgba(111, 76, 83, 0.82)`
+- Background: `rgba(80, 55, 65, 0.6)`
 - Border-radius: `14px`
 - Internal padding: `22px 24px`
-- Text color: `#f0e0e6` (light pink-white)
+- Text color: `#e8d5dc` (light warm text)
 - Sub-headers within boxes: bold white `#ffffff`
 
 ### Good / Bad Example Blocks
@@ -171,7 +175,7 @@ Content is displayed inside semi-transparent dark rounded boxes:
 All materials are strictly protected under AI Influencer Accelerator® rights
 ```
 
-- Font: 10px, muted rose (`#8a6a72`)
+- Font: 10px, muted light (`#b0a0a5`)
 - Position: absolute bottom-center of page
 - Consistent on every page
 
@@ -180,7 +184,7 @@ All materials are strictly protected under AI Influencer Accelerator® rights
 ## 9. Section Header Two-Tone Rule
 
 Section headers use a two-tone color effect:
-- **Primary words:** Dark rose-brown `#2a1a1f`
+- **Primary words:** White `#ffffff`
 - **Last word:** Faded gold-rose `#c49a85`
 - All uppercase, italic, bold
 - Example: **INTRO: THE ROLE OF** <span style="color:#c49a85">**REDDIT**</span>
@@ -251,10 +255,10 @@ Each PDF is generated from a JSON config file in `content/`:
 - [ ] Page size is 1440 × 810 landscape
 - [ ] Cover page has statue, title, subtitle, brand badge
 - [ ] Table of Contents is page 2 with pill-shaped items
-- [ ] Content pages use dusty rose gradient background
+- [ ] Content pages use dark gradient background (same as cover, NOT rose/pink)
 - [ ] Section headers are italic, uppercase, two-tone colored
 - [ ] Content boxes are semi-transparent dark rounded panels
-- [ ] Body text is light pink-white on dark boxes
+- [ ] Body text is light warm `#e8d5dc` on dark boxes
 - [ ] Footer appears on every page except cover
 - [ ] Good/Bad examples use left-border accent style
 - [ ] Statue decoration appears subtly on content pages
